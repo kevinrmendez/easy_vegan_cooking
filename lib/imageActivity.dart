@@ -28,7 +28,6 @@ class ImageActivity extends StatefulWidget {
 class ImageActivityState extends State<ImageActivity> {
   bool downloading;
   int index;
-  String progressString;
   List<Ingredient> ingredientList = List();
 
   void _showAd() async {
@@ -42,19 +41,18 @@ class ImageActivityState extends State<ImageActivity> {
     }
   }
 
-  List<Widget> labels(List<String> labels) {
+  List<Widget> labels(List labels) {
     List<Widget> list = List();
     labels.forEach((labelText) {
       var label = new Label(
         text: labelText,
       );
-
       list.add(label);
     });
     return list;
   }
 
-  List<Widget> steps(List<String> steps) {
+  List<Widget> steps(List steps) {
     List<Widget> list = List();
     var stepNumber = 1;
     steps.forEach((step) {

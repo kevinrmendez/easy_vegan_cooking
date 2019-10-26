@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 // import 'package:url_launcher/url_launcher.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_database/firebase_database.dart';
 
 import 'Recipe.dart';
 import 'apikeys.dart';
@@ -84,6 +86,11 @@ class _GridActivityState extends State<GridActivity> {
       print("RECIPES");
       print(recipe.toString());
     });
+    var recipesRef = FirebaseDatabase.instance
+        .reference()
+        .child('code4food-e0d74')
+        .equalTo(widget.category, key: "category");
+
     return Scaffold(
       drawer: AppDrawer(),
       appBar: AppBar(
@@ -92,57 +99,88 @@ class _GridActivityState extends State<GridActivity> {
       body: Column(
         children: <Widget>[
           Expanded(
-            child: GridView.count(
-                crossAxisCount: 2,
-                childAspectRatio: 1.0,
-                padding: const EdgeInsets.all(4.0),
-                mainAxisSpacing: 4.0,
-                crossAxisSpacing: 4.0,
-                children: recipes.map((recipe) {
-                  return GestureDetector(
-                      child: GridTile(
-                        child: CachedNetworkImage(
-                          imageBuilder: (context, imageProvider) => Container(
-                            decoration: BoxDecoration(
-                                image: DecorationImage(
-                                    image: imageProvider, fit: BoxFit.cover)),
-                          ),
-                          imageUrl: recipe.image,
-                          placeholder: (context, url) => Container(
-                            constraints:
-                                BoxConstraints(maxHeight: 30, maxWidth: 30),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                SizedBox(
-                                    height: 40,
-                                    width: 40,
-                                    child: new CircularProgressIndicator()),
-                              ],
-                            ),
-                          ),
-                          errorWidget: (context, url, error) =>
-                              new Icon(Icons.error),
-                        ),
-                        footer: GridTileBar(
-                          title: Text(recipe.title),
-                          subtitle: Text(" ${recipe.time} min"),
-                        ),
-                      ),
-                      onTap: () async {
-                        // String url = recipe["image"];
-                        // print('URL');
-                        // print(url);
-                        _showAd();
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ImageActivity(
-                                    recipe: recipe,
-                                  )),
-                        );
-                      });
-                }).toList()),
+            child: StreamBuilder<QuerySnapshot>(
+                stream: Firestore.instance
+                    .collection('recipes')
+                    .where("category", isEqualTo: widget.category)
+                    .snapshots(),
+                builder: (context, snapshot) {
+                  switch (snapshot.connectionState) {
+                    case ConnectionState.waiting:
+                      return new Text('Loading...');
+                    default:
+                      return GridView.count(
+                          crossAxisCount: 2,
+                          childAspectRatio: 1.0,
+                          padding: const EdgeInsets.all(4.0),
+                          mainAxisSpacing: 4.0,
+                          crossAxisSpacing: 4.0,
+                          children: snapshot.data.documents
+                              .map((DocumentSnapshot document) {
+                            Recipe recipe = Recipe(
+                                image: document["image"],
+                                title: document["title"],
+                                category: document["category"],
+                                difficulty: document["difficulty"],
+                                instructions: document["instructions"],
+                                time: document["time"],
+                                serves: document["serves"],
+                                ingredients: document["ingredients"],
+                                steps: document["steps"],
+                                labels: document["labels"],
+                                nutrition: document["nutrition"],
+                                isFavorite: false);
+                            print(recipe.toString());
+                            return GestureDetector(
+                                child: GridTile(
+                                  child: CachedNetworkImage(
+                                    imageBuilder: (context, imageProvider) =>
+                                        Container(
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: imageProvider,
+                                              fit: BoxFit.cover)),
+                                    ),
+                                    imageUrl: recipe.image,
+                                    placeholder: (context, url) => Container(
+                                      constraints: BoxConstraints(
+                                          maxHeight: 30, maxWidth: 30),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          SizedBox(
+                                              height: 40,
+                                              width: 40,
+                                              child:
+                                                  new CircularProgressIndicator()),
+                                        ],
+                                      ),
+                                    ),
+                                    errorWidget: (context, url, error) =>
+                                        new Icon(Icons.error),
+                                  ),
+                                  footer: GridTileBar(
+                                    title: Text(recipe.title),
+                                    subtitle: Text(" ${recipe.time} min"),
+                                  ),
+                                ),
+                                onTap: () async {
+                                  // String url = recipe["image"];
+                                  // print('URL');
+                                  // print(url);
+                                  _showAd();
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => ImageActivity(
+                                              recipe: recipe,
+                                            )),
+                                  );
+                                });
+                          }).toList());
+                  }
+                }),
           ),
           AdmobBanner(
             adUnitId: getBannerAdUnitId(),

@@ -6,10 +6,10 @@ class Recipe {
   final String instructions;
   final int time;
   final int serves;
-  final List<String> ingredients;
-  final List<String> steps;
-  final List<String> labels;
-  final Map<String, int> nutrition;
+  final List ingredients;
+  final List steps;
+  final List labels;
+  final Map nutrition;
   bool isFavorite;
 
   Recipe(
@@ -28,8 +28,19 @@ class Recipe {
 
   @override
   String toString() {
-    print(
-        "RECIPE:: title:$title, category:$category, difficulty: $difficulty, time: $time,serves:$serves, ingredients: $ingredients,steps: $steps,isFavorite: $isFavorite");
+    print("""
+        RECIPE:: title:$title, 
+        image: $image,
+        category:$category, 
+        difficulty: $difficulty, 
+        time: $time,
+        serves:$serves, 
+        ingredients: $ingredients,
+        steps: $steps,
+        isFavorite: $isFavorite,
+        labeLs: $labels,
+        nutrition: $nutrition
+        """);
     return super.toString();
   }
 }
