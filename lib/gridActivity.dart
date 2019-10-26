@@ -56,31 +56,25 @@ class _GridActivityState extends State<GridActivity> {
     super.dispose();
   }
 
-  List<Recipe> _dataConverter(data) {
-    List<Recipe> recipeList = [];
-    data.forEach((data) {
-      Recipe recipe = Recipe(
-          image: data["image"],
-          title: data["title"],
-          category: data["category"],
-          difficulty: data["difficulty"],
-          instructions: data["instructions"],
-          time: data["time"],
-          serves: data["serves"],
-          ingredients: data["ingredients"],
-          steps: data["steps"],
-          labels: data["labels"],
-          nutrition: data["nutrition"],
-          isFavorite: false);
-      recipeList.add(recipe);
-    });
-
-    return recipeList;
+  Recipe _recipeBuilder(data) {
+    return Recipe(
+        image: data["image"],
+        title: data["title"],
+        category: data["category"],
+        difficulty: data["difficulty"],
+        instructions: data["instructions"],
+        time: data["time"],
+        serves: data["serves"],
+        ingredients: data["ingredients"],
+        steps: data["steps"],
+        labels: data["labels"],
+        nutrition: data["nutrition"],
+        isFavorite: false);
   }
 
   @override
   Widget build(BuildContext context) {
-    AppState appState = AppState.of(context);
+    // AppState appState = AppState.of(context);
 
     var recipesRef = FirebaseDatabase.instance.reference();
 
@@ -101,16 +95,20 @@ class _GridActivityState extends State<GridActivity> {
                 builder: (context, snap) {
                   switch (snap.connectionState) {
                     case ConnectionState.waiting:
-                      return new Text('Loading...');
+                      return Center(
+                          child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          CircularProgressIndicator(),
+                        ],
+                      ));
                     default:
                       print("SNAPSHOT: ${snap.data.snapshot.value}");
                       if (snap.hasData &&
                           !snap.hasError &&
                           snap.data.snapshot.value != null) {
                         DataSnapshot snapshot = snap.data.snapshot;
-
-                        print("SNAPSHOT: ${snapshot.value}");
-                        // print('HOOOLA');
+                        // print("SNAPSHOT: ${snapshot.value}");
                         return GridView.count(
                             crossAxisCount: 2,
                             childAspectRatio: 1.0,
@@ -121,19 +119,7 @@ class _GridActivityState extends State<GridActivity> {
                                 .where((recipe) =>
                                     recipe["category"] == widget.category)
                                 .map<Widget>((document) {
-                              Recipe recipe = Recipe(
-                                  image: document["image"],
-                                  title: document["title"],
-                                  category: document["category"],
-                                  difficulty: document["difficulty"],
-                                  instructions: document["instructions"],
-                                  time: document["time"],
-                                  serves: document["serves"],
-                                  ingredients: document["ingredients"],
-                                  steps: document["steps"],
-                                  labels: document["labels"],
-                                  nutrition: document["nutrition"],
-                                  isFavorite: false);
+                              Recipe recipe = _recipeBuilder(document);
                               // print(recipe.toString());
                               return GestureDetector(
                                   child: GridTile(
