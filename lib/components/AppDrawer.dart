@@ -38,7 +38,7 @@ class AppDrawer extends StatelessWidget {
               ),
               trailing: Icon(
                 Icons.home,
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).accentColor,
               ),
               onTap: () {
                 Navigator.of(context).pop();
@@ -53,7 +53,7 @@ class AppDrawer extends StatelessWidget {
               ),
               trailing: Icon(
                 Icons.favorite,
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).accentColor,
               ),
               onTap: () {
                 Navigator.of(context).pop();
@@ -68,7 +68,7 @@ class AppDrawer extends StatelessWidget {
               ),
               trailing: Icon(
                 Icons.shopping_cart,
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).accentColor,
               ),
               onTap: () {
                 Navigator.of(context).pop();
@@ -83,7 +83,7 @@ class AppDrawer extends StatelessWidget {
               ),
               trailing: Icon(
                 Icons.share,
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).accentColor,
               ),
               onTap: () {
                 String url =
@@ -100,7 +100,7 @@ class AppDrawer extends StatelessWidget {
               ),
               trailing: Icon(
                 Icons.rate_review,
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).accentColor,
               ),
               onTap: () async {
                 String url =

@@ -66,6 +66,7 @@ class _FoodPictureState extends State<FoodPicture> {
               icon: Icon(
                 Icons.share,
                 color: Theme.of(context).accentColor,
+                size: 35,
               ),
               onPressed: () {
                 _shareRecipe(widget.recipe);

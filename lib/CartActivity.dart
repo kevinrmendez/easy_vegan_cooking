@@ -1,3 +1,4 @@
+import 'package:easy_vegan_cooking/Ingredient.dart';
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
 import 'package:easy_vegan_cooking/imageActivity.dart';
@@ -5,8 +6,10 @@ import 'package:flutter/material.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:provider/provider.dart';
 // import 'package:url_launcher/url_launcher.dart';
 
+import 'CartModel.dart';
 import 'Recipe.dart';
 import 'apikeys.dart';
 import 'components/AppDrawer.dart';
@@ -106,25 +109,28 @@ class _CartActivityState extends State<CartActivity> {
               //             );
               //           });
               //     }).toList()),
-              child: shoppingList.isNotEmpty
-                  ? ListView.builder(
-                      itemCount: shoppingList.length,
-                      itemBuilder: (context, int index) {
-                        return ListTile(
-                          title: Text(shoppingList[index]),
-                          trailing: IconButton(
-                            icon: Icon(Icons.delete),
-                            color: Theme.of(context).accentColor,
-                            onPressed: () {
-                              appState.callback(
-                                  shoppingItem: shoppingList[index]);
-                              print('delete');
-                            },
-                          ),
-                        );
-                      },
-                    )
-                  : EmptyListTitle('your shopping cart is empty')),
+              child: Consumer<CartModel>(builder: (context, cartModel, child) {
+            List<Ingredient> shoppingList = cartModel.ingredients;
+            return shoppingList.isNotEmpty
+                ? ListView.builder(
+                    itemCount: shoppingList.length,
+                    itemBuilder: (context, int index) {
+                      return ListTile(
+                        title: Text(shoppingList[index].name),
+                        trailing: IconButton(
+                          icon: Icon(Icons.delete),
+                          color: Theme.of(context).accentColor,
+                          onPressed: () {
+                            print('deleting item');
+                            Provider.of<CartModel>(context, listen: true)
+                                .remove(shoppingList[index]);
+                          },
+                        ),
+                      );
+                    },
+                  )
+                : EmptyListTitle('your shopping cart is empty');
+          })),
           AdmobBanner(
             adUnitId: getBannerAdUnitId(),
             adSize: AdmobBannerSize.BANNER,

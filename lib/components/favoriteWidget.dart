@@ -1,6 +1,8 @@
 import 'package:easy_vegan_cooking/Recipe.dart';
+import 'package:easy_vegan_cooking/RecipeModel.dart';
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class FavoriteWidget extends StatefulWidget {
   final Recipe recipe;
@@ -12,18 +14,15 @@ class FavoriteWidget extends StatefulWidget {
 class _FavoriteWidgetState extends State<FavoriteWidget> {
   bool _isFavorited;
   void _toggleFavorite(context) {
-    AppState appState = AppState.of(context);
-
     setState(() {
       if (_isFavorited) {
         widget.recipe.isFavorite = false;
         _isFavorited = false;
-        appState.callback(recipe: widget.recipe);
+        Provider.of<RecipeModel>(context, listen: false).remove(widget.recipe);
       } else {
         widget.recipe.isFavorite = true;
-
         _isFavorited = true;
-        appState.callback(recipe: widget.recipe);
+        Provider.of<RecipeModel>(context, listen: false).add(widget.recipe);
       }
     });
   }

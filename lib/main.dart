@@ -16,11 +16,14 @@ import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import 'package:path_provider/path_provider.dart';
+import 'CartModel.dart';
 import 'Ingredient.dart';
 import 'Recipe.dart';
+import 'RecipeModel.dart';
 import 'appState.dart';
 import 'categoryActivity.dart';
 import 'data.dart';
+import 'package:provider/provider.dart';
 
 const PrimaryColor = const Color(0xFF99cc00);
 const AccentColor = const Color(0xFFeeb52d);
@@ -111,24 +114,34 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     return AppState(
-      share: this.share,
-      callback: _callback,
-      blackScreen: blackScreen,
-      save: this.save,
-      recipes: this.recipes,
-      shoppingCart: this.shoppingCart,
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primaryColor: PrimaryColor,
-          accentColor: AccentColor,
-          primaryTextTheme: TextTheme(title: TextStyle(color: Colors.white)),
-          primarySwatch: Colors.blueGrey,
-        ),
-        home: CategoryActivity(),
-      ),
-    );
+        share: this.share,
+        callback: _callback,
+        blackScreen: blackScreen,
+        save: this.save,
+        recipes: this.recipes,
+        shoppingCart: this.shoppingCart,
+        child: MultiProvider(
+          providers: [
+            ChangeNotifierProvider(
+              builder: (context) => RecipeModel(),
+            ),
+            ChangeNotifierProvider(
+              builder: (context) => CartModel(),
+            )
+          ],
+          child: MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Flutter Demo',
+            theme: ThemeData(
+              primaryColor: PrimaryColor,
+              accentColor: AccentColor,
+              primaryTextTheme:
+                  TextTheme(title: TextStyle(color: Colors.white)),
+              primarySwatch: Colors.blueGrey,
+            ),
+            home: CategoryActivity(),
+          ),
+        ));
   }
 }
 

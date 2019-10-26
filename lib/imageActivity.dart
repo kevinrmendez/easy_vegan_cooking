@@ -10,7 +10,9 @@ import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 // import 'package:swipedetector/swipedetector.dart';
 import 'package:http/http.dart' as http;
+import 'package:provider/provider.dart';
 
+import 'CartModel.dart';
 import 'Ingredient.dart';
 import 'Recipe.dart';
 import 'apikeys.dart';
@@ -343,9 +345,10 @@ class IngredientCheckbox extends StatefulWidget {
 
 class _IngredientCheckboxState extends State<IngredientCheckbox> {
   bool isChecked;
+
   @override
   void initState() {
-    isChecked = widget.ingredient.isChecked ?? false;
+    isChecked = widget.ingredient.isChecked;
     super.initState();
   }
 
@@ -372,14 +375,24 @@ class IngredientList extends StatefulWidget {
 }
 
 class _IngredientListState extends State<IngredientList> {
-  List<Widget> ingredients(List<Ingredient> ingredients) {
+  List<Ingredient> ingredientList = [];
+  bool isShoppingCartEmpty;
+  List<Widget> ingredientsWidget(List<Ingredient> ingredients) {
     List<Widget> list = List();
 
-    ingredients.forEach((item) {
+    ingredientList.forEach((item) {
       var row = Row(
         children: <Widget>[
-          new IngredientCheckbox(
-            ingredient: item,
+          // IngredientCheckbox(
+          //   ingredient: item,
+          // ),
+          Checkbox(
+            value: item.isChecked,
+            onChanged: (value) {
+              setState(() {
+                item.isChecked = value;
+              });
+            },
           ),
           Text(item.name)
         ],
@@ -389,20 +402,53 @@ class _IngredientListState extends State<IngredientList> {
     return list;
   }
 
-  List<Ingredient> ingredientList = [];
-  bool isChecked;
+  // bool isChecked;
+
+  Container shoppingCartButton(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+          color: PrimaryColor,
+          borderRadius: BorderRadius.all(Radius.circular(50))),
+      child: IconButton(
+        icon: Icon(Icons.shopping_cart),
+        color:
+            // Theme.of(context).primaryColor,
+            Colors.white,
+        onPressed: () {
+          ingredientList.forEach((ingredient) {
+            if (ingredient.isChecked) {
+              Provider.of<CartModel>(context, listen: false).add(ingredient);
+              setState(() {
+                ingredient.isChecked = false;
+                isShoppingCartEmpty = false;
+              });
+            }
+          });
+          if (!isShoppingCartEmpty) {
+            final snackBar = SnackBar(
+              content: Text('ingredients added to shopping cart'),
+              backgroundColor: AccentColor,
+            );
+            Scaffold.of(context).showSnackBar(snackBar);
+            isShoppingCartEmpty = true;
+          }
+        },
+      ),
+    );
+  }
+
   @override
   void initState() {
     widget.ingredientData.forEach((item) {
       Ingredient ingredient = Ingredient(name: item, isChecked: false);
       ingredientList.add(ingredient);
     });
+    isShoppingCartEmpty = true;
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    AppState appState = AppState.of(context);
     return Card(
       child: Column(
         children: <Widget>[
@@ -414,31 +460,9 @@ class _IngredientListState extends State<IngredientList> {
             alignment: AlignmentDirectional.topEnd,
             children: <Widget>[
               Column(
-                children: ingredients(ingredientList),
+                children: ingredientsWidget(ingredientList),
               ),
-              Container(
-                decoration: BoxDecoration(
-                    color: AccentColor,
-                    borderRadius: BorderRadius.all(Radius.circular(50))),
-                child: IconButton(
-                  icon: Icon(Icons.shopping_cart),
-                  color:
-                      // Theme.of(context).primaryColor,
-                      Colors.white,
-                  onPressed: () {
-                    ingredientList.forEach((ingredient) {
-                      if (ingredient.isChecked) {
-                        appState.callback(ingredient: ingredient);
-                      }
-                    });
-                    final snackBar = SnackBar(
-                      content: Text('ingredients added to shopping cart'),
-                      backgroundColor: AccentColor,
-                    );
-                    Scaffold.of(context).showSnackBar(snackBar);
-                  },
-                ),
-              )
+              shoppingCartButton(context)
             ],
           ),
         ],
