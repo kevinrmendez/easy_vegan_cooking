@@ -83,7 +83,7 @@ final data = [
   },
   {
     "image":
-        'https://cdn.pixabay.com/photo/2015/05/31/13/59/salad-791891_1280.jpg',
+        "https://cdn.pixabay.com/photo/2015/05/31/13/59/salad-791891_1280.jpg",
     "title": "recipe4",
     "category": "dinner",
     "time": 20,
@@ -98,7 +98,7 @@ final data = [
   },
   {
     "image":
-        'https://cdn.pixabay.com/photo/2016/10/31/18/23/salad-1786327_1280.jpg',
+        "https://cdn.pixabay.com/photo/2016/10/31/18/23/salad-1786327_1280.jpg",
     "title": "recipe5",
     "category": "breakfast",
     "time": 10,
@@ -113,7 +113,7 @@ final data = [
   },
   {
     "image":
-        'https://cdn.pixabay.com/photo/2017/02/08/17/22/salad-2049563_1280.jpg',
+        "https://cdn.pixabay.com/photo/2017/02/08/17/22/salad-2049563_1280.jpg",
     "title": "recipe6",
     "category": "dinner",
     "time": 30,
@@ -128,7 +128,7 @@ final data = [
   },
   {
     "image":
-        'https://cdn.pixabay.com/photo/2017/03/16/23/24/salad-2150548_1280.jpg',
+        "https://cdn.pixabay.com/photo/2017/03/16/23/24/salad-2150548_1280.jpg",
     "title": "recipe7",
     "category": "lunch",
     "time": 38,
@@ -143,7 +143,7 @@ final data = [
   },
   {
     "image":
-        'https://cdn.pixabay.com/photo/2015/05/31/12/58/spinach-791629_1280.jpg',
+        "https://cdn.pixabay.com/photo/2015/05/31/12/58/spinach-791629_1280.jpg",
     "title": "recipe8",
     "category": "dinner",
     "time": 40,
@@ -158,7 +158,7 @@ final data = [
   },
   {
     "image":
-        'https://cdn.pixabay.com/photo/2014/12/16/23/45/soup-570922_1280.jpg',
+        "https://cdn.pixabay.com/photo/2014/12/16/23/45/soup-570922_1280.jpg",
     "title": "soup1",
     "category": "soups",
     "time": 20,
@@ -173,7 +173,7 @@ final data = [
   },
   {
     "image":
-        'https://cdn.pixabay.com/photo/2016/05/26/19/49/strawberry-smoothie-1418212_1280.jpg',
+        "https://cdn.pixabay.com/photo/2016/05/26/19/49/strawberry-smoothie-1418212_1280.jpg",
     "title": "smoothie1",
     "category": "smoothies",
     "time": 5,
@@ -197,4 +197,82 @@ final data = [
     "labels": ["healthy", "green", "fresh"],
     "nutrition": {"carbs": 100, "protein": 200, "fat": 300}
   },
+  {
+    "image":
+        "https://cdn.pixabay.com/photo/2018/09/23/09/31/smoothie-3697014_1280.jpg",
+    "title": "smoothie2",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "100gr of carrots",
+      "200gr of tomatos",
+      "300gr of spinach",
+      "100 gr blueberry"
+    ],
+    "steps": [
+      "chop veggies",
+      "put salt",
+      "fry till ready",
+      "put berries",
+      "enjoy"
+    ],
+    "instructions":
+        "Put some avocado to make it extra healthy and extra smooth ",
+    "labels": ["healthy", "green", "fresh"],
+    "nutrition": {"carbs": 100, "protein": 200, "fat": 300}
+  },
+  {
+    "image":
+        "https://cdn.pixabay.com/photo/2015/03/26/23/09/cake-pops-693645_1280.jpg",
+    "title": "dessert1",
+    "category": "desserts",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "100gr of carrots",
+      "200gr of tomatos",
+      "300gr of spinach",
+      "100 gr blueberry"
+    ],
+    "steps": [
+      "chop veggies",
+      "put salt",
+      "fry till ready",
+      "put berries",
+      "enjoy"
+    ],
+    "instructions":
+        "Put some avocado to make it extra healthy and extra smooth ",
+    "labels": ["healthy", "green", "fresh"],
+    "nutrition": {"carbs": 100, "protein": 200, "fat": 300}
+  },
+  {
+    "image":
+        "https://cdn.pixabay.com/photo/2016/06/12/15/03/cupcakes-1452178_1280.jpg",
+    "title": "dessert2",
+    "category": "desserts",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "100gr of carrots",
+      "200gr of tomatos",
+      "300gr of spinach",
+      "100 gr blueberry"
+    ],
+    "steps": [
+      "chop veggies",
+      "put salt",
+      "fry till ready",
+      "put berries",
+      "enjoy"
+    ],
+    "instructions":
+        "Put some avocado to make it extra healthy and extra smooth ",
+    "labels": ["healthy", "green", "fresh"],
+    "nutrition": {"carbs": 100, "protein": 200, "fat": 300}
+  }
 ];

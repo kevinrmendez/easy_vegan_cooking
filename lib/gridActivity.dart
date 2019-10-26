@@ -1,3 +1,4 @@
+import 'package:easy_vegan_cooking/appState.dart';
 import 'package:flutter/material.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
@@ -79,17 +80,13 @@ class _GridActivityState extends State<GridActivity> {
 
   @override
   Widget build(BuildContext context) {
-    var filteredData =
-        data.where((recipe) => recipe["category"] == widget.category);
-    var recipes = _dataConverter(filteredData);
-    recipes.forEach((recipe) {
-      print("RECIPES");
-      print(recipe.toString());
-    });
-    var recipesRef = FirebaseDatabase.instance
-        .reference()
-        .child('code4food-e0d74')
-        .equalTo(widget.category, key: "category");
+    AppState appState = AppState.of(context);
+
+    var recipesRef = FirebaseDatabase.instance.reference();
+
+    // recipesRef.once().then((DataSnapshot snapshot) {
+    //   print('Connected to second database and read ${snapshot.value}');
+    // });
 
     return Scaffold(
       drawer: AppDrawer(),
@@ -99,86 +96,93 @@ class _GridActivityState extends State<GridActivity> {
       body: Column(
         children: <Widget>[
           Expanded(
-            child: StreamBuilder<QuerySnapshot>(
-                stream: Firestore.instance
-                    .collection('recipes')
-                    .where("category", isEqualTo: widget.category)
-                    .snapshots(),
-                builder: (context, snapshot) {
-                  switch (snapshot.connectionState) {
+            child: StreamBuilder(
+                stream: recipesRef.onValue,
+                builder: (context, snap) {
+                  switch (snap.connectionState) {
                     case ConnectionState.waiting:
                       return new Text('Loading...');
                     default:
-                      return GridView.count(
-                          crossAxisCount: 2,
-                          childAspectRatio: 1.0,
-                          padding: const EdgeInsets.all(4.0),
-                          mainAxisSpacing: 4.0,
-                          crossAxisSpacing: 4.0,
-                          children: snapshot.data.documents
-                              .map((DocumentSnapshot document) {
-                            Recipe recipe = Recipe(
-                                image: document["image"],
-                                title: document["title"],
-                                category: document["category"],
-                                difficulty: document["difficulty"],
-                                instructions: document["instructions"],
-                                time: document["time"],
-                                serves: document["serves"],
-                                ingredients: document["ingredients"],
-                                steps: document["steps"],
-                                labels: document["labels"],
-                                nutrition: document["nutrition"],
-                                isFavorite: false);
-                            print(recipe.toString());
-                            return GestureDetector(
-                                child: GridTile(
-                                  child: CachedNetworkImage(
-                                    imageBuilder: (context, imageProvider) =>
-                                        Container(
-                                      decoration: BoxDecoration(
-                                          image: DecorationImage(
-                                              image: imageProvider,
-                                              fit: BoxFit.cover)),
-                                    ),
-                                    imageUrl: recipe.image,
-                                    placeholder: (context, url) => Container(
-                                      constraints: BoxConstraints(
-                                          maxHeight: 30, maxWidth: 30),
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: <Widget>[
-                                          SizedBox(
-                                              height: 40,
-                                              width: 40,
-                                              child:
-                                                  new CircularProgressIndicator()),
-                                        ],
+                      print("SNAPSHOT: ${snap.data.snapshot.value}");
+                      if (snap.hasData &&
+                          !snap.hasError &&
+                          snap.data.snapshot.value != null) {
+                        DataSnapshot snapshot = snap.data.snapshot;
+
+                        print("SNAPSHOT: ${snapshot.value}");
+                        // print('HOOOLA');
+                        return GridView.count(
+                            crossAxisCount: 2,
+                            childAspectRatio: 1.0,
+                            padding: const EdgeInsets.all(4.0),
+                            mainAxisSpacing: 4.0,
+                            crossAxisSpacing: 4.0,
+                            children: snapshot.value
+                                .where((recipe) =>
+                                    recipe["category"] == widget.category)
+                                .map<Widget>((document) {
+                              Recipe recipe = Recipe(
+                                  image: document["image"],
+                                  title: document["title"],
+                                  category: document["category"],
+                                  difficulty: document["difficulty"],
+                                  instructions: document["instructions"],
+                                  time: document["time"],
+                                  serves: document["serves"],
+                                  ingredients: document["ingredients"],
+                                  steps: document["steps"],
+                                  labels: document["labels"],
+                                  nutrition: document["nutrition"],
+                                  isFavorite: false);
+                              // print(recipe.toString());
+                              return GestureDetector(
+                                  child: GridTile(
+                                    child: CachedNetworkImage(
+                                      imageBuilder: (context, imageProvider) =>
+                                          Container(
+                                        decoration: BoxDecoration(
+                                            image: DecorationImage(
+                                                image: imageProvider,
+                                                fit: BoxFit.cover)),
                                       ),
+                                      imageUrl: recipe.image,
+                                      placeholder: (context, url) => Container(
+                                        constraints: BoxConstraints(
+                                            maxHeight: 30, maxWidth: 30),
+                                        child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: <Widget>[
+                                            SizedBox(
+                                                height: 40,
+                                                width: 40,
+                                                child:
+                                                    new CircularProgressIndicator()),
+                                          ],
+                                        ),
+                                      ),
+                                      errorWidget: (context, url, error) =>
+                                          new Icon(Icons.error),
                                     ),
-                                    errorWidget: (context, url, error) =>
-                                        new Icon(Icons.error),
+                                    footer: GridTileBar(
+                                      title: Text(recipe.title),
+                                      subtitle: Text(" ${recipe.time} min"),
+                                    ),
                                   ),
-                                  footer: GridTileBar(
-                                    title: Text(recipe.title),
-                                    subtitle: Text(" ${recipe.time} min"),
-                                  ),
-                                ),
-                                onTap: () async {
-                                  // String url = recipe["image"];
-                                  // print('URL');
-                                  // print(url);
-                                  _showAd();
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => ImageActivity(
-                                              recipe: recipe,
-                                            )),
-                                  );
-                                });
-                          }).toList());
+                                  onTap: () async {
+                                    _showAd();
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => ImageActivity(
+                                                recipe: recipe,
+                                              )),
+                                    );
+                                  });
+                            }).toList());
+                      } else {
+                        return Center(child: CircularProgressIndicator());
+                      }
                   }
                 }),
           ),

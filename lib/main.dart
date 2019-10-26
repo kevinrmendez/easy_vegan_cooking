@@ -29,16 +29,12 @@ import 'package:firebase_database/firebase_database.dart';
 
 const PrimaryColor = const Color(0xFF99cc00);
 const AccentColor = const Color(0xFFeeb52d);
+FirebaseApp app;
 void main() async {
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   Admob.initialize(getAppId());
-  // final FirebaseApp app = await FirebaseApp.configure(
-  //     name: 'database',
-  //     options: FirebaseOptions(
-  //         googleAppID: '1:454744853632:android:98894b7aec322805fd6a65',
-  //         apiKey: ' AIzaSyDIrgTyWsPqkIxYAFVEARnoQOTJbC16Sbc ',
-  //         databaseURL: 'https://code4food-e0d74.firebaseio.com/'));
+
   runApp(MyApp());
 }
 
