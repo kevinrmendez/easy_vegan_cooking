@@ -177,8 +177,8 @@ class _LabelFilterActivityState extends State<LabelFilterActivity> {
                                           subtitle: Text(" ${recipe.time} min"),
                                         ),
                                       ),
-                                      FavoriteWidget(
-                                          recipe: recipe, iconSize: 20)
+                                      // FavoriteWidget(
+                                      //     recipe: recipe, iconSize: 20)
                                     ],
                                   ),
                                   onTap: () async {

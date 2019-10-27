@@ -109,6 +109,7 @@ class ImageActivityState extends State<ImageActivity> {
 
   Widget _contentMargin({List<Widget> children}) {
     return Container(
+      width: MediaQuery.of(context).size.width,
       margin: EdgeInsets.all(20),
       child: Column(children: children),
     );
@@ -159,6 +160,7 @@ class ImageActivityState extends State<ImageActivity> {
                                             child: Container(
                                               child: Text(
                                                 widget.recipe.title,
+                                                textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                     fontSize: 30,
                                                     color: Theme.of(context)

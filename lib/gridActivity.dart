@@ -1,6 +1,9 @@
+import 'dart:async';
+
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
+import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
@@ -37,6 +40,8 @@ class GridActivity extends StatefulWidget {
 }
 
 class _GridActivityState extends State<GridActivity> {
+  DatabaseReference recipesRef;
+  StreamSubscription _recipesSubscription;
   void _showAd() async {
     _counter++;
     if (_counter % 3 == 0) {
@@ -50,11 +55,17 @@ class _GridActivityState extends State<GridActivity> {
 
   @override
   void initState() {
+    recipesRef = FirebaseDatabase.instance.reference();
+
+    _recipesSubscription = recipesRef.onChildAdded.listen((event) {
+      print('Child added: ${event.snapshot.value}');
+    });
     super.initState();
   }
 
   @override
   void dispose() {
+    _recipesSubscription..cancel();
     super.dispose();
   }
 
@@ -74,11 +85,23 @@ class _GridActivityState extends State<GridActivity> {
         isFavorite: false);
   }
 
+  Widget _cardDetailText(text) {
+    return Flexible(
+      child: Container(
+        width: MediaQuery.of(context).size.width * .6,
+        child: Text(
+          text,
+          textAlign: TextAlign.right,
+          style: TextStyle(
+              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     // AppState appState = AppState.of(context);
-
-    var recipesRef = FirebaseDatabase.instance.reference();
 
     // recipesRef.once().then((DataSnapshot snapshot) {
     //   print('Connected to second database and read ${snapshot.value}');
@@ -92,110 +115,202 @@ class _GridActivityState extends State<GridActivity> {
       body: Column(
         children: <Widget>[
           Expanded(
-            child: StreamBuilder(
-                stream: recipesRef.onValue,
-                builder: (context, snap) {
-                  switch (snap.connectionState) {
-                    case ConnectionState.waiting:
-                      return Center(
-                          child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          SizedBox(
-                              height: 50,
-                              width: 50,
-                              child: CircularProgressIndicator()),
-                        ],
-                      ));
-                    default:
-                      print("SNAPSHOT: ${snap.data.snapshot.value}");
-                      if (snap.hasData &&
-                          !snap.hasError &&
-                          snap.data.snapshot.value != null) {
-                        DataSnapshot snapshot = snap.data.snapshot;
-                        // print("SNAPSHOT: ${snapshot.value}");
-                        return GridView.count(
-                            crossAxisCount: 2,
-                            childAspectRatio: 1.0,
-                            padding: const EdgeInsets.all(4.0),
-                            mainAxisSpacing: 4.0,
-                            crossAxisSpacing: 4.0,
-                            children: snapshot.value
-                                .where((recipe) =>
-                                    recipe["category"] == widget.category)
-                                .map<Widget>((document) {
-                              Recipe recipe = _recipeBuilder(document);
-                              // print(recipe.toString());
-                              return GestureDetector(
-                                  child: Stack(
-                                    alignment: AlignmentDirectional.bottomEnd,
-                                    fit: StackFit.loose,
-                                    children: <Widget>[
-                                      GridTile(
-                                        child: CachedNetworkImage(
-                                          imageBuilder:
-                                              (context, imageProvider) =>
-                                                  Container(
-                                            decoration: BoxDecoration(
-                                                image: DecorationImage(
-                                                    image: imageProvider,
-                                                    fit: BoxFit.cover)),
-                                          ),
-                                          imageUrl: recipe.image,
-                                          placeholder: (context, url) =>
-                                              Container(
-                                            color: GreyColor,
-                                            constraints: BoxConstraints(
-                                                maxHeight: 30, maxWidth: 30),
-                                            child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              children: <Widget>[
-                                                SizedBox(
-                                                    height: 40,
-                                                    width: 40,
-                                                    child:
-                                                        new CircularProgressIndicator()),
-                                              ],
-                                            ),
-                                          ),
-                                          errorWidget: (context, url, error) =>
-                                              Container(
-                                                  color: GreyColor,
-                                                  constraints: BoxConstraints(
-                                                      maxHeight: 30,
-                                                      maxWidth: 30),
-                                                  child: Icon(Icons.error)),
-                                        ),
-                                        footer: GridTileBar(
-                                          title: Text(
-                                            recipe.title,
-                                            style: TextStyle(
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                          subtitle: Text(" ${recipe.time} min"),
-                                        ),
+            // child: StreamBuilder(
+            //     stream: recipesRef.onValue,
+            //     builder: (context, snap) {
+            //       switch (snap.connectionState) {
+            //         case ConnectionState.waiting:
+            //           return Center(
+            //               child: Column(
+            //             mainAxisAlignment: MainAxisAlignment.center,
+            //             children: <Widget>[
+            //               SizedBox(
+            //                   height: 50,
+            //                   width: 50,
+            //                   child: CircularProgressIndicator()),
+            //             ],
+            //           ));
+            //         default:
+            //           print("SNAPSHOT: ${snap.data.snapshot.value}");
+            //           if (snap.hasData &&
+            //               !snap.hasError &&
+            //               snap.data.snapshot.value != null) {
+            //             DataSnapshot snapshot = snap.data.snapshot;
+            //             // print("SNAPSHOT: ${snapshot.value}");
+            //             return GridView.count(
+            //                 crossAxisCount: 2,
+            //                 childAspectRatio: 1.0,
+            //                 padding: const EdgeInsets.all(4.0),
+            //                 mainAxisSpacing: 4.0,
+            //                 crossAxisSpacing: 4.0,
+            //                 children: snapshot.value
+            //                     .where((recipe) =>
+            //                         recipe["category"] == widget.category)
+            //                     .map<Widget>((document) {
+            //                   Recipe recipe = _recipeBuilder(document);
+            //                   // print(recipe.toString());
+            //                   return GestureDetector(
+            //                       child: Stack(
+            //                         alignment: AlignmentDirectional.bottomEnd,
+            //                         fit: StackFit.loose,
+            //                         children: <Widget>[
+            //                           GridTile(
+            //                             child: CachedNetworkImage(
+            //                               imageBuilder:
+            //                                   (context, imageProvider) =>
+            //                                       Container(
+            //                                 decoration: BoxDecoration(
+            //                                     image: DecorationImage(
+            //                                         image: imageProvider,
+            //                                         fit: BoxFit.cover)),
+            //                               ),
+            //                               imageUrl: recipe.image,
+            //                               placeholder: (context, url) =>
+            //                                   Container(
+            //                                 color: GreyColor,
+            //                                 constraints: BoxConstraints(
+            //                                     maxHeight: 30, maxWidth: 30),
+            //                                 child: Column(
+            //                                   mainAxisAlignment:
+            //                                       MainAxisAlignment.center,
+            //                                   children: <Widget>[
+            //                                     SizedBox(
+            //                                         height: 40,
+            //                                         width: 40,
+            //                                         child:
+            //                                             new CircularProgressIndicator()),
+            //                                   ],
+            //                                 ),
+            //                               ),
+            //                               errorWidget: (context, url, error) =>
+            //                                   Container(
+            //                                       color: GreyColor,
+            //                                       constraints: BoxConstraints(
+            //                                           maxHeight: 30,
+            //                                           maxWidth: 30),
+            //                                       child: Icon(Icons.error)),
+            //                             ),
+            //                             footer: GridTileBar(
+            //                               title: Text(
+            //                                 recipe.title,
+            //                                 style: TextStyle(
+            //                                     fontWeight: FontWeight.bold),
+            //                               ),
+            //                               subtitle: Text(" ${recipe.time} min"),
+            //                             ),
+            //                           ),
+            //                           // FavoriteWidget(
+            //                           //     recipe: recipe, iconSize: 20)
+            //                         ],
+            //                       ),
+            //                       onTap: () async {
+            //                         _showAd();
+            //                         Navigator.push(
+            //                           context,
+            //                           MaterialPageRoute(
+            //                               builder: (context) => ImageActivity(
+            //                                     recipe: recipe,
+            //                                   )),
+            //                         );
+            //                       });
+            //                 }).toList());
+            //           } else {
+            //             return Center(child: CircularProgressIndicator());
+            //           }
+            //       }
+            //     }),
+            child: FirebaseAnimatedList(
+              query: FirebaseDatabase.instance.reference(),
+              itemBuilder: (BuildContext context, DataSnapshot snapshot,
+                  Animation<double> animation, int index) {
+                Recipe recipe = _recipeBuilder(snapshot.value);
+                return recipe.category == widget.category
+                    ? SizeTransition(
+                        sizeFactor: animation,
+                        // child: GridTile(child: Text(snapshot.value["title"])),
+                        child: Container(
+                          // decoration: ,
+                          margin: EdgeInsets.symmetric(vertical: 5),
+                          height: MediaQuery.of(context).size.height * .4,
+                          width: MediaQuery.of(context).size.width,
+                          child: GestureDetector(
+                            onTap: () {
+                              _showAd();
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ImageActivity(
+                                          recipe: recipe,
+                                        )),
+                              );
+                            },
+                            child: Stack(
+                                alignment: AlignmentDirectional.bottomEnd,
+                                fit: StackFit.loose,
+                                children: <Widget>[
+                                  CachedNetworkImage(
+                                    imageBuilder: (context, imageProvider) =>
+                                        Container(
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: imageProvider,
+                                              fit: BoxFit.cover)),
+                                    ),
+                                    imageUrl: recipe.image,
+                                    placeholder: (context, url) => Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      color: GreyColor,
+                                      // constraints: BoxConstraints(maxHeight: 30, maxWidth: 30),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          SizedBox(
+                                              height: 40,
+                                              width: 40,
+                                              child:
+                                                  new CircularProgressIndicator()),
+                                        ],
                                       ),
-                                      // FavoriteWidget(
-                                      //     recipe: recipe, iconSize: 20)
-                                    ],
+                                    ),
+                                    errorWidget: (context, url, error) =>
+                                        Container(
+                                            width: MediaQuery.of(context)
+                                                .size
+                                                .width,
+                                            color: GreyColor,
+                                            child: Icon(
+                                              Icons.error,
+                                              size: 40,
+                                              // color: PrimaryColor,
+                                            )),
                                   ),
-                                  onTap: () async {
-                                    _showAd();
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => ImageActivity(
-                                                recipe: recipe,
-                                              )),
-                                    );
-                                  });
-                            }).toList());
-                      } else {
-                        return Center(child: CircularProgressIndicator());
-                      }
-                  }
-                }),
+                                  Container(
+                                    margin: EdgeInsets.all(10),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.end,
+                                      children: <Widget>[
+                                        _cardDetailText(recipe.title),
+                                        _cardDetailText("${recipe.time} min")
+                                      ],
+                                    ),
+                                  )
+                                ]),
+                          ),
+                          // Card(
+                          //     child: Column(
+                          //   children: <Widget>[
+                          //     Image.network(snapshot.value["image"]),
+                          //     Text(snapshot.value["title"])
+                          //   ],
+                          // )),
+                        ),
+                      )
+                    : SizedBox();
+              },
+            ),
           ),
           AdmobBanner(
             adUnitId: getBannerAdUnitId(),
