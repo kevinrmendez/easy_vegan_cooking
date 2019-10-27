@@ -151,12 +151,22 @@ class ImageActivityState extends State<ImageActivity> {
                                     Container(
                                       margin:
                                           EdgeInsetsDirectional.only(top: 8),
-                                      child: Text(
-                                        widget.recipe.title,
-                                        style: TextStyle(
-                                            fontSize: 30,
-                                            color:
-                                                Theme.of(context).primaryColor),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          Flexible(
+                                            child: Container(
+                                              child: Text(
+                                                widget.recipe.title,
+                                                style: TextStyle(
+                                                    fontSize: 30,
+                                                    color: Theme.of(context)
+                                                        .primaryColor),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                     Container(

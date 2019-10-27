@@ -264,5 +264,34 @@
     "instructions": "",
     "labels": ["berries", "green", "fresh"],
     "nutrition": { "carbs": 100, "protein": 200, "fat": 300 }
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/chiaPudding.jpg?alt=media&token=2c46f473-d174-4fa6-b359-46dc47e8f20a",
+    "title": "Chocolate chia pudding Chocolate chia pudding",
+    "category": "desserts",
+    "time": 5,
+    "serves": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      "60g chia seeds",
+      "400ml unsweetened almond milk",
+      "3 tbsp cacao powder",
+      "2 tbsp maple syrup",
+      "½ tsp vanilla extract",
+      "cacao nibs, mixed",
+      "frozen berries, to serve"
+    ],
+    "steps": [
+      "Mix all the ingredients in a big bowl",
+      "Add a pinch of salt",
+      "Whisk to combine the ingredients",
+      "Cover with a plastic film and leave for 4 hrs in the fridge",
+      "Pour the mix in small glasses",
+      "Add forze berries and cacao powder",
+      "enjoy"
+    ],
+    "instructions": "",
+    "labels": ["berries", "green", "fresh"],
+    "nutrition": { "carbs": 100, "protein": 200, "fat": 300 }
   }
 ]
