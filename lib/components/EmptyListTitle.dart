@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class EmptyListTitle extends StatelessWidget {
-  final String text;
-  EmptyListTitle(this.text);
+  final String title;
+  final String content;
+  EmptyListTitle(this.title, this.content);
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -12,10 +13,22 @@ class EmptyListTitle extends StatelessWidget {
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20),
             width: MediaQuery.of(context).size.width * 0.7,
-            child: Text(
-              text,
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 30),
+            child: Column(
+              children: <Widget>[
+                Text(
+                  title,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 30),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  child: Text(
+                    content,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 15),
+                  ),
+                ),
+              ],
             ),
           ),
         ],

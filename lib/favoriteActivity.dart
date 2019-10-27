@@ -97,7 +97,11 @@ class _FavoriteActivityState extends State<FavoriteActivity> {
                                     new Icon(Icons.error),
                               ),
                               footer: GridTileBar(
-                                title: Text(recipe.title),
+                                title: Text(
+                                  recipe.title,
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                                subtitle: Text("${recipe.time} minutes"),
                               ),
                             ),
                             onTap: () async {
@@ -114,7 +118,8 @@ class _FavoriteActivityState extends State<FavoriteActivity> {
                               );
                             });
                       }).toList())
-                  : EmptyListTitle('Your favorite recipe list is empty');
+                  : EmptyListTitle(
+                      'Favorite', 'Add your favorite recipes here');
             },
           )),
           AdmobBanner(

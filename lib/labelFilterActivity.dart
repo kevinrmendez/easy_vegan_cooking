@@ -16,9 +16,9 @@ import 'data.dart';
 
 import 'imageActivity.dart';
 
-class GridActivity extends StatefulWidget {
-  final String category;
-  GridActivity({Key key, this.category}) : super(key: key);
+class LabelFilterActivity extends StatefulWidget {
+  final String label;
+  LabelFilterActivity({Key key, this.label}) : super(key: key);
   // GridActivity() {
   //   data.shuffle();
   // }
@@ -33,10 +33,10 @@ class GridActivity extends StatefulWidget {
   // always marked "final".
 
   @override
-  _GridActivityState createState() => _GridActivityState();
+  _LabelFilterActivityState createState() => _LabelFilterActivityState();
 }
 
-class _GridActivityState extends State<GridActivity> {
+class _LabelFilterActivityState extends State<LabelFilterActivity> {
   void _showAd() async {
     _counter++;
     if (_counter % 3 == 0) {
@@ -87,7 +87,7 @@ class _GridActivityState extends State<GridActivity> {
     return Scaffold(
       drawer: AppDrawer(),
       appBar: AppBar(
-        title: Text('Vegan recipes for ${widget.category}'),
+        title: Text('#${widget.label} recipes'),
       ),
       body: Column(
         children: <Widget>[
@@ -114,16 +114,21 @@ class _GridActivityState extends State<GridActivity> {
                           snap.data.snapshot.value != null) {
                         DataSnapshot snapshot = snap.data.snapshot;
                         // print("SNAPSHOT: ${snapshot.value}");
+                        List filteredRecipes = [];
+                        List recipesList = snapshot.value.toList();
+                        for (var i = 0; i < recipesList.length; i++) {
+                          print('FILTERING DATA');
+                          print(recipesList[i]);
+                          if (recipesList[i]["labels"].contains(widget.label))
+                            filteredRecipes.add(recipesList[i]);
+                        }
                         return GridView.count(
                             crossAxisCount: 2,
                             childAspectRatio: 1.0,
                             padding: const EdgeInsets.all(4.0),
                             mainAxisSpacing: 4.0,
                             crossAxisSpacing: 4.0,
-                            children: snapshot.value
-                                .where((recipe) =>
-                                    recipe["category"] == widget.category)
-                                .map<Widget>((document) {
+                            children: filteredRecipes.map<Widget>((document) {
                               Recipe recipe = _recipeBuilder(document);
                               // print(recipe.toString());
                               return GestureDetector(

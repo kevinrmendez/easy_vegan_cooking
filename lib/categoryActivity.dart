@@ -9,6 +9,7 @@ import 'components/AppDrawer.dart';
 import 'data.dart';
 
 import 'gridActivity.dart';
+import 'main.dart';
 
 class CategoryActivity extends StatefulWidget {
   // GridActivity({Key key, this.title}) : super(key: key);
@@ -106,6 +107,7 @@ class _CategoryActivityState extends State<CategoryActivity> {
                             ),
                             imageUrl: category["image"],
                             placeholder: (context, url) => Container(
+                              color: GreyColor,
                               constraints:
                                   BoxConstraints(maxHeight: 30, maxWidth: 30),
                               child: Column(
@@ -122,7 +124,10 @@ class _CategoryActivityState extends State<CategoryActivity> {
                                 new Icon(Icons.error),
                           ),
                           footer: GridTileBar(
-                            title: Text(category["title"]),
+                            title: Text(
+                              category["title"],
+                              style: TextStyle(fontSize: 20),
+                            ),
                           ),
                         ),
                         onTap: () async {

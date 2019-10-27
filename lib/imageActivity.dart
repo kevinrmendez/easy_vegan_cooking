@@ -1,22 +1,20 @@
-import 'dart:io';
-
 import 'package:admob_flutter/admob_flutter.dart';
-import 'package:easy_vegan_cooking/components/FoodPicture.dart';
-import 'package:easy_vegan_cooking/components/SubtitleWidget.dart';
-import 'package:easy_vegan_cooking/main.dart';
+import 'package:easy_vegan_cooking/CartActivity.dart';
 import 'package:flutter/material.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter/services.dart';
-import 'package:path_provider/path_provider.dart';
 // import 'package:swipedetector/swipedetector.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 
+import 'package:easy_vegan_cooking/components/FoodPicture.dart';
+import 'package:easy_vegan_cooking/components/SubtitleWidget.dart';
+import 'package:easy_vegan_cooking/main.dart';
 import 'CartModel.dart';
 import 'Ingredient.dart';
 import 'Recipe.dart';
 import 'apikeys.dart';
-import 'appState.dart';
+import 'labelFilterActivity.dart';
 
 class ImageActivity extends StatefulWidget {
   final Recipe recipe;
@@ -26,7 +24,6 @@ class ImageActivity extends StatefulWidget {
 }
 
 class ImageActivityState extends State<ImageActivity> {
-  bool downloading;
   int index;
   List<Ingredient> ingredientList = List();
 
@@ -44,7 +41,7 @@ class ImageActivityState extends State<ImageActivity> {
   List<Widget> labels(List labels) {
     List<Widget> list = List();
     labels.forEach((labelText) {
-      var label = new Label(
+      var label = Label(
         text: labelText,
       );
       list.add(label);
@@ -69,9 +66,6 @@ class ImageActivityState extends State<ImageActivity> {
   @override
   void initState() {
     // index = data.indexOf(widget.recipe);
-    downloading = false;
-    // _saveImages = true;
-    // index = _getNumber();
     super.initState();
   }
 
@@ -115,7 +109,6 @@ class ImageActivityState extends State<ImageActivity> {
 
   @override
   Widget build(BuildContext context) {
-    AppState appState = AppState.of(context);
     return Scaffold(
       body: Center(
         child: Column(
@@ -166,12 +159,20 @@ class ImageActivityState extends State<ImageActivity> {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: <Widget>[
-                                              _smallText(
-                                                  'Cooks in ${widget.recipe.time} minutes'),
-                                              _smallText(
-                                                  'Serves ${widget.recipe.serves}'),
-                                              _smallText(
-                                                  'Difficulty ${widget.recipe.difficulty}'),
+                                              _recipeDetail(
+                                                  'Cooks in:',
+                                                  ' ${widget.recipe.time} minutes',
+                                                  Icons.access_time),
+                                              _recipeDetail(
+                                                  'Serves:',
+                                                  '${widget.recipe.serves}',
+                                                  FontAwesomeIcons.utensils),
+                                              _recipeDetail(
+                                                  'Difficulty: ',
+                                                  '${widget.recipe.difficulty}',
+                                                  FontAwesomeIcons.brain),
+                                              // _smallText(
+                                              //     'Difficulty ${widget.recipe.difficulty}'),
                                             ],
                                           ),
                                         ],
@@ -196,8 +197,7 @@ class ImageActivityState extends State<ImageActivity> {
                               widget.recipe.instructions != null
                                   ? Card(
                                       child: Container(
-                                      padding:
-                                          EdgeInsets.symmetric(horizontal: 20),
+                                      margin: EdgeInsets.all(20),
                                       child: Column(
                                         children: <Widget>[
                                           SubtitleWidget(
@@ -228,8 +228,13 @@ class ImageActivityState extends State<ImageActivity> {
                                     )
                                   : SizedBox(),
                               Card(
-                                child: Row(
-                                  children: labels(widget.recipe.labels),
+                                child: Column(
+                                  children: <Widget>[
+                                    SubtitleWidget('Related tags'),
+                                    Row(
+                                      children: labels(widget.recipe.labels),
+                                    ),
+                                  ],
                                 ),
                               )
                             ],
@@ -244,10 +249,36 @@ class ImageActivityState extends State<ImageActivity> {
     );
   }
 
-  Widget _smallText(String text) {
+  Widget _smallText(String title, String detail) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
-      child: Text(text),
+      child: Row(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(right: 2.0),
+            child: Text(
+              title,
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
+          Text(detail)
+        ],
+      ),
+    );
+  }
+
+  Widget _recipeDetail(String title, String text, IconData icon) {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 15),
+      child: Row(
+        children: <Widget>[
+          Icon(
+            icon,
+            size: 11,
+          ),
+          _smallText(title, text),
+        ],
+      ),
     );
   }
 }
@@ -262,16 +293,28 @@ class Label extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        decoration: BoxDecoration(
-            color: AccentColor,
-            borderRadius: BorderRadius.all(Radius.circular(10))),
-        margin: EdgeInsets.all(4),
-        padding: EdgeInsets.all(8),
-        child: Text(
-          text,
-          style: TextStyle(color: Colors.white),
-        ));
+    return GestureDetector(
+      child: Container(
+          decoration: BoxDecoration(
+              color: AccentColor,
+              borderRadius: BorderRadius.all(Radius.circular(10))),
+          margin: EdgeInsets.all(4),
+          padding: EdgeInsets.all(8),
+          child: Text(
+            "#$text",
+            style: TextStyle(color: Colors.white),
+          )),
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => LabelFilterActivity(
+                      label: text,
+                    )));
+
+        print('tag printed');
+      },
+    );
   }
 }
 
@@ -306,8 +349,8 @@ class _StepState extends State<Step> {
             padding: const EdgeInsets.fromLTRB(5, 0, 10, 0),
             child: Text(
               "${widget.stepNumber}",
-              style:
-                  TextStyle(color: Theme.of(context).accentColor, fontSize: 30),
+              style: TextStyle(
+                  color: Theme.of(context).primaryColor, fontSize: 30),
             ),
           ),
           Text(
@@ -317,47 +360,16 @@ class _StepState extends State<Step> {
               opacity: isChecked ? 1.0 : 0.0,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Icon(Icons.check),
+                child: Icon(
+                  Icons.check,
+                  color: AccentColor,
+                ),
               ))
         ],
       )),
       onTap: () {
         setState(() {
           isChecked = !isChecked;
-        });
-      },
-    );
-  }
-}
-
-class IngredientCheckbox extends StatefulWidget {
-  final Ingredient ingredient;
-  const IngredientCheckbox({
-    this.ingredient,
-    Key key,
-  }) : super(key: key);
-
-  @override
-  _IngredientCheckboxState createState() => _IngredientCheckboxState();
-}
-
-class _IngredientCheckboxState extends State<IngredientCheckbox> {
-  bool isChecked;
-
-  @override
-  void initState() {
-    isChecked = widget.ingredient.isChecked;
-    super.initState();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Checkbox(
-      value: isChecked,
-      onChanged: (bool value) {
-        widget.ingredient.isChecked = value;
-        setState(() {
-          isChecked = value;
         });
       },
     );
@@ -379,31 +391,34 @@ class _IngredientListState extends State<IngredientList> {
     List<Widget> list = List();
 
     ingredientList.forEach((item) {
-      var row = Row(
-        children: <Widget>[
-          // IngredientCheckbox(
-          //   ingredient: item,
-          // ),
-          Checkbox(
-            value: item.isChecked,
-            onChanged: (value) {
-              setState(() {
-                item.isChecked = value;
-              });
-            },
-          ),
-          Text(item.name)
-        ],
-      );
+      var row = Container(
+          // margin: EdgeInsets.symmetric(vertical: 40),
+          // color: Colors.red,
+          height: 30,
+          child: Row(
+            children: <Widget>[
+              Checkbox(
+                value: item.isChecked,
+                onChanged: (value) {
+                  setState(() {
+                    item.isChecked = value;
+                  });
+                },
+              ),
+              Text(
+                item.name,
+                // style: TextStyle(fontSize: 10),
+              )
+            ],
+          ));
       list.add(row);
     });
     return list;
   }
 
-  // bool isChecked;
-
   Container shoppingCartButton(BuildContext context) {
     return Container(
+      margin: EdgeInsets.symmetric(horizontal: 15),
       decoration: BoxDecoration(
           color: PrimaryColor,
           borderRadius: BorderRadius.all(Radius.circular(50))),
@@ -424,7 +439,15 @@ class _IngredientListState extends State<IngredientList> {
           });
           if (!isShoppingCartEmpty) {
             final snackBar = SnackBar(
-              content: Text('ingredients added to shopping cart'),
+              duration: Duration(seconds: 5),
+              content: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => CartActivity()),
+                    );
+                  },
+                  child: Text('ingredients added to shopping cart')),
               backgroundColor: AccentColor,
             );
             Scaffold.of(context).showSnackBar(snackBar);
@@ -458,6 +481,7 @@ class _IngredientListState extends State<IngredientList> {
             alignment: AlignmentDirectional.topEnd,
             children: <Widget>[
               Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: ingredientsWidget(ingredientList),
               ),
               shoppingCartButton(context)

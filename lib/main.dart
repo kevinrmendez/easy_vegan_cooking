@@ -29,6 +29,8 @@ import 'package:firebase_database/firebase_database.dart';
 
 const PrimaryColor = const Color(0xFF99cc00);
 const AccentColor = const Color(0xFFeeb52d);
+// const GreyColor = const Color(0xFFD0D0D0);
+const GreyColor = const Color(0xFFe6e6e6);
 FirebaseApp app;
 void main() async {
   SystemChrome.setPreferredOrientations(

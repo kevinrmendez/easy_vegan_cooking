@@ -1,6 +1,8 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_vegan_cooking/Recipe.dart';
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
+import 'package:easy_vegan_cooking/main.dart';
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
 
@@ -53,11 +55,45 @@ class _FoodPictureState extends State<FoodPicture> {
       alignment: AlignmentDirectional.bottomEnd,
       fit: StackFit.loose,
       children: <Widget>[
+        // Container(
+        //   height: MediaQuery.of(context).size.height * .4,
+        //   decoration: BoxDecoration(
+        //       color: GreyColor,
+        //       image: DecorationImage(
+        //           image: NetworkImage(widget.recipe.image), fit: BoxFit.cover)),
+        // ),
         Container(
           height: MediaQuery.of(context).size.height * .4,
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: NetworkImage(widget.recipe.image), fit: BoxFit.cover)),
+          child: CachedNetworkImage(
+            imageBuilder: (context, imageProvider) => Container(
+              decoration: BoxDecoration(
+                  image:
+                      DecorationImage(image: imageProvider, fit: BoxFit.cover)),
+            ),
+            imageUrl: widget.recipe.image,
+            placeholder: (context, url) => Container(
+              width: MediaQuery.of(context).size.height * .4,
+              color: GreyColor,
+              // constraints: BoxConstraints(maxHeight: 30, maxWidth: 30),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  SizedBox(
+                      height: 40,
+                      width: 40,
+                      child: new CircularProgressIndicator()),
+                ],
+              ),
+            ),
+            errorWidget: (context, url, error) => Container(
+                width: MediaQuery.of(context).size.width,
+                color: GreyColor,
+                child: Icon(
+                  Icons.error,
+                  size: 40,
+                  // color: PrimaryColor,
+                )),
+          ),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
@@ -73,7 +109,10 @@ class _FoodPictureState extends State<FoodPicture> {
                 print('share');
               },
             ),
-            FavoriteWidget(recipe: widget.recipe),
+            FavoriteWidget(
+              recipe: widget.recipe,
+              iconSize: 45,
+            ),
           ],
         )
       ],

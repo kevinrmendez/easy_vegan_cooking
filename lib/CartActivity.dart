@@ -129,7 +129,8 @@ class _CartActivityState extends State<CartActivity> {
                       );
                     },
                   )
-                : EmptyListTitle('your shopping cart is empty');
+                : EmptyListTitle('Shopping Cart',
+                    'Add all your ingredients of your recipes here');
           })),
           AdmobBanner(
             adUnitId: getBannerAdUnitId(),

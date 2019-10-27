@@ -6,7 +6,8 @@ import 'package:provider/provider.dart';
 
 class FavoriteWidget extends StatefulWidget {
   final Recipe recipe;
-  FavoriteWidget({this.recipe});
+  final double iconSize;
+  FavoriteWidget({this.recipe, this.iconSize = 10});
   @override
   _FavoriteWidgetState createState() => _FavoriteWidgetState();
 }
@@ -41,7 +42,7 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
         Container(
           padding: EdgeInsets.all(0),
           child: IconButton(
-              iconSize: 45,
+              iconSize: widget.iconSize,
               icon: (_isFavorited
                   ? Icon(
                       Icons.favorite,
