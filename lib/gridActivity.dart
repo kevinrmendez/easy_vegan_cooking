@@ -172,8 +172,8 @@ class _GridActivityState extends State<GridActivity> {
                                           subtitle: Text(" ${recipe.time} min"),
                                         ),
                                       ),
-                                      FavoriteWidget(
-                                          recipe: recipe, iconSize: 20)
+                                      // FavoriteWidget(
+                                      //     recipe: recipe, iconSize: 20)
                                     ],
                                   ),
                                   onTap: () async {

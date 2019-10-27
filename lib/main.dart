@@ -32,6 +32,7 @@ const AccentColor = const Color(0xFFeeb52d);
 // const GreyColor = const Color(0xFFD0D0D0);
 const GreyColor = const Color(0xFFe6e6e6);
 FirebaseApp app;
+var recipesData;
 void main() async {
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);

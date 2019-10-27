@@ -107,6 +107,13 @@ class ImageActivityState extends State<ImageActivity> {
     );
   }
 
+  Widget _contentMargin({List<Widget> children}) {
+    return Container(
+      margin: EdgeInsets.all(20),
+      child: Column(children: children),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -141,12 +148,16 @@ class ImageActivityState extends State<ImageActivity> {
                                     //   // fit: BoxFit.fitHeight,
                                     // ),
 
-                                    Text(
-                                      widget.recipe.title,
-                                      style: TextStyle(
-                                          fontSize: 30,
-                                          color:
-                                              Theme.of(context).primaryColor),
+                                    Container(
+                                      margin:
+                                          EdgeInsetsDirectional.only(top: 8),
+                                      child: Text(
+                                        widget.recipe.title,
+                                        style: TextStyle(
+                                            fontSize: 30,
+                                            color:
+                                                Theme.of(context).primaryColor),
+                                      ),
                                     ),
                                     Container(
                                       padding:
@@ -196,47 +207,46 @@ class ImageActivityState extends State<ImageActivity> {
                               ),
                               widget.recipe.instructions != null
                                   ? Card(
-                                      child: Container(
-                                      margin: EdgeInsets.all(20),
-                                      child: Column(
-                                        children: <Widget>[
-                                          SubtitleWidget(
-                                            'More information',
-                                          ),
-                                          Text(widget.recipe.instructions),
-                                        ],
+                                      child: _contentMargin(children: [
+                                      SubtitleWidget(
+                                        'More information',
                                       ),
-                                    ))
+                                      Text(widget.recipe.instructions),
+                                    ]))
                                   : SizedBox(),
                               widget.recipe.nutrition != null
                                   ? Card(
                                       child: Container(
+                                        margin: EdgeInsets.all(20),
                                         width:
                                             MediaQuery.of(context).size.width,
                                         child: Column(
-                                          children: <Widget>[
+                                          children: [
                                             SubtitleWidget('Nutritional value'),
-                                            Text(
-                                                "Carbs: ${widget.recipe.nutrition["carbs"]}"),
-                                            Text(
-                                                "Fat: ${widget.recipe.nutrition["fat"]}"),
-                                            Text(
-                                                "Protein: ${widget.recipe.nutrition["protein"]}"),
+                                            Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: <Widget>[
+                                                Text(
+                                                    "Carbs: ${widget.recipe.nutrition["carbs"]}"),
+                                                Text(
+                                                    "Fat: ${widget.recipe.nutrition["fat"]}"),
+                                                Text(
+                                                    "Protein: ${widget.recipe.nutrition["protein"]}"),
+                                              ],
+                                            ),
                                           ],
                                         ),
                                       ),
                                     )
                                   : SizedBox(),
                               Card(
-                                child: Column(
-                                  children: <Widget>[
-                                    SubtitleWidget('Related tags'),
-                                    Row(
-                                      children: labels(widget.recipe.labels),
-                                    ),
-                                  ],
+                                  child: _contentMargin(children: [
+                                SubtitleWidget('Related tags'),
+                                Row(
+                                  children: labels(widget.recipe.labels),
                                 ),
-                              )
+                              ]))
                             ],
                           ),
                         ));

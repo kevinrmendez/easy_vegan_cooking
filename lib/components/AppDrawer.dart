@@ -1,12 +1,17 @@
 import 'package:easy_vegan_cooking/categoryActivity.dart';
 import 'package:easy_vegan_cooking/favoriteActivity.dart';
+import 'package:easy_vegan_cooking/imageActivity.dart';
+import 'package:easy_vegan_cooking/main.dart';
 import 'package:easy_vegan_cooking/recentRecipes.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
 import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../CartActivity.dart';
+import '../Recipe.dart';
+import '../RecipeModel.dart';
 
 class AppDrawer extends StatelessWidget {
   // This widget is the root of your application.
@@ -16,7 +21,7 @@ class AppDrawer extends StatelessWidget {
       width: MediaQuery.of(context).size.width * .8,
       child: Drawer(
         child: Container(
-          // color: Colors.indigo,
+          color: GreyColor,
           child: ListView(
             children: <Widget>[
               // UserAccountsDrawerHeader(
@@ -105,6 +110,24 @@ class AppDrawer extends StatelessWidget {
                           RecentRecipesActivity()));
                 },
               ),
+              // ListTile(
+              //   title: Text(
+              //     "Random Recipe",
+              //     // style: TextStyle(color: Theme.of(context).primaryColor),
+              //   ),
+              //   trailing: Icon(
+              //     FontAwesomeIcons.plusCircle,
+              //     color: Theme.of(context).accentColor,
+              //   ),
+              //   onTap: () {
+              //     Navigator.of(context).pop();
+              //     // Navigator.of(context).push(MaterialPageRoute(
+              //     //     builder: (BuildContext context) =>
+              //     //         ImageActivity(recipe: ,))
+              //     //         );
+              //   },
+              // ),
+
               // ListTile(
               //   title: Text(
               //     "Share App",

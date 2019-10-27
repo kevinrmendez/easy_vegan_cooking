@@ -7,7 +7,7 @@ class Ingredient {
 
   @override
   String toString() {
-    print("Ingredient:: name:$name, isFavorite: $isChecked");
+    print("Ingredient:: name:$name, isChecked: $isChecked");
     return super.toString();
   }
 }
