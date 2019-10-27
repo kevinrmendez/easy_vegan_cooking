@@ -173,8 +173,8 @@ class _RecentRecipesActivityState extends State<RecentRecipesActivity> {
                                           subtitle: Text(" ${recipe.time} min"),
                                         ),
                                       ),
-                                      FavoriteWidget(
-                                          recipe: recipe, iconSize: 20)
+                                      // FavoriteWidget(
+                                      //     recipe: recipe, iconSize: 20)
                                     ],
                                   ),
                                   onTap: () async {

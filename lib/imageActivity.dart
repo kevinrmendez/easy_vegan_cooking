@@ -205,7 +205,8 @@ class ImageActivityState extends State<ImageActivity> {
                                   ],
                                 ),
                               ),
-                              widget.recipe.instructions != null
+                              widget.recipe.instructions != null &&
+                                      widget.recipe.instructions != ""
                                   ? Card(
                                       child: _contentMargin(children: [
                                       SubtitleWidget(
@@ -363,8 +364,12 @@ class _StepState extends State<Step> {
                   color: Theme.of(context).primaryColor, fontSize: 30),
             ),
           ),
-          Text(
-            "${widget.step}",
+          Flexible(
+            child: Container(
+              child: Text(
+                "${widget.step}",
+              ),
+            ),
           ),
           Opacity(
               opacity: isChecked ? 1.0 : 0.0,

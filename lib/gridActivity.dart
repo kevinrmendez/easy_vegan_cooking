@@ -168,7 +168,11 @@ class _GridActivityState extends State<GridActivity> {
                                                   child: Icon(Icons.error)),
                                         ),
                                         footer: GridTileBar(
-                                          title: Text(recipe.title),
+                                          title: Text(
+                                            recipe.title,
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                           subtitle: Text(" ${recipe.time} min"),
                                         ),
                                       ),
