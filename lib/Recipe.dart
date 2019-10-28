@@ -9,7 +9,7 @@ class Recipe {
   final List ingredients;
   final List steps;
   final List labels;
-  final Map nutrition;
+  final List nutrition;
   bool isFavorite;
 
   Recipe(

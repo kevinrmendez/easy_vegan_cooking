@@ -10,7 +10,12 @@
     "steps": ["chop veggies", "put salt", "fry till ready"],
     "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
-    "nutrition": { "protein": 200, "carbs": 300, "fat": 400 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://cdn.pixabay.com/photo/2016/03/05/23/01/prawn-1239427_1280.jpg",
@@ -23,7 +28,12 @@
     "steps": ["chop veggies", "put salt", "fry till ready"],
     "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
-    "nutrition": { "protein": 200, "carbs": 300, "fat": 400 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://cdn.pixabay.com/photo/2014/12/15/14/05/salad-569156_1280.jpg",
@@ -36,7 +46,12 @@
     "steps": ["chop veggies", "put salt", "fry till ready"],
     "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
-    "nutrition": { "protein": 200, "carbs": 300, "fat": 400 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://cdn.pixabay.com/photo/2015/05/31/13/59/salad-791891_1280.jpg",
@@ -49,7 +64,12 @@
     "steps": ["chop veggies", "put salt", "fry till ready"],
     "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
-    "nutrition": { "protein": 200, "carbs": 300, "fat": 400 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://cdn.pixabay.com/photo/2016/10/31/18/23/salad-1786327_1280.jpg",
@@ -62,7 +82,12 @@
     "steps": ["chop veggies", "put salt", "fry till ready"],
     "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
-    "nutrition": { "protein": 200, "carbs": 300, "fat": 400 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://cdn.pixabay.com/photo/2017/02/08/17/22/salad-2049563_1280.jpg",
@@ -75,7 +100,12 @@
     "steps": ["chop veggies", "put salt", "fry till ready"],
     "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
-    "nutrition": { "protein": 200, "carbs": 300, "fat": 400 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://cdn.pixabay.com/photo/2017/03/16/23/24/salad-2150548_1280.jpg",
@@ -88,7 +118,12 @@
     "steps": ["chop veggies", "put salt", "fry till ready"],
     "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
-    "nutrition": { "protein": 200, "carbs": 300, "fat": 400 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://cdn.pixabay.com/photo/2015/05/31/12/58/spinach-791629_1280.jpg",
@@ -101,7 +136,12 @@
     "steps": ["chop veggies", "put salt", "fry till ready"],
     "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ",
     "labels": ["green", "red", "soya"],
-    "nutrition": { "carbs": 100, "protein": 200, "fat": 300 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://cdn.pixabay.com/photo/2014/12/16/23/45/soup-570922_1280.jpg",
@@ -114,7 +154,12 @@
     "steps": ["chop veggies", "put salt", "fry till ready"],
     "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ",
     "labels": ["green", "red", "soya"],
-    "nutrition": { "carbs": 100, "protein": 200, "fat": 300 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://cdn.pixabay.com/photo/2016/05/26/19/49/strawberry-smoothie-1418212_1280.jpg",
@@ -138,7 +183,12 @@
     ],
     "instructions": "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
-    "nutrition": { "carbs": 100, "protein": 200, "fat": 300 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://cdn.pixabay.com/photo/2018/09/23/09/31/smoothie-3697014_1280.jpg",
@@ -162,7 +212,12 @@
     ],
     "instructions": "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
-    "nutrition": { "carbs": 100, "protein": 200, "fat": 300 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://cdn.pixabay.com/photo/2015/03/26/23/09/cake-pops-693645_1280.jpg",
@@ -186,7 +241,12 @@
     ],
     "instructions": "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
-    "nutrition": { "carbs": 100, "protein": 200, "fat": 300 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/cupcakes.jpg?alt=media&token=97dc9f66-a531-4a7d-aa4d-11d72c8d7c01",
@@ -210,7 +270,12 @@
     ],
     "instructions": "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
-    "nutrition": { "carbs": 100, "protein": 200, "fat": 300 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/cakepops.jpg?alt=media&token=e0521831-c64c-4653-87dc-3c8923d80f25",
@@ -234,7 +299,12 @@
     ],
     "instructions": "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
-    "nutrition": { "carbs": 100, "protein": 200, "fat": 300 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/chiaPudding.jpg?alt=media&token=2c46f473-d174-4fa6-b359-46dc47e8f20a",
@@ -263,7 +333,12 @@
     ],
     "instructions": "",
     "labels": ["berries", "green", "fresh"],
-    "nutrition": { "carbs": 100, "protein": 200, "fat": 300 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/chiaPudding.jpg?alt=media&token=2c46f473-d174-4fa6-b359-46dc47e8f20a",
@@ -292,7 +367,12 @@
     ],
     "instructions": "",
     "labels": ["berries", "green", "fresh"],
-    "nutrition": { "carbs": 100, "protein": 200, "fat": 300 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   },
   {
     "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/brownies.jpg?alt=media&token=e99817d2-7fbc-45a2-a4e4-b930f11769fc",
@@ -325,6 +405,49 @@
     ],
     "instructions": "Eat the brownies within three days.",
     "labels": ["berries", "green", "fresh"],
-    "nutrition": { "carbs": 100, "protein": 200, "fat": 300 }
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/coliflowerBuffalo.jpeg?alt=media&token=ca31c66c-fbf9-43b3-9cf1-29a1de12ea19",
+    "title": "Crispy Buffalo Cauliflower Bites",
+    "category": "snacks",
+    "time": 35,
+    "serves": 6,
+    "difficulty": "easy",
+    "ingredients": [
+      "⅔ cup brown rice flour",
+      "2 tablespoons almond flour",
+      "1 tablespoon tomato paste",
+      "2 teaspoons garlic powder",
+      "2 teaspoons onion powder",
+      "2 teaspoons smoked paprika",
+      "1 teaspoon dried parsley",
+      "1 head cauliflower, cut into 2-inch florets",
+      "⅓ cup Frank’s hot sauce or barbecue sauce"
+    ],
+    "steps": [
+      "Preheat oven to 232°C. Line 2 baking sheets with parchment paper. ",
+      "Combine the brown rice flour, almond flour, tomato paste, garlic powder, onion powder, paprika, parsley, and ⅔ cup of water in a blender. Puree until the batter is smooth and thick. ",
+      "Transfer to a bowl and add the cauliflower ",
+      "mix until the cauliflowers are well coated with the batter",
+      "Arrange the cauliflower in a single layer on the prepared baking sheets, making sure that the florets do not touch one another.",
+      "Bake for 20 to 25 minutes, until crisp on the edges.",
+      "Remove from the heat and let stand for 3 minutes to crisp up a bit more..",
+      "Transfer to a bowl and drizzle with the sauce.",
+      "Enjoy"
+    ],
+    "instructions": "Eat the brownies within three days.",
+    "labels": ["snack", "healthySnack", "crispy", "cauliflower"],
+    "nutrition": [
+      { "name": "carbs", "amount": 100 },
+      { "name": "protein", "amount": 100 },
+      { "name": "fat", "amount": 100 },
+      { "name": "fiber", "amount": 100 }
+    ]
   }
 ]

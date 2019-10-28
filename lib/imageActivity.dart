@@ -115,6 +115,23 @@ class ImageActivityState extends State<ImageActivity> {
     );
   }
 
+  List<Widget> _buildNutritionInfo(List data) {
+    List<Widget> nutritionList = List();
+    data.forEach((item) {
+      var row = Row(
+        children: <Widget>[
+          Text(
+            item["name"],
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+          ),
+          Text(item["amount"].toString()),
+        ],
+      );
+      nutritionList.add(row);
+    });
+    return nutritionList;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -239,14 +256,16 @@ class ImageActivityState extends State<ImageActivity> {
                                             Column(
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
-                                              children: <Widget>[
-                                                Text(
-                                                    "Carbs: ${widget.recipe.nutrition["carbs"]}"),
-                                                Text(
-                                                    "Fat: ${widget.recipe.nutrition["fat"]}"),
-                                                Text(
-                                                    "Protein: ${widget.recipe.nutrition["protein"]}"),
-                                              ],
+                                              // children: <Widget>[
+                                              //   Text(
+                                              //       "Carbs: ${widget.recipe.nutrition["carbs"]}"),
+                                              //   Text(
+                                              //       "Fat: ${widget.recipe.nutrition["fat"]}"),
+                                              //   Text(
+                                              //       "Protein: ${widget.recipe.nutrition["protein"]}"),
+                                              // ],
+                                              children: _buildNutritionInfo(
+                                                  widget.recipe.nutrition),
                                             ),
                                           ],
                                         ),
@@ -256,7 +275,9 @@ class ImageActivityState extends State<ImageActivity> {
                               Card(
                                   child: _contentMargin(children: [
                                 SubtitleWidget('Related tags'),
-                                Row(
+                                Wrap(
+                                  spacing: 8.0,
+                                  runSpacing: 4.0,
                                   children: labels(widget.recipe.labels),
                                 ),
                               ]))
@@ -432,9 +453,13 @@ class _IngredientListState extends State<IngredientList> {
                   });
                 },
               ),
-              Text(
-                item.name,
-                // style: TextStyle(fontSize: 10),
+              Flexible(
+                child: Container(
+                  child: Text(
+                    item.name,
+                    // style: TextStyle(fontSize: 10),
+                  ),
+                ),
               )
             ],
           ));
@@ -498,23 +523,26 @@ class _IngredientListState extends State<IngredientList> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: Column(
-        children: <Widget>[
-          SubtitleWidget(
-            'Ingredients',
-          ),
-          Stack(
-            fit: StackFit.loose,
-            alignment: AlignmentDirectional.topEnd,
-            children: <Widget>[
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: ingredientsWidget(ingredientList),
-              ),
-              shoppingCartButton(context)
-            ],
-          ),
-        ],
+      child: Container(
+        margin: EdgeInsets.all(20),
+        child: Column(
+          children: <Widget>[
+            SubtitleWidget(
+              'Ingredients',
+            ),
+            Stack(
+              fit: StackFit.loose,
+              alignment: AlignmentDirectional.topEnd,
+              children: <Widget>[
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: ingredientsWidget(ingredientList),
+                ),
+                shoppingCartButton(context)
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

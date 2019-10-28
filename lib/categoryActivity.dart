@@ -1,3 +1,4 @@
+import 'package:easy_vegan_cooking/searchFilterActivity.dart';
 import 'package:flutter/material.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
@@ -20,6 +21,11 @@ class CategoryActivity extends StatefulWidget {
 }
 
 class _CategoryActivityState extends State<CategoryActivity> {
+  Icon _searchIcon = new Icon(Icons.search);
+  Widget _appBarTitle = new Text('Easy vegan cooking');
+  final TextEditingController _filter = new TextEditingController();
+
+  String _searchText = "";
   void _showAd() async {
     _counter++;
     if (_counter % 3 == 0) {
@@ -29,6 +35,83 @@ class _CategoryActivityState extends State<CategoryActivity> {
     if (await interstitialAd.isLoaded) {
       interstitialAd.show();
     }
+  }
+
+  Widget _buildAppBarTitle() {
+    return Container(
+      // width: 200,
+      // color: Colors.red,
+      child: Row(
+        children: <Widget>[
+          Container(
+              width: MediaQuery.of(context).size.width * .6,
+              child: _appBarTitle),
+          Container(
+            // width: 200,
+            child: IconButton(
+              icon: _searchIcon,
+              onPressed: _searchPressed,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _searchPressed() {
+    setState(() {
+      if (this._searchIcon.icon == Icons.search) {
+        this._searchIcon = new Icon(Icons.close);
+        this._appBarTitle = TextField(
+          style: TextStyle(color: Colors.white, fontSize: 19),
+          controller: _filter,
+          decoration: InputDecoration(
+            fillColor: Colors.white,
+            // prefixIcon: Icon(
+            //   Icons.search,
+            //   color: Colors.white,
+            // ),
+            hintText: 'Search recipe',
+            hintStyle: TextStyle(color: Colors.white),
+            enabledBorder: UnderlineInputBorder(
+              borderSide: BorderSide(color: Colors.white),
+            ),
+            focusedBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: Colors.white)),
+            // border: UnderlineInputBorder(
+            //     borderSide: BorderSide(color: Colors.white))
+          ),
+          onEditingComplete: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => SearchFilterActivity(
+                        searchTerm: _filter.text,
+                      )),
+            );
+          },
+        );
+      } else {
+        this._searchIcon = new Icon(
+          Icons.search,
+          color: Colors.white,
+        );
+        this._appBarTitle = new Text('Easy Vegan Cooking');
+        // filteredNames = names;
+        _filter.clear();
+      }
+    });
+  }
+
+  Widget _buildBar(BuildContext context) {
+    return AppBar(centerTitle: true, title: _buildAppBarTitle()
+        // leading: Container(
+        //   child: new IconButton(
+        //     icon: _searchIcon,
+        //     onPressed: _searchPressed,
+        //   ),
+        // ),
+        );
   }
 
   @override
@@ -85,9 +168,7 @@ class _CategoryActivityState extends State<CategoryActivity> {
       onWillPop: _onWillPop,
       child: Scaffold(
         drawer: AppDrawer(),
-        appBar: AppBar(
-          title: Text('Easy vegan cooking'),
-        ),
+        appBar: _buildBar(context),
         body: Column(
           children: <Widget>[
             Expanded(
