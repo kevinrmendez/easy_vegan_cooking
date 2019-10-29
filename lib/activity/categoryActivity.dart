@@ -27,7 +27,7 @@ class _CategoryActivityState extends State<CategoryActivity> {
   String _searchText = "";
   void _showAd() async {
     _counter++;
-    if (_counter % 3 == 0) {
+    if (_counter % 5 == 0) {
       interstitialAd.load();
     }
 
