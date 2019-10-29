@@ -1,5 +1,4 @@
 import 'package:admob_flutter/admob_flutter.dart';
-import 'package:easy_vegan_cooking/CartActivity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 // import 'package:swipedetector/swipedetector.dart';
@@ -10,10 +9,12 @@ import 'package:provider/provider.dart';
 import 'package:easy_vegan_cooking/components/FoodPicture.dart';
 import 'package:easy_vegan_cooking/components/SubtitleWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
-import 'CartModel.dart';
-import 'Ingredient.dart';
-import 'Recipe.dart';
-import 'apikeys.dart';
+
+import '../CartModel.dart';
+import '../Ingredient.dart';
+import '../Recipe.dart';
+import '../apikeys.dart';
+import 'CartActivity.dart';
 import 'labelFilterActivity.dart';
 
 class ImageActivity extends StatefulWidget {
@@ -454,9 +455,11 @@ class _IngredientListState extends State<IngredientList> {
                 },
               ),
               Flexible(
+                fit: FlexFit.loose,
                 child: Container(
                   child: Text(
                     item.name,
+                    overflow: TextOverflow.visible,
                     // style: TextStyle(fontSize: 10),
                   ),
                 ),
@@ -524,11 +527,25 @@ class _IngredientListState extends State<IngredientList> {
   Widget build(BuildContext context) {
     return Card(
       child: Container(
-        margin: EdgeInsets.all(20),
+        margin: EdgeInsets.symmetric(vertical: 20),
         child: Column(
           children: <Widget>[
-            SubtitleWidget(
-              'Ingredients',
+            Container(
+              height: 50,
+              width: MediaQuery.of(context).size.width,
+              child: Stack(
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      SubtitleWidget(
+                        'Ingredients',
+                      ),
+                    ],
+                  ),
+                  Positioned(right: 0, child: shoppingCartButton(context)),
+                ],
+              ),
             ),
             Stack(
               fit: StackFit.loose,
@@ -538,7 +555,6 @@ class _IngredientListState extends State<IngredientList> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: ingredientsWidget(ingredientList),
                 ),
-                shoppingCartButton(context)
               ],
             ),
           ],

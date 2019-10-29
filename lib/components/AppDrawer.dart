@@ -1,15 +1,15 @@
-import 'package:easy_vegan_cooking/categoryActivity.dart';
-import 'package:easy_vegan_cooking/favoriteActivity.dart';
-import 'package:easy_vegan_cooking/imageActivity.dart';
+import 'package:easy_vegan_cooking/activity/CartActivity.dart';
+import 'package:easy_vegan_cooking/activity/RecentRecipesListActivity.dart';
+import 'package:easy_vegan_cooking/activity/categoryActivity.dart';
+import 'package:easy_vegan_cooking/activity/favoriteActivity.dart';
+import 'package:easy_vegan_cooking/activity/recentRecipes.dart';
 import 'package:easy_vegan_cooking/main.dart';
-import 'package:easy_vegan_cooking/recentRecipes.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../CartActivity.dart';
 import '../Recipe.dart';
 import '../RecipeModel.dart';
 
@@ -107,7 +107,7 @@ class AppDrawer extends StatelessWidget {
                   Navigator.of(context).pop();
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (BuildContext context) =>
-                          RecentRecipesActivity()));
+                          RecentRecipesListActivity()));
                 },
               ),
               // ListTile(

@@ -9,10 +9,9 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
 
-import 'Recipe.dart';
-import 'apikeys.dart';
-import 'components/AppDrawer.dart';
-import 'data.dart';
+import '../Recipe.dart';
+import '../apikeys.dart';
+import '../components/AppDrawer.dart';
 
 import 'imageActivity.dart';
 
@@ -86,7 +85,7 @@ class _RecentRecipesActivityState extends State<RecentRecipesActivity> {
     return Scaffold(
       drawer: AppDrawer(),
       appBar: AppBar(
-        title: Text('Recent Vegan recipes'),
+        title: Text('New Vegan recipes'),
       ),
       body: Column(
         children: <Widget>[

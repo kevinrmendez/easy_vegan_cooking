@@ -2,37 +2,44 @@ final categories = [
   {
     "title": "breakfast",
     "image":
-        "https://cdn.pixabay.com/photo/2016/09/15/19/24/salad-1672505_1280.jpg",
+        // "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast.jpg?alt=media&token=39e1ecc4-7eab-45bf-bcdb-dc3795533b13",
+        "assets/category-images/breakfast.jpg",
   },
   {
     "title": "meals",
     "image":
-        "https://cdn.pixabay.com/photo/2016/03/05/23/01/prawn-1239427_1280.jpg",
+        // "https://cdn.pixabay.com/photo/2014/12/15/14/05/salad-569156_1280.jpg",
+        "assets/category-images/meals.jpg",
   },
   {
     "title": "smoothies",
     "image":
-        "https://cdn.pixabay.com/photo/2018/11/11/19/33/fruit-3809523_1280.jpg",
+        // "https://cdn.pixabay.com/photo/2018/11/11/19/33/fruit-3809523_1280.jpg",
+        "assets/category-images/smoothies.jpg",
   },
   {
     "title": "snacks",
     "image":
-        "https://cdn.pixabay.com/photo/2014/12/15/14/05/salad-569156_1280.jpg",
+        // "https://images.unsplash.com/photo-1515041761709-f9fc96e04cd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+        "assets/category-images/snacks.jfif",
   },
   {
     "title": "soups",
     "image":
-        "https://cdn.pixabay.com/photo/2016/06/01/21/34/soup-1429735_1280.jpg",
+        // "https://cdn.pixabay.com/photo/2016/06/01/21/34/soup-1429735_1280.jpg",
+        "assets/category-images/soups.jpg",
   },
   {
     "title": "desserts",
     "image":
-        "https://cdn.pixabay.com/photo/2015/09/02/13/23/blueberries-919029_1280.jpg",
+        // "https://cdn.pixabay.com/photo/2015/09/02/13/23/blueberries-919029_1280.jpg",
+        "assets/category-images/desserts.jpg",
   },
   {
     "title": "salads",
     "image":
-        "https://cdn.pixabay.com/photo/2015/05/31/13/59/salad-791891_1280.jpg",
+        // "https://images.unsplash.com/photo-1556386470-bcdc6a5e9b9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=336&q=80",
+        "assets/category-images/salads.jfif",
   }
 ];
 final data = [

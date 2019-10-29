@@ -18,7 +18,7 @@ class EmptyListTitle extends StatelessWidget {
                 Text(
                   title,
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 30),
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8),

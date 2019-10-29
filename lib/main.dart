@@ -1,7 +1,6 @@
 import 'dart:typed_data';
 
 import 'package:admob_flutter/admob_flutter.dart';
-import 'package:easy_vegan_cooking/gridActivity.dart';
 import 'package:dio/dio.dart';
 
 import 'package:easy_vegan_cooking/components/appTItle.dart';
@@ -20,9 +19,9 @@ import 'CartModel.dart';
 import 'Ingredient.dart';
 import 'Recipe.dart';
 import 'RecipeModel.dart';
+import 'activity/categoryActivity.dart';
 import 'appState.dart';
-import 'categoryActivity.dart';
-import 'data.dart';
+import 'data/data.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -140,6 +139,7 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
             theme: ThemeData(
+              fontFamily: 'Montserrat',
               primaryColor: PrimaryColor,
               accentColor: AccentColor,
               primaryTextTheme:

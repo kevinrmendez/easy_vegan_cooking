@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:easy_vegan_cooking/appState.dart';
+import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
@@ -12,10 +13,9 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
 
-import 'Recipe.dart';
-import 'apikeys.dart';
-import 'components/AppDrawer.dart';
-import 'data.dart';
+import '../Recipe.dart';
+import '../apikeys.dart';
+import '../components/AppDrawer.dart';
 
 import 'imageActivity.dart';
 
@@ -42,6 +42,9 @@ class GridActivity extends StatefulWidget {
 class _GridActivityState extends State<GridActivity> {
   DatabaseReference recipesRef;
   StreamSubscription _recipesSubscription;
+
+  // bool isDatabaseNotEmpty;
+
   void _showAd() async {
     _counter++;
     if (_counter % 3 == 0) {
@@ -56,6 +59,13 @@ class _GridActivityState extends State<GridActivity> {
   @override
   void initState() {
     recipesRef = FirebaseDatabase.instance.reference();
+    // recipesRef.once().then((snapshot) {
+    //   if (snapshot.value != null) {
+    //     isDatabaseNotEmpty = true;
+    //   } else {
+    //     isDatabaseNotEmpty = false;
+    //   }
+    // });
 
     _recipesSubscription = recipesRef.onChildAdded.listen((event) {
       print('Child added: ${event.snapshot.value}');
@@ -93,7 +103,9 @@ class _GridActivityState extends State<GridActivity> {
           text,
           textAlign: TextAlign.right,
           style: TextStyle(
-              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+              color: Colors.white,
+              // fontWeight: FontWeight.bold,
+              fontSize: 20),
         ),
       ),
     );
@@ -110,7 +122,7 @@ class _GridActivityState extends State<GridActivity> {
     return Scaffold(
       drawer: AppDrawer(),
       appBar: AppBar(
-        title: Text('Vegan recipes for ${widget.category}'),
+        title: Text('${widget.category}'),
       ),
       body: Column(
         children: <Widget>[

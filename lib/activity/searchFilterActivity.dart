@@ -1,4 +1,5 @@
 import 'package:easy_vegan_cooking/appState.dart';
+import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
@@ -10,10 +11,9 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
 
-import 'Recipe.dart';
-import 'apikeys.dart';
-import 'components/AppDrawer.dart';
-import 'data.dart';
+import '../Recipe.dart';
+import '../apikeys.dart';
+import '../components/AppDrawer.dart';
 
 import 'imageActivity.dart';
 

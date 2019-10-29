@@ -55,6 +55,14 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/drawer-header.jpg
+    - assets/category-images/breakfast.jpg
+    - assets/category-images/desserts.jpg
+    - assets/category-images/meals.jpg
+    - assets/category-images/smoothies.jpg
+    - assets/category-images/soups.jpg
+    - assets/category-images/soups.jpg
+    - assets/category-images/salads.jfif
+    - assets/category-images/snacks.jfif
   #  - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -66,9 +74,14 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Funny & Cute
+    - family: Montserrat
       fonts:
-        - asset: assets/fonts/Funny&Cute.ttf
+        - asset: fonts/Montserrat/Montserrat-Regular.ttf
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat/Montserrat-Regular.ttf
+        - asset: fonts/Montserrat/Montserrat-Bold.ttf
+        - weight: 700
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

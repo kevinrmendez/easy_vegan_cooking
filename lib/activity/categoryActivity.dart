@@ -1,4 +1,5 @@
-import 'package:easy_vegan_cooking/searchFilterActivity.dart';
+import 'package:easy_vegan_cooking/activity/searchFilterActivity.dart';
+import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:flutter/material.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
@@ -6,12 +7,10 @@ import 'package:cached_network_image/cached_network_image.dart';
 // import 'package:url_launcher/url_launcher.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import 'apikeys.dart';
-import 'components/AppDrawer.dart';
-import 'data.dart';
-
+import '../main.dart';
+import '../data/data.dart';
+import '../apikeys.dart';
 import 'gridActivity.dart';
-import 'main.dart';
 
 class CategoryActivity extends StatefulWidget {
   // GridActivity({Key key, this.title}) : super(key: key);
@@ -181,29 +180,14 @@ class _CategoryActivityState extends State<CategoryActivity> {
                   children: categories.map((Map category) {
                     return GestureDetector(
                         child: GridTile(
-                          child: CachedNetworkImage(
-                            imageBuilder: (context, imageProvider) => Container(
-                              decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                      image: imageProvider, fit: BoxFit.cover)),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                    category["image"],
+                                  ),
+                                  fit: BoxFit.cover),
                             ),
-                            imageUrl: category["image"],
-                            placeholder: (context, url) => Container(
-                              color: GreyColor,
-                              constraints:
-                                  BoxConstraints(maxHeight: 30, maxWidth: 30),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: <Widget>[
-                                  SizedBox(
-                                      height: 40,
-                                      width: 40,
-                                      child: new CircularProgressIndicator()),
-                                ],
-                              ),
-                            ),
-                            errorWidget: (context, url, error) =>
-                                new Icon(Icons.error),
                           ),
                           footer: GridTileBar(
                             title: Text(
