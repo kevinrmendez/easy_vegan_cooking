@@ -8,7 +8,7 @@
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
+    "suggestions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -26,7 +26,7 @@
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
+    "suggestions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -44,7 +44,7 @@
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
+    "suggestions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -62,7 +62,7 @@
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
+    "suggestions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -80,7 +80,7 @@
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
+    "suggestions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -98,7 +98,7 @@
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
+    "suggestions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -116,7 +116,7 @@
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
+    "suggestions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -134,7 +134,7 @@
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ",
+    "suggestions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ",
     "labels": ["green", "red", "soya"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -152,7 +152,7 @@
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ",
+    "suggestions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ",
     "labels": ["green", "red", "soya"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -181,7 +181,7 @@
       "put berries",
       "enjoy"
     ],
-    "instructions": "Put some avocado to make it extra healthy and extra smooth ",
+    "suggestions": "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -210,7 +210,7 @@
       "put berries",
       "enjoy"
     ],
-    "instructions": "Put some avocado to make it extra healthy and extra smooth ",
+    "suggestions": "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -239,7 +239,7 @@
       "put berries",
       "enjoy"
     ],
-    "instructions": "Put some avocado to make it extra healthy and extra smooth ",
+    "suggestions": "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -268,7 +268,7 @@
       "put berries",
       "enjoy"
     ],
-    "instructions": "Put some avocado to make it extra healthy and extra smooth ",
+    "suggestions": "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -297,7 +297,7 @@
       "put berries",
       "enjoy"
     ],
-    "instructions": "Put some avocado to make it extra healthy and extra smooth ",
+    "suggestions": "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -331,7 +331,7 @@
       "Add forze berries and cacao powder",
       "enjoy"
     ],
-    "instructions": "",
+    "suggestions": "",
     "labels": ["berries", "green", "fresh"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -365,7 +365,7 @@
       "Add forze berries and cacao powder",
       "enjoy"
     ],
-    "instructions": "",
+    "suggestions": "",
     "labels": ["berries", "green", "fresh"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -403,7 +403,7 @@
       "Bake for 35-45 mins until a skewer inserted in the middle comes out clean with moist crumbs. ",
       "Allow to cool in the tin completely, then cut into squares."
     ],
-    "instructions": "Eat the brownies within three days.",
+    "suggestions": "Eat the brownies within three days.",
     "labels": ["berries", "green", "fresh"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -440,7 +440,7 @@
       "Transfer to a bowl and drizzle with the sauce.",
       "Enjoy"
     ],
-    "instructions": "Eat the brownies within three days.",
+    "suggestions": "Eat the brownies within three days.",
     "labels": ["snack", "healthySnack", "crispy", "cauliflower"],
     "nutrition": [
       { "name": "carbs", "amount": 100 },
@@ -485,7 +485,7 @@
       "Keep stirring constantly, until chowder thickens, it takes aroun 15 to 20 minutes.",
       "Enjoy"
     ],
-    "instructions": "",
+    "suggestions": "",
     "labels": ["soup", "corn", "creamy"],
     "nutrition": []
   },
@@ -519,7 +519,7 @@
       "Serve with lime wedges",
       "Enjoy"
     ],
-    "instructions": "",
+    "suggestions": "",
     "labels": ["asian", "thai", "noodles"],
     "nutrition": []
   },
@@ -553,7 +553,7 @@
       "Serve with lime wedges",
       "Enjoy"
     ],
-    "instructions": "",
+    "suggestions": "",
     "labels": ["asian", "thai", "noodles"],
     "nutrition": []
   }

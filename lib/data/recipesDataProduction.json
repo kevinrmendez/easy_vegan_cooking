@@ -23,7 +23,7 @@
       "Add frozen berries and cacao powder",
       "enjoy"
     ],
-    "instructions": "",
+    "suggestions": "",
     "labels": ["berries", "chocolate", "fresh", "chia", "pudding"],
     "nutrition": []
   },
@@ -55,7 +55,7 @@
       "Allow to cool in the tin completely, then cut into squares.",
       "Enjoy"
     ],
-    "instructions": "Eat the brownies within three days.",
+    "suggestions": "Eat the brownies within three days.",
     "labels": ["chocolate", "brownie"],
     "nutrition": []
   },
@@ -87,7 +87,7 @@
       "Put the florets to a bowl and mix with the sauce.",
       "Enjoy"
     ],
-    "instructions": "",
+    "suggestions": "",
     "labels": ["snack", "crunchy", "cauliflower"],
     "nutrition": []
   },
@@ -128,7 +128,7 @@
       "Keep stirring all the time, until chowder thickens, it takes aroun 15 to 25 minutes.",
       "Enjoy"
     ],
-    "instructions": "",
+    "suggestions": "",
     "labels": ["soup", "corn", "creamy"],
     "nutrition": []
   },
@@ -161,7 +161,7 @@
       "Serve with lime wedges",
       "Enjoy"
     ],
-    "instructions": "",
+    "suggestions": "",
     "labels": ["asian", "thai", "noodles", "sweet potatoes"],
     "nutrition": []
   },
@@ -193,7 +193,7 @@
       "Combine the toasted sesame seeds, carrot and bean sprouts in a medium bowl. Pour the dressing",
       "Enjoy"
     ],
-    "instructions": "",
+    "suggestions": "",
     "labels": ["carrot", "ginger", "fresh", "summer"],
     "nutrition": []
   },
@@ -216,7 +216,7 @@
       "add more milk if necessary.",
       "Enjoy"
     ],
-    "instructions": "",
+    "suggestions": "",
     "labels": ["blueberry", "smoothie", "banana"],
     "nutrition": []
   },
@@ -239,8 +239,34 @@
       "add a pinch of salt and serve it with the strawberries",
       "Enjoy"
     ],
-    "instructions": "",
+    "suggestions": "",
     "labels": ["strawberry", "oats", "morning"],
+    "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/roastedChickpeas2.jfif?alt=media&token=41ccc935-3139-4631-ba28-c5e57749bf10",
+    "title": "Roasted chickpeas",
+    "category": "snacks",
+    "time": 40,
+    "serves": 4,
+    "difficulty": "super easy",
+    "ingredients": [
+      "1 can chickpeas",
+      "salt",
+      "cayenne pepper",
+      "2 tbsp olive oil"
+    ],
+    "steps": [
+      "Preheat oven 23 degrees C",
+      "Drain and dry the chickpeas with paper towl.",
+      "Put the chickpeas in a bowl and add olive oil",
+      "Season to taste with salt and cayenne pepper",
+      "spread the chickpeas in trail cover with baking sheet",
+      "bake for around 30-40 minutes until they are crunchy",
+      "Enjoy"
+    ],
+    "suggestions": "Drain really well the chickpeas for a crunchy touch",
+    "labels": ["chickpeas", "crunchy", "roasted"],
     "nutrition": []
   }
 ]

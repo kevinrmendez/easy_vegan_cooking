@@ -6,6 +6,7 @@ import 'package:admob_flutter/admob_flutter.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 // import 'package:url_launcher/url_launcher.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../main.dart';
 import '../data/data.dart';
@@ -128,7 +129,10 @@ class _CategoryActivityState extends State<CategoryActivity> {
       return showDialog(
             context: context,
             builder: (context) => new AlertDialog(
-              title: new Text('Do you want to close the app?'),
+              title: new Text(
+                'Do you want to close the app?',
+                style: TextStyle(color: PrimaryColor),
+              ),
               content: new Text(
                   'Please share use your feedback before leaving the app, we would love hearing from you'),
               actions: <Widget>[
@@ -136,19 +140,19 @@ class _CategoryActivityState extends State<CategoryActivity> {
                   onPressed: () => Navigator.of(context).pop(true),
                   child: new Text('Yes'),
                 ),
-                // FlatButton(
-                //   onPressed: () async {
-                //     // Navigator.of(context).pop(false);
-                //     String url =
-                //         "https://play.google.com/store/apps/details?id=com.kevinrmendez.easy.vegan.cooking";
-                //     if (await canLaunch(url)) {
-                //       await launch(url);
-                //     } else {
-                //       throw 'Could not launch $url';
-                //     }
-                //   },
-                //   child: new Text('review app'),
-                // ),
+                FlatButton(
+                  onPressed: () async {
+                    // Navigator.of(context).pop(false);
+                    String url =
+                        "https://play.google.com/store/apps/details?id=com.kevinrmendez.easy.vegan.cooking";
+                    if (await canLaunch(url)) {
+                      await launch(url);
+                    } else {
+                      throw 'Could not launch $url';
+                    }
+                  },
+                  child: new Text('review app'),
+                ),
                 FlatButton(
                   onPressed: () => Navigator.of(context).pop(false),
                   child: new Text('No'),

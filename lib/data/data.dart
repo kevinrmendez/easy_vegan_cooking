@@ -53,7 +53,7 @@ final data = [
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions":
+    "suggestions":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": {"protein": 200, "carbs": 300, "fat": 400}
@@ -68,7 +68,7 @@ final data = [
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions":
+    "suggestions":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": {"protein": 200, "carbs": 300, "fat": 400}
@@ -83,7 +83,7 @@ final data = [
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions":
+    "suggestions":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": {"protein": 200, "carbs": 300, "fat": 400}
@@ -98,7 +98,7 @@ final data = [
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions":
+    "suggestions":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": {"protein": 200, "carbs": 300, "fat": 400}
@@ -113,7 +113,7 @@ final data = [
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions":
+    "suggestions":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": {"protein": 200, "carbs": 300, "fat": 400}
@@ -128,7 +128,7 @@ final data = [
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions":
+    "suggestions":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": {"protein": 200, "carbs": 300, "fat": 400}
@@ -143,7 +143,7 @@ final data = [
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions":
+    "suggestions":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ipsum. Praesent vel aliquet augue. In sodales sem eu dignissim imperdiet. Pellentesque luctus auctor neque, ac vulputate risus tincidunt quis. Aliquam augue ex, molestie mollis lacinia sit amet, mollis pretium lorem. Suspendisse ultrices, velit a venenatis sodales, nunc est semper ligula, ut efficitur urna odio vel velit. Duis turpis lorem, rhoncus a velit in, iaculis laoreet lacus. Sed sodales ante ut pellentesque sodales.",
     "labels": ["green", "red", "soya"],
     "nutrition": {"protein": 200, "carbs": 300, "fat": 400}
@@ -158,7 +158,7 @@ final data = [
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions":
+    "suggestions":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ",
     "labels": ["green", "red", "soya"],
     "nutrition": {"carbs": 100, "protein": 200, "fat": 300}
@@ -173,7 +173,7 @@ final data = [
     "difficulty": "easy",
     "ingredients": ["100gr of carrots", "200gr of tomatos", "300gr of spinach"],
     "steps": ["chop veggies", "put salt", "fry till ready"],
-    "instructions":
+    "suggestions":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae accumsan tortor, nec sodales ",
     "labels": ["green", "red", "soya"],
     "nutrition": {"carbs": 100, "protein": 200, "fat": 300}
@@ -199,7 +199,7 @@ final data = [
       "put berries",
       "enjoy"
     ],
-    "instructions":
+    "suggestions":
         "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
     "nutrition": {"carbs": 100, "protein": 200, "fat": 300}
@@ -225,7 +225,7 @@ final data = [
       "put berries",
       "enjoy"
     ],
-    "instructions":
+    "suggestions":
         "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
     "nutrition": {"carbs": 100, "protein": 200, "fat": 300}
@@ -251,7 +251,7 @@ final data = [
       "put berries",
       "enjoy"
     ],
-    "instructions":
+    "suggestions":
         "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
     "nutrition": {"carbs": 100, "protein": 200, "fat": 300}
@@ -277,7 +277,7 @@ final data = [
       "put berries",
       "enjoy"
     ],
-    "instructions":
+    "suggestions":
         "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
     "nutrition": {"carbs": 100, "protein": 200, "fat": 300}

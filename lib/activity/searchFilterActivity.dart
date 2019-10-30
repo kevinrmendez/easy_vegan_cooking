@@ -65,7 +65,7 @@ class _SearchFilterActivityState extends State<SearchFilterActivity> {
         title: data["title"],
         category: data["category"],
         difficulty: data["difficulty"],
-        instructions: data["instructions"],
+        suggestions: data["suggestions"],
         time: data["time"],
         serves: data["serves"],
         ingredients: data["ingredients"],

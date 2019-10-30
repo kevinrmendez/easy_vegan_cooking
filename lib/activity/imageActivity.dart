@@ -228,21 +228,21 @@ class ImageActivityState extends State<ImageActivity> {
                               Card(
                                 child: Column(
                                   children: <Widget>[
-                                    SubtitleWidget('Instructions'),
+                                    SubtitleWidget("Instructions"),
                                     Column(
                                       children: steps(widget.recipe.steps),
                                     ),
                                   ],
                                 ),
                               ),
-                              widget.recipe.instructions != null &&
-                                      widget.recipe.instructions != ""
+                              widget.recipe.suggestions != null &&
+                                      widget.recipe.suggestions != ""
                                   ? Card(
                                       child: _contentMargin(children: [
                                       SubtitleWidget(
-                                        'More information',
+                                        "Chef's Suggestions",
                                       ),
-                                      Text(widget.recipe.instructions),
+                                      Text(widget.recipe.suggestions),
                                     ]))
                                   : SizedBox(),
                               widget.recipe.nutrition != null
@@ -281,7 +281,11 @@ class ImageActivityState extends State<ImageActivity> {
                                   runSpacing: 4.0,
                                   children: labels(widget.recipe.labels),
                                 ),
-                              ]))
+                              ])),
+                              AdmobBanner(
+                                adUnitId: getBannerAdUnitId(),
+                                adSize: AdmobBannerSize.BANNER,
+                              ),
                             ],
                           ),
                         ));

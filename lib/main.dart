@@ -27,9 +27,15 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 
 const PrimaryColor = const Color(0xFF99cc00);
-const AccentColor = const Color(0xFFeeb52d);
+// const AccentColor = const Color(0xFFeeb52d);
+// const AccentColor = const Color(0xFFCE424D);
+// // const AccentColor = const Color(0xFFD7D430);
+// const AccentColor = const Color(0xFFC9CC00);
+// const AccentColor = const Color(0xFFE2BE66);
+const AccentColor = const Color(0xFFFF9900);
 // const GreyColor = const Color(0xFFD0D0D0);
-const GreyColor = const Color(0xFFe6e6e6);
+// const GreyColor = const Color(0xFFe6e6e6);
+const GreyColor = const Color(0xFFEEEEEE);
 FirebaseApp app;
 var recipesData;
 void main() async {

@@ -3,7 +3,7 @@ class Recipe {
   final String title;
   final String category;
   final String difficulty;
-  final String instructions;
+  final String suggestions;
   final int time;
   final int serves;
   final List ingredients;
@@ -17,7 +17,7 @@ class Recipe {
       this.title,
       this.category,
       this.difficulty,
-      this.instructions,
+      this.suggestions,
       this.time,
       this.serves,
       this.ingredients,

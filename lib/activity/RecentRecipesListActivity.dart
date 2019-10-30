@@ -62,7 +62,7 @@ class _RecentRecipesListActivityState extends State<RecentRecipesListActivity> {
         title: data["title"],
         category: data["category"],
         difficulty: data["difficulty"],
-        instructions: data["instructions"],
+        suggestions: data["suggestions"],
         time: data["time"],
         serves: data["serves"],
         ingredients: data["ingredients"],
@@ -154,6 +154,7 @@ class _RecentRecipesListActivityState extends State<RecentRecipesListActivity> {
                                 ),
                               ),
                               errorWidget: (context, url, error) => Container(
+                                  height: MediaQuery.of(context).size.height,
                                   width: MediaQuery.of(context).size.width,
                                   color: GreyColor,
                                   child: Icon(
