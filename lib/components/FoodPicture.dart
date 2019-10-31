@@ -34,12 +34,9 @@ class _FoodPictureState extends State<FoodPicture> {
   void _shareRecipe(Recipe recipe) {
     Share.share("""
          Hi, 
-         I would like to share you this vegan recipe: ${recipe.title},
-         cooking time: ${recipe.time} 
-         ingredients: ${recipe.ingredients}, 
-         steps:${recipe.steps}
-         You can find more free recipes from https://kevinrmendez.com/
-         
+         I would like to share you this delicious easy vegan recipe: ${recipe.title},
+         you can read the full recipe from the app:
+          https://play.google.com/store/apps/details?id=com.kevinrmendez.easy.vegan.cooking  
          """);
   }
 

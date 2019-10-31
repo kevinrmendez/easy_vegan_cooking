@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:easy_vegan_cooking/activity/CartActivity.dart';
 import 'package:easy_vegan_cooking/activity/RecentRecipesListActivity.dart';
+import 'package:easy_vegan_cooking/activity/TimerActivity.dart';
 import 'package:easy_vegan_cooking/activity/categoryActivity.dart';
 import 'package:easy_vegan_cooking/activity/favoriteActivity.dart';
 import 'package:easy_vegan_cooking/activity/recentRecipes.dart';
@@ -108,6 +111,21 @@ class AppDrawer extends StatelessWidget {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (BuildContext context) =>
                           RecentRecipesListActivity()));
+                },
+              ),
+              ListTile(
+                title: Text(
+                  "Timer",
+                  // style: TextStyle(color: Theme.of(context).primaryColor),
+                ),
+                trailing: Icon(
+                  FontAwesomeIcons.timesCircle,
+                  color: Theme.of(context).accentColor,
+                ),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) => TimerActivity()));
                 },
               ),
               // ListTile(

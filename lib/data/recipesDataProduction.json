@@ -268,5 +268,35 @@
     "suggestions": "Drain really well the chickpeas for a crunchy touch",
     "labels": ["chickpeas", "crunchy", "roasted"],
     "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FpastaPesto.jpg?alt=media&token=9d218f1e-f47f-4f8e-bdaf-bbb89dba1ebf",
+    "title": "Chickpeas pesto pasta",
+    "category": "meals",
+    "time": 40,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "1 can chickpeas",
+      "salt",
+      "pepper",
+      "3 tbsp pesto pasta",
+      "2 tbsp olive oil",
+      "pasta",
+      "1/2 lemon"
+    ],
+    "steps": [
+      "Bring water with salt to boil and cook the pasta for 10 - 15 min",
+      "Meanwhile, drain  and rinse the chickpeas",
+      "Chop the onion and the chickpeas",
+      "Fry the chickpeas and onion for 5 min",
+      "Add pesto, salt, pepper and lemon juice ",
+      "When the pasta is ready, drain the water and add it to the frying pan",
+      "Mix everything and cook for 5 more minutes",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["chickpeas", "pasta", "pesto"],
+    "nutrition": []
   }
 ]

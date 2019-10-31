@@ -31,6 +31,8 @@ dependencies:
   cloud_firestore: ^0.12.9+5
   firebase_database: ^3.0.7
   font_awesome_flutter:
+  countdown:
+  countdown_flutter:
 
 dev_dependencies:
   flutter_test:
