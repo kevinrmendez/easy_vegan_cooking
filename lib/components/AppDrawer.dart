@@ -119,7 +119,7 @@ class AppDrawer extends StatelessWidget {
                   // style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 trailing: Icon(
-                  FontAwesomeIcons.timesCircle,
+                  FontAwesomeIcons.clock,
                   color: Theme.of(context).accentColor,
                 ),
                 onTap: () {

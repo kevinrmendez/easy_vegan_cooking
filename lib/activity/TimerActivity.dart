@@ -1,10 +1,14 @@
+import 'package:audioplayers/audio_cache.dart';
 import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:flutter/material.dart';
-
+import 'package:quiver/async.dart';
 import 'package:admob_flutter/admob_flutter.dart';
+import 'package:vibration/vibration.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 // import 'package:url_launcher/url_launcher.dart';
 import 'package:countdown/countdown.dart';
+
 import 'package:countdown_flutter/countdown_flutter.dart';
 
 import '../apikeys.dart';
@@ -17,71 +21,97 @@ class TimerActivity extends StatefulWidget {
 }
 
 class _TimerActivityState extends State<TimerActivity> {
-  CountDown cd = CountDown(Duration(seconds: 10));
+  CountDown cd;
+  CountdownTimer countDownTimer;
+  final timeController = TextEditingController();
+  AudioCache audioPlayer;
   bool isTimerActive;
+  bool isDone;
+  String isDoneText;
+  String timerStatusText;
   int time;
-  var sub;
+  var countdown;
 
   void startTimer() {
-    if (isTimerActive) {
+    setState(() {
+      timerStatusText = "Set cooking alarm";
+      isDoneText = "";
+      isDone = false;
+    });
+    if (time > 0) {
       setState(() {
-        isTimerActive = false;
+        isTimerActive = true;
+        timerStatusText = "Time remaining";
       });
-    } else {
-      sub.onData((Duration d) {
-        print(d);
+      countDownTimer = CountdownTimer(
+        new Duration(minutes: time),
+        new Duration(minutes: 1),
+      );
+
+      countdown = countDownTimer.listen(null);
+      countdown.onData((duration) {
         setState(() {
-          time = time - 1;
+          time--;
         });
       });
+
+      countdown.onDone(() {
+        setState(() {
+          isDone = true;
+          isDoneText = "Food is ready";
+          timeController.text = "";
+          timerStatusText = "";
+          isTimerActive = false;
+        });
+        countdown.cancel();
+        audioPlayer.play('alarmClock.mp3');
+        vibrate();
+      });
     }
-
-    // setState(() {
-    //   isTimerActive = !isTimerActive;
-    // });
-
-    // if (isTimerActive) {
-    //   sub.pause();
-    // } else {
-    //   sub.resume();
-    // }
-
-    sub.onDone(() {
-      print("Timer completed");
-    });
   }
 
   void stopTimer() {
-    sub.setState(() {
+    countdown.cancel();
+    setState(() {
+      isDoneText = "";
       time = 0;
+      isTimerActive = false;
+      timerStatusText = "Set cooking alarm";
     });
+    timeController.text = "";
   }
 
-  void _showAd() async {
-    _counter++;
-    if (_counter % 3 == 0) {
-      interstitialAd.load();
-    }
-
-    if (await interstitialAd.isLoaded) {
-      interstitialAd.show();
-    }
+  void vibrate() {
+    Vibration.vibrate(duration: 1500);
   }
 
   @override
   void initState() {
-    time = 10;
+    timerStatusText = "Set cooking alarm";
+    time = 30;
     isTimerActive = false;
-    sub = cd.stream.listen(null);
-
+    timeController.text = time.toString();
+    isDoneText = "";
+    isDone = false;
+    audioPlayer = AudioCache();
     super.initState();
   }
 
   @override
   void dispose() {
-    sub.stream.cancel();
     super.dispose();
   }
+
+  // void _showAd() async {
+  //   _counter++;
+  //   if (_counter % 3 == 0) {
+  //     interstitialAd.load();
+  //   }
+
+  //   if (await interstitialAd.isLoaded) {
+  //     interstitialAd.show();
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -92,39 +122,96 @@ class _TimerActivityState extends State<TimerActivity> {
       appBar: AppBar(
         title: Text('Favorite vegan recipes'),
       ),
-      body: Column(
-        children: <Widget>[
-          Text('timer here'),
-          TextField(keyboardType: TextInputType.datetime),
-          Text('$time'),
-          RaisedButton(
-            onPressed: startTimer,
-            child: isTimerActive ? Icon(Icons.pause) : Icon(Icons.play_arrow),
+      body: Center(
+        child: Container(
+          height: MediaQuery.of(context).size.height * 4,
+          margin: EdgeInsets.symmetric(vertical: 40),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              isDone
+                  ? Text(
+                      isDoneText,
+                      style: TextStyle(fontSize: 30),
+                    )
+                  : Text(
+                      timerStatusText,
+                      style: TextStyle(fontSize: 30),
+                    ),
+              isDone
+                  ? SizedBox()
+                  : Column(
+                      children: <Widget>[
+                        Text(
+                          '$time',
+                          style: TextStyle(fontSize: 60),
+                        ),
+                        Container(
+                            margin: EdgeInsets.symmetric(vertical: 7),
+                            child: Text(" ${time > 1 ? "minutes" : "minute"}")),
+                        // isTimerActive ? CircularProgressIndicator() : SizedBox()
+                      ],
+                    ),
+
+              Container(
+                width: MediaQuery.of(context).size.width * .4,
+                child: isTimerActive
+                    ? SizedBox()
+                    : TextField(
+                        onTap: () {
+                          setState(() {
+                            timerStatusText = "Set cooking  alarm";
+                            isDone = false;
+                          });
+                        },
+                        decoration: InputDecoration(
+                            labelText: 'time in minutes', hintText: '0'),
+                        keyboardType: TextInputType.number,
+                        controller: timeController,
+                        onChanged: (value) {
+                          this.time = int.parse(value);
+                        },
+                      ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 10),
+                    child: isTimerActive
+                        ? RaisedButton(
+                            onPressed: stopTimer,
+                            child: Icon(Icons.stop),
+                          )
+                        : RaisedButton(
+                            onPressed: startTimer,
+                            child: Icon(Icons.play_arrow),
+                          ),
+                  ),
+                ],
+              ),
+              // AdmobBanner(
+              //   adUnitId: getBannerAdUnitId(),
+              //   adSize: AdmobBannerSize.BANNER,
+              // ),
+            ],
           ),
-          RaisedButton(
-            onPressed: stopTimer,
-            child: Icon(Icons.stop),
-          ),
-          AdmobBanner(
-            adUnitId: getBannerAdUnitId(),
-            adSize: AdmobBannerSize.BANNER,
-          ),
-        ],
+        ),
       ),
     );
   }
 }
 
-String getBannerAdUnitId() {
-  return apikeys["addMobBanner"];
-}
+// String getBannerAdUnitId() {
+//   return apikeys["addMobBanner"];
+// }
 
-AdmobInterstitial interstitialAd = AdmobInterstitial(
-  adUnitId: getInterstitialAdUnitId(),
-);
+// AdmobInterstitial interstitialAd = AdmobInterstitial(
+//   adUnitId: getInterstitialAdUnitId(),
+// );
 
-getInterstitialAdUnitId() {
-  return apikeys["addMobInterstellar"];
-}
+// getInterstitialAdUnitId() {
+//   return apikeys["addMobInterstellar"];
+// }
 
-int _counter = 0;
+// int _counter = 0;

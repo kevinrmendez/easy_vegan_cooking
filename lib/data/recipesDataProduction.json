@@ -298,5 +298,27 @@
     "suggestions": "",
     "labels": ["chickpeas", "pasta", "pesto"],
     "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FcarrotSmoothie.jpg?alt=media&token=4422b677-1ecd-4e16-975f-8dac358e9c81",
+    "title": "Carrot smoothie",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "super easy",
+    "ingredients": [
+      "4 dl soy yogurt",
+      "180 gr of carrots",
+      "1 tsp sugar or vanilla sugar"
+    ],
+    "steps": [
+      "Peel and chop carrots in small pieces",
+      "Add the carrots, soy yogurt and sugar to the blender",
+      "Blend till all the ingredients are mixed",
+      "Enjoy"
+    ],
+    "suggestions": "Add some soy milk if the smoothie is thick",
+    "labels": ["carrot", "soy"],
+    "nutrition": []
   }
 ]
