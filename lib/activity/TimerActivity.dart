@@ -127,7 +127,7 @@ class _TimerActivityState extends State<TimerActivity> {
           height: MediaQuery.of(context).size.height * 4,
           margin: EdgeInsets.symmetric(vertical: 40),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               isDone
                   ? Text(
