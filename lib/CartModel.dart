@@ -23,4 +23,9 @@ class CartModel extends ChangeNotifier {
     _cartIngredients.removeAt(ingredients.indexOf(ingredient));
     notifyListeners();
   }
+
+  void removeAll() {
+    _cartIngredients.clear();
+    notifyListeners();
+  }
 }

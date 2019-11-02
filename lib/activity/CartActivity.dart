@@ -43,14 +43,40 @@ class _CartActivityState extends State<CartActivity> {
 
   @override
   Widget build(BuildContext context) {
+    void _menuSelected(choice) {
+      switch (choice) {
+        case 'delete':
+          {
+            Provider.of<CartModel>(context, listen: false).removeAll();
+            print('delete all');
+          }
+          break;
+      }
+    }
+
     // var filteredData = data.where((recipe) => recipe["category"] == "dinner");
     AppState appState = AppState.of(context);
     List shoppingList = AppState.of(context).shoppingCart;
     return Scaffold(
       drawer: AppDrawer(),
-      appBar: AppBar(
-        title: Text('Shopping cart list'),
-      ),
+      appBar: AppBar(title: Text('Shopping cart list'), actions: <Widget>[
+        PopupMenuButton(
+          icon: Icon(
+            Icons.more_horiz,
+            size: 30,
+          ),
+          onSelected: _menuSelected,
+          color: Colors.white,
+          itemBuilder: (BuildContext context) {
+            return [
+              PopupMenuItem(
+                value: 'delete',
+                child: Container(child: Text('Delete all')),
+              ),
+            ];
+          },
+        ),
+      ]),
       body: Column(
         children: <Widget>[
           Expanded(

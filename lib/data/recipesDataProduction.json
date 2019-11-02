@@ -320,5 +320,32 @@
     "suggestions": "Add some soy milk if the smoothie is thick",
     "labels": ["carrot", "soy"],
     "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FavocadoToast.jpg?alt=media&token=7be1f73c-6935-4159-8763-c3d55f31de94",
+    "title": "Avocado toast",
+    "category": "breakfast",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "super easy",
+    "ingredients": [
+      "2 slices bread",
+      "1 avocado",
+      "salt",
+      "pepper",
+      "3 tbsp cilantro",
+      "4 tbsp lemon juice"
+    ],
+    "steps": [
+      "Toast 2 slices of bread in a toaster",
+      "Meanwhile in a bowl mash the avocado",
+      "Add cilantro, lemon juice, a pinch of salta and a pinch of pepper",
+      "Mix all the ingredients",
+      "Spread the avocado to the bread",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["avocado", "toast"],
+    "nutrition": []
   }
 ]
