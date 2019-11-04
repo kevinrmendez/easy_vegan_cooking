@@ -15,13 +15,46 @@ import java.io.IOException;
 import android.util.DisplayMetrics;
 import android.view.Display;
 
+import 	android.util.Log;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
 public class MainActivity extends FlutterActivity {
+private InterstitialAd mInterstitialAd;
+
+  
      private static final String SHARE_CHANNEL = "setWallpaper";
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     GeneratedPluginRegistrant.registerWith(this);
 
+mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+      
   }
+    @Override  
+    protected void onStart() {  
+        super.onStart();  
+
+        Log.d("lifecycle","onStart invoked");  
+           if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        } else {
+            Log.d("TAG", "The interstitial wasn't loaded yet.");
+        }
+    }  
+    //   @Override  
+    // protected void onResume() {  
+    //     super.onResume();  
+    //     Log.d("lifecycle","onResume invoked");  
+    //          if (mInterstitialAd.isLoaded()) {
+    //         mInterstitialAd.show();
+    //     } else {
+    //         Log.d("TAG", "The interstitial wasn't loaded yet.");
+    //     }
+    // }  
+  
 
 }

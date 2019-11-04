@@ -12,6 +12,7 @@ import 'package:countdown/countdown.dart';
 import 'package:countdown_flutter/countdown_flutter.dart';
 
 import '../apikeys.dart';
+import '../app_localizations.dart';
 
 class TimerActivity extends StatefulWidget {
   // TimerActivity({Key key}) : super(key: key);
@@ -129,6 +130,11 @@ class _TimerActivityState extends State<TimerActivity> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
+              // Text(
+              //   AppLocalizations.of(context).translate('first_string'),
+              //   style: TextStyle(fontSize: 25),
+              //   textAlign: TextAlign.center,
+              // ),
               isDone
                   ? Text(
                       isDoneText,

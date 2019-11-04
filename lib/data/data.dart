@@ -281,5 +281,38 @@ final data = [
         "Put some avocado to make it extra healthy and extra smooth ",
     "labels": ["healthy", "green", "fresh"],
     "nutrition": {"carbs": 100, "protein": 200, "fat": 300}
+  },
+  {
+    "image":
+        "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2Fovenroastedsweetpotato.jpg?alt=media&token=7366bb8d-b7a9-49bf-a3ab-173c28e59e33",
+    "title": "Oven roasted sweet potato",
+    "category": "snacks",
+    "time": 30,
+    "serves": 4,
+    "difficulty": "super easy",
+    "ingredients": [
+      "2  large sweet potatoes",
+      "3 tablespoons  olive oil      ",
+      "2 teaspoons salt",
+      "2 teaspoons garlic powder",
+      "2 teaspoons oregano"
+    ],
+    "steps": [
+      "Peel the sweet potatoes",
+      "Cut the sweet potatoes in bite size pieces.",
+      "Add the sweet potato bites on an owen plate.",
+      "Cover them with olive oil using a cooking brush.",
+      "Spice with salt, garlic powder and oregano. ",
+      "Cook in oven for 20 minutes.",
+      "Enjoy"
+    ],
+    "suggestions": "Serve with hummus or guacamole.",
+    "labels": ["sweet potato", "healthy snack"],
+    "nutrition": [
+      {"name": "carbs", "amount": 52},
+      {"name": "protein", "amount": 4},
+      {"name": "fat", "amount": 40},
+      {"name": "calories", "amount": 582}
+    ]
   }
 ];

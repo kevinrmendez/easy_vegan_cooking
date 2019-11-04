@@ -1,11 +1,11 @@
 [
   {
     "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/chiaPudding.jpg?alt=media&token=2c46f473-d174-4fa6-b359-46dc47e8f20a",
-    "title": "Chocolate chia pudding",
+    "title": "Pudding the chocolate y chia",
     "category": "desserts",
     "time": 5,
     "serves": 4,
-    "difficulty": "easy",
+    "difficulty": "facil",
     "ingredients": [
       "50g chia seeds",
       "400ml almond/soy milk",
@@ -29,7 +29,7 @@
   },
   {
     "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/brownies.jpg?alt=media&token=e99817d2-7fbc-45a2-a4e4-b930f11769fc",
-    "title": "Vegan brownies",
+    "title": "Brownies veganos",
     "category": "desserts",
     "time": 55,
     "serves": 12,
@@ -93,7 +93,7 @@
   },
   {
     "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/corn_cream.jfif?alt=media&token=ed0015b9-d665-4101-b1c9-5fa73a6d7a7b",
-    "title": "Vegan Corn Cream",
+    "title": "Crema de maiz vegana",
     "category": "soups",
     "time": 40,
     "serves": 6,
@@ -346,140 +346,6 @@
     ],
     "suggestions": "",
     "labels": ["avocado", "toast"],
-    "nutrition": []
-  },
-  {
-    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2Fhummus.jpg?alt=media&token=55fcae93-a562-492c-8959-0df0319ff4eb",
-    "title": "Hummus",
-    "category": "snacks",
-    "time": 10,
-    "serves": 2,
-    "difficulty": "super easy",
-    "ingredients": [
-      "2 garlic cloves",
-      "4 tbsp lemon juice",
-      "salt",
-      "pepper",
-      "3 tbsp olive oil",
-      "1 can chickpeas"
-    ],
-    "steps": [
-      "Drain and rince the chickpeas",
-      "Add the chickpeas,garlic,lemon juice, a big pinch of salt, pepper and olive oil to a food processor",
-      "Blend until well combined",
-      "Taste and add more lemon juice, pepper or salt",
-      "Enjoy"
-    ],
-    "suggestions": "If the hummus is a bit dry, add a bit of water while blending the ingredients",
-    "labels": ["chickpeas", "hummus"],
-    "nutrition": []
-  },
-  {
-    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2Fovenroastedsweetpotato.jpg?alt=media&token=7366bb8d-b7a9-49bf-a3ab-173c28e59e33",
-    "title": "Oven roasted sweet potato",
-    "category": "snacks",
-    "time": 30,
-    "serves": 4,
-    "difficulty": "super easy",
-    "ingredients": [
-      "2  large sweet potatoes",
-      "3 tablespoons  olive oil      ",
-      "2 teaspoons salt",
-      "2 teaspoons garlic powder",
-      "2 teaspoons oregano"
-    ],
-    "steps": [
-      "Peel the sweet potatoes",
-      "Cut the sweet potatoes in bite size pieces.",
-      "Add the sweet potato bites on an owen plate.",
-      "Cover them with olive oil using a cooking brush.",
-      "Spice with salt, garlic powder and oregano. ",
-      "Cook in oven for 20 minutes.",
-      "Enjoy"
-    ],
-    "suggestions": "Serve with hummus or guacamole.",
-    "labels": ["sweet potato", "healthy snack"],
-    "nutrition": []
-  },
-  {
-    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2Fsmokytomatoredpeppersoup.jpg?alt=media&token=457a758d-8786-4273-8192-7d97ed531314",
-    "title": "Smoky tomato and red pepper soup",
-    "category": "soups",
-    "time": 30,
-    "serves": 4,
-    "difficulty": "easy",
-    "ingredients": [
-      "5 tomatoes",
-      "3 red peppers",
-      "1 can crushed tomatoes",
-      "2 dl vegetable broth",
-      "3 cloves of garlic",
-      "1 teaspoon of smoked paprika powder ",
-      "1-2 teaspoons of dried basil"
-    ],
-    "steps": [
-      "Roast tomatoes and peppers in oven until soft.",
-      "Add roasted tomatoes and peppers in blender with 1 can of crushed tomatoes",
-      "Add vegetable broth, garlic and spices and blend",
-      "Add to a kettle and boil until hot.",
-      "Check taste and add salt if necessary.",
-      "Cook in oven for 20 minutes.",
-      "Enjoy"
-    ],
-    "suggestions": "Serve with fried vegetables and mushrooms and/or freshly baked bread.",
-    "labels": ["tomato soup", "healthy soup", " starter,"],
-    "nutrition": []
-  },
-  {
-    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/desserts%2Ffruitcocktail.jpg?alt=media&token=6bbed582-32ef-4c32-b76e-9bf90799fa8f",
-    "title": "DIY Fruitcocktail",
-    "category": "desserts",
-    "time": 15,
-    "serves": 4,
-    "difficulty": "super easy",
-    "ingredients": [
-      "1 apple",
-      "1 orange",
-      "½ small pineapple",
-      "1 dl dried cranberries",
-      "1 stem of grapes",
-      "0,5 dl orange juice",
-      "½ lemon juice",
-      "1 tablespoon of honey"
-    ],
-    "steps": [
-      "Cut all fruits in roughly the same size pieces.",
-      "Mix orange juice, the juice of a half lemon and honey together in a bowl.",
-      "Pour the juice and honey mix on the fruits and mix well with a spoon.      ",
-      "Enjoy"
-    ],
-    "suggestions": "Serve with vegan ice cream, chia pudding or plant yoghurt. ",
-    "labels": ["fruits", "healthy dessert"],
-    "nutrition": []
-  },
-  {
-    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2Fguacamole.jpg?alt=media&token=da2f2f88-d221-4b71-8cc3-f34884ad2a32",
-    "title": "Guacamole",
-    "category": "snacks",
-    "time": 15,
-    "serves": 4,
-    "difficulty": "super easy",
-    "ingredients": [
-      "3-4 avocados",
-      "1 lime",
-      "2 teaspoon salt",
-      "1/2 onion",
-      "4 tablespoons fresh cilantro"
-    ],
-    "steps": [
-      "In a bowl mash the avocados and add lime juice",
-      "Cut the onion into small pieces ",
-      "Add the chopped onion to the bowl; Add salt and cilantro",
-      "Mix all the ingredients",
-      "Enjoy"
-    ],
-    "suggestions": "Add 1/2 or 1 chopped  jalapeño if you want a spicy guacamole",
-    "labels": ["avocado", "snacks", "lime"],
     "nutrition": []
   }
 ]

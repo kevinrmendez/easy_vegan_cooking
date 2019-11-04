@@ -1,5 +1,8 @@
+import 'package:easy_vegan_cooking/activity/CartActivity.dart';
 import 'package:easy_vegan_cooking/activity/searchFilterActivity.dart';
 import 'package:easy_vegan_cooking/components/AppDrawer.dart';
+import 'package:easy_vegan_cooking/data/data.dart';
+
 import 'package:flutter/material.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
@@ -9,12 +12,14 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../main.dart';
-import '../data/data.dart';
 import '../apikeys.dart';
 import 'gridActivity.dart';
 
 class CategoryActivity extends StatefulWidget {
   // GridActivity({Key key, this.title}) : super(key: key);
+  CategoryActivity() {
+    interstitialAd.load();
+  }
 
   @override
   _CategoryActivityState createState() => _CategoryActivityState();
@@ -117,6 +122,11 @@ class _CategoryActivityState extends State<CategoryActivity> {
   @override
   void initState() {
     super.initState();
+    // WidgetsBinding.instance.addPostFrameCallback((_) => (context) {
+    //       interstitialAd.show();
+    //       print('ADD SHOWED');
+    //     });
+    // interstitialAd.show();
   }
 
   @override

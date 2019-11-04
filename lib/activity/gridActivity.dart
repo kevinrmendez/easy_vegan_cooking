@@ -22,6 +22,7 @@ import 'imageActivity.dart';
 class GridActivity extends StatefulWidget {
   final String category;
   GridActivity({Key key, this.category}) : super(key: key);
+
   // GridActivity() {
   //   data.shuffle();
   // }

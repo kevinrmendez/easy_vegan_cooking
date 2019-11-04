@@ -1,4 +1,5 @@
 import 'package:admob_flutter/admob_flutter.dart';
+import 'package:easy_vegan_cooking/components/RecipesSuggestions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 // import 'package:swipedetector/swipedetector.dart';
@@ -282,6 +283,12 @@ class ImageActivityState extends State<ImageActivity> {
                                   children: labels(widget.recipe.labels),
                                 ),
                               ])),
+                              SubtitleWidget(
+                                "You may also like",
+                              ),
+                              RecipesSuggestions(
+                                  labels: widget.recipe.labels,
+                                  currentRecipe: widget.recipe),
                               AdmobBanner(
                                 adUnitId: getBannerAdUnitId(),
                                 adSize: AdmobBannerSize.BANNER,

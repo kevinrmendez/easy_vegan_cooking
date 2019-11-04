@@ -13,15 +13,16 @@ import 'package:http/http.dart' as http;
 import 'package:share/share.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:permission_handler/permission_handler.dart';
-
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:path_provider/path_provider.dart';
 import 'CartModel.dart';
 import 'Ingredient.dart';
 import 'Recipe.dart';
 import 'RecipeModel.dart';
 import 'activity/categoryActivity.dart';
+import 'apikeys.dart';
 import 'appState.dart';
-import 'data/data.dart';
+import 'app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -42,32 +43,11 @@ void main() async {
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   Admob.initialize(getAppId());
-
   runApp(MyApp());
 }
 
 String getAppId() {
   return "ca-app-pub-7306861253247220~4569332025";
-}
-
-Map<PermissionGroup, PermissionStatus> _permissions;
-PermissionStatus _permissionStatus;
-Future<PermissionStatus> _checkPermission() async {
-  PermissionStatus permission =
-      await PermissionHandler().checkPermissionStatus(PermissionGroup.storage);
-  return permission;
-}
-
-Future<Map<PermissionGroup, PermissionStatus>> _requestPermission() async {
-  // await PermissionHandler()
-  //     .shouldShowRequestPermissionRationale(PermissionGroup.contacts);
-  // await PermissionHandler().openAppSettings();
-
-  _permissionStatus = await _checkPermission();
-  if (_permissionStatus != PermissionStatus.granted) {
-    return await PermissionHandler()
-        .requestPermissions([PermissionGroup.storage]);
-  }
 }
 
 class MyApp extends StatefulWidget {
@@ -89,12 +69,32 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
     blackScreen = false;
     recipes = [];
     shoppingCart = [];
+    WidgetsBinding.instance.addObserver(this);
+
     super.initState();
   }
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    // _showAd();
+    print('state = $state');
+  }
+
+  void _showAd() async {
+    _counter++;
+    if (_counter % 4 == 0) {
+      interstitialAd.load();
+    }
+
+    if (await interstitialAd.isLoaded) {
+      interstitialAd.show();
+    }
   }
 
   _callback(
@@ -144,6 +144,12 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
+            // initialRoute: '/',
+            // routes: {
+            //   // When navigating to the "/" route, build the FirstScreen widget.
+            //   '/Category': (context) => CategoryActivity(),
+            //   // When navigating to the "/second" route, build the SecondScreen widget.
+            // },
             theme: ThemeData(
               fontFamily: 'Montserrat',
               primaryColor: PrimaryColor,
@@ -152,6 +158,31 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
                   TextTheme(title: TextStyle(color: Colors.white)),
               primarySwatch: Colors.blueGrey,
             ),
+            supportedLocales: [
+              const Locale('en', 'US'),
+              const Locale('es', 'MX'),
+            ],
+            localizationsDelegates: [
+              // A class which loads the translations from JSON files
+              AppLocalizations.delegate,
+              // Built-in localization of basic text for Material widgets
+              GlobalMaterialLocalizations.delegate,
+              // Built-in localization for text direction LTR/RTL
+              GlobalWidgetsLocalizations.delegate,
+            ],
+            localeResolutionCallback: (locale, supportedLocales) {
+              // Check if the current device locale is supported
+              for (var supportedLocale in supportedLocales) {
+                if (supportedLocale.languageCode == locale.languageCode &&
+                    supportedLocale.countryCode == locale.countryCode) {
+                  return supportedLocale;
+                }
+              }
+              // If the locale of the device is not supported, use the first one
+              // from the list (English, in this case).
+              return supportedLocales.first;
+            },
+            // home: SplashScreen(),
             home: CategoryActivity(),
           ),
         ));
@@ -178,19 +209,7 @@ class _MyHomePageState extends State<MyHomePage> {
   bool downloading;
   @override
   void initState() {
-    downloading = false;
-    index = _getNumber();
     super.initState();
-  }
-
-  int _getNumber() {
-    return widget._random.nextInt(data.length);
-  }
-
-  void _changeIndex() {
-    setState(() {
-      index = _getNumber();
-    });
   }
 
   @override
@@ -244,3 +263,65 @@ class _MyHomePageState extends State<MyHomePage> {
         );
   }
 }
+
+class SplashScreen extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return SplashScreenState();
+  }
+}
+
+class SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    interstitialAdBeginning.load();
+    Future.delayed(Duration(seconds: 5), () {
+      interstitialAdBeginning.show();
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CategoryActivity(),
+          ));
+      Navigator.of(context).pushAndRemoveUntil(
+        MaterialPageRoute(builder: (context) => CategoryActivity()),
+        (Route<dynamic> route) => false,
+      );
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/screen.jpg'), fit: BoxFit.cover)),
+          width: MediaQuery.of(context).size.width,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                'Welcome to Easy Vegan Cooking',
+                style: new TextStyle(fontSize: 35.0, color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
+              CircularProgressIndicator()
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+AdmobInterstitial interstitialAdBeginning = AdmobInterstitial(
+  adUnitId: getInterstitialAdUnitId(),
+);
+
+getInterstitialAdUnitId() {
+  return apikeys["addMobInterstellar"];
+}
+
+int _counter = 0;
