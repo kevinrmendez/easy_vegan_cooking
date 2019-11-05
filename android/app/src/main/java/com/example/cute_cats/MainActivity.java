@@ -18,9 +18,16 @@ import android.view.Display;
 import 	android.util.Log;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.AdListener;
+import 	java.util.Timer;
+import 	java.util.TimerTask;
+import java.lang.Runnable;
+
+import io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService;
 
 public class MainActivity extends FlutterActivity {
 private InterstitialAd mInterstitialAd;
+ private Timer waitTimer;
 
   
      private static final String SHARE_CHANNEL = "setWallpaper";
@@ -31,30 +38,78 @@ private InterstitialAd mInterstitialAd;
 
 mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        // mInterstitialAd.setAdUnitId("ca-app-pub-7306861253247220/1751596994");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
+
+        mInterstitialAd.setAdListener(new AdListener() {
+        @Override
+        public void onAdLoaded() {
+
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                }
+
+        }
+          @Override
+        public void onAdOpened() {}
+        @Override
+        public void onAdFailedToLoad(int errorCode){}
+        });
+
+           if (mInterstitialAd.isLoaded()) {
+                 mInterstitialAd.show();
+                 Log.d("TAG", "The interstitial was shown");
+
+               }else{
+  Log.d("TAG", "The interstitial wasn't loaded yet.");
+               }
+
+
+// waitTimer = new Timer();
+// waitTimer.schedule(new TimerTask() {
+//     @Override
+//     public void run() {
+//         // interstitialCanceled = true;
+//         MainActivity.this.runOnUiThread(new Runnable() {
+//             @Override
+//             public void run() {
+//               if (mInterstitialAd.isLoaded()) {
+//                 mInterstitialAd.show();
+//                 Log.d("TAG", "The interstitial was shown");
+
+//               }else{
+//  Log.d("TAG", "The interstitial wasn't loaded yet.");
+//               }
+//             }
+//         });
+//     }
+// }, 8000);
+
+     
       
   }
-    @Override  
-    protected void onStart() {  
-        super.onStart();  
+    // @Override  
+    // protected void onStart() {  
+    //     super.onStart();  
 
-        Log.d("lifecycle","onStart invoked");  
-           if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            Log.d("TAG", "The interstitial wasn't loaded yet.");
-        }
-    }  
-    //   @Override  
-    // protected void onResume() {  
-    //     super.onResume();  
-    //     Log.d("lifecycle","onResume invoked");  
-    //          if (mInterstitialAd.isLoaded()) {
+    //     Log.d("lifecycle","onStart invoked");  
+    //        if (mInterstitialAd.isLoaded()) {
     //         mInterstitialAd.show();
     //     } else {
     //         Log.d("TAG", "The interstitial wasn't loaded yet.");
     //     }
     // }  
-  
+  @Override  
+    protected void onResume() {  
+        super.onResume();  
+         if (mInterstitialAd.isLoaded()) {
+                 mInterstitialAd.show();
+                 Log.d("TAG", "The interstitial was shown");
+
+               }else{
+  Log.d("TAG", "The interstitial wasn't loaded yet.");
+               }
+        Log.d("lifecycle","onResume invoked");  
+    }  
 
 }
