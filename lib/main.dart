@@ -7,14 +7,10 @@ import 'package:easy_vegan_cooking/components/appTItle.dart';
 import 'package:easy_vegan_cooking/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'dart:math';
 import 'package:http/http.dart' as http;
 // import 'package:url_launcher/url_launcher.dart';
-import 'package:share/share.dart';
-import 'package:image_gallery_saver/image_gallery_saver.dart';
-import 'package:permission_handler/permission_handler.dart';
+
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:path_provider/path_provider.dart';
 import 'CartModel.dart';
 import 'Ingredient.dart';
 import 'Recipe.dart';
@@ -26,6 +22,9 @@ import 'app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
+
+import 'dart:io';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 const PrimaryColor = const Color(0xFF99cc00);
 // const AccentColor = const Color(0xFFeeb52d);
@@ -62,16 +61,39 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
   List recipes;
   List shoppingCart;
 
+  FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
+
+  void firebaseCloudMessagingListeners() {
+    _firebaseMessaging.getToken().then((token) {
+      print(token);
+    });
+
+    _firebaseMessaging.configure(
+      onMessage: (Map<String, dynamic> message) async {
+        print('on message $message');
+      },
+      onResume: (Map<String, dynamic> message) async {
+        print('on resume $message');
+      },
+      onLaunch: (Map<String, dynamic> message) async {
+        print('on launch $message');
+      },
+    );
+    _firebaseMessaging.getToken().then((token) {
+      print(" TOKEN : $token");
+    });
+  }
+
   @override
   void initState() {
+    super.initState();
     share = true;
     save = true;
     blackScreen = false;
     recipes = [];
     shoppingCart = [];
     WidgetsBinding.instance.addObserver(this);
-
-    super.initState();
+    firebaseCloudMessagingListeners();
   }
 
   @override
@@ -190,8 +212,6 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
 }
 
 class MyHomePage extends StatefulWidget {
-  final _random = new Random();
-
   MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
@@ -225,7 +245,6 @@ class _MyHomePageState extends State<MyHomePage> {
       }
     }
 
-    AppState appState = AppState.of(context);
     return Scaffold(
         appBar: AppBar(
           // Here we take the value from the MyHomePage object that was created by
@@ -242,11 +261,6 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.white,
               itemBuilder: (BuildContext context) {
                 return [
-                  // PopupMenuItem(
-                  //   value: 'donate',
-                  //   child: Container(child: Text('Donate')),
-                  // ),
-
                   PopupMenuItem(
                     value: 'settings',
                     child: Container(child: Text('Settings')),
@@ -261,58 +275,6 @@ class _MyHomePageState extends State<MyHomePage> {
         )
         // This trailing comma makes auto-formatting nicer for build methods.
         );
-  }
-}
-
-class SplashScreen extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return SplashScreenState();
-  }
-}
-
-class SplashScreenState extends State<SplashScreen> {
-  @override
-  void initState() {
-    super.initState();
-    interstitialAdBeginning.load();
-    Future.delayed(Duration(seconds: 5), () {
-      interstitialAdBeginning.show();
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => CategoryActivity(),
-          ));
-      Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (context) => CategoryActivity()),
-        (Route<dynamic> route) => false,
-      );
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Container(
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage('assets/screen.jpg'), fit: BoxFit.cover)),
-          width: MediaQuery.of(context).size.width,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                'Welcome to Easy Vegan Cooking',
-                style: new TextStyle(fontSize: 35.0, color: Colors.white),
-                textAlign: TextAlign.center,
-              ),
-              CircularProgressIndicator()
-            ],
-          ),
-        ),
-      ),
-    );
   }
 }
 

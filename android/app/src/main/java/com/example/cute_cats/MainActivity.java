@@ -23,7 +23,6 @@ import 	java.util.Timer;
 import 	java.util.TimerTask;
 import java.lang.Runnable;
 
-import io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService;
 
 public class MainActivity extends FlutterActivity {
 private InterstitialAd mInterstitialAd;
@@ -34,11 +33,12 @@ private InterstitialAd mInterstitialAd;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+
     GeneratedPluginRegistrant.registerWith(this);
 
 mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
-        // mInterstitialAd.setAdUnitId("ca-app-pub-7306861253247220/1751596994");
+        // mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.setAdUnitId("ca-app-pub-7306861253247220/1751596994");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
         mInterstitialAd.setAdListener(new AdListener() {
@@ -63,53 +63,20 @@ mInterstitialAd = new InterstitialAd(this);
                }else{
   Log.d("TAG", "The interstitial wasn't loaded yet.");
                }
-
-
-// waitTimer = new Timer();
-// waitTimer.schedule(new TimerTask() {
-//     @Override
-//     public void run() {
-//         // interstitialCanceled = true;
-//         MainActivity.this.runOnUiThread(new Runnable() {
-//             @Override
-//             public void run() {
-//               if (mInterstitialAd.isLoaded()) {
-//                 mInterstitialAd.show();
-//                 Log.d("TAG", "The interstitial was shown");
-
-//               }else{
-//  Log.d("TAG", "The interstitial wasn't loaded yet.");
-//               }
-//             }
-//         });
-//     }
-// }, 8000);
-
-     
-      
+   
   }
-    // @Override  
-    // protected void onStart() {  
-    //     super.onStart();  
 
-    //     Log.d("lifecycle","onStart invoked");  
-    //        if (mInterstitialAd.isLoaded()) {
-    //         mInterstitialAd.show();
-    //     } else {
-    //         Log.d("TAG", "The interstitial wasn't loaded yet.");
-    //     }
-    // }  
-  @Override  
-    protected void onResume() {  
-        super.onResume();  
-         if (mInterstitialAd.isLoaded()) {
-                 mInterstitialAd.show();
-                 Log.d("TAG", "The interstitial was shown");
+  // @Override  
+  //   protected void onResume() {  
+  //       super.onResume();  
+  //        if (mInterstitialAd.isLoaded()) {
+  //                mInterstitialAd.show();
+  //                Log.d("TAG", "The interstitial was shown");
 
-               }else{
-  Log.d("TAG", "The interstitial wasn't loaded yet.");
-               }
-        Log.d("lifecycle","onResume invoked");  
-    }  
+  //              }else{
+  // Log.d("TAG", "The interstitial wasn't loaded yet.");
+  //              }
+  //       Log.d("lifecycle","onResume invoked");  
+  //   }  
 
 }
