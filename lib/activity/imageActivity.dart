@@ -10,6 +10,7 @@ import 'package:provider/provider.dart';
 import 'package:easy_vegan_cooking/components/FoodPicture.dart';
 import 'package:easy_vegan_cooking/components/SubtitleWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
+import '../helpers.dart';
 
 import '../CartModel.dart';
 import '../Ingredient.dart';
@@ -29,16 +30,16 @@ class ImageActivityState extends State<ImageActivity> {
   int index;
   List<Ingredient> ingredientList = List();
 
-  void _showAd() async {
-    _counter++;
-    if (_counter % 4 == 0) {
-      interstitialAd.load();
-    }
+  // void _showAd() async {
+  //   _counter++;
+  //   if (_counter % 4 == 0) {
+  //     interstitialAd.load();
+  //   }
 
-    if (await interstitialAd.isLoaded) {
-      interstitialAd.show();
-    }
-  }
+  //   if (await interstitialAd.isLoaded) {
+  //     interstitialAd.show();
+  //   }
+  // }
 
   List<Widget> labels(List labels) {
     List<Widget> list = List();
@@ -575,24 +576,24 @@ class _IngredientListState extends State<IngredientList> {
   }
 }
 
-String getBannerAdUnitId() {
-  return apikeys["addMobBanner"];
-}
+// String getBannerAdUnitId() {
+//   return apikeys["addMobBanner"];
+// }
 
-AdmobInterstitial interstitialAd = AdmobInterstitial(
-  adUnitId: getInterstitialAdUnitId(),
-);
+// AdmobInterstitial interstitialAd = AdmobInterstitial(
+//   adUnitId: getInterstitialAdUnitId(),
+// );
 
-getInterstitialAdUnitId() {
-  return apikeys["addMobInterstellar"];
-}
+// getInterstitialAdUnitId() {
+//   return apikeys["addMobInterstellar"];
+// }
 
-AdmobReward rewardAd = AdmobReward(
-  adUnitId: getRewardBasedVideoAdUnitId(),
-);
+// AdmobReward rewardAd = AdmobReward(
+//   adUnitId: getRewardBasedVideoAdUnitId(),
+// );
 
-getRewardBasedVideoAdUnitId() {
-  return apikeys["adMobRewarded"];
-}
+// getRewardBasedVideoAdUnitId() {
+//   return apikeys["adMobRewarded"];
+// }
 
-int _counter = 0;
+// int _counter = 0;

@@ -106,7 +106,7 @@ class _RecentRecipesActivityState extends State<RecentRecipesActivity> {
                         ],
                       ));
                     default:
-                      print("SNAPSHOT: ${snap.data.snapshot.value}");
+                      // print("SNAPSHOT: ${snap.data.snapshot.value}");
                       if (snap.hasData &&
                           !snap.hasError &&
                           snap.data.snapshot.value != null) {

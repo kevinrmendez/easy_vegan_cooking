@@ -69,7 +69,7 @@ class _FoodPictureState extends State<FoodPicture> {
             ),
             imageUrl: widget.recipe.image,
             placeholder: (context, url) => Container(
-              width: MediaQuery.of(context).size.height * .4,
+              width: MediaQuery.of(context).size.height,
               color: GreyColor,
               // constraints: BoxConstraints(maxHeight: 30, maxWidth: 30),
               child: Column(

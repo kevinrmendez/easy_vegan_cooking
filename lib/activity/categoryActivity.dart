@@ -13,7 +13,9 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../main.dart';
 import '../apikeys.dart';
+import '../apikeys.dart';
 import 'gridActivity.dart';
+import '../helpers.dart';
 
 class CategoryActivity extends StatefulWidget {
   // GridActivity({Key key, this.title}) : super(key: key);
@@ -31,16 +33,16 @@ class _CategoryActivityState extends State<CategoryActivity> {
   final TextEditingController _filter = new TextEditingController();
 
   String _searchText = "";
-  void _showAd() async {
-    _counter++;
-    if (_counter % 5 == 0) {
-      interstitialAd.load();
-    }
+  // void _showAd() async {
+  //   _counter++;
+  //   if (_counter % 5 == 0) {
+  //     interstitialAd.load();
+  //   }
 
-    if (await interstitialAd.isLoaded) {
-      interstitialAd.show();
-    }
-  }
+  //   if (await interstitialAd.isLoaded) {
+  //     interstitialAd.show();
+  //   }
+  // }
 
   Widget _buildAppBarTitle() {
     return Container(
@@ -135,43 +137,41 @@ class _CategoryActivityState extends State<CategoryActivity> {
   }
 
   Future<bool> _onWillPop() {
-    if (_counter % 3 == 0) {
-      return showDialog(
-            context: context,
-            builder: (context) => new AlertDialog(
-              title: new Text(
-                'Do you want to close the app?',
-                style: TextStyle(color: PrimaryColor),
-              ),
-              content: new Text(
-                  'Please share use your feedback before leaving the app, we would love hearing from you'),
-              actions: <Widget>[
-                FlatButton(
-                  onPressed: () => Navigator.of(context).pop(true),
-                  child: new Text('Yes'),
-                ),
-                FlatButton(
-                  onPressed: () async {
-                    // Navigator.of(context).pop(false);
-                    String url =
-                        "https://play.google.com/store/apps/details?id=com.kevinrmendez.easy.vegan.cooking";
-                    if (await canLaunch(url)) {
-                      await launch(url);
-                    } else {
-                      throw 'Could not launch $url';
-                    }
-                  },
-                  child: new Text('review app'),
-                ),
-                FlatButton(
-                  onPressed: () => Navigator.of(context).pop(false),
-                  child: new Text('No'),
-                ),
-              ],
+    return showDialog(
+          context: context,
+          builder: (context) => new AlertDialog(
+            title: new Text(
+              'Do you want to close the app?',
+              style: TextStyle(color: PrimaryColor),
             ),
-          ) ??
-          false;
-    }
+            content: new Text(
+                'Please share use your feedback before leaving the app, we would love hearing from you'),
+            actions: <Widget>[
+              FlatButton(
+                onPressed: () => Navigator.of(context).pop(true),
+                child: new Text('Yes'),
+              ),
+              FlatButton(
+                onPressed: () async {
+                  // Navigator.of(context).pop(false);
+                  String url =
+                      "https://play.google.com/store/apps/details?id=com.kevinrmendez.easy.vegan.cooking";
+                  if (await canLaunch(url)) {
+                    await launch(url);
+                  } else {
+                    throw 'Could not launch $url';
+                  }
+                },
+                child: new Text('review app'),
+              ),
+              FlatButton(
+                onPressed: () => Navigator.of(context).pop(false),
+                child: new Text('No'),
+              ),
+            ],
+          ),
+        ) ??
+        false;
   }
 
   @override
@@ -214,7 +214,7 @@ class _CategoryActivityState extends State<CategoryActivity> {
                           // String url = recipe["image"];
                           // print('URL');
                           // print(url);
-                          _showAd();
+                          // showAd();
                           Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -236,16 +236,27 @@ class _CategoryActivityState extends State<CategoryActivity> {
   }
 }
 
-String getBannerAdUnitId() {
-  return apikeys["addMobBanner"];
-}
+// String getBannerAdUnitId() {
+//   return apikeys["addMobBanner"];
+// }
 
-AdmobInterstitial interstitialAd = AdmobInterstitial(
-  adUnitId: getInterstitialAdUnitId(),
-);
+// AdmobInterstitial interstitialAd = AdmobInterstitial(
+//   adUnitId: getInterstitialAdUnitId(),
+// );
 
-getInterstitialAdUnitId() {
-  return apikeys["addMobInterstellar"];
-}
+// getInterstitialAdUnitId() {
+//   return apikeys["addMobInterstellar"];
+// }
 
-int _counter = 0;
+// void showAd() async {
+//   _counter++;
+//   if (_counter % 5 == 0) {
+//     interstitialAd.load();
+//   }
+
+//   if (await interstitialAd.isLoaded) {
+//     interstitialAd.show();
+//   }
+// }
+
+// int _counter = 0;

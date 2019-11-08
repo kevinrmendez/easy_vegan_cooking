@@ -17,7 +17,9 @@ import '../Recipe.dart';
 import '../apikeys.dart';
 import '../components/AppDrawer.dart';
 
+import 'categoryActivity.dart';
 import 'imageActivity.dart';
+import '../helpers.dart';
 
 class GridActivity extends StatefulWidget {
   final String category;
@@ -46,16 +48,16 @@ class _GridActivityState extends State<GridActivity> {
 
   // bool isDatabaseNotEmpty;
 
-  void _showAd() async {
-    _counter++;
-    if (_counter % 3 == 0) {
-      interstitialAd.load();
-    }
+  // void _showAd() async {
+  //   _counter++;
+  //   if (_counter % 3 == 0) {
+  //     interstitialAd.load();
+  //   }
 
-    if (await interstitialAd.isLoaded) {
-      interstitialAd.show();
-    }
-  }
+  //   if (await interstitialAd.isLoaded) {
+  //     interstitialAd.show();
+  //   }
+  // }
 
   @override
   void initState() {
@@ -69,7 +71,7 @@ class _GridActivityState extends State<GridActivity> {
     // });
 
     _recipesSubscription = recipesRef.onChildAdded.listen((event) {
-      print('Child added: ${event.snapshot.value}');
+      // print('Child added: ${event.snapshot.value}');
     });
     super.initState();
   }
@@ -248,7 +250,8 @@ class _GridActivityState extends State<GridActivity> {
                           width: MediaQuery.of(context).size.width,
                           child: GestureDetector(
                             onTap: () {
-                              _showAd();
+                              // _showAd();
+                              showAd();
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -338,16 +341,16 @@ class _GridActivityState extends State<GridActivity> {
   }
 }
 
-String getBannerAdUnitId() {
-  return apikeys["addMobBanner"];
-}
+// String getBannerAdUnitId() {
+//   return apikeys["addMobBanner"];
+// }
 
-AdmobInterstitial interstitialAd = AdmobInterstitial(
-  adUnitId: getInterstitialAdUnitId(),
-);
+// AdmobInterstitial interstitialAd = AdmobInterstitial(
+//   adUnitId: getInterstitialAdUnitId(),
+// );
 
-getInterstitialAdUnitId() {
-  return apikeys["addMobInterstellar"];
-}
+// getInterstitialAdUnitId() {
+//   return apikeys["addMobInterstellar"];
+// }
 
-int _counter = 0;
+// int _counter = 0;

@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:easy_vegan_cooking/activity/CartActivity.dart';
 import 'package:easy_vegan_cooking/activity/RecentRecipesListActivity.dart';
+import 'package:easy_vegan_cooking/activity/RecipeOfDayActivity.dart';
 import 'package:easy_vegan_cooking/activity/TimerActivity.dart';
 import 'package:easy_vegan_cooking/activity/categoryActivity.dart';
 import 'package:easy_vegan_cooking/activity/favoriteActivity.dart';
@@ -103,7 +104,7 @@ class AppDrawer extends StatelessWidget {
                   // style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 trailing: Icon(
-                  FontAwesomeIcons.plusCircle,
+                  FontAwesomeIcons.utensils,
                   color: Theme.of(context).accentColor,
                 ),
                 onTap: () {
@@ -111,6 +112,22 @@ class AppDrawer extends StatelessWidget {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (BuildContext context) =>
                           RecentRecipesListActivity()));
+                },
+              ),
+              ListTile(
+                title: Text(
+                  "Recipe of the Day",
+                  // style: TextStyle(color: Theme.of(context).primaryColor),
+                ),
+                trailing: Icon(
+                  FontAwesomeIcons.sun,
+                  color: Theme.of(context).accentColor,
+                ),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) =>
+                          RecipeOfDayActivity()));
                 },
               ),
               ListTile(

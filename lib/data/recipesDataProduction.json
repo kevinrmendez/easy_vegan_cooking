@@ -481,5 +481,99 @@
     "suggestions": "Add 1/2 or 1 chopped  jalapeño if you want a spicy guacamole",
     "labels": ["avocado", "snacks", "lime"],
     "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/salads%2FGreenChickpeaSalad.jpg?alt=media&token=8fae45af-ec9b-41d0-a69d-775651929425",
+    "title": "Green Chickpea Salad",
+    "category": "salads",
+    "time": 10,
+    "serves": 4,
+    "difficulty": "super easy",
+    "ingredients": [
+      "1/4 cup chopped cilantro",
+      "1 avocado",
+      "4 tablespoons of lemon juice",
+      "4 tablespoons extra virgin olive oil",
+      "salt",
+      "black pepper",
+      "1 can of chickpeas",
+      "1 cucumber"
+    ],
+    "steps": [
+      "Cut the avocado in slices ",
+      "Dice the cucumber   ",
+      "Drain and rinse the chickpeas with water",
+      "Mix all the ingredients in a bowl",
+      "Add lemon juice, salt and black pepper to taste",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["avocado", "chickpeas", "lime", "salads", "green"],
+    "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/salads%2FbeetrootSpinach.jpg?alt=media&token=f567e519-a4b7-4c5e-a19a-256e523c6182",
+    "title": "Beetroot Spinach Salad",
+    "category": "salads",
+    "time": 10,
+    "serves": 4,
+    "difficulty": "super easy",
+    "ingredients": [
+      "4 boild beetroots",
+      "2 teaspoons Dijon Mustard",
+      "1/2 teaspoon of honey",
+      "2 tablespoons apple sider vinager ",
+      "4 tablespoons olive oil",
+      "1/2 cup walnuts",
+      "1/2 teaspoon of salt",
+      "200 grams of spinach",
+      "black pepper"
+    ],
+    "steps": [
+      "Before starting, boil the beetroots for 45 min and then peel them",
+      "Cut in cubes the beetroots ",
+      "Cut the walnuts in small portions",
+      "For making the dressing  mix  olive oil, mustard, vinegar, honey, salt and some  pepper",
+      "In a large bowl mix the spinach with the dressing",
+      "Then add feta cheese, beetroots and walnuts ",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["walnuts", "spinach", "beetroot", "green"],
+    "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FcarrotCorianderSoup.jpg?alt=media&token=cea2db5d-36ce-4a1c-9f82-b9388df601fe",
+    "title": "Carrot coriander soup",
+    "category": "soups",
+    "time": 40,
+    "serves": 4,
+    "difficulty": " easy",
+    "ingredients": [
+      "500gr carrots",
+      "1 onion",
+      "1 potato",
+      "40gr coriander",
+      "1 vegatable stockpot in 1L water",
+      "1 tablespoon olive oil",
+      "1 teaspoon of ground coriander",
+      "1 tablespoon of pumpkin seeds",
+      "salt"
+    ],
+    "steps": [
+      "Peel and chopp the onion, potato and carrots",
+      "Heat with olive oil the onion for 5 min",
+      "Add the potato, carrots and season with gorund coriander, cook for another 5 min",
+      "Pour the vegetable stock,bring to boil and the reduce the temperature",
+      "Cover and cook for around 15 - 20 min",
+      "Cool down a bit the soup;then pour it in a food processor with the coriander",
+      "Mix until smooth and return the purée to the pan ",
+      "Cook for 5 more min and season with salt",
+      "Serve and garnish the soup with coriander leaves and pumpkin seeds",
+      "Enjoy"
+    ],
+    "suggestions": "stir ocasionally while cooking the vegetables in the oven",
+    "labels": ["carrots", "soup", "coriander"],
+    "nutrition": []
   }
 ]

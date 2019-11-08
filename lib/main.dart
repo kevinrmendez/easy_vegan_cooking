@@ -108,16 +108,16 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
     print('state = $state');
   }
 
-  void _showAd() async {
-    _counter++;
-    if (_counter % 4 == 0) {
-      interstitialAd.load();
-    }
+  // void _showAd() async {
+  //   _counter++;
+  //   if (_counter % 4 == 0) {
+  //     interstitialAd.load();
+  //   }
 
-    if (await interstitialAd.isLoaded) {
-      interstitialAd.show();
-    }
-  }
+  //   if (await interstitialAd.isLoaded) {
+  //     interstitialAd.show();
+  //   }
+  // }
 
   _callback(
       {share,
@@ -278,12 +278,12 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-AdmobInterstitial interstitialAdBeginning = AdmobInterstitial(
-  adUnitId: getInterstitialAdUnitId(),
-);
+// AdmobInterstitial interstitialAdBeginning = AdmobInterstitial(
+//   adUnitId: getInterstitialAdUnitId(),
+// );
 
-getInterstitialAdUnitId() {
-  return apikeys["addMobInterstellar"];
-}
+// getInterstitialAdUnitId() {
+//   return apikeys["addMobInterstellar"];
+// }
 
-int _counter = 0;
+// int _counter = 0;

@@ -1,0 +1,34 @@
+[
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FroastedRootVegetables.jpg?alt=media&token=5337ec76-6239-4bd5-8c2f-28b4de552e7a",
+    "title": "Roasted Root Vegetables",
+    "category": "meals",
+    "time": 60,
+    "serves": 4,
+    "difficulty": " easy",
+    "ingredients": [
+      "2 beets",
+      "2 carrots",
+      "2 sweet potatoes",
+      "1 red onion",
+      "2 teaspoons olive oil",
+      "2 teaspoons salt",
+      "1/4 teaspoon black pepper",
+      "1 head garlic, cloves peeled and separated",
+      "3 tablespoons chopped fresh rosemary leaves"
+    ],
+    "steps": [
+      "Preheat the oven 220 degrees Celsius and place 1 baking sheets with parchment paper.",
+      "Peel the beets, carrots and sweet potatoes; then cut them in small pieces (3cm)",
+      "Cut the onion in slices",
+      "Place all the vegetables in a backing sheets. Drizzle with olive oil.",
+      "Season with salt,pepper amd rosemary",
+      "Roast the vegetables for 45 min until they are tender",
+      "For making the dressing  mix  olive oil, mustard, vinegar, honey, salt and some  pepper",
+      "Enjoy"
+    ],
+    "suggestions": "stir ocasionally while cooking the vegetables in the oven",
+    "labels": ["beets", "carrots", "roasted"],
+    "nutrition": []
+  }
+]

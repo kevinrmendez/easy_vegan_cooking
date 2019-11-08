@@ -11,6 +11,7 @@ import 'package:provider/provider.dart';
 
 import '../CartModel.dart';
 import '../apikeys.dart';
+import '../helpers.dart';
 
 class CartActivity extends StatefulWidget {
   // GridActivity({Key key, this.title}) : super(key: key);
@@ -20,16 +21,16 @@ class CartActivity extends StatefulWidget {
 }
 
 class _CartActivityState extends State<CartActivity> {
-  void _showAd() async {
-    _counter++;
-    if (_counter % 3 == 0) {
-      interstitialAd.load();
-    }
+  // void _showAd() async {
+  //   _counter++;
+  //   if (_counter % 3 == 0) {
+  //     interstitialAd.load();
+  //   }
 
-    if (await interstitialAd.isLoaded) {
-      interstitialAd.show();
-    }
-  }
+  //   if (await interstitialAd.isLoaded) {
+  //     interstitialAd.show();
+  //   }
+  // }
 
   @override
   void initState() {
@@ -163,16 +164,16 @@ class _CartActivityState extends State<CartActivity> {
   }
 }
 
-String getBannerAdUnitId() {
-  return apikeys["addMobBanner"];
-}
+// String getBannerAdUnitId() {
+//   return apikeys["addMobBanner"];
+// }
 
-AdmobInterstitial interstitialAd = AdmobInterstitial(
-  adUnitId: getInterstitialAdUnitId(),
-);
+// AdmobInterstitial interstitialAd = AdmobInterstitial(
+//   adUnitId: getInterstitialAdUnitId(),
+// );
 
-getInterstitialAdUnitId() {
-  return apikeys["addMobInterstellar"];
-}
+// getInterstitialAdUnitId() {
+//   return apikeys["addMobInterstellar"];
+// }
 
-int _counter = 0;
+// int _counter = 0;

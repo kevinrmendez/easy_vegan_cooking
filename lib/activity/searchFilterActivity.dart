@@ -16,6 +16,7 @@ import '../apikeys.dart';
 import '../components/AppDrawer.dart';
 
 import 'imageActivity.dart';
+import '../helpers.dart';
 
 class SearchFilterActivity extends StatefulWidget {
   final String searchTerm;
@@ -38,16 +39,16 @@ class SearchFilterActivity extends StatefulWidget {
 }
 
 class _SearchFilterActivityState extends State<SearchFilterActivity> {
-  void _showAd() async {
-    _counter++;
-    if (_counter % 3 == 0) {
-      interstitialAd.load();
-    }
+  // void _showAd() async {
+  //   _counter++;
+  //   if (_counter % 3 == 0) {
+  //     interstitialAd.load();
+  //   }
 
-    if (await interstitialAd.isLoaded) {
-      interstitialAd.show();
-    }
-  }
+  //   if (await interstitialAd.isLoaded) {
+  //     interstitialAd.show();
+  //   }
+  // }
 
   @override
   void initState() {
@@ -195,7 +196,8 @@ class _SearchFilterActivityState extends State<SearchFilterActivity> {
                                       ],
                                     ),
                                     onTap: () async {
-                                      _showAd();
+                                      // _showAd();
+                                      showAd();
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
@@ -225,16 +227,16 @@ class _SearchFilterActivityState extends State<SearchFilterActivity> {
   }
 }
 
-String getBannerAdUnitId() {
-  return apikeys["addMobBanner"];
-}
+// String getBannerAdUnitId() {
+//   return apikeys["addMobBanner"];
+// }
 
-AdmobInterstitial interstitialAd = AdmobInterstitial(
-  adUnitId: getInterstitialAdUnitId(),
-);
+// AdmobInterstitial interstitialAd = AdmobInterstitial(
+//   adUnitId: getInterstitialAdUnitId(),
+// );
 
-getInterstitialAdUnitId() {
-  return apikeys["addMobInterstellar"];
-}
+// getInterstitialAdUnitId() {
+//   return apikeys["addMobInterstellar"];
+// }
 
-int _counter = 0;
+// int _counter = 0;

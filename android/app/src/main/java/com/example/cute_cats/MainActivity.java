@@ -37,7 +37,7 @@ private InterstitialAd mInterstitialAd;
     GeneratedPluginRegistrant.registerWith(this);
 
 mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-7306861253247220/1751596994");
+        mInterstitialAd.setAdUnitId("ca-app-pub-7306861253247220/3399175417");
         // mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
 
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
@@ -48,6 +48,7 @@ mInterstitialAd = new InterstitialAd(this);
 
                 if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
+                     Log.d("TAG", "The interstitial was shown FROM KOTLIN");
                 }
 
         }
@@ -55,29 +56,6 @@ mInterstitialAd = new InterstitialAd(this);
         public void onAdOpened() {}
         @Override
         public void onAdFailedToLoad(int errorCode){}
-        });
-
-           if (mInterstitialAd.isLoaded()) {
-                 mInterstitialAd.show();
-                 Log.d("TAG", "The interstitial was shown");
-
-               }else{
-  Log.d("TAG", "The interstitial wasn't loaded yet.");
-               }
-   
+        });   
   }
-
-  // @Override  
-  //   protected void onResume() {  
-  //       super.onResume();  
-  //        if (mInterstitialAd.isLoaded()) {
-  //                mInterstitialAd.show();
-  //                Log.d("TAG", "The interstitial was shown");
-
-  //              }else{
-  // Log.d("TAG", "The interstitial wasn't loaded yet.");
-  //              }
-  //       Log.d("lifecycle","onResume invoked");  
-  //   }  
-
 }

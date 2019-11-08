@@ -103,7 +103,7 @@ class _RecipesSuggestionsState extends State<RecipesSuggestions> {
                     ],
                   ));
                 default:
-                  print("SNAPSHOT: ${snap.data.snapshot.value}");
+                  // print("SNAPSHOT: ${snap.data.snapshot.value}");
                   if (snap.hasData &&
                       !snap.hasError &&
                       snap.data.snapshot.value != null) {
