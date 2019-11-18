@@ -101,7 +101,6 @@ class ImageComponentState extends State<ImageComponent> {
                   return Text('no connection founded, please try again');
                 case ConnectionState.active:
                 case ConnectionState.waiting:
-                  return SizedBox();
                   return Center(
                       child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,

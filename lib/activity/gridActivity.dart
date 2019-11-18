@@ -250,7 +250,6 @@ class _GridActivityState extends State<GridActivity> {
                           width: MediaQuery.of(context).size.width,
                           child: GestureDetector(
                             onTap: () {
-                              // _showAd();
                               showAd();
                               Navigator.push(
                                 context,

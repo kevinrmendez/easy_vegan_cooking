@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:dio/dio.dart';
+import 'package:easy_vegan_cooking/activity/RecipeOfDayActivity.dart';
 
 import 'package:easy_vegan_cooking/components/appTItle.dart';
 import 'package:easy_vegan_cooking/settings.dart';
@@ -38,6 +39,7 @@ const AccentColor = const Color(0xFFFF9900);
 const GreyColor = const Color(0xFFEEEEEE);
 FirebaseApp app;
 var recipesData;
+
 void main() async {
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);

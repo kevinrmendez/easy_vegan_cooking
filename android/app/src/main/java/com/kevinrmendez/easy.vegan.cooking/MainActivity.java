@@ -24,9 +24,10 @@ import 	java.util.TimerTask;
 import java.lang.Runnable;
 
 
-public class MainActivity extends FlutterActivity {
+public class MainActivity extends FlutterActivity  {
 private InterstitialAd mInterstitialAd;
  private Timer waitTimer;
+
 
   
      private static final String SHARE_CHANNEL = "setWallpaper";
@@ -58,4 +59,5 @@ mInterstitialAd = new InterstitialAd(this);
         public void onAdFailedToLoad(int errorCode){}
         });   
   }
+
 }

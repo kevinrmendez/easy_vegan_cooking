@@ -16,12 +16,15 @@ getInterstitialAdUnitId() {
 
 void showAd() async {
   counter++;
+  print("counter: $counter");
   if (counter % 3 == 0) {
     interstitialAd.load();
   }
-
-  if (await interstitialAd.isLoaded) {
-    interstitialAd.show();
+  if (counter > 3) {
+    if (await interstitialAd.isLoaded) {
+      interstitialAd.show();
+      counter = 0;
+    }
   }
 }
 

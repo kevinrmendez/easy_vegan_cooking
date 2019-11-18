@@ -300,6 +300,36 @@
     "nutrition": []
   },
   {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FVeganpestoPasta.jpg?alt=media&token=5aa5df47-494a-4e7a-bbe1-7aa432418371",
+    "title": "Vegan pesto pasta",
+    "category": "meals",
+    "time": 30,
+    "serves": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      "1 can chickpeas",
+      "salt",
+      "pepper",
+      "3 tbsp pesto pasta",
+      "2 tbsp olive oil",
+      "250gr pasta",
+      "3 cups cherry tomatoes (sliced)",
+      "Vegan parmesan cheese"
+    ],
+    "steps": [
+      "Bring water with salt to boil and cook the pasta for 10 - 15 min",
+      "While cooking the pasta, in a frying pan olive oil and tomatoes, stir occasionally",
+      "When the pasta is ready, add it to the frying pan",
+      "Add  pesto, salt and pepper to taste ",
+      "Mix well all the ingredients",
+      "Add parmesan cheese when serving",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["tomatoes", "pasta", "pesto"],
+    "nutrition": []
+  },
+  {
     "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FcarrotSmoothie.jpg?alt=media&token=4422b677-1ecd-4e16-975f-8dac358e9c81",
     "title": "Carrot smoothie",
     "category": "smoothies",
@@ -574,6 +604,146 @@
     ],
     "suggestions": "stir ocasionally while cooking the vegetables in the oven",
     "labels": ["carrots", "soup", "coriander"],
+    "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FroastedRootVegetables.jpg?alt=media&token=5337ec76-6239-4bd5-8c2f-28b4de552e7a",
+    "title": "Roasted Root Vegetables",
+    "category": "meals",
+    "time": 60,
+    "serves": 4,
+    "difficulty": " easy",
+    "ingredients": [
+      "2 beets",
+      "2 carrots",
+      "2 sweet potatoes",
+      "1 red onion",
+      "2 teaspoons olive oil",
+      "2 teaspoons salt",
+      "1/4 teaspoon black pepper",
+      "1 head garlic, cloves peeled and separated",
+      "3 tablespoons chopped fresh rosemary leaves"
+    ],
+    "steps": [
+      "Preheat the oven 220 degrees Celsius and place 1 baking sheets with parchment paper.",
+      "Peel the beets, carrots and sweet potatoes; then cut them in small pieces (3cm)",
+      "Cut the onion in slices",
+      "Place all the vegetables in a backing sheets. Drizzle with olive oil.",
+      "Season with salt,pepper amd rosemary",
+      "Roast the vegetables for 45 min until they are tender",
+      "For making the dressing  mix  olive oil, mustard, vinegar, honey, salt and some  pepper",
+      "Enjoy"
+    ],
+    "suggestions": "stir ocasionally while cooking the vegetables in the oven",
+    "labels": ["beets", "carrots", "roasted"],
+    "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FstrawberryFrenchToast.jpg?alt=media&token=051ca277-0f79-4443-ba3e-fdfd3b923f3a",
+    "title": "Strawberry French toast",
+    "category": "breakfast",
+    "time": 40,
+    "serves": 6,
+    "difficulty": " easy",
+    "ingredients": [
+      "6 slices of bread",
+      "2 tsp vanilla extract",
+      "200 ml almond milk",
+      "2 tsp cinammon",
+      "4 tbsp maple syrup",
+      "200 gr strawberry",
+      "3 tbsp vegan butter"
+    ],
+    "steps": [
+      "Mix in a bowl the vanilla extract, cinamon, almond milk and maple syrup",
+      "Heat the frying pan for 5 min and grease with 1 tbsp of vegan butter",
+      "Dip each bread slice in the mix for 20 seconds per side",
+      "Place the bread in the frying pan and cook until it is brown and crispy, around 3 minutes per side",
+      "Cut the strawberries in half",
+      "Serve the french toasts with the stawberries",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["bread", "breakfast", "strawberry", "toast"],
+    "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FgreenSmoothie.jpg?alt=media&token=227e87ad-ee33-4b29-b54a-53ae80294712",
+    "title": "Green Smoothie",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "super easy",
+    "ingredients": [
+      "1 ½ cups frozen berries",
+      "1 banana",
+      "1 ½ cup spinach",
+      "1 ½ cups to 2 cups unsweetened almond milk "
+    ],
+    "steps": [
+      "Cut the banana in slices",
+      "Add all the ingredients to the blender and mix well",
+      "Enjoy"
+    ],
+    "suggestions": "if the smoothie is too thick, add more almond milk",
+    "labels": ["spinach", "smoothie", "green"],
+    "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FpastaBolognese.jpg?alt=media&token=530c95d7-dc94-4616-bd43-c5abda452527",
+    "title": "Pasta Bolognese",
+    "category": "meals",
+    "time": 60,
+    "serves": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      "80gr mushrooms diced",
+      "70gr lentils",
+      "200g spaghetti",
+      "2 tbsp of salt",
+      "1 ½ tsp olive oil",
+      "1 onion chopped",
+      "3 celery sticks chopped",
+      "1 carrot diced ",
+      "3 garlic cloves, chopped",
+      "400gr tomato purée",
+      "2 tbsp dried oregano"
+    ],
+    "steps": [
+      "Heat oil in a pan and add onion,garlic celery, mushrooms and carrots; cook for 8 min",
+      "Add lentils and tomato purée and cook for 15 min; then spice the sauce with oregano and salt",
+      "Meanwhile cook the pasta with salt water",
+      "When the pasta is ready drain the water for 40 - 50 min",
+      "Serve the pasta with the tomato sauce",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["pasta", "tomato", "lentils"],
+    "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FchocolateBananaShake.jpg?alt=media&token=66377184-b0a5-47e3-b0bd-1cd75b39bed7",
+    "title": "Chocolate Banana Smoothie ",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "3 bananas",
+      "2 cups almond/soy milk",
+      "2 teaspoons of maple syrup",
+      "2 tablespoons of cocoa powder",
+      "Flax seeds",
+      "Almond Flakes"
+    ],
+    "steps": [
+      "Cut the banana in slices",
+      "Add the banana, milk, maple syrup and cocoa powder to the blender",
+      "Serve with some flax seeds and almond flakes",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["chocolate", "banana"],
     "nutrition": []
   }
 ]
