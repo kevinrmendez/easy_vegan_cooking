@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:easy_vegan_cooking/activity/imageActivity.dart';
 import 'package:easy_vegan_cooking/components/imageComponent.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
@@ -74,10 +75,10 @@ class _RecipeOfDayActivityState extends State<RecipeOfDayActivity> {
                 },
               ),
             ),
-            AdmobBanner(
-              adUnitId: getBannerAdUnitId(),
-              adSize: AdmobBannerSize.BANNER,
-            ),
+            // AdmobBanner(
+            //   adUnitId: getBannerAdUnitId(),
+            //   adSize: AdmobBannerSize.BANNER,
+            // ),
           ],
         ),
       ),

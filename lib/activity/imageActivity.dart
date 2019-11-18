@@ -182,9 +182,11 @@ class ImageActivityState extends State<ImageActivity> {
                                                 widget.recipe.title,
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
-                                                    fontSize: 30,
-                                                    color: Theme.of(context)
-                                                        .primaryColor),
+                                                    fontSize: 25,
+                                                    fontWeight: FontWeight.bold
+                                                    // color: Theme.of(context)
+                                                    //     .primaryColor
+                                                    ),
                                               ),
                                             ),
                                           ),
@@ -575,25 +577,3 @@ class _IngredientListState extends State<IngredientList> {
     );
   }
 }
-
-// String getBannerAdUnitId() {
-//   return apikeys["addMobBanner"];
-// }
-
-// AdmobInterstitial interstitialAd = AdmobInterstitial(
-//   adUnitId: getInterstitialAdUnitId(),
-// );
-
-// getInterstitialAdUnitId() {
-//   return apikeys["addMobInterstellar"];
-// }
-
-// AdmobReward rewardAd = AdmobReward(
-//   adUnitId: getRewardBasedVideoAdUnitId(),
-// );
-
-// getRewardBasedVideoAdUnitId() {
-//   return apikeys["adMobRewarded"];
-// }
-
-// int _counter = 0;

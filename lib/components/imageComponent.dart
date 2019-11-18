@@ -1,3 +1,4 @@
+import 'package:admob_flutter/admob_flutter.dart';
 import 'package:easy_vegan_cooking/activity/CartActivity.dart';
 import 'package:easy_vegan_cooking/activity/labelFilterActivity.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +15,8 @@ import '../CartModel.dart';
 import '../Ingredient.dart';
 import '../Recipe.dart';
 import 'RecipesSuggestions.dart';
+
+import './../helpers.dart';
 
 class ImageComponent extends StatefulWidget {
   final Recipe recipe;
@@ -126,15 +129,13 @@ class ImageComponentState extends State<ImageComponent> {
                                       children: <Widget>[
                                         Flexible(
                                           child: Container(
-                                            child: Text(
-                                              widget.recipe.title,
-                                              textAlign: TextAlign.center,
-                                              style: TextStyle(
-                                                  fontSize: 30,
-                                                  color: Theme.of(context)
-                                                      .primaryColor),
-                                            ),
-                                          ),
+                                              child: Text(
+                                            widget.recipe.title,
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.bold),
+                                          )),
                                         ),
                                       ],
                                     ),
@@ -228,15 +229,16 @@ class ImageComponentState extends State<ImageComponent> {
                                 children: labels(widget.recipe.labels),
                               ),
                             ])),
-                            // SubtitleWidget(
-                            //   "You may also like",
-                            // ),
-                            // RecipesSuggestions(
-                            //     labels: widget.recipe.labels,
-                            //     currentRecipe: widget.recipe),
-                            // SizedBox(
-                            //   height: 100,
-                            // )
+                            SubtitleWidget(
+                              "You may also like",
+                            ),
+                            RecipesSuggestions(
+                                labels: widget.recipe.labels,
+                                currentRecipe: widget.recipe),
+                            AdmobBanner(
+                              adUnitId: getBannerAdUnitId(),
+                              adSize: AdmobBannerSize.BANNER,
+                            ),
                           ],
                         ),
                       ));
