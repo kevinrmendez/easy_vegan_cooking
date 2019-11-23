@@ -26,6 +26,7 @@ import 'package:firebase_database/firebase_database.dart';
 
 import 'dart:io';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:dio/dio.dart';
 
 const PrimaryColor = const Color(0xFF99cc00);
 // const AccentColor = const Color(0xFFeeb52d);
@@ -37,6 +38,7 @@ const AccentColor = const Color(0xFFFF9900);
 // const GreyColor = const Color(0xFFD0D0D0);
 // const GreyColor = const Color(0xFFe6e6e6);
 const GreyColor = const Color(0xFFEEEEEE);
+const RedColors = const Color(0xFFff6961);
 FirebaseApp app;
 var recipesData;
 

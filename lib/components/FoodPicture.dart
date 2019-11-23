@@ -47,20 +47,13 @@ class _FoodPictureState extends State<FoodPicture> {
 
   @override
   Widget build(BuildContext context) {
-    AppState appState = AppState.of(context);
+    // AppState appState = AppState.of(context);
     return Stack(
       alignment: AlignmentDirectional.bottomEnd,
       fit: StackFit.loose,
       children: <Widget>[
-        // Container(
-        //   height: MediaQuery.of(context).size.height * .4,
-        //   decoration: BoxDecoration(
-        //       color: GreyColor,
-        //       image: DecorationImage(
-        //           image: NetworkImage(widget.recipe.image), fit: BoxFit.cover)),
-        // ),
         Container(
-          height: MediaQuery.of(context).size.height * .4,
+          height: MediaQuery.of(context).size.height * .5,
           child: CachedNetworkImage(
             imageBuilder: (context, imageProvider) => Container(
               decoration: BoxDecoration(
@@ -71,7 +64,6 @@ class _FoodPictureState extends State<FoodPicture> {
             placeholder: (context, url) => Container(
               width: MediaQuery.of(context).size.height,
               color: GreyColor,
-              // constraints: BoxConstraints(maxHeight: 30, maxWidth: 30),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -98,7 +90,8 @@ class _FoodPictureState extends State<FoodPicture> {
             IconButton(
               icon: Icon(
                 Icons.share,
-                color: Theme.of(context).accentColor,
+                // color: Theme.of(context).accentColor,
+                color: RedColors,
                 size: 35,
               ),
               onPressed: () {

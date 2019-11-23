@@ -60,7 +60,7 @@ class _CartActivityState extends State<CartActivity> {
     List shoppingList = AppState.of(context).shoppingCart;
     return Scaffold(
       drawer: AppDrawer(),
-      appBar: AppBar(title: Text('Shopping cart list'), actions: <Widget>[
+      appBar: AppBar(title: Text('Groceries'), actions: <Widget>[
         PopupMenuButton(
           icon: Icon(
             Icons.more_horiz,
@@ -151,7 +151,7 @@ class _CartActivityState extends State<CartActivity> {
                       );
                     },
                   )
-                : EmptyListTitle('Shopping Cart',
+                : EmptyListTitle('Groceries',
                     'Add all your ingredients of your recipes here');
           })),
           AdmobBanner(
@@ -163,17 +163,3 @@ class _CartActivityState extends State<CartActivity> {
     );
   }
 }
-
-// String getBannerAdUnitId() {
-//   return apikeys["addMobBanner"];
-// }
-
-// AdmobInterstitial interstitialAd = AdmobInterstitial(
-//   adUnitId: getInterstitialAdUnitId(),
-// );
-
-// getInterstitialAdUnitId() {
-//   return apikeys["addMobInterstellar"];
-// }
-
-// int _counter = 0;

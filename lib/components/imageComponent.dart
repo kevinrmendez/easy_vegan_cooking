@@ -170,6 +170,10 @@ class ImageComponentState extends State<ImageComponent> {
                                 ],
                               ),
                             ),
+                            AdmobBanner(
+                              adUnitId: getBannerAdUnitId(),
+                              adSize: AdmobBannerSize.BANNER,
+                            ),
                             IngredientList(
                               ingredientData: widget.recipe.ingredients,
                             ),
@@ -235,10 +239,13 @@ class ImageComponentState extends State<ImageComponent> {
                             RecipesSuggestions(
                                 labels: widget.recipe.labels,
                                 currentRecipe: widget.recipe),
-                            AdmobBanner(
-                              adUnitId: getBannerAdUnitId(),
-                              adSize: AdmobBannerSize.BANNER,
-                            ),
+                            SizedBox(
+                              height: 70,
+                            )
+                            // AdmobBanner(
+                            //   adUnitId: getBannerAdUnitId(),
+                            //   adSize: AdmobBannerSize.BANNER,
+                            // ),
                           ],
                         ),
                       ));
@@ -458,7 +465,7 @@ class _IngredientListState extends State<IngredientList> {
                       MaterialPageRoute(builder: (context) => CartActivity()),
                     );
                   },
-                  child: Text('ingredients added to shopping cart')),
+                  child: Text('ingredients added to groceries list')),
               backgroundColor: AccentColor,
             );
             Scaffold.of(context).showSnackBar(snackBar);

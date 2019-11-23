@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
+import 'package:easy_vegan_cooking/components/MyGridTile.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
@@ -45,6 +46,7 @@ class GridActivity extends StatefulWidget {
 class _GridActivityState extends State<GridActivity> {
   DatabaseReference recipesRef;
   StreamSubscription _recipesSubscription;
+  List<Recipe> recipeList = [];
 
   // bool isDatabaseNotEmpty;
 
@@ -62,6 +64,7 @@ class _GridActivityState extends State<GridActivity> {
   @override
   void initState() {
     recipesRef = FirebaseDatabase.instance.reference();
+
     // recipesRef.once().then((snapshot) {
     //   if (snapshot.value != null) {
     //     isDatabaseNotEmpty = true;
@@ -138,155 +141,9 @@ class _GridActivityState extends State<GridActivity> {
                   Animation<double> animation, int index) {
                 Recipe recipe = _recipeBuilder(snapshot.value);
                 return recipe.category == widget.category
-                    ? SizeTransition(
-                        sizeFactor: animation,
-                        // child: GridTile(child: Text(snapshot.value["title"])),
-                        child: Container(
-                          // decoration: ,
-                          margin: EdgeInsets.symmetric(vertical: 5),
-                          height: MediaQuery.of(context).size.height * .4,
-                          width: MediaQuery.of(context).size.width,
-                          child: GestureDetector(
-                            onTap: () {
-                              showAd();
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => ImageActivity(
-                                          recipe: recipe,
-                                        )),
-                              );
-                            },
-                            child:
-                                // Stack(
-                                //     alignment: AlignmentDirectional.bottomEnd,
-                                //     fit: StackFit.loose,
-                                //     children: <Widget>[
-                                //       CachedNetworkImage(
-                                //         imageBuilder: (context, imageProvider) =>
-                                //             Container(
-                                //           decoration: BoxDecoration(
-                                //               image: DecorationImage(
-                                //                   image: imageProvider,
-                                //                   fit: BoxFit.cover)),
-                                //         ),
-                                //         imageUrl: recipe.image,
-                                //         placeholder: (context, url) => Container(
-                                //           width: MediaQuery.of(context).size.width,
-                                //           color: GreyColor,
-                                //           // constraints: BoxConstraints(maxHeight: 30, maxWidth: 30),
-                                //           child: Column(
-                                //             mainAxisAlignment:
-                                //                 MainAxisAlignment.center,
-                                //             children: <Widget>[
-                                //               SizedBox(
-                                //                   height: 40,
-                                //                   width: 40,
-                                //                   child:
-                                //                       new CircularProgressIndicator()),
-                                //             ],
-                                //           ),
-                                //         ),
-                                //         errorWidget: (context, url, error) =>
-                                //             Container(
-                                //                 height: MediaQuery.of(context)
-                                //                     .size
-                                //                     .height,
-                                //                 width: MediaQuery.of(context)
-                                //                     .size
-                                //                     .width,
-                                //                 color: GreyColor,
-                                //                 child: Icon(
-                                //                   Icons.error,
-                                //                   size: 40,
-                                //                   // color: PrimaryColor,
-                                //                 )),
-                                //       ),
-                                //       Container(
-                                //         margin: EdgeInsets.all(10),
-                                //         child: Column(
-                                //           mainAxisAlignment: MainAxisAlignment.end,
-                                //           crossAxisAlignment:
-                                //               CrossAxisAlignment.end,
-                                //           children: <Widget>[
-                                //             _cardDetailText(recipe.title),
-                                //             _cardDetailText("${recipe.time} min")
-                                //           ],
-                                //         ),
-                                //       )
-                                //     ]),
-
-                                Container(
-                              padding: EdgeInsets.symmetric(horizontal: 10),
-                              child: Card(
-                                child: Column(
-                                  children: <Widget>[
-                                    CachedNetworkImage(
-                                      imageBuilder: (context, imageProvider) =>
-                                          Container(
-                                        height:
-                                            MediaQuery.of(context).size.height *
-                                                .31,
-                                        decoration: BoxDecoration(
-                                            image: DecorationImage(
-                                                image: imageProvider,
-                                                fit: BoxFit.cover)),
-                                      ),
-                                      imageUrl: recipe.image,
-                                      placeholder: (context, url) => Container(
-                                        height:
-                                            MediaQuery.of(context).size.height *
-                                                .3,
-                                        width:
-                                            MediaQuery.of(context).size.width *
-                                                .7,
-                                        color: GreyColor,
-                                        // constraints: BoxConstraints(maxHeight: 30, maxWidth: 30),
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: <Widget>[
-                                            SizedBox(
-                                                height: 40,
-                                                width: 40,
-                                                child:
-                                                    new CircularProgressIndicator()),
-                                          ],
-                                        ),
-                                      ),
-                                      errorWidget: (context, url, error) =>
-                                          Container(
-                                              height: MediaQuery.of(context)
-                                                  .size
-                                                  .height,
-                                              width: MediaQuery.of(context)
-                                                  .size
-                                                  .width,
-                                              color: GreyColor,
-                                              child: Icon(
-                                                Icons.error,
-                                                size: 40,
-                                                // color: PrimaryColor,
-                                              )),
-                                    ),
-                                    _cardDetailText(
-                                        recipe.title, FontWeight.bold),
-                                    _cardDetailText(
-                                        "${recipe.time} min", FontWeight.normal)
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-
-                          // Card(
-                          //     child: Column(
-                          //   children: <Widget>[
-                          //     Image.network(snapshot.value["image"]),
-                          //     Text(snapshot.value["title"])
-                          //   ],
-                          // )),
-                        ),
+                    ? MyGridTile(
+                        recipe: recipe,
+                        animation: animation,
                       )
                     : SizedBox();
               },

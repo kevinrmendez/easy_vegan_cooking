@@ -85,7 +85,7 @@ class AppDrawer extends StatelessWidget {
               ),
               ListTile(
                 title: Text(
-                  "Shopping Cart",
+                  "Groceries",
                   // style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 trailing: Icon(

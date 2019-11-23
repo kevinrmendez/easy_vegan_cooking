@@ -1,14 +1,11 @@
 import 'dart:async';
 
-import 'package:easy_vegan_cooking/activity/imageActivity.dart';
 import 'package:easy_vegan_cooking/components/imageComponent.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 
-import 'package:admob_flutter/admob_flutter.dart';
 // import 'package:url_launcher/url_launcher.dart';
 import 'package:firebase_database/firebase_database.dart';
-import '../helpers.dart';
 
 import '../Recipe.dart';
 import '../components/AppDrawer.dart';

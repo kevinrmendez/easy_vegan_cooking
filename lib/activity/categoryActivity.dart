@@ -29,7 +29,7 @@ class CategoryActivity extends StatefulWidget {
 
 class _CategoryActivityState extends State<CategoryActivity> {
   Icon _searchIcon = new Icon(Icons.search);
-  Widget _appBarTitle = new Text('Easy vegan cooking');
+  Widget _appBarTitle = new Text('Easy Vegan Cooking');
   final TextEditingController _filter = new TextEditingController();
 
   String _searchText = "";
@@ -145,7 +145,7 @@ class _CategoryActivityState extends State<CategoryActivity> {
               style: TextStyle(color: PrimaryColor),
             ),
             content: new Text(
-                'Please share use your feedback before leaving the app, we would love hearing from you'),
+                'Please share us your feedback before leaving the app, we would love hearing from you'),
             actions: <Widget>[
               FlatButton(
                 onPressed: () => Navigator.of(context).pop(true),
