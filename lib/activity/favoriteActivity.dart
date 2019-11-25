@@ -1,6 +1,9 @@
+import 'dart:convert';
+
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
+import 'package:easy_vegan_cooking/main.dart';
 import 'package:flutter/material.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
@@ -14,6 +17,7 @@ import '../RecipeModel.dart';
 
 import '../apikeys.dart';
 import 'imageActivity.dart';
+import '../activity/../helpers.dart';
 
 class FavoriteActivity extends StatefulWidget {
   // GridActivity({Key key, this.title}) : super(key: key);
@@ -22,25 +26,51 @@ class FavoriteActivity extends StatefulWidget {
   _FavoriteActivityState createState() => _FavoriteActivityState();
 }
 
-class _FavoriteActivityState extends State<FavoriteActivity> {
-  void _showAd() async {
-    _counter++;
-    if (_counter % 3 == 0) {
-      interstitialAd.load();
-    }
+class _FavoriteActivityState extends State<FavoriteActivity>
+    with WidgetsBindingObserver {
+  List<Recipe> recipes;
+  var localDbrecipes;
+  // void _showAd() async {
+  //   _counter++;
+  //   if (_counter % 3 == 0) {
+  //     interstitialAd.load();
+  //   }
 
-    if (await interstitialAd.isLoaded) {
-      interstitialAd.show();
+  //   if (await interstitialAd.isLoaded) {
+  //     interstitialAd.show();
+  //   }
+  // }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    print('state = $state');
+    if (state == AppLifecycleState.paused) {
+      // recipes.forEach((item) {
+      //   print(item);
+      // });
+      // var json = jsonEncode(recipes.map((e) => e.toJson()).toList());
+      // print('JSON: $json');
+      // storage.setItem('recipes', json);
+      // storage.setItem('name', 'kevin');
+    }
+    if (state == AppLifecycleState.resumed) {
+      // localDbrecipes = storage.getItem('recipes');
+      // var name = storage.getItem('name');
+      // print('NAME: $name');
+      // print('LOCALDBRECIPES: $localDbrecipes');
+      // print('RECIPES: $recipes');
     }
   }
 
   @override
   void initState() {
+    WidgetsBinding.instance.addObserver(this);
     super.initState();
   }
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
 
@@ -57,7 +87,7 @@ class _FavoriteActivityState extends State<FavoriteActivity> {
         children: <Widget>[
           Expanded(child: Consumer<RecipeModel>(
             builder: (context, recipeModel, child) {
-              List<Recipe> recipes = recipeModel.recipes;
+              recipes = recipeModel.recipes;
               return recipes.isNotEmpty
                   ? GridView.count(
                       crossAxisCount: 1,
@@ -106,7 +136,7 @@ class _FavoriteActivityState extends State<FavoriteActivity> {
                               // String url = recipe["image"];
                               // print('URL');
                               // print(url);
-                              _showAd();
+                              showAd();
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(

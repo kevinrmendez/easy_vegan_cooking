@@ -1,6 +1,8 @@
 import 'dart:async';
 
 import 'package:easy_vegan_cooking/components/imageComponent.dart';
+import 'package:easy_vegan_cooking/components/imageComponent2.dart';
+import 'package:easy_vegan_cooking/components/imageComponentParallax.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 
@@ -66,7 +68,8 @@ class _RecipeOfDayActivityState extends State<RecipeOfDayActivity> {
                 itemBuilder: (BuildContext context, DataSnapshot snapshot,
                     Animation<double> animation, int index) {
                   Recipe recipe = _recipeBuilder(snapshot.value);
-                  return ImageComponent(
+                  return ImageComponent2(
+                    // return ImageComponentParallax(
                     recipe: recipe,
                   );
                 },

@@ -8,13 +8,23 @@ import 'package:provider/provider.dart';
 class FavoriteWidget extends StatefulWidget {
   final Recipe recipe;
   final double iconSize;
-  FavoriteWidget({this.recipe, this.iconSize = 10});
+  FavoriteWidget({this.recipe, this.iconSize = 10}) {
+    // _saveData(recipe) async {
+    //   var store = intMapStoreFactory.store('recipes');
+
+    //   await store.add(db, recipe);
+    //   var dbRecipe = await store.count(db);
+    //   print('DBRECIPES $dbRecipe');
+    // }
+    // _saveData(recipe.toMap());
+  }
   @override
   _FavoriteWidgetState createState() => _FavoriteWidgetState();
 }
 
 class _FavoriteWidgetState extends State<FavoriteWidget> {
   bool _isFavorited;
+
   void _toggleFavorite(context) {
     setState(() {
       if (_isFavorited) {

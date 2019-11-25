@@ -1,4 +1,5 @@
 import 'package:easy_vegan_cooking/components/imageComponent.dart';
+import 'package:easy_vegan_cooking/components/imageComponentParallax.dart';
 import 'package:flutter/material.dart';
 // import 'package:swipedetector/swipedetector.dart';
 
@@ -27,7 +28,10 @@ class ImageActivityState extends State<ImageActivity> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Center(
-      child: ImageComponent(
+      // child: ImageComponent(
+      //   recipe: widget.recipe,
+      // ),
+      child: ImageComponentParallax(
         recipe: widget.recipe,
       ),
     ));

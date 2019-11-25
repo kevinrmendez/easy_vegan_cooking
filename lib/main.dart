@@ -27,25 +27,27 @@ import 'package:firebase_database/firebase_database.dart';
 import 'dart:io';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:dio/dio.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import 'package:path/path.dart';
+import 'package:path_provider/path_provider.dart';
 
 const PrimaryColor = const Color(0xFF99cc00);
-// const AccentColor = const Color(0xFFeeb52d);
-// const AccentColor = const Color(0xFFCE424D);
-// // const AccentColor = const Color(0xFFD7D430);
-// const AccentColor = const Color(0xFFC9CC00);
-// const AccentColor = const Color(0xFFE2BE66);
 const AccentColor = const Color(0xFFFF9900);
-// const GreyColor = const Color(0xFFD0D0D0);
-// const GreyColor = const Color(0xFFe6e6e6);
 const GreyColor = const Color(0xFFEEEEEE);
 const RedColors = const Color(0xFFff6961);
 FirebaseApp app;
 var recipesData;
 
+String dbPath;
+Directory directory;
+SharedPreferences prefs;
+
 void main() async {
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   Admob.initialize(getAppId());
+
   runApp(MyApp());
 }
 
@@ -111,17 +113,6 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
     // _showAd();
     print('state = $state');
   }
-
-  // void _showAd() async {
-  //   _counter++;
-  //   if (_counter % 4 == 0) {
-  //     interstitialAd.load();
-  //   }
-
-  //   if (await interstitialAd.isLoaded) {
-  //     interstitialAd.show();
-  //   }
-  // }
 
   _callback(
       {share,

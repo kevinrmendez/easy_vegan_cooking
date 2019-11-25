@@ -9,7 +9,7 @@ class SubtitleWidget extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Text(
         text,
-        style: TextStyle(fontSize: 22),
+        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       ),
     );
   }

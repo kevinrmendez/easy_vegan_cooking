@@ -1,4 +1,5 @@
 import 'package:admob_flutter/admob_flutter.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_vegan_cooking/activity/CartActivity.dart';
 import 'package:easy_vegan_cooking/activity/labelFilterActivity.dart';
 import 'package:easy_vegan_cooking/components/StepWidget.dart';
@@ -8,7 +9,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 
-import 'package:easy_vegan_cooking/components/FoodPicture.dart';
 import 'package:easy_vegan_cooking/components/SubtitleWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
 
@@ -18,15 +18,28 @@ import '../Recipe.dart';
 import 'RecipesSuggestions.dart';
 
 import './../helpers.dart';
+import 'favoriteWidget.dart';
+import 'package:share/share.dart';
 
-class ImageComponent extends StatefulWidget {
-  final Recipe recipe;
-  ImageComponent({this.recipe});
-  @override
-  ImageComponentState createState() => ImageComponentState();
+void _shareRecipe(Recipe recipe) {
+  Share.share("""
+         Hi, 
+         I would like to share you this delicious easy vegan recipe: ${recipe.title},
+         you can read the full recipe from the app:
+          https://play.google.com/store/apps/details?id=com.kevinrmendez.easy.vegan.cooking  
+         """);
 }
 
-class ImageComponentState extends State<ImageComponent> {
+class ImageComponentParallax extends StatefulWidget {
+  final Recipe recipe;
+  ImageComponentParallax({this.recipe});
+  @override
+  ImageComponentParallaxState createState() => ImageComponentParallaxState();
+}
+
+class ImageComponentParallaxState extends State<ImageComponentParallax> {
+  ScrollController _controller = ScrollController();
+
   int index;
   List<Ingredient> ingredientList = List();
 
@@ -92,6 +105,187 @@ class ImageComponentState extends State<ImageComponent> {
 
   @override
   Widget build(BuildContext context) {
+    return NestedScrollView(
+      headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+        return <Widget>[
+          SliverAppBar(
+            expandedHeight: MediaQuery.of(context).size.height * .5,
+            floating: true,
+            pinned: true,
+            backgroundColor: Color.fromRGBO(255, 255, 255, 0),
+            bottom: PreferredSize(
+              preferredSize: Size.fromHeight(0),
+              child: SizedBox(),
+            ),
+
+            // backgroundColor: Color.fromRGBO(255, 255, 255, 0),
+            flexibleSpace: FlexibleSpaceBar(
+                centerTitle: true,
+                title: Text(''),
+                // Container(
+                //   // constraints: BoxConstraints(maxWidth: 200),
+                //   child: Container(
+                //     width: MediaQuery.of(context).size.width,
+                //     color: Color.fromRGBO(153, 204, 0, 0.5),
+                //     child: Text(widget.recipe.title,
+                //         textAlign: TextAlign.center,
+                //         style: TextStyle(
+                //             color: Colors.white,
+                //             fontSize: 16.0,
+                //             fontWeight: FontWeight.bold)),
+                //   ),
+                // ),
+                background: FoodPictureParallax(
+                  recipe: widget.recipe,
+                )),
+          ),
+        ];
+      },
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            AdmobBanner(
+              adUnitId: getBannerAdUnitId(),
+              adSize: AdmobBannerSize.BANNER,
+            ),
+            Container(
+              margin: EdgeInsetsDirectional.only(top: 8),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Flexible(
+                    child: Container(
+                        child: Text(
+                      widget.recipe.title,
+                      textAlign: TextAlign.center,
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    )),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsetsDirectional.only(top: 8),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  // Flexible(
+                  //   child: Container(
+                  //       child: Text(
+                  //     widget.recipe.title,
+                  //     textAlign: TextAlign.center,
+                  //     style:
+                  //         TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  //   )),
+                  // ),
+
+                  FavoriteWidget(recipe: widget.recipe, iconSize: 35.0),
+                  IconButton(
+                    icon: Icon(
+                      Icons.share,
+                      // color: Theme.of(context).accentColor,
+                      color: RedColors,
+                      size: 35,
+                    ),
+                    onPressed: () {
+                      _shareRecipe(widget.recipe);
+                      print('share');
+                    },
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      _recipeDetail('Cooks in:',
+                          ' ${widget.recipe.time} minutes', Icons.access_time),
+                      _recipeDetail('Serves:', '${widget.recipe.serves}',
+                          FontAwesomeIcons.utensils),
+                      _recipeDetail(
+                          'Difficulty: ',
+                          '${widget.recipe.difficulty}',
+                          FontAwesomeIcons.brain),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            IngredientList(
+              ingredientData: widget.recipe.ingredients,
+            ),
+            Card(
+              child: Column(
+                children: <Widget>[
+                  SubtitleWidget("Instructions"),
+                  Column(
+                    children: steps(widget.recipe.steps),
+                  ),
+                ],
+              ),
+            ),
+            widget.recipe.suggestions != null && widget.recipe.suggestions != ""
+                ? Card(
+                    child: _contentMargin(children: [
+                    SubtitleWidget(
+                      "Chef's Suggestions",
+                    ),
+                    Text(widget.recipe.suggestions),
+                  ]))
+                : SizedBox(),
+            widget.recipe.nutrition != null
+                ? Card(
+                    child: Container(
+                      margin: EdgeInsets.all(20),
+                      width: MediaQuery.of(context).size.width,
+                      child: Column(
+                        children: [
+                          SubtitleWidget('Nutritional value'),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            // children: <Widget>[
+                            //   Text(
+                            //       "Carbs: ${widget.recipe.nutrition["carbs"]}"),
+                            //   Text(
+                            //       "Fat: ${widget.recipe.nutrition["fat"]}"),
+                            //   Text(
+                            //       "Protein: ${widget.recipe.nutrition["protein"]}"),
+                            // ],
+                            children:
+                                _buildNutritionInfo(widget.recipe.nutrition),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
+                : SizedBox(),
+            Card(
+                child: _contentMargin(children: [
+              SubtitleWidget('Related tags'),
+              Wrap(
+                spacing: 8.0,
+                runSpacing: 4.0,
+                children: labels(widget.recipe.labels),
+              ),
+            ])),
+            SubtitleWidget(
+              "You may also like",
+            ),
+            RecipesSuggestions(
+                labels: widget.recipe.labels, currentRecipe: widget.recipe),
+            SizedBox(
+              height: 70,
+            )
+          ],
+        ),
+      ),
+    );
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -116,12 +310,13 @@ class ImageComponentState extends State<ImageComponent> {
                   return Container(
                       height: MediaQuery.of(context).size.height,
                       child: SingleChildScrollView(
+                        controller: _controller,
                         child: Column(
                           children: <Widget>[
                             Card(
                               child: Column(
                                 children: <Widget>[
-                                  FoodPicture(recipe: widget.recipe),
+                                  FoodPictureParallax(recipe: widget.recipe),
                                   Container(
                                     margin: EdgeInsetsDirectional.only(top: 8),
                                     child: Row(
@@ -462,6 +657,102 @@ class _IngredientListState extends State<IngredientList> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class FoodPictureParallax extends StatefulWidget {
+  final Recipe recipe;
+  FoodPictureParallax({this.recipe});
+  @override
+  _FoodPictureParallaxState createState() => _FoodPictureParallaxState();
+}
+
+class _FoodPictureParallaxState extends State<FoodPictureParallax> {
+  // bool _isFavorited;
+  // void _toggleFavorite(context) {
+  //   AppState appState = AppState.of(context);
+
+  //   setState(() {
+  //     if (_isFavorited) {
+  //       widget.recipe.isFavorite = false;
+  //       _isFavorited = false;
+  //       appState.callback(recipe: widget.recipe);
+  //     } else {
+  //       widget.recipe.isFavorite = true;
+
+  //       _isFavorited = true;
+  //       appState.callback(recipe: widget.recipe);
+  //     }
+  //   });
+  // }
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // AppState appState = AppState.of(context);
+    return Stack(
+      alignment: AlignmentDirectional.topStart,
+      fit: StackFit.loose,
+      children: <Widget>[
+        Container(
+          height: MediaQuery.of(context).size.height * .6,
+          child: CachedNetworkImage(
+            imageBuilder: (context, imageProvider) => Container(
+              decoration: BoxDecoration(
+                  image:
+                      DecorationImage(image: imageProvider, fit: BoxFit.cover)),
+            ),
+            imageUrl: widget.recipe.image,
+            placeholder: (context, url) => Container(
+              width: MediaQuery.of(context).size.height,
+              color: GreyColor,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  SizedBox(
+                      height: 40,
+                      width: 40,
+                      child: new CircularProgressIndicator()),
+                ],
+              ),
+            ),
+            errorWidget: (context, url, error) => Container(
+                width: MediaQuery.of(context).size.width,
+                color: GreyColor,
+                child: Icon(
+                  Icons.error,
+                  size: 40,
+                  // color: PrimaryColor,
+                )),
+          ),
+        ),
+        // Row(
+        //   mainAxisAlignment: MainAxisAlignment.end,
+        //   children: <Widget>[
+        //     IconButton(
+        //       icon: Icon(
+        //         Icons.share,
+        //         // color: Theme.of(context).accentColor,
+        //         color: RedColors,
+        //         size: 35,
+        //       ),
+        //       onPressed: () {
+        //         _shareRecipe(widget.recipe);
+        //         print('share');
+        //       },
+        //     ),
+        //     FavoriteWidget(
+        //       recipe: widget.recipe,
+        //       iconSize: 45,
+        //     ),
+        //   ],
+        // )
+      ],
     );
   }
 }

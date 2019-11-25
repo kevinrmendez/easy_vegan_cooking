@@ -1,4 +1,5 @@
 import 'package:admob_flutter/admob_flutter.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_vegan_cooking/activity/CartActivity.dart';
 import 'package:easy_vegan_cooking/activity/labelFilterActivity.dart';
 import 'package:easy_vegan_cooking/components/StepWidget.dart';
@@ -18,15 +19,26 @@ import '../Recipe.dart';
 import 'RecipesSuggestions.dart';
 
 import './../helpers.dart';
+import 'favoriteWidget.dart';
+import 'package:share/share.dart';
 
-class ImageComponent extends StatefulWidget {
-  final Recipe recipe;
-  ImageComponent({this.recipe});
-  @override
-  ImageComponentState createState() => ImageComponentState();
+void _shareRecipe(Recipe recipe) {
+  Share.share("""
+         Hi, 
+         I would like to share you this delicious easy vegan recipe: ${recipe.title},
+         you can read the full recipe from the app:
+          https://play.google.com/store/apps/details?id=com.kevinrmendez.easy.vegan.cooking  
+         """);
 }
 
-class ImageComponentState extends State<ImageComponent> {
+class ImageComponent2 extends StatefulWidget {
+  final Recipe recipe;
+  ImageComponent2({this.recipe});
+  @override
+  ImageComponent2State createState() => ImageComponent2State();
+}
+
+class ImageComponent2State extends State<ImageComponent2> {
   int index;
   List<Ingredient> ingredientList = List();
 
@@ -121,7 +133,11 @@ class ImageComponentState extends State<ImageComponent> {
                             Card(
                               child: Column(
                                 children: <Widget>[
-                                  FoodPicture(recipe: widget.recipe),
+                                  FoodPicture2(recipe: widget.recipe),
+                                  AdmobBanner(
+                                    adUnitId: getBannerAdUnitId(),
+                                    adSize: AdmobBannerSize.BANNER,
+                                  ),
                                   Container(
                                     margin: EdgeInsetsDirectional.only(top: 8),
                                     child: Row(
@@ -137,6 +153,30 @@ class ImageComponentState extends State<ImageComponent> {
                                                 fontSize: 25,
                                                 fontWeight: FontWeight.bold),
                                           )),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Container(
+                                    margin: EdgeInsetsDirectional.only(top: 8),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: <Widget>[
+                                        FavoriteWidget(
+                                            recipe: widget.recipe,
+                                            iconSize: 35.0),
+                                        IconButton(
+                                          icon: Icon(
+                                            Icons.share,
+                                            // color: Theme.of(context).accentColor,
+                                            color: RedColors,
+                                            size: 35,
+                                          ),
+                                          onPressed: () {
+                                            _shareRecipe(widget.recipe);
+                                            print('share');
+                                          },
                                         ),
                                       ],
                                     ),
@@ -170,10 +210,6 @@ class ImageComponentState extends State<ImageComponent> {
                                   ),
                                 ],
                               ),
-                            ),
-                            AdmobBanner(
-                              adUnitId: getBannerAdUnitId(),
-                              adSize: AdmobBannerSize.BANNER,
                             ),
                             IngredientList(
                               ingredientData: widget.recipe.ingredients,
@@ -462,6 +498,81 @@ class _IngredientListState extends State<IngredientList> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class FoodPicture2 extends StatefulWidget {
+  final Recipe recipe;
+  FoodPicture2({this.recipe});
+  @override
+  _FoodPicture2State createState() => _FoodPicture2State();
+}
+
+class _FoodPicture2State extends State<FoodPicture2> {
+  // bool _isFavorited;
+  // void _toggleFavorite(context) {
+  //   AppState appState = AppState.of(context);
+
+  //   setState(() {
+  //     if (_isFavorited) {
+  //       widget.recipe.isFavorite = false;
+  //       _isFavorited = false;
+  //       appState.callback(recipe: widget.recipe);
+  //     } else {
+  //       widget.recipe.isFavorite = true;
+
+  //       _isFavorited = true;
+  //       appState.callback(recipe: widget.recipe);
+  //     }
+  //   });
+  // }
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // AppState appState = AppState.of(context);
+    return Stack(
+      alignment: AlignmentDirectional.bottomEnd,
+      fit: StackFit.loose,
+      children: <Widget>[
+        Container(
+          height: MediaQuery.of(context).size.height * .5,
+          child: CachedNetworkImage(
+            imageBuilder: (context, imageProvider) => Container(
+              decoration: BoxDecoration(
+                  image:
+                      DecorationImage(image: imageProvider, fit: BoxFit.cover)),
+            ),
+            imageUrl: widget.recipe.image,
+            placeholder: (context, url) => Container(
+              width: MediaQuery.of(context).size.height,
+              color: GreyColor,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  SizedBox(
+                      height: 40,
+                      width: 40,
+                      child: new CircularProgressIndicator()),
+                ],
+              ),
+            ),
+            errorWidget: (context, url, error) => Container(
+                width: MediaQuery.of(context).size.width,
+                color: GreyColor,
+                child: Icon(
+                  Icons.error,
+                  size: 40,
+                  // color: PrimaryColor,
+                )),
+          ),
+        ),
+      ],
     );
   }
 }

@@ -64,6 +64,9 @@ class _GridActivityState extends State<GridActivity> {
   @override
   void initState() {
     recipesRef = FirebaseDatabase.instance.reference();
+    recipesRef.once().then((onValue) {
+      print(onValue);
+    });
 
     // recipesRef.once().then((snapshot) {
     //   if (snapshot.value != null) {

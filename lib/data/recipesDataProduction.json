@@ -629,7 +629,7 @@
       "Peel the beets, carrots and sweet potatoes; then cut them in small pieces (3cm)",
       "Cut the onion in slices",
       "Place all the vegetables in a backing sheets. Drizzle with olive oil.",
-      "Season with salt,pepper amd rosemary",
+      "Season with salt,pepper and rosemary",
       "Roast the vegetables for 45 min until they are tender",
       "For making the dressing  mix  olive oil, mustard, vinegar, honey, salt and some  pepper",
       "Enjoy"
@@ -909,6 +909,62 @@
     ],
     "suggestions": "Add some chili  for some heat",
     "labels": ["hummus", "tortilla", "mexican"],
+    "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FmangoSmoothie.jpg?alt=media&token=ce7cb362-ab87-47c9-a679-2e0abf2d9efa",
+    "title": "Mango Banana Smoothie",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1 ½ cups frozen mango",
+      "1  banana",
+      "¼ cup old-fashioned oats",
+      "1 ½ cups  unsweetened almond milk ",
+      "1/2 cup of orange juice ",
+      "1 tablespoon chia seeds"
+    ],
+    "steps": [
+      "Add all the ingredients in a blender and mix",
+      "add more milk if necessary.",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["mango", "smoothie", "banana"],
+    "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FTofuScramblewithVeggies.jpg?alt=media&token=92907c50-8205-4db7-8c73-8721df724efb",
+    "title": "Tofu Scramble with Veggies",
+    "category": "breakfast",
+    "time": 15,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "250gr firm tofu",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon salt",
+      "1 onion",
+      "2 cloves garlic",
+      "3 tablespoons almond milk",
+      "black pepper",
+      "1/2 red bell pepper",
+      "1/2 zucchini",
+      "1/2 tablespoon olive oil"
+    ],
+    "steps": [
+      "Chop the onion, red bell pepper, zucchini and garlic in small pieces",
+      "Crumble the tofu using a fork or with your hands",
+      "Add olive oil to the frying pan, fry the onion and garlic for few minutes",
+      "Add the zucchini and red bell pepper, cook for some minutes",
+      "Add crumble tofu and almond milk,stir and cook for around 8 minutes",
+      "Season with salt,black pepper and turmeric",
+      "Enjoy"
+    ],
+    "suggestions": "serve with homemade hummus",
+    "labels": ["tofu", "scramble", "breakfast"],
     "nutrition": []
   }
 ]
