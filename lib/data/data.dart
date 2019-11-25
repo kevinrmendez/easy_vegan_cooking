@@ -15,7 +15,7 @@ final categories = [
     "title": "smoothies",
     "image":
         // "https://cdn.pixabay.com/photo/2018/11/11/19/33/fruit-3809523_1280.jpg",
-        "assets/category-images/smoothies2.jpg",
+        "assets/category-images/smoothies.jpg",
   },
   {
     "title": "snacks",
