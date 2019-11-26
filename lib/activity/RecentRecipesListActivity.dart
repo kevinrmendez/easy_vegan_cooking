@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:easy_vegan_cooking/appState.dart';
+import 'package:easy_vegan_cooking/components/GridListComponent.dart';
 import 'package:easy_vegan_cooking/components/MyGridTile.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
@@ -99,28 +100,31 @@ class _RecentRecipesListActivityState extends State<RecentRecipesListActivity> {
       appBar: AppBar(
         title: Text('New vegan recipes'),
       ),
-      body: Column(
-        children: <Widget>[
-          Expanded(
-            child: FirebaseAnimatedList(
-              query: FirebaseDatabase.instance.reference().limitToLast(14),
-              itemBuilder: (BuildContext context, DataSnapshot snapshot,
-                  Animation<double> animation, int index) {
-                Recipe recipe = _recipeBuilder(snapshot.value);
-
-                return MyGridTile(
-                  recipe: recipe,
-                  animation: animation,
-                );
-              },
-            ),
-          ),
-          AdmobBanner(
-            adUnitId: getBannerAdUnitId(),
-            adSize: AdmobBannerSize.BANNER,
-          ),
-        ],
+      body: GridListComponent(
+        listSize: 14,
       ),
+      // body: Column(
+      //   children: <Widget>[
+      //     Expanded(
+      //       child: FirebaseAnimatedList(
+      //         query: FirebaseDatabase.instance.reference().limitToLast(14),
+      //         itemBuilder: (BuildContext context, DataSnapshot snapshot,
+      //             Animation<double> animation, int index) {
+      //           Recipe recipe = _recipeBuilder(snapshot.value);
+
+      //           return MyGridTile(
+      //             recipe: recipe,
+      //             animation: animation,
+      //           );
+      //         },
+      //       ),
+      //     ),
+      //     AdmobBanner(
+      //       adUnitId: getBannerAdUnitId(),
+      //       adSize: AdmobBannerSize.BANNER,
+      //     ),
+      //   ],
+      // ),
     );
   }
 }

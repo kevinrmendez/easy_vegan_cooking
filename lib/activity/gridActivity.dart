@@ -2,11 +2,13 @@ import 'dart:async';
 
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
+import 'package:easy_vegan_cooking/components/GridListComponent.dart';
 import 'package:easy_vegan_cooking/components/MyGridTile.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
+import 'package:connectivity/connectivity.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -46,6 +48,8 @@ class GridActivity extends StatefulWidget {
 class _GridActivityState extends State<GridActivity> {
   DatabaseReference recipesRef;
   StreamSubscription _recipesSubscription;
+  var connectivityResult;
+  var connectivitySubscription;
   List<Recipe> recipeList = [];
 
   // bool isDatabaseNotEmpty;
@@ -60,9 +64,22 @@ class _GridActivityState extends State<GridActivity> {
   //     interstitialAd.show();
   //   }
   // }
+  _checkConnectivity(ConnectivityResult result) async {
+    // connectivityResult = await Connectivity().checkConnectivity();
+    // print('Conectivity: ${connectivityResult == ConnectivityResult.mobile}');
+    setState(() {
+      connectivityResult = result;
+    });
+  }
 
   @override
   void initState() {
+    connectivitySubscription = Connectivity()
+        .onConnectivityChanged
+        .listen((ConnectivityResult result) {
+      print("Connection Status has Changed");
+      _checkConnectivity(result);
+    });
     recipesRef = FirebaseDatabase.instance.reference();
     recipesRef.once().then((onValue) {
       print(onValue);
@@ -84,7 +101,7 @@ class _GridActivityState extends State<GridActivity> {
 
   @override
   void dispose() {
-    _recipesSubscription..cancel();
+    _recipesSubscription.cancel();
     super.dispose();
   }
 
@@ -131,37 +148,16 @@ class _GridActivityState extends State<GridActivity> {
     // });
 
     return Scaffold(
-      drawer: AppDrawer(),
-      appBar: AppBar(
-        title: Text(
-          '${widget.category}',
-          style: TextStyle(fontWeight: FontWeight.bold),
+        drawer: AppDrawer(),
+        appBar: AppBar(
+          title: Text(
+            '${widget.category}',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
-      ),
-      body: Column(
-        children: <Widget>[
-          Expanded(
-            child: FirebaseAnimatedList(
-              query: FirebaseDatabase.instance.reference(),
-              itemBuilder: (BuildContext context, DataSnapshot snapshot,
-                  Animation<double> animation, int index) {
-                Recipe recipe = _recipeBuilder(snapshot.value);
-                return recipe.category == widget.category
-                    ? MyGridTile(
-                        recipe: recipe,
-                        animation: animation,
-                      )
-                    : SizedBox();
-              },
-            ),
-          ),
-          AdmobBanner(
-            adUnitId: getBannerAdUnitId(),
-            adSize: AdmobBannerSize.BANNER,
-          ),
-        ],
-      ),
-    );
+        body: GridListComponent(
+          category: widget.category,
+        ));
   }
 }
 
