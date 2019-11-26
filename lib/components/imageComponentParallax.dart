@@ -155,12 +155,14 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
                 children: <Widget>[
                   Flexible(
                     child: Container(
+                        constraints: BoxConstraints(
+                            maxWidth: MediaQuery.of(context).size.width * .8),
                         child: Text(
-                      widget.recipe.title,
-                      textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                    )),
+                          widget.recipe.title,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: 25, fontWeight: FontWeight.bold),
+                        )),
                   ),
                 ],
               ),

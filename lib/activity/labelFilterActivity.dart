@@ -87,7 +87,10 @@ class _LabelFilterActivityState extends State<LabelFilterActivity> {
     return Scaffold(
       drawer: AppDrawer(),
       appBar: AppBar(
-        title: Text('#${widget.label} recipes'),
+        title: Text(
+          '#${widget.label} recipes',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
       ),
       body: Column(
         children: <Widget>[
@@ -173,7 +176,11 @@ class _LabelFilterActivityState extends State<LabelFilterActivity> {
                                                   child: Icon(Icons.error)),
                                         ),
                                         footer: GridTileBar(
-                                          title: Text(recipe.title),
+                                          backgroundColor:
+                                              Color.fromRGBO(0, 0, 0, 0.3),
+                                          title: Text(
+                                            recipe.title,
+                                          ),
                                           subtitle: Text(" ${recipe.time} min"),
                                         ),
                                       ),

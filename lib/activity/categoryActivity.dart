@@ -29,7 +29,10 @@ class CategoryActivity extends StatefulWidget {
 
 class _CategoryActivityState extends State<CategoryActivity> {
   Icon _searchIcon = new Icon(Icons.search);
-  Widget _appBarTitle = new Text('Easy Vegan Cooking');
+  Widget _appBarTitle = new Text(
+    'Easy Vegan Cooking',
+    style: TextStyle(fontWeight: FontWeight.bold),
+  );
   final TextEditingController _filter = new TextEditingController();
 
   String _searchText = "";
@@ -103,7 +106,8 @@ class _CategoryActivityState extends State<CategoryActivity> {
           Icons.search,
           color: Colors.white,
         );
-        this._appBarTitle = new Text('Easy Vegan Cooking');
+        this._appBarTitle = new Text('Easy Vegan Cooking',
+            style: TextStyle(fontWeight: FontWeight.bold));
         // filteredNames = names;
         _filter.clear();
       }
@@ -193,20 +197,24 @@ class _CategoryActivityState extends State<CategoryActivity> {
                   crossAxisSpacing: 4.0,
                   children: categories.map((Map category) {
                     return GestureDetector(
-                        child: GridTile(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                  image: AssetImage(
-                                    category["image"],
-                                  ),
-                                  fit: BoxFit.cover),
+                        child: Container(
+                          child: GridTile(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                    image: AssetImage(
+                                      category["image"],
+                                    ),
+                                    fit: BoxFit.cover),
+                              ),
                             ),
-                          ),
-                          footer: GridTileBar(
-                            title: Text(
-                              category["title"],
-                              style: TextStyle(fontSize: 20),
+                            footer: GridTileBar(
+                              backgroundColor: Color.fromRGBO(0, 0, 0, 0.3),
+                              title: Text(
+                                category["title"],
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),
                         ),
@@ -225,10 +233,10 @@ class _CategoryActivityState extends State<CategoryActivity> {
                         });
                   }).toList()),
             ),
-            AdmobBanner(
-              adUnitId: getBannerAdUnitId(),
-              adSize: AdmobBannerSize.BANNER,
-            ),
+            // AdmobBanner(
+            //   adUnitId: getBannerAdUnitId(),
+            //   adSize: AdmobBannerSize.BANNER,
+            // ),
           ],
         ),
       ),

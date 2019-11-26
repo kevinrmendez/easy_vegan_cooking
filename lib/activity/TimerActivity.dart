@@ -121,7 +121,7 @@ class _TimerActivityState extends State<TimerActivity> {
     return Scaffold(
       drawer: AppDrawer(),
       appBar: AppBar(
-        title: Text('Favorite vegan recipes'),
+        title: Text('Timer'),
       ),
       body: Center(
         child: Container(

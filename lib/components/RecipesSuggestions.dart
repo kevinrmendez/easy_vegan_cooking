@@ -188,8 +188,13 @@ class _RecipesSuggestionsState extends State<RecipesSuggestions> {
                                         ),
                                       ),
                                       Container(
+                                        padding: EdgeInsets.all(4),
+                                        color: Color.fromRGBO(0, 0, 0, 0.3),
                                         margin: EdgeInsets.all(10),
                                         child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.end,
+                                          mainAxisSize: MainAxisSize.min,
                                           children: <Widget>[
                                             Text(
                                               recipe.title,
@@ -197,6 +202,7 @@ class _RecipesSuggestionsState extends State<RecipesSuggestions> {
                                                   color: Colors.white),
                                             ),
                                             Text(" ${recipe.time} min",
+                                                textAlign: TextAlign.right,
                                                 style: TextStyle(
                                                     color: Colors.white))
                                           ],

@@ -966,5 +966,48 @@
     "suggestions": "serve with homemade hummus",
     "labels": ["tofu", "scramble", "breakfast"],
     "nutrition": []
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FHorseBeanHummusTaco.jpg?alt=media&token=ee34f592-7e00-44af-987d-92d7c0a38001",
+    "title": "Horse Bean Hummus Taco",
+    "category": "meals",
+    "time": 30,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "250gr minced horse bean or other mock meat",
+      "1 small onion",
+      "2 kale leaves",
+      "2 cloves garlic",
+      "2 tablespoons of fresh cilantro",
+      "1/2 lime juice",
+      "1/2 - 1 teaspoon of salt",
+      "1/2 - 1 teaspoon of smoked red chilli powder",
+      "1/2 tablespoon olive oil",
+      "2 tortillas",
+      "1 avocado",
+      "1 tomato chopped",
+      "1 cup of fresh spinach",
+      "2 tablespoons of hummus"
+    ],
+    "steps": [
+      "Chop the onion, kale and garlic in small pieces;add to frying pan and cook for 2 minutes",
+      "Add minced horse bean to the frying pan and cook for 2 more minutes",
+      "Season with cilantro, salt, smoked chilli powder and lime juice",
+      "Cut the avocado, tomato and spinach in small slices",
+      "Warm the tortillas for 15 seconds in microwave or frying pan",
+      "Add the minced horse bean, chopped vegetables and hummus on the tortilla ",
+      "Enjoy"
+    ],
+    "suggestions": "serve with chilli sauce, fresh cilantro and lime",
+    "labels": [
+      "taco",
+      "horse bean",
+      "hummus",
+      "chilli",
+      "mexican food",
+      "tortilla"
+    ],
+    "nutrition": []
   }
 ]

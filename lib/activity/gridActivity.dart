@@ -133,7 +133,10 @@ class _GridActivityState extends State<GridActivity> {
     return Scaffold(
       drawer: AppDrawer(),
       appBar: AppBar(
-        title: Text('${widget.category}'),
+        title: Text(
+          '${widget.category}',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
       ),
       body: Column(
         children: <Widget>[

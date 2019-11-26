@@ -171,8 +171,9 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
               fontFamily: 'Montserrat',
               primaryColor: PrimaryColor,
               accentColor: AccentColor,
-              primaryTextTheme:
-                  TextTheme(title: TextStyle(color: Colors.white)),
+              primaryTextTheme: TextTheme(
+                  title: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold)),
               primarySwatch: Colors.blueGrey,
             ),
             supportedLocales: [
