@@ -143,8 +143,10 @@ class _GridListComponentState extends State<GridListComponent> {
           : Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                EmptyListTitle('No internet',
-                    'Check your internet connection and try again :)'),
+                connectivityResult == null
+                    ? CircularProgressIndicator()
+                    : EmptyListTitle('No internet',
+                        'Check your internet connection and try again :)'),
               ],
             ),
     );

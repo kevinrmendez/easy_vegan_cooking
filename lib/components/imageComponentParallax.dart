@@ -480,7 +480,7 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
         children: <Widget>[
           Icon(
             icon,
-            size: 11,
+            size: 13,
           ),
           _smallText(title, text),
         ],
