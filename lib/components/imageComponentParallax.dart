@@ -120,7 +120,6 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
               preferredSize: Size.fromHeight(0),
               child: SizedBox(),
             ),
-            // backgroundColor: Color.fromRGBO(255, 255, 255, 0),
             flexibleSpace: FlexibleSpaceBar(
                 centerTitle: true,
                 collapseMode: CollapseMode.parallax,
@@ -167,16 +166,6 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  // Flexible(
-                  //   child: Container(
-                  //       child: Text(
-                  //     widget.recipe.title,
-                  //     textAlign: TextAlign.center,
-                  //     style:
-                  //         TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                  //   )),
-                  // ),
-
                   FavoriteWidget(recipe: widget.recipe, iconSize: 35.0),
                   IconButton(
                     icon: Icon(
@@ -293,171 +282,6 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
             )
           ],
         ),
-      ),
-    );
-    return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          FutureBuilder(
-            future: http.get(widget.recipe.image),
-            builder:
-                (BuildContext context, AsyncSnapshot<http.Response> snapshot) {
-              switch (snapshot.connectionState) {
-                case ConnectionState.none:
-                  return Text('no connection founded, please try again');
-                case ConnectionState.active:
-                case ConnectionState.waiting:
-                  return Center(
-                      child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      CircularProgressIndicator(),
-                    ],
-                  ));
-                case ConnectionState.done:
-                  return Container(
-                      height: MediaQuery.of(context).size.height,
-                      child: SingleChildScrollView(
-                        controller: _controller,
-                        child: Column(
-                          children: <Widget>[
-                            Card(
-                              child: Column(
-                                children: <Widget>[
-                                  FoodPictureParallax(recipe: widget.recipe),
-                                  Container(
-                                    margin: EdgeInsetsDirectional.only(top: 8),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: <Widget>[
-                                        Flexible(
-                                          child: Container(
-                                              child: Text(
-                                            widget.recipe.title,
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                                fontSize: 25,
-                                                fontWeight: FontWeight.bold),
-                                          )),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Container(
-                                    padding: EdgeInsets.symmetric(vertical: 10),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: <Widget>[
-                                        Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: <Widget>[
-                                            _recipeDetail(
-                                                'Cooks in:',
-                                                ' ${widget.recipe.time} minutes',
-                                                Icons.access_time),
-                                            _recipeDetail(
-                                                'Serves:',
-                                                '${widget.recipe.serves}',
-                                                FontAwesomeIcons.utensils),
-                                            _recipeDetail(
-                                                'Difficulty: ',
-                                                '${widget.recipe.difficulty}',
-                                                FontAwesomeIcons.brain),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            AdmobBanner(
-                              adUnitId: getBannerAdUnitId(),
-                              adSize: AdmobBannerSize.BANNER,
-                            ),
-                            IngredientList(
-                              ingredientData: widget.recipe.ingredients,
-                            ),
-                            Card(
-                              child: Column(
-                                children: <Widget>[
-                                  SubtitleWidget("Instructions"),
-                                  Column(
-                                    children: steps(widget.recipe.steps),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            widget.recipe.suggestions != null &&
-                                    widget.recipe.suggestions != ""
-                                ? Card(
-                                    child: _contentMargin(children: [
-                                    SubtitleWidget(
-                                      "Chef's Suggestions",
-                                    ),
-                                    Text(widget.recipe.suggestions),
-                                  ]))
-                                : SizedBox(),
-                            widget.recipe.nutrition != null
-                                ? Card(
-                                    child: Container(
-                                      margin: EdgeInsets.all(20),
-                                      width: MediaQuery.of(context).size.width,
-                                      child: Column(
-                                        children: [
-                                          SubtitleWidget('Nutritional value'),
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            // children: <Widget>[
-                                            //   Text(
-                                            //       "Carbs: ${widget.recipe.nutrition["carbs"]}"),
-                                            //   Text(
-                                            //       "Fat: ${widget.recipe.nutrition["fat"]}"),
-                                            //   Text(
-                                            //       "Protein: ${widget.recipe.nutrition["protein"]}"),
-                                            // ],
-                                            children: _buildNutritionInfo(
-                                                widget.recipe.nutrition),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  )
-                                : SizedBox(),
-                            Card(
-                                child: _contentMargin(children: [
-                              SubtitleWidget('Related tags'),
-                              Wrap(
-                                spacing: 8.0,
-                                runSpacing: 4.0,
-                                children: labels(widget.recipe.labels),
-                              ),
-                            ])),
-                            SubtitleWidget(
-                              "You may also like",
-                            ),
-                            RecipesSuggestions(
-                                labels: widget.recipe.labels,
-                                currentRecipe: widget.recipe),
-                            SizedBox(
-                              height: 70,
-                            )
-                            // AdmobBanner(
-                            //   adUnitId: getBannerAdUnitId(),
-                            //   adSize: AdmobBannerSize.BANNER,
-                            // ),
-                          ],
-                        ),
-                      ));
-              }
-            },
-          ),
-        ],
       ),
     );
   }

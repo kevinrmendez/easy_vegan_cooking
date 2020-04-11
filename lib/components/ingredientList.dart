@@ -61,7 +61,6 @@ class _IngredientListState extends State<IngredientList> {
           Flexible(
             // fit: FlexFit.loose,
             child: Container(
-              // color: Colors.red,
               width: MediaQuery.of(context).size.width * .8,
               child: Text(
                 item.name,
@@ -100,6 +99,7 @@ class _IngredientListState extends State<IngredientList> {
             Container(
               width: MediaQuery.of(context).size.width,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.min,
                 // mainAxisAlignment: MainAxisAlignment.center,
                 children: ingredientsWidget(ingredientList),
