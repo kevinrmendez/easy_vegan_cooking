@@ -98,6 +98,14 @@ flutter:
         - asset: fonts/Montserrat/Montserrat-Regular.ttf
         - asset: fonts/Montserrat/Montserrat-Bold.ttf
         - weight: 700
+    - family: JosefinSans
+      fonts:
+        - asset: fonts/JosefinSans/JosefinSans-Regular.ttf
+    - family: JosefinSans
+      fonts:
+        - asset: fonts/JosefinSans/JosefinSans-Regular.ttf
+        - asset: fonts/JosefinSans/JosefinSans-Bold.ttf
+        - weight: 700
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
