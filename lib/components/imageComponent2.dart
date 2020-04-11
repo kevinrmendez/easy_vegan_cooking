@@ -267,7 +267,7 @@ class ImageComponent2State extends State<ImageComponent2> {
                                 labels: widget.recipe.labels,
                                 currentRecipe: widget.recipe),
                             SizedBox(
-                              height: 70,
+                              height: 120,
                             )
                             // AdmobBanner(
                             //   adUnitId: getBannerAdUnitId(),
