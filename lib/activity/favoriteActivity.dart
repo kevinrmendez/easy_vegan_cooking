@@ -81,7 +81,7 @@ class _FavoriteActivityState extends State<FavoriteActivity>
     return Scaffold(
       drawer: AppDrawer(),
       appBar: AppBar(
-        title: Text('Favorite vegan recipes'),
+        title: Text('Favorite recipes'),
       ),
       body: Column(
         children: <Widget>[

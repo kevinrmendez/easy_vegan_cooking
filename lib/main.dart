@@ -174,7 +174,9 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
               accentColor: AccentColor,
               primaryTextTheme: TextTheme(
                   title: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold)),
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22)),
               primarySwatch: Colors.blueGrey,
             ),
             supportedLocales: [

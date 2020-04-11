@@ -24,7 +24,7 @@ class MyGridTile extends StatelessWidget {
     Widget _cardDetailText(text, fontWeight) {
       return Flexible(
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 10),
+          padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
           width: MediaQuery.of(context).size.width,
           child: Text(
             text,
