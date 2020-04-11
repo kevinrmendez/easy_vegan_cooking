@@ -40,6 +40,12 @@ final categories = [
     "image":
         // "https://images.unsplash.com/photo-1556386470-bcdc6a5e9b9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=336&q=80",
         "assets/category-images/salads.jpg",
+  },
+  {
+    "title": "dinner",
+    "image":
+        // "https://images.unsplash.com/photo-1556386470-bcdc6a5e9b9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=336&q=80",
+        "assets/category-images/dinner.jpg",
   }
 ];
 final data = [
