@@ -25,38 +25,41 @@ class _IngredientListState extends State<IngredientList> {
     ingredientList.forEach((item) {
       var row = Row(
         children: <Widget>[
-          Checkbox(
-            value: item.isChecked,
-            onChanged: (value) {
-              setState(() {
-                item.isChecked = value;
-                if (item.isChecked) {
-                  Provider.of<CartModel>(context, listen: false).add(item);
-                  WidgetUtils.showSnackBar(
-                      context: context,
-                      message: 'ingredient added to groceries list',
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => CartActivity()),
-                        );
-                      });
-                } else {
-                  Provider.of<CartModel>(context, listen: false).remove(item);
-                  WidgetUtils.showSnackBar(
-                      context: context,
-                      message: 'ingredient removed from groceries list',
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => CartActivity()),
-                        );
-                      });
-                }
-              });
-            },
+          Container(
+            height: 35,
+            child: Checkbox(
+              value: item.isChecked,
+              onChanged: (value) {
+                setState(() {
+                  item.isChecked = value;
+                  if (item.isChecked) {
+                    Provider.of<CartModel>(context, listen: false).add(item);
+                    WidgetUtils.showSnackBar(
+                        context: context,
+                        message: 'ingredient added to groceries list',
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => CartActivity()),
+                          );
+                        });
+                  } else {
+                    Provider.of<CartModel>(context, listen: false).remove(item);
+                    WidgetUtils.showSnackBar(
+                        context: context,
+                        message: 'ingredient removed from groceries list',
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => CartActivity()),
+                          );
+                        });
+                  }
+                });
+              },
+            ),
           ),
           Flexible(
             // fit: FlexFit.loose,
