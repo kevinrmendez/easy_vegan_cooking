@@ -29,7 +29,7 @@ class MyGridTile extends StatelessWidget {
         child: Text(
           text,
           textAlign: TextAlign.right,
-          style: TextStyle(fontSize: 17, fontWeight: fontWeight),
+          style: TextStyle(fontSize: 16, fontWeight: fontWeight),
         ),
       );
     }
