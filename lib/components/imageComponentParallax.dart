@@ -119,11 +119,20 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
               preferredSize: Size.fromHeight(0),
               child: SizedBox(),
             ),
-
             // backgroundColor: Color.fromRGBO(255, 255, 255, 0),
             flexibleSpace: FlexibleSpaceBar(
                 centerTitle: true,
-                title: Text(''),
+                collapseMode: CollapseMode.parallax,
+                title: SizedBox(),
+                // Container(
+                //     padding: EdgeInsets.all(10),
+                //     width: MediaQuery.of(context).size.width * .7,
+                //     color: PrimaryColor,
+                //     child: Text(
+                //       widget.recipe.title,
+                //       style: TextStyle(fontSize: 20),
+                //       textAlign: TextAlign.center,
+                //     )),
                 // Container(
                 //   // constraints: BoxConstraints(maxWidth: 200),
                 //   child: Container(
@@ -210,9 +219,16 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
             Card(
               child: Column(
                 children: <Widget>[
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Icon(FontAwesomeIcons.book),
                   SubtitleWidget("Instructions"),
                   Column(
                     children: steps(widget.recipe.steps),
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                 ],
               ),
@@ -220,6 +236,7 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
             widget.recipe.suggestions != null && widget.recipe.suggestions != ""
                 ? Card(
                     child: _contentMargin(children: [
+                    Icon(FontAwesomeIcons.leaf),
                     SubtitleWidget(
                       "Chef's Suggestions",
                     ),
@@ -254,6 +271,10 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
                 : SizedBox(),
             Card(
                 child: _contentMargin(children: [
+              Icon(
+                FontAwesomeIcons.hashtag,
+                color: Colors.black,
+              ),
               SubtitleWidget('Related tags'),
               Wrap(
                 spacing: 8.0,
@@ -517,24 +538,6 @@ class FoodPictureParallax extends StatefulWidget {
 }
 
 class _FoodPictureParallaxState extends State<FoodPictureParallax> {
-  // bool _isFavorited;
-  // void _toggleFavorite(context) {
-  //   AppState appState = AppState.of(context);
-
-  //   setState(() {
-  //     if (_isFavorited) {
-  //       widget.recipe.isFavorite = false;
-  //       _isFavorited = false;
-  //       appState.callback(recipe: widget.recipe);
-  //     } else {
-  //       widget.recipe.isFavorite = true;
-
-  //       _isFavorited = true;
-  //       appState.callback(recipe: widget.recipe);
-  //     }
-  //   });
-  // }
-
   @override
   void initState() {
     super.initState();
@@ -579,27 +582,6 @@ class _FoodPictureParallaxState extends State<FoodPictureParallax> {
                 )),
           ),
         ),
-        // Row(
-        //   mainAxisAlignment: MainAxisAlignment.end,
-        //   children: <Widget>[
-        //     IconButton(
-        //       icon: Icon(
-        //         Icons.share,
-        //         // color: Theme.of(context).accentColor,
-        //         color: RedColors,
-        //         size: 35,
-        //       ),
-        //       onPressed: () {
-        //         _shareRecipe(widget.recipe);
-        //         print('share');
-        //       },
-        //     ),
-        //     FavoriteWidget(
-        //       recipe: widget.recipe,
-        //       iconSize: 45,
-        //     ),
-        //   ],
-        // )
       ],
     );
   }

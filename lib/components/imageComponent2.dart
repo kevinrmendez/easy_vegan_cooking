@@ -204,6 +204,7 @@ class ImageComponent2State extends State<ImageComponent2> {
                             Card(
                               child: Column(
                                 children: <Widget>[
+                                  Icon(FontAwesomeIcons.lemon),
                                   SubtitleWidget("Instructions"),
                                   Column(
                                     children: steps(widget.recipe.steps),
@@ -215,6 +216,7 @@ class ImageComponent2State extends State<ImageComponent2> {
                                     widget.recipe.suggestions != ""
                                 ? Card(
                                     child: _contentMargin(children: [
+                                    Icon(FontAwesomeIcons.leaf),
                                     SubtitleWidget(
                                       "Chef's Suggestions",
                                     ),
@@ -250,6 +252,7 @@ class ImageComponent2State extends State<ImageComponent2> {
                                 : SizedBox(),
                             Card(
                                 child: _contentMargin(children: [
+                              Icon(FontAwesomeIcons.hashtag),
                               SubtitleWidget('Related tags'),
                               Wrap(
                                 spacing: 8.0,

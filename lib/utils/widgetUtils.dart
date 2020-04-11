@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../main.dart';
+
 class WidgetUtils {
   static Widget recipeTitle({String text = "", BuildContext context}) {
     return Container(
@@ -20,5 +22,14 @@ class WidgetUtils {
         ],
       ),
     );
+  }
+
+  static showSnackBar({BuildContext context, String message, Function onTap}) {
+    final snackBar = SnackBar(
+      duration: Duration(seconds: 5),
+      content: GestureDetector(onTap: onTap, child: Text(message)),
+      backgroundColor: AccentColor,
+    );
+    Scaffold.of(context).showSnackBar(snackBar);
   }
 }

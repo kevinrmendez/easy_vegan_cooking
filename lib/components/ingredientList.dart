@@ -1,5 +1,7 @@
 import 'package:easy_vegan_cooking/activity/CartActivity.dart';
+import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
 import '../CartModel.dart';
@@ -17,7 +19,6 @@ class IngredientList extends StatefulWidget {
 
 class _IngredientListState extends State<IngredientList> {
   List<Ingredient> ingredientList = [];
-  bool isShoppingCartEmpty;
   List<Widget> ingredientsWidget(List<Ingredient> ingredients) {
     List<Widget> list = List();
 
@@ -32,6 +33,32 @@ class _IngredientListState extends State<IngredientList> {
                 onChanged: (value) {
                   setState(() {
                     item.isChecked = value;
+                    if (item.isChecked) {
+                      Provider.of<CartModel>(context, listen: false).add(item);
+                      WidgetUtils.showSnackBar(
+                          context: context,
+                          message: 'ingredient added to groceries list',
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => CartActivity()),
+                            );
+                          });
+                    } else {
+                      Provider.of<CartModel>(context, listen: false)
+                          .remove(item);
+                      WidgetUtils.showSnackBar(
+                          context: context,
+                          message: 'ingredient removed from groceries list',
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => CartActivity()),
+                            );
+                          });
+                    }
                   });
                 },
               ),
@@ -54,55 +81,12 @@ class _IngredientListState extends State<IngredientList> {
     return list;
   }
 
-  Container shoppingCartButton(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: 15),
-      decoration: BoxDecoration(
-          color: PrimaryColor,
-          borderRadius: BorderRadius.all(Radius.circular(50))),
-      child: IconButton(
-        icon: Icon(Icons.shopping_cart),
-        color:
-            // Theme.of(context).primaryColor,
-            Colors.white,
-        onPressed: () {
-          ingredientList.forEach((ingredient) {
-            if (ingredient.isChecked) {
-              Provider.of<CartModel>(context, listen: false).add(ingredient);
-              setState(() {
-                ingredient.isChecked = false;
-                isShoppingCartEmpty = false;
-              });
-            }
-          });
-          if (!isShoppingCartEmpty) {
-            final snackBar = SnackBar(
-              duration: Duration(seconds: 5),
-              content: GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => CartActivity()),
-                    );
-                  },
-                  child: Text('ingredients added to groceries list')),
-              backgroundColor: AccentColor,
-            );
-            Scaffold.of(context).showSnackBar(snackBar);
-            isShoppingCartEmpty = true;
-          }
-        },
-      ),
-    );
-  }
-
   @override
   void initState() {
     widget.ingredientData.forEach((item) {
       Ingredient ingredient = Ingredient(name: item, isChecked: false);
       ingredientList.add(ingredient);
     });
-    isShoppingCartEmpty = true;
     super.initState();
   }
 
@@ -114,6 +98,7 @@ class _IngredientListState extends State<IngredientList> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
+            Icon(FontAwesomeIcons.lemon),
             SubtitleWidget(
               'Ingredients',
             ),
@@ -127,21 +112,10 @@ class _IngredientListState extends State<IngredientList> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: ingredientsWidget(ingredientList),
                   ),
-                  Positioned(right: 0, child: shoppingCartButton(context)),
+                  // Positioned(right: 0, child: shoppingCartButton(context)),
                 ],
               ),
             ),
-            // Stack(
-            //   fit: StackFit.loose,
-            //   alignment: AlignmentDirectional.topEnd,
-            //   children: <Widget>[
-            //     Column(
-            //       mainAxisSize: MainAxisSize.min,
-            //       mainAxisAlignment: MainAxisAlignment.center,
-            //       children: ingredientsWidget(ingredientList),
-            //     ),
-            //   ],
-            // ),
           ],
         ),
       ),
