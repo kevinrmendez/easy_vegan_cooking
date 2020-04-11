@@ -26,41 +26,43 @@ class _StepWidgetState extends State<StepWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      child: Card(
-          child: Row(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.fromLTRB(5, 0, 10, 0),
-            child: Padding(
-              padding: const EdgeInsets.only(left: 10),
-              child: Text(
-                "${widget.stepNumber}",
-                style: TextStyle(
-                    color: Theme.of(context).primaryColor,
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
-          ),
-          Flexible(
-            child: Container(
-              child: Text(
-                "${widget.step}",
-                // style: TextStyle(fontSize: 17),
-              ),
-            ),
-          ),
-          Opacity(
-              opacity: isChecked ? 1.0 : 0.0,
+      child: Container(
+        padding: EdgeInsets.only(top: 10),
+        child: Row(
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.fromLTRB(5, 0, 10, 0),
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Icon(
-                  Icons.check,
-                  color: AccentColor,
+                padding: const EdgeInsets.only(left: 10),
+                child: Text(
+                  "${widget.stepNumber}",
+                  style: TextStyle(
+                      color: Theme.of(context).primaryColor,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold),
                 ),
-              ))
-        ],
-      )),
+              ),
+            ),
+            Flexible(
+              child: Container(
+                child: Text(
+                  "${widget.step}",
+                  // style: TextStyle(fontSize: 17),
+                ),
+              ),
+            ),
+            Opacity(
+                opacity: isChecked ? 1.0 : 0.0,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Icon(
+                    Icons.check,
+                    color: AccentColor,
+                  ),
+                ))
+          ],
+        ),
+      ),
       onTap: () {
         setState(() {
           isChecked = !isChecked;

@@ -168,6 +168,7 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
             //   // When navigating to the "/second" route, build the SecondScreen widget.
             // },
             theme: ThemeData(
+              textTheme: TextTheme(body1: TextStyle(fontSize: 18)),
               // fontFamily: 'Montserrat',
               fontFamily: 'JosefinSans',
               primaryColor: PrimaryColor,
