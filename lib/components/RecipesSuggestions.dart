@@ -14,8 +14,6 @@ import '../Recipe.dart';
 import '../apikeys.dart';
 import '../components/AppDrawer.dart';
 
-import '../activity/RecipeActivity.dart';
-
 class RecipesSuggestions extends StatefulWidget {
   final List labels;
   final Recipe currentRecipe;

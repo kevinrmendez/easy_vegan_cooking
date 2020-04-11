@@ -21,7 +21,7 @@ import '../apikeys.dart';
 import '../components/AppDrawer.dart';
 
 import 'categoryActivity.dart';
-import 'imageActivity.dart';
+import 'RecipeActivity.dart';
 import '../helpers.dart';
 
 class GridActivity extends StatefulWidget {

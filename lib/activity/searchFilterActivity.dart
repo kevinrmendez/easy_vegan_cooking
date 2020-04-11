@@ -16,7 +16,6 @@ import '../Recipe.dart';
 import '../apikeys.dart';
 import '../components/AppDrawer.dart';
 
-import 'RecipeActivity.dart';
 import '../helpers.dart';
 
 class SearchFilterActivity extends StatefulWidget {

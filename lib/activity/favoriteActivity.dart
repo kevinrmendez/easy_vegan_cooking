@@ -17,7 +17,6 @@ import '../Recipe.dart';
 import '../RecipeModel.dart';
 
 import '../apikeys.dart';
-import 'imageActivity.dart';
 import '../activity/../helpers.dart';
 
 class FavoriteActivity extends StatefulWidget {
@@ -142,7 +141,7 @@ class _FavoriteActivityState extends State<FavoriteActivity>
                         //       Navigator.push(
                         //         context,
                         //         MaterialPageRoute(
-                        //             builder: (context) => ImageActivity(
+                        //             builder: (context) => RecipeActivity(
                         //                   recipe: recipe,
                         //                 )),
                         //       );

@@ -1,4 +1,3 @@
-import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
