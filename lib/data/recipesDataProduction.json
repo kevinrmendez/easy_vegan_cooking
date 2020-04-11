@@ -322,7 +322,7 @@
 			"When the pasta is ready, add it to the frying pan",
 			"Add  pesto, salt and pepper to taste ",
 			"Mix well all the ingredients",
-			"Add parmesan cheese when serving",
+			"Add vegan parmesan cheese when serving",
 			"Enjoy"
 		],
 		"suggestions": "",
@@ -565,7 +565,7 @@
 			"Cut the walnuts in small portions",
 			"For making the dressing  mix  olive oil, mustard, vinegar, maple syrup, salt and some  pepper",
 			"In a large bowl mix the spinach with the dressing",
-			"Then add feta cheese, beetroots and walnuts ",
+			"Then add  beetroots and walnuts ",
 			"Enjoy"
 		],
 		"suggestions": "",
@@ -1246,7 +1246,6 @@
 			"6 cups mixed salad",
 			"black pepper",
 			"salt",
-			"1/3 cup feta cheese crumbles",
 			"2 tablespoons dijon mustard",
 			"6 tablespoons olive oil",
 			"2 tablespoons maple syrup",
@@ -1256,7 +1255,7 @@
 			"Wash and chop and strawberries, onion and salad",
 			"Toast the nuts in a frying pan for 3 minutes",
 			"In a small bowl mix the balsamic vinegar, olive oil, maple syrup, mustard and a pintch of salt",
-			"Serve the salad with  feta cheese,  salad dressing, nuts and black pepper",
+			"Serve with salad dressing, nuts and black pepper",
 			"Enjoy"
 		],
 		"suggestions": "",
@@ -1302,6 +1301,37 @@
 		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FspinachSoup.jpg?alt=media&token=a552687b-a542-4e18-b2d0-aef3ae0eabc1",
 		"title": "Spinach Soup",
 		"category": "soups",
+		"time": 20,
+		"serves": 4,
+		"difficulty": "very easy",
+		"ingredients": [
+			"Salt",
+			"1 1/2 onions",
+			"3 cloves of garlic",
+			"2 cups of vegetable broth",
+			"3 potatoes",
+			"salt",
+			"1 1/2 tbsp olive oil",
+			"black pepper",
+			"250 gr spinach leaves"
+		],
+		"steps": [
+			"Peel and chop in small pieces the onion, garlic and potatoes and wash the spinach leaves",
+			"Heat a pan on medium heat, pour olive oil. Add the onion and garlic, stir now and then",
+			"When the onion is tender, add the spinach leaves until wilted",
+			"Add the vegetable broth and the chopped potatoes and cook for 20 minutes",
+			"Pour the soup in a food mixer and blend the ingredients thoroughly",
+			"Add salt and pepper to taste",
+			"Enjoy"
+		],
+		"suggestions": "serve with homemade chili salsa",
+		"labels": ["tofu", "scramble", "taco", "mexican food"],
+		"nutrition": []
+	},
+	{
+		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FspinachSoup.jpg?alt=media&token=a552687b-a542-4e18-b2d0-aef3ae0eabc1",
+		"title": "Spinach Soup",
+		"category": "dinner",
 		"time": 20,
 		"serves": 4,
 		"difficulty": "very easy",

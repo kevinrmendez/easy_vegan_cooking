@@ -3,6 +3,7 @@ import 'package:easy_vegan_cooking/activity/CartActivity.dart';
 import 'package:easy_vegan_cooking/activity/labelFilterActivity.dart';
 import 'package:easy_vegan_cooking/components/StepWidget.dart';
 import 'package:easy_vegan_cooking/components/ingredientList.dart';
+import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 import 'package:flutter/material.dart';
 // import 'package:swipedetector/swipedetector.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -123,25 +124,8 @@ class ImageComponentState extends State<ImageComponent> {
                               child: Column(
                                 children: <Widget>[
                                   FoodPicture(recipe: widget.recipe),
-                                  Container(
-                                    margin: EdgeInsetsDirectional.only(top: 8),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: <Widget>[
-                                        Flexible(
-                                          child: Container(
-                                              child: Text(
-                                            widget.recipe.title,
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                                fontSize: 25,
-                                                fontWeight: FontWeight.bold),
-                                          )),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
+                                  WidgetUtils.recipeTitle(
+                                      text: widget.recipe.title),
                                   Container(
                                     padding: EdgeInsets.symmetric(vertical: 10),
                                     child: Row(

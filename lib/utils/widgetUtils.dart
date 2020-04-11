@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart';
+
+class WidgetUtils {
+  static Widget recipeTitle({String text = "", BuildContext context}) {
+    return Container(
+      margin: EdgeInsetsDirectional.only(top: 8),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Flexible(
+            child: Container(
+                padding: EdgeInsets.only(top: 10),
+                width: MediaQuery.of(context).size.width * .7,
+                child: Text(
+                  text,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                )),
+          ),
+        ],
+      ),
+    );
+  }
+}

@@ -142,6 +142,9 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
     return AppState(
         share: this.share,
         callback: _callback,
@@ -168,7 +171,8 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
             //   // When navigating to the "/second" route, build the SecondScreen widget.
             // },
             theme: ThemeData(
-              textTheme: TextTheme(body1: TextStyle(fontSize: 18)),
+              textTheme:
+                  TextTheme(body1: TextStyle(fontSize: 18, height: 1.13)),
               // fontFamily: 'Montserrat',
               fontFamily: 'JosefinSans',
               primaryColor: PrimaryColor,

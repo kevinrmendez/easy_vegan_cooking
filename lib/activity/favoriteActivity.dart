@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
+import 'package:easy_vegan_cooking/components/MyGridTile.dart';
 import 'package:easy_vegan_cooking/main.dart';
 import 'package:flutter/material.dart';
 
@@ -85,66 +86,67 @@ class _FavoriteActivityState extends State<FavoriteActivity>
       ),
       body: Column(
         children: <Widget>[
-          Expanded(child: Consumer<RecipeModel>(
+          Flexible(child: Consumer<RecipeModel>(
             builder: (context, recipeModel, child) {
               recipes = recipeModel.recipes;
               return recipes.isNotEmpty
                   ? GridView.count(
                       crossAxisCount: 1,
                       childAspectRatio: 1.0,
-                      padding: const EdgeInsets.all(4.0),
-                      mainAxisSpacing: 4.0,
-                      crossAxisSpacing: 4.0,
+                      // padding: const EdgeInsets.all(4.0),
+                      // mainAxisSpacing: 4.0,
+                      // crossAxisSpacing: 4.0,
                       children: recipes.map((recipe) {
-                        return GestureDetector(
-                            child: GridTile(
-                              child: CachedNetworkImage(
-                                imageBuilder: (context, imageProvider) =>
-                                    Container(
-                                  decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                          image: imageProvider,
-                                          fit: BoxFit.cover)),
-                                ),
-                                imageUrl: recipe.image,
-                                placeholder: (context, url) => Container(
-                                  constraints: BoxConstraints(
-                                      maxHeight: 30, maxWidth: 30),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: <Widget>[
-                                      SizedBox(
-                                          height: 40,
-                                          width: 40,
-                                          child:
-                                              new CircularProgressIndicator()),
-                                    ],
-                                  ),
-                                ),
-                                errorWidget: (context, url, error) =>
-                                    new Icon(Icons.error),
-                              ),
-                              footer: GridTileBar(
-                                title: Text(
-                                  recipe.title,
-                                  style: TextStyle(fontSize: 20),
-                                ),
-                                subtitle: Text("${recipe.time} minutes"),
-                              ),
-                            ),
-                            onTap: () async {
-                              // String url = recipe["image"];
-                              // print('URL');
-                              // print(url);
-                              showAd();
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => ImageActivity(
-                                          recipe: recipe,
-                                        )),
-                              );
-                            });
+                        return MyGridTile(recipe: recipe);
+                        // return GestureDetector(
+                        //     child: GridTile(
+                        //       child: CachedNetworkImage(
+                        //         imageBuilder: (context, imageProvider) =>
+                        //             Container(
+                        //           decoration: BoxDecoration(
+                        //               image: DecorationImage(
+                        //                   image: imageProvider,
+                        //                   fit: BoxFit.cover)),
+                        //         ),
+                        //         imageUrl: recipe.image,
+                        //         placeholder: (context, url) => Container(
+                        //           constraints: BoxConstraints(
+                        //               maxHeight: 30, maxWidth: 30),
+                        //           child: Column(
+                        //             mainAxisAlignment: MainAxisAlignment.center,
+                        //             children: <Widget>[
+                        //               SizedBox(
+                        //                   height: 40,
+                        //                   width: 40,
+                        //                   child:
+                        //                       new CircularProgressIndicator()),
+                        //             ],
+                        //           ),
+                        //         ),
+                        //         errorWidget: (context, url, error) =>
+                        //             new Icon(Icons.error),
+                        //       ),
+                        //       footer: GridTileBar(
+                        //         title: Text(
+                        //           recipe.title,
+                        //           style: TextStyle(fontSize: 20),
+                        //         ),
+                        //         subtitle: Text("${recipe.time} minutes"),
+                        //       ),
+                        //     ),
+                        //     onTap: () async {
+                        //       // String url = recipe["image"];
+                        //       // print('URL');
+                        //       // print(url);
+                        //       showAd();
+                        //       Navigator.push(
+                        //         context,
+                        //         MaterialPageRoute(
+                        //             builder: (context) => ImageActivity(
+                        //                   recipe: recipe,
+                        //                 )),
+                        //       );
+                        //     });
                       }).toList())
                   : EmptyListTitle(
                       'Favorite', 'Add your favorite recipes here');

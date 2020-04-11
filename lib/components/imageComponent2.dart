@@ -3,6 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_vegan_cooking/activity/CartActivity.dart';
 import 'package:easy_vegan_cooking/activity/labelFilterActivity.dart';
 import 'package:easy_vegan_cooking/components/StepWidget.dart';
+import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 import 'package:flutter/material.dart';
 // import 'package:swipedetector/swipedetector.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -140,25 +141,9 @@ class ImageComponent2State extends State<ImageComponent2> {
                                     adUnitId: getBannerAdUnitId(),
                                     adSize: AdmobBannerSize.BANNER,
                                   ),
-                                  Container(
-                                    margin: EdgeInsetsDirectional.only(top: 8),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: <Widget>[
-                                        Flexible(
-                                          child: Container(
-                                              child: Text(
-                                            widget.recipe.title,
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                                fontSize: 25,
-                                                fontWeight: FontWeight.bold),
-                                          )),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
+                                  WidgetUtils.recipeTitle(
+                                      text: widget.recipe.title,
+                                      context: context),
                                   Container(
                                     margin: EdgeInsetsDirectional.only(top: 8),
                                     child: Row(

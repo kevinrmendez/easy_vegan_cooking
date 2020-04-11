@@ -121,13 +121,13 @@ class _GridListComponentState extends State<GridListComponent> {
                       if (widget.category == null) {
                         return MyGridTile(
                           recipe: recipe,
-                          animation: animation,
+                          // animation: animation,
                         );
                       } else {
                         return recipe.category == widget.category
                             ? MyGridTile(
                                 recipe: recipe,
-                                animation: animation,
+                                // animation: animation,
                               )
                             : SizedBox();
                       }

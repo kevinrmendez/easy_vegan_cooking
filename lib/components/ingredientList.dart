@@ -23,9 +23,8 @@ class _IngredientListState extends State<IngredientList> {
 
     ingredientList.forEach((item) {
       var row = Container(
-          // margin: EdgeInsets.symmetric(vertical: 40),
-          // color: Colors.red,
           height: 30,
+          // margin: EdgeInsets.symmetric(vertical: 40),
           child: Row(
             children: <Widget>[
               Checkbox(
@@ -37,11 +36,13 @@ class _IngredientListState extends State<IngredientList> {
                 },
               ),
               Flexible(
-                fit: FlexFit.loose,
+                // fit: FlexFit.loose,
                 child: Container(
+                  // color: Colors.red,
+                  width: MediaQuery.of(context).size.width * .8,
                   child: Text(
                     item.name,
-                    overflow: TextOverflow.visible,
+                    // overflow: TextOverflow.visible,
                     // style: TextStyle(fontSize: 10),
                   ),
                 ),
@@ -111,34 +112,36 @@ class _IngredientListState extends State<IngredientList> {
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 20),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
+            SubtitleWidget(
+              'Ingredients',
+            ),
             Container(
-              height: 50,
               width: MediaQuery.of(context).size.width,
               child: Stack(
+                fit: StackFit.loose,
                 children: <Widget>[
-                  Row(
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      SubtitleWidget(
-                        'Ingredients',
-                      ),
-                    ],
+                    children: ingredientsWidget(ingredientList),
                   ),
                   Positioned(right: 0, child: shoppingCartButton(context)),
                 ],
               ),
             ),
-            Stack(
-              fit: StackFit.loose,
-              alignment: AlignmentDirectional.topEnd,
-              children: <Widget>[
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: ingredientsWidget(ingredientList),
-                ),
-              ],
-            ),
+            // Stack(
+            //   fit: StackFit.loose,
+            //   alignment: AlignmentDirectional.topEnd,
+            //   children: <Widget>[
+            //     Column(
+            //       mainAxisSize: MainAxisSize.min,
+            //       mainAxisAlignment: MainAxisAlignment.center,
+            //       children: ingredientsWidget(ingredientList),
+            //     ),
+            //   ],
+            // ),
           ],
         ),
       ),

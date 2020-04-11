@@ -320,5 +320,5 @@ final data = [
       {"name": "fat", "amount": 40},
       {"name": "calories", "amount": 582}
     ]
-  }
+  },
 ];
