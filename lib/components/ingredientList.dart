@@ -23,10 +23,7 @@ class _IngredientListState extends State<IngredientList> {
     List<Widget> list = List();
 
     ingredientList.forEach((item) {
-      var row = Container(
-          // height: 30,
-          // margin: EdgeInsets.symmetric(vertical: 40),
-          child: Row(
+      var row = Row(
         children: <Widget>[
           Checkbox(
             value: item.isChecked,
@@ -74,7 +71,7 @@ class _IngredientListState extends State<IngredientList> {
             ),
           )
         ],
-      ));
+      );
       list.add(row);
     });
     return list;
@@ -95,7 +92,6 @@ class _IngredientListState extends State<IngredientList> {
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 20),
         child: Column(
-          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Icon(FontAwesomeIcons.lemon),
             SubtitleWidget(
@@ -103,17 +99,12 @@ class _IngredientListState extends State<IngredientList> {
             ),
             Container(
               width: MediaQuery.of(context).size.width,
-              child: Stack(
-                fit: StackFit.loose,
-                children: <Widget>[
-                  Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: ingredientsWidget(ingredientList),
-                  ),
-                  // Positioned(right: 0, child: shoppingCartButton(context)),
-                ],
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                // mainAxisAlignment: MainAxisAlignment.center,
+                children: ingredientsWidget(ingredientList),
               ),
+              // Positioned(right: 0, child: shoppingCartButton(context)),
             ),
           ],
         ),

@@ -38,7 +38,7 @@ class _StepWidgetState extends State<StepWidget> {
                   "${widget.stepNumber}",
                   style: TextStyle(
                       color: Theme.of(context).primaryColor,
-                      fontSize: 25,
+                      fontSize: 30,
                       fontWeight: FontWeight.bold),
                 ),
               ),
