@@ -1,3 +1,4 @@
+import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
@@ -13,7 +14,7 @@ import '../Recipe.dart';
 import '../apikeys.dart';
 import '../components/AppDrawer.dart';
 
-import 'imageActivity.dart';
+import 'RecipeActivity.dart';
 import '../helpers.dart';
 
 class LabelFilterActivity extends StatefulWidget {
@@ -194,7 +195,7 @@ class _LabelFilterActivityState extends State<LabelFilterActivity> {
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => ImageActivity(
+                                          builder: (context) => RecipeActivity(
                                                 recipe: recipe,
                                               )),
                                     );

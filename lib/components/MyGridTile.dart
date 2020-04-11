@@ -1,4 +1,5 @@
-import 'package:easy_vegan_cooking/activity/imageActivity.dart';
+import 'package:easy_vegan_cooking/activity/RecipeActivity.dart';
+import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
 import 'package:easy_vegan_cooking/main.dart';
 import 'package:flutter/material.dart';
 
@@ -49,7 +50,7 @@ class MyGridTile extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (context) => ImageActivity(
+                builder: (context) => RecipeActivity(
                       recipe: recipe,
                     )),
           );

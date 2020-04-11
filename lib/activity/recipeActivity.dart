@@ -5,14 +5,14 @@ import 'package:flutter/material.dart';
 
 import '../Recipe.dart';
 
-class ImageActivity extends StatefulWidget {
+class RecipeActivity extends StatefulWidget {
   final Recipe recipe;
-  ImageActivity({this.recipe});
+  RecipeActivity({this.recipe});
   @override
-  ImageActivityState createState() => ImageActivityState();
+  RecipeActivityState createState() => RecipeActivityState();
 }
 
-class ImageActivityState extends State<ImageActivity> {
+class RecipeActivityState extends State<RecipeActivity> {
   @override
   void initState() {
     // index = data.indexOf(widget.recipe);
@@ -27,13 +27,16 @@ class ImageActivityState extends State<ImageActivity> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          title: Text(widget.recipe.title),
+        ),
         body: Center(
-      // child: ImageComponent(
-      //   recipe: widget.recipe,
-      // ),
-      child: ImageComponentParallax(
-        recipe: widget.recipe,
-      ),
-    ));
+          // child: ImageComponent(
+          //   recipe: widget.recipe,
+          // ),
+          child: ImageComponentParallax(
+            recipe: widget.recipe,
+          ),
+        ));
   }
 }

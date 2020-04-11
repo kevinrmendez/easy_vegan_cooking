@@ -1,3 +1,4 @@
+import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
@@ -13,7 +14,7 @@ import '../Recipe.dart';
 import '../apikeys.dart';
 import '../components/AppDrawer.dart';
 
-import '../activity/imageActivity.dart';
+import '../activity/RecipeActivity.dart';
 
 class RecipesSuggestions extends StatefulWidget {
   final List labels;
@@ -214,7 +215,7 @@ class _RecipesSuggestionsState extends State<RecipesSuggestions> {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => ImageActivity(
+                                          builder: (context) => RecipeActivity(
                                                 recipe: recipe,
                                               )));
                                 },

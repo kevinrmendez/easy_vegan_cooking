@@ -1,3 +1,4 @@
+import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
@@ -15,7 +16,7 @@ import '../Recipe.dart';
 import '../apikeys.dart';
 import '../components/AppDrawer.dart';
 
-import 'imageActivity.dart';
+import 'RecipeActivity.dart';
 import '../helpers.dart';
 
 class SearchFilterActivity extends StatefulWidget {
@@ -201,7 +202,8 @@ class _SearchFilterActivityState extends State<SearchFilterActivity> {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => ImageActivity(
+                                            builder: (context) =>
+                                                RecipeActivity(
                                                   recipe: recipe,
                                                 )),
                                       );

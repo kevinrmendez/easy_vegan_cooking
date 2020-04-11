@@ -18,7 +18,7 @@ import '../Recipe.dart';
 import '../apikeys.dart';
 import '../components/AppDrawer.dart';
 
-import 'imageActivity.dart';
+import 'RecipeActivity.dart';
 
 class RecentRecipesListActivity extends StatefulWidget {
   RecentRecipesListActivity({Key key}) : super(key: key);

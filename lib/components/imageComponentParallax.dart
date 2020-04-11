@@ -114,6 +114,7 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
             expandedHeight: MediaQuery.of(context).size.height * .5,
             floating: true,
             pinned: true,
+            leading: SizedBox(),
             backgroundColor: Color.fromRGBO(255, 255, 255, 0),
             bottom: PreferredSize(
               preferredSize: Size.fromHeight(0),
