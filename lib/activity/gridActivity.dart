@@ -6,6 +6,7 @@ import 'package:easy_vegan_cooking/components/GridListComponent.dart';
 import 'package:easy_vegan_cooking/components/MyGridTile.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
+import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 import 'package:connectivity/connectivity.dart';
@@ -149,12 +150,15 @@ class _GridActivityState extends State<GridActivity> {
 
     return Scaffold(
         drawer: AppDrawer(),
-        appBar: AppBar(
-          title: Text(
-            '${widget.category}',
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-        ),
+        appBar: WidgetUtils.appBar(title: "${widget.category}"),
+        // appBar: AppBar(
+        //   title: Text(
+
+        //     '${widget.category}',
+        //     style: TextStyle(fontWeight: FontWeight.bold),
+        //   ),
+        // ),
+
         body: GridListComponent(
           category: widget.category,
         ));

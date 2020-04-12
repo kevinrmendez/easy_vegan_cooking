@@ -1,5 +1,6 @@
 import 'package:easy_vegan_cooking/components/imageComponent.dart';
 import 'package:easy_vegan_cooking/components/imageComponentParallax.dart';
+import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 import 'package:flutter/material.dart';
 // import 'package:swipedetector/swipedetector.dart';
 
@@ -27,9 +28,7 @@ class RecipeActivityState extends State<RecipeActivity> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(widget.recipe.title),
-        ),
+        appBar: WidgetUtils.appBar(title: widget.recipe.title),
         body: Center(
           // child: ImageComponent(
           //   recipe: widget.recipe,

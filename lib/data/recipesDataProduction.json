@@ -1,1362 +1,1413 @@
 [
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/chiaPudding.jpg?alt=media&token=2c46f473-d174-4fa6-b359-46dc47e8f20a",
-		"title": "Chocolate chia pudding",
-		"category": "desserts",
-		"time": 5,
-		"serves": 4,
-		"difficulty": "easy",
-		"ingredients": [
-			"50g chia seeds",
-			"400ml almond/soy milk",
-			"3 tbsp cacao powder",
-			"½ tsp vanilla extract",
-			"cacao nibs",
-			"frozen berries"
-		],
-		"steps": [
-			"Mix all the ingredients in a big bowl",
-			"Add a pinch of salt",
-			"Whisk to combine the ingredients",
-			"Cover with a plastic film and leave for 4 hrs in the fridge",
-			"Pour the mix in small glasses",
-			"Add frozen berries and cacao powder",
-			"enjoy"
-		],
-		"suggestions": "",
-		"labels": ["berries", "chocolate", "fresh", "chia", "pudding"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/brownies.jpg?alt=media&token=e99817d2-7fbc-45a2-a4e4-b930f11769fc",
-		"title": "Vegan brownies",
-		"category": "desserts",
-		"time": 55,
-		"serves": 12,
-		"difficulty": "easy",
-		"ingredients": [
-			"200g dark chocolate",
-			"80g vegan margarine",
-			"125g flour",
-			"70g ground almonds",
-			"2 tbsp ground flaxseed",
-			"60g cocoa powder",
-			"¼ tsp baking powder",
-			"1 tsp vanilla extract"
-		],
-		"steps": [
-			"Heat oven to 170C/150C and grease and line a 20cm square tin with baking parchment. ",
-			"Combine the flaxseed with 6 tbsp water and set aside for at least 5 mins",
-			"Melt 120g chocolate and margarine with 60ml water on  low heat. Allow to cool slightly.",
-			"Put the flour, almonds, cocoa, baking powder and ¼ tsp salt in a bowl and stir to remove any lumps.",
-			"Mix the sugar into the melted chocolate mixture, and beat well until a smooth mix is formed",
-			" Stir in the flaxseed mixture, vanilla extract and remaining chocolate, then add the flour mixture.",
-			"Bake for 35-45 mins",
-			"Allow to cool in the tin completely, then cut into squares.",
-			"Enjoy"
-		],
-		"suggestions": "Eat the brownies within three days.",
-		"labels": ["chocolate", "brownie"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/coliflowerBuffalo.jpeg?alt=media&token=ca31c66c-fbf9-43b3-9cf1-29a1de12ea19",
-		"title": " Buffalo Cauliflower Bites",
-		"category": "snacks",
-		"time": 35,
-		"serves": 6,
-		"difficulty": "easy",
-		"ingredients": [
-			"⅔ cup flour",
-			"⅓ cup hot sauce or barbecue sauce",
-			"1 tsp dried parsley",
-			"1  cauliflower",
-			"1 tbsp tomato paste",
-			"2 tsp smoked paprika",
-			"2 tsp garlic powder",
-			"2 tsp onion powder"
-		],
-		"steps": [
-			"Cut the cauliflower into florets",
-			"Preheat oven to 232°C. Line 2 baking sheets with parchment paper. ",
-			"Combine the tomato paste, garlic powder, onion powder, brown rice flour, almond flour, paprika, parsley, and ⅔ cup of water in a blender. Mix until the batter is smooth and thick.",
-			"Add the batter to a bowl and add the cauliflower ",
-			"Mix until the cauliflowers are well covered with the batter",
-			"Lay the cauliflower in a single layer on the baking sheets, make sure that there is some space between the cauliflower florets.",
-			"Bake for 20 to 25 minutes, until the cauliflowers are crispy, let them cool down after",
-			"Put the florets to a bowl and mix with the sauce.",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["snack", "crunchy", "cauliflower"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/corn_cream.jfif?alt=media&token=ed0015b9-d665-4101-b1c9-5fa73a6d7a7b",
-		"title": "Vegan Corn Cream",
-		"category": "soups",
-		"time": 40,
-		"serves": 6,
-		"difficulty": "easy",
-		"ingredients": [
-			"1 small onion",
-			"1 cup celery",
-			"1 cup carrots",
-			"1 mince clove garlic",
-			"2 tbsp olive oil",
-			"2 1/2 cups water",
-			"2 cups corn",
-			"2 cubes vegetable bouillon",
-			"2 cups soy/almond milk",
-			"1 tbsp flour",
-			"1 tsp dried parsley",
-			"1 tsp garlic powder",
-			"1 tsp salt",
-			"1 tsp pepper"
-		],
-		"steps": [
-			"Chop the carrots,onion and celery",
-			"Heat oil in a large pot over medium heat. ",
-			"Stir in onions and celery and cook until the onions are golden",
-			"Stir in carrots and garlic until garlic is golden.",
-			"At the same time, bring water to a boil over high heat and add the cubes of boullion",
-			"When bouillon cubes have dissolved, add corn and the vegetables from the pan.",
-			"Cook until vegetables are tender. If required add water.",
-			"Reduce heat to low, and pour 1 cup soy/almond milk.",
-			"Stir soup well and add the second cup of soy/almond milk.",
-			"Quickly whisk in flour. Stir in and add parsley, garlic powder, salt, and pepper. ",
-			"Keep stirring all the time, until chowder thickens, it takes aroun 15 to 25 minutes.",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["soup", "corn", "creamy"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/pathThai.jfif?alt=media&token=380d8140-a55b-4c1f-a08b-2f5c3ee355b0",
-		"title": "Thai Sweet Potato Noodle Bowl",
-		"category": "meals",
-		"time": 25,
-		"serves": 4,
-		"difficulty": "easy",
-		"ingredients": [
-			"1 teaspoon salt",
-			"1 cup sliced red bell pepper",
-			"2  tablespoons toasted sesame oil",
-			"2 medium sweet potatoes, spiralized into noodles",
-			"half cup water",
-			"3 cups baby spinach",
-			"150gr of tofu in cubes",
-			"half cup light coconut milk",
-			"2 tablespoons curry paste",
-			"half cup chopped unsalted cashews",
-			"4 lime wedge"
-		],
-		"steps": [
-			"Heat 2 tablespoons oil in a large skillet over medium-high",
-			"Add sweet potato noodles, bell pepper, and 1/2 teaspoon salt; fry for 5 minutes.",
-			"Add half cup water; cover and cook 3 minutes.",
-			"Add tofu and spinach; fry for 4 minutes.",
-			"Combine remaining salt, coconut milk and curry paste in a bowl.",
-			"Serve with lime wedges",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["asian", "thai", "noodles", "sweet potatoes"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/carrot-salad.jpg?alt=media&token=a8bda9c7-dfd7-4210-bc4c-c0df2f2fd6b8",
-		"title": "Carrot Ginger Salad",
-		"category": "salads",
-		"time": 25,
-		"serves": 4,
-		"difficulty": "easy",
-		"ingredients": [
-			"2 tablespoons sesame seeds",
-			"3 medium  carrots ",
-			"1 1/4 cups fresh bean sprouts",
-			"1/4 cup of lemon juice",
-			"1 tablespoon peanut oil",
-			"1 tablespoon sesame oil",
-			"3 teaspoons grated ginger",
-			"Salt & freshly ground black pepper",
-			"3 tablespoons almond butter",
-			"2 tablespoons fresh curry paste",
-			"1/4 cup chopped unsalted cashews",
-			"4 lime wedge"
-		],
-		"steps": [
-			"Peel and cut the carrots in the shape of stick",
-			"Fry the sesame seeds for 2-3 minutes until lightly toasted, then set aside",
-			" Mix the lemon juice, peanut oil, sesame oil, ginger in a cup; then add salt and pepper",
-			"Combine the toasted sesame seeds, carrot and bean sprouts in a medium bowl. Pour the dressing",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["carrot", "ginger", "fresh", "summer"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/blueberrysmoothie.jfif?alt=media&token=8f3e27db-9110-4fe5-9028-f488bbe12e13",
-		"title": "Blueberry Smoothie",
-		"category": "smoothies",
-		"time": 5,
-		"serves": 2,
-		"difficulty": "easy",
-		"ingredients": [
-			"1 ½ cups frozen blueberries",
-			"1 ½ cup frozen bananas",
-			"¼ cup old-fashioned oats",
-			"1 ½ cups to 2 cups unsweetened almond milk "
-		],
-		"steps": [
-			"Combine all of the ingredients",
-			"Stop to scrape down the sides ",
-			"add more milk if necessary.",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["blueberry", "smoothie", "banana"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FstrawberryPorridge.jpg?alt=media&token=c75ba37e-a582-4d03-8e9e-b1fe87d0e5fd",
-		"title": "Vegan strawberry porridge",
-		"category": "breakfast",
-		"time": 10,
-		"serves": 1,
-		"difficulty": "super easy",
-		"ingredients": [
-			"50g porridge oats",
-			"250ml almond/soy milk",
-			"small pinch of salt",
-			"3-4 chopped strawberry"
-		],
-		"steps": [
-			"Combine the oats and milk in a pot",
-			"Cook gently for 10 minutes in medium-low heat,stir constantly",
-			"add a pinch of salt and serve it with the strawberries",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["strawberry", "oatmeal", "morning"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/roastedChickpeas2.jfif?alt=media&token=41ccc935-3139-4631-ba28-c5e57749bf10",
-		"title": "Roasted chickpeas",
-		"category": "snacks",
-		"time": 40,
-		"serves": 4,
-		"difficulty": "super easy",
-		"ingredients": [
-			"1 can chickpeas",
-			"salt",
-			"cayenne pepper",
-			"2 tbsp olive oil"
-		],
-		"steps": [
-			"Preheat oven 23 degrees C",
-			"Drain and dry the chickpeas with paper towl.",
-			"Put the chickpeas in a bowl and add olive oil",
-			"Season to taste with salt and cayenne pepper",
-			"spread the chickpeas in trail cover with baking sheet",
-			"bake for around 30-40 minutes until they are crunchy",
-			"Enjoy"
-		],
-		"suggestions": "Drain really well the chickpeas for a crunchy touch",
-		"labels": ["chickpeas", "crunchy", "roasted"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FpastaPesto.jpg?alt=media&token=9d218f1e-f47f-4f8e-bdaf-bbb89dba1ebf",
-		"title": "Chickpeas pesto pasta",
-		"category": "meals",
-		"time": 40,
-		"serves": 2,
-		"difficulty": "easy",
-		"ingredients": [
-			"1 can chickpeas",
-			"salt",
-			"pepper",
-			"3 tbsp pesto pasta",
-			"2 tbsp olive oil",
-			"pasta",
-			"1/2 lemon"
-		],
-		"steps": [
-			"Bring water with salt to boil and cook the pasta for 10 - 15 min",
-			"Meanwhile, drain  and rinse the chickpeas",
-			"Chop the onion and the chickpeas",
-			"Fry the chickpeas and onion for 5 min",
-			"Add pesto, salt, pepper and lemon juice ",
-			"When the pasta is ready, drain the water and add it to the frying pan",
-			"Mix everything and cook for 5 more minutes",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["chickpeas", "pasta", "pesto"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FVeganpestoPasta.jpg?alt=media&token=5aa5df47-494a-4e7a-bbe1-7aa432418371",
-		"title": "Vegan pesto pasta",
-		"category": "meals",
-		"time": 30,
-		"serves": 4,
-		"difficulty": "easy",
-		"ingredients": [
-			"1 can chickpeas",
-			"salt",
-			"pepper",
-			"3 tbsp pesto pasta",
-			"2 tbsp olive oil",
-			"250gr pasta",
-			"3 cups cherry tomatoes (sliced)",
-			"Vegan parmesan cheese"
-		],
-		"steps": [
-			"Bring water with salt to boil and cook the pasta for 10 - 15 min",
-			"While cooking the pasta, in a frying pan olive oil and tomatoes, stir occasionally",
-			"When the pasta is ready, add it to the frying pan",
-			"Add  pesto, salt and pepper to taste ",
-			"Mix well all the ingredients",
-			"Add vegan parmesan cheese when serving",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["tomatoes", "pasta", "pesto"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FcarrotSmoothie.jpg?alt=media&token=4422b677-1ecd-4e16-975f-8dac358e9c81",
-		"title": "Carrot smoothie",
-		"category": "smoothies",
-		"time": 5,
-		"serves": 2,
-		"difficulty": "super easy",
-		"ingredients": [
-			"4 dl soy yogurt",
-			"180 gr of carrots",
-			"1 tsp sugar or vanilla sugar"
-		],
-		"steps": [
-			"Peel and chop carrots in small pieces",
-			"Add the carrots, soy yogurt and sugar to the blender",
-			"Blend till all the ingredients are mixed",
-			"Enjoy"
-		],
-		"suggestions": "Add some soy milk if the smoothie is thick",
-		"labels": ["carrot", "soy"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FavocadoToast.jpg?alt=media&token=7be1f73c-6935-4159-8763-c3d55f31de94",
-		"title": "Avocado toast",
-		"category": "breakfast",
-		"time": 5,
-		"serves": 2,
-		"difficulty": "super easy",
-		"ingredients": [
-			"2 slices bread",
-			"1 avocado",
-			"salt",
-			"pepper",
-			"3 tbsp cilantro",
-			"4 tbsp lemon juice"
-		],
-		"steps": [
-			"Toast 2 slices of bread in a toaster",
-			"Meanwhile in a bowl mash the avocado",
-			"Add cilantro, lemon juice, a pinch of salta and a pinch of pepper",
-			"Mix all the ingredients",
-			"Spread the avocado to the bread",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["avocado", "toast"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2Fhummus.jpg?alt=media&token=55fcae93-a562-492c-8959-0df0319ff4eb",
-		"title": "Hummus",
-		"category": "snacks",
-		"time": 10,
-		"serves": 2,
-		"difficulty": "super easy",
-		"ingredients": [
-			"2 garlic cloves",
-			"4 tbsp lemon juice",
-			"salt",
-			"pepper",
-			"3 tbsp olive oil",
-			"1 can chickpeas"
-		],
-		"steps": [
-			"Drain and rince the chickpeas",
-			"Add the chickpeas,garlic,lemon juice, a big pinch of salt, pepper and olive oil to a food processor",
-			"Blend until well combined",
-			"Taste and add more lemon juice, pepper or salt",
-			"Enjoy"
-		],
-		"suggestions": "If the hummus is a bit dry, add a bit of water while blending the ingredients",
-		"labels": ["chickpeas", "hummus"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2Fovenroastedsweetpotato.jpg?alt=media&token=7366bb8d-b7a9-49bf-a3ab-173c28e59e33",
-		"title": "Oven roasted sweet potato",
-		"category": "snacks",
-		"time": 30,
-		"serves": 4,
-		"difficulty": "super easy",
-		"ingredients": [
-			"2  large sweet potatoes",
-			"3 tablespoons  olive oil      ",
-			"2 teaspoons salt",
-			"2 teaspoons garlic powder",
-			"2 teaspoons oregano"
-		],
-		"steps": [
-			"Peel the sweet potatoes",
-			"Cut the sweet potatoes in bite size pieces.",
-			"Add the sweet potato bites on an owen plate.",
-			"Cover them with olive oil using a cooking brush.",
-			"Spice with salt, garlic powder and oregano. ",
-			"Cook in oven for 20 minutes.",
-			"Enjoy"
-		],
-		"suggestions": "Serve with hummus or guacamole.",
-		"labels": ["sweet potato", "healthy snack"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2Fsmokytomatoredpeppersoup.jpg?alt=media&token=457a758d-8786-4273-8192-7d97ed531314",
-		"title": "Smoky tomato and red pepper soup",
-		"category": "soups",
-		"time": 30,
-		"serves": 4,
-		"difficulty": "easy",
-		"ingredients": [
-			"5 tomatoes",
-			"3 red peppers",
-			"1 can crushed tomatoes",
-			"2 dl vegetable broth",
-			"3 cloves of garlic",
-			"1 teaspoon of smoked paprika powder ",
-			"1-2 teaspoons of dried basil"
-		],
-		"steps": [
-			"Roast tomatoes and peppers in oven until soft.",
-			"Add roasted tomatoes and peppers in blender with 1 can of crushed tomatoes",
-			"Add vegetable broth, garlic and spices and blend",
-			"Add to a kettle and boil until hot.",
-			"Check taste and add salt if necessary.",
-			"Cook in oven for 20 minutes.",
-			"Enjoy"
-		],
-		"suggestions": "Serve with fried vegetables and mushrooms and/or freshly baked bread.",
-		"labels": ["tomato soup", "healthy soup", " starter,"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/desserts%2Ffruitcocktail.jpg?alt=media&token=6bbed582-32ef-4c32-b76e-9bf90799fa8f",
-		"title": "DIY Fruitcocktail",
-		"category": "desserts",
-		"time": 15,
-		"serves": 4,
-		"difficulty": "super easy",
-		"ingredients": [
-			"1 apple",
-			"1 orange",
-			"½ small pineapple",
-			"1 dl dried cranberries",
-			"1 stem of grapes",
-			"0,5 dl orange juice",
-			"½ lemon juice",
-			"1 tablespoon of maple syrup"
-		],
-		"steps": [
-			"Cut all fruits in roughly the same size pieces.",
-			"Mix orange juice, the juice of a half lemon and maple syrup together in a bowl.",
-			"Pour the juice and maple syrup mix on the fruits and mix well with a spoon.      ",
-			"Enjoy"
-		],
-		"suggestions": "Serve with vegan ice cream, chia pudding or plant yoghurt. ",
-		"labels": ["fruits", "healthy dessert"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2Fguacamole.jpg?alt=media&token=da2f2f88-d221-4b71-8cc3-f34884ad2a32",
-		"title": "Guacamole",
-		"category": "snacks",
-		"time": 15,
-		"serves": 4,
-		"difficulty": "super easy",
-		"ingredients": [
-			"3-4 avocados",
-			"1 lime",
-			"2 teaspoon salt",
-			"1/2 onion",
-			"4 tablespoons fresh cilantro"
-		],
-		"steps": [
-			"In a bowl mash the avocados and add lime juice",
-			"Cut the onion into small pieces ",
-			"Add the chopped onion to the bowl; Add salt and cilantro",
-			"Mix all the ingredients",
-			"Enjoy"
-		],
-		"suggestions": "Add 1/2 or 1 chopped  jalapeño if you want a spicy guacamole",
-		"labels": ["avocado", "snacks", "lime"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/salads%2FGreenChickpeaSalad.jpg?alt=media&token=8fae45af-ec9b-41d0-a69d-775651929425",
-		"title": "Green Chickpea Salad",
-		"category": "salads",
-		"time": 10,
-		"serves": 4,
-		"difficulty": "super easy",
-		"ingredients": [
-			"1/4 cup chopped cilantro",
-			"1 avocado",
-			"4 tablespoons of lemon juice",
-			"4 tablespoons extra virgin olive oil",
-			"salt",
-			"black pepper",
-			"1 can of chickpeas",
-			"1 cucumber"
-		],
-		"steps": [
-			"Cut the avocado in slices ",
-			"Dice the cucumber   ",
-			"Drain and rinse the chickpeas with water",
-			"Mix all the ingredients in a bowl",
-			"Add lemon juice, salt and black pepper to taste",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["avocado", "chickpeas", "lime", "salads", "green"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/salads%2FbeetrootSpinach.jpg?alt=media&token=f567e519-a4b7-4c5e-a19a-256e523c6182",
-		"title": "Beetroot Spinach Salad",
-		"category": "salads",
-		"time": 10,
-		"serves": 4,
-		"difficulty": "super easy",
-		"ingredients": [
-			"4 boild beetroots",
-			"2 teaspoons Dijon Mustard",
-			"1/2 teaspoon of maple syrup",
-			"2 tablespoons apple sider vinager ",
-			"4 tablespoons olive oil",
-			"1/2 cup walnuts",
-			"1/2 teaspoon of salt",
-			"200 grams of spinach",
-			"black pepper"
-		],
-		"steps": [
-			"Before starting, boil the beetroots for 45 min and then peel them",
-			"Cut in cubes the beetroots ",
-			"Cut the walnuts in small portions",
-			"For making the dressing  mix  olive oil, mustard, vinegar, maple syrup, salt and some  pepper",
-			"In a large bowl mix the spinach with the dressing",
-			"Then add  beetroots and walnuts ",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["walnuts", "spinach", "beetroot", "green"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FcarrotCorianderSoup.jpg?alt=media&token=cea2db5d-36ce-4a1c-9f82-b9388df601fe",
-		"title": "Carrot coriander soup",
-		"category": "soups",
-		"time": 40,
-		"serves": 4,
-		"difficulty": " easy",
-		"ingredients": [
-			"500gr carrots",
-			"1 onion",
-			"1 potato",
-			"40gr coriander",
-			"1 vegatable stockpot in 1L water",
-			"1 tablespoon olive oil",
-			"1 teaspoon of ground coriander",
-			"1 tablespoon of pumpkin seeds",
-			"salt"
-		],
-		"steps": [
-			"Peel and chopp the onion, potato and carrots",
-			"Heat with olive oil the onion for 5 min",
-			"Add the potato, carrots and season with gorund coriander, cook for another 5 min",
-			"Pour the vegetable stock,bring to boil and the reduce the temperature",
-			"Cover and cook for around 15 - 20 min",
-			"Cool down a bit the soup;then pour it in a food processor with the coriander",
-			"Mix until smooth and return the purée to the pan ",
-			"Cook for 5 more min and season with salt",
-			"Serve and garnish the soup with coriander leaves and pumpkin seeds",
-			"Enjoy"
-		],
-		"suggestions": "stir ocasionally while cooking the vegetables in the oven",
-		"labels": ["carrots", "soup", "coriander"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FroastedRootVegetables.jpg?alt=media&token=5337ec76-6239-4bd5-8c2f-28b4de552e7a",
-		"title": "Roasted Root Vegetables",
-		"category": "meals",
-		"time": 60,
-		"serves": 4,
-		"difficulty": " easy",
-		"ingredients": [
-			"2 beets",
-			"2 carrots",
-			"2 sweet potatoes",
-			"1 red onion",
-			"2 teaspoons olive oil",
-			"2 teaspoons salt",
-			"1/4 teaspoon black pepper",
-			"1 head garlic, cloves peeled and separated",
-			"3 tablespoons chopped fresh rosemary leaves"
-		],
-		"steps": [
-			"Preheat the oven 220 degrees Celsius and place 1 baking sheets with parchment paper.",
-			"Peel the beets, carrots and sweet potatoes; then cut them in small pieces (3cm)",
-			"Cut the onion in slices",
-			"Place all the vegetables in a backing sheets. Drizzle with olive oil.",
-			"Season with salt,pepper and rosemary",
-			"Roast the vegetables for 45 min until they are tender",
-			"For making the dressing  mix  olive oil, mustard, vinegar, maple syrup, salt and some  pepper",
-			"Enjoy"
-		],
-		"suggestions": "stir ocasionally while cooking the vegetables in the oven",
-		"labels": ["beets", "carrots", "roasted"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FstrawberryFrenchToast.jpg?alt=media&token=051ca277-0f79-4443-ba3e-fdfd3b923f3a",
-		"title": "Strawberry French toast",
-		"category": "breakfast",
-		"time": 40,
-		"serves": 6,
-		"difficulty": " easy",
-		"ingredients": [
-			"6 slices of bread",
-			"2 tsp vanilla extract",
-			"200 ml almond milk",
-			"2 tsp cinammon",
-			"4 tbsp maple syrup",
-			"200 gr strawberry",
-			"3 tbsp vegan butter"
-		],
-		"steps": [
-			"Mix in a bowl the vanilla extract, cinamon, almond milk and maple syrup",
-			"Heat the frying pan for 5 min and grease with 1 tbsp of vegan butter",
-			"Dip each bread slice in the mix for 20 seconds per side",
-			"Place the bread in the frying pan and cook until it is brown and crispy, around 3 minutes per side",
-			"Cut the strawberries in half",
-			"Serve the french toasts with the stawberries",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["bread", "breakfast", "strawberry", "toast"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FgreenSmoothie.jpg?alt=media&token=227e87ad-ee33-4b29-b54a-53ae80294712",
-		"title": "Green Smoothie",
-		"category": "smoothies",
-		"time": 5,
-		"serves": 2,
-		"difficulty": "super easy",
-		"ingredients": [
-			"1 ½ cups frozen berries",
-			"1 banana",
-			"1 ½ cup spinach",
-			"1 ½ cups to 2 cups unsweetened almond milk "
-		],
-		"steps": [
-			"Cut the banana in slices",
-			"Add all the ingredients to the blender and mix well",
-			"Enjoy"
-		],
-		"suggestions": "if the smoothie is too thick, add more almond milk",
-		"labels": ["spinach", "smoothie", "green"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FpastaBolognese.jpg?alt=media&token=530c95d7-dc94-4616-bd43-c5abda452527",
-		"title": "Pasta Bolognese",
-		"category": "meals",
-		"time": 60,
-		"serves": 4,
-		"difficulty": "easy",
-		"ingredients": [
-			"80gr mushrooms diced",
-			"70gr lentils",
-			"200g spaghetti",
-			"2 tbsp of salt",
-			"1 ½ tsp olive oil",
-			"1 onion chopped",
-			"3 celery sticks chopped",
-			"1 carrot diced ",
-			"3 garlic cloves, chopped",
-			"400gr tomato purée",
-			"2 tbsp dried oregano"
-		],
-		"steps": [
-			"Heat oil in a pan and add onion,garlic celery, mushrooms and carrots; cook for 8 min",
-			"Add lentils and tomato purée and cook for 15 min; then spice the sauce with oregano and salt",
-			"Meanwhile cook the pasta with salt water",
-			"When the pasta is ready drain the water for 40 - 50 min",
-			"Serve the pasta with the tomato sauce",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["pasta", "tomato", "lentils"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FchocolateBananaShake.jpg?alt=media&token=66377184-b0a5-47e3-b0bd-1cd75b39bed7",
-		"title": "Chocolate Banana Smoothie ",
-		"category": "smoothies",
-		"time": 5,
-		"serves": 2,
-		"difficulty": "very easy",
-		"ingredients": [
-			"3 bananas",
-			"2 cups almond/soy milk",
-			"2 teaspoons of maple syrup",
-			"2 tablespoons of cocoa powder",
-			"Flax seeds",
-			"Almond Flakes"
-		],
-		"steps": [
-			"Cut the banana in slices",
-			"Add the banana, milk, maple syrup and cocoa powder to the blender",
-			"Serve with some flax seeds and almond flakes",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["chocolate", "banana"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FChickpeaTomatoPasta.jpg?alt=media&token=ec14eeda-3e96-4dd3-ac9f-b110814f3405",
-		"title": "Chickpea Tomato Pasta",
-		"category": "meals",
-		"time": 30,
-		"serves": 4,
-		"difficulty": "easy",
-		"ingredients": [
-			"400gr pasta",
-			"1 teaspoon of salt",
-			"1l water",
-			"1 onion",
-			"3 garlic cloves",
-			"1 tablespoon olive oil",
-			"3 kale leaves",
-			"1 carrot diced ",
-			"½ small (10 cm) zuchini",
-			"½ yellow paprika",
-			"3 cups cherry tomatoes (sliced)",
-			"400g Tomato purée",
-			"1 teaspoon turmeric powder",
-			"1 teaspoon smoked paprika powder",
-			"1-2 teaspoon dried basil",
-			"1 teaspoon black pepper",
-			"3 dl chickpeas"
-		],
-		"steps": [
-			"Boil water with salt.",
-			"Heat olive oil on a pan.",
-			"Chop onion and garlic into small pieces and add to the pan. Fry for 2 minutes.",
-			"Chop kale and add to the pan. Cook until it loses its texture.",
-			"Chop zucchini and and red pepper in small same size pieces and add to the pan. Fry 2 minutes.",
-			"Chop tomatoes in small pieces and add to the pan. Cook until they lose their texture.",
-			"Add canned tomatoes and stir. Add spices according to your liking. ",
-			"Enjoy"
-		],
-		"suggestions": "Serve with a glass of organic red wine and freshly baked bread with olive oil and seasalt.",
-		"labels": ["pasta", "chickpeas", "tomato"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FblueberryBananaSmoothie.jpg?alt=media&token=53ff5bb6-01aa-4567-89b2-2fc69d192cbc",
-		"title": "High Protein Blueberry Banana Smoothie ",
-		"category": "smoothies",
-		"time": 5,
-		"serves": 2,
-		"difficulty": "very easy",
-		"ingredients": [
-			"1 banana",
-			"250g unsweetened plantbased yoghurt",
-			"1 tablespoon unflavoured hemp protein",
-			"1 dl frozen blueberries",
-			"3 dl organic blueberry juice"
-		],
-		"steps": ["Add all ingredients to a blender and blend.", "Enjoy"],
-		"suggestions": "",
-		"labels": ["blueberry", "banana", "hemp"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FTofuNoodleWok.jpg?alt=media&token=74bcc151-0399-4129-8433-bd1c44440f73",
-		"title": "Tofu Noodle Wok",
-		"category": "meals",
-		"time": 15,
-		"serves": 2,
-		"difficulty": "very easy",
-		"ingredients": [
-			"200gr whole wheat rice noodles",
-			"5 dl water",
-			"100g red cabbage",
-			"100g zucchini",
-			"100g red pepper",
-			"1 onion",
-			"3 garlic cloves",
-			"200g tofu",
-			"1 tablespoon sesame oil",
-			"1 tablespoon soy sauce",
-			"½ lemon juice",
-			"1 tablespoon fresh ginger",
-			"0,5 teaspoon turmeric",
-			"1-2 tablespoons sweet chili sauce"
-		],
-		"steps": [
-			"Boil water and add water to a bowl with salt and noodles.",
-			"Heat pan with a small amount of olive oil.",
-			"Dry tofu with a paper towel and cut into cubes.",
-			"Add tofu to the heated pan with sliced onion and mashed garlic. Fry 2 minutes.",
-			"Cut all vegetables into same size slices so they cook evenly. Add vegetables to the pan. Fry 5 minutes.",
-			"Spice tofu and vegetables with sesame oil, soy sauce, lemon juice, ginger and turmeric.",
-			"Remove noodles from water and add them to the pan. Mix with tofu and vegetables.",
-			"Add sweet chili sauce and mix one more time.",
-			"Remove noodles from water and add them to the pan. Mix with tofu and vegetables.",
-			"Enjoy"
-		],
-		"suggestions": "Serve with fresh coriander or thai basil.",
-		"labels": ["tofu", "wok", "noddles", "tumeric"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FsweetPotatoCoconutCurrySoup.jpg?alt=media&token=b7c2eed8-4208-4b4c-8620-d3afd6769183",
-		"title": "Sweet Potato Coconut Curry Soup",
-		"category": "soups",
-		"time": 30,
-		"serves": 2,
-		"difficulty": " easy",
-		"ingredients": [
-			"2 sweet potatoes",
-			"3 garlic cloves",
-			"1 tablespoon coconut oil",
-			"1 teaspoon masala",
-			"1/2 teaspoon turmeric",
-			"1/2 teaspoon ground ginger",
-			"250 ml coconut milk",
-			"250 ml vegetable stock",
-			"1 onion",
-			"1 lemon",
-			"pepper",
-			"salt"
-		],
-		"steps": [
-			"Peel and cut the sweet potatoes and onion in small pieces",
-			"Heat the coconut oil in a large pot.Fry the onion untill golden ",
-			"Add the garlic to the pot and cook for a minute",
-			"Add ginger, turmeric and masala",
-			"Add the sweet potato, vegetable stock and coconut milk",
-			"Bring to simmer and cook for 20 minutes or until the sweet potato is soft",
-			"Blend the soup with a hand blender until creamy",
-			"Add lemon juice, salt and pepper to taste ",
-			"Enjoy"
-		],
-		"suggestions": "Add some chili powder for some heat",
-		"labels": ["sweet potato", "curry", "ginger"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2FhummusQuesadilla.jpeg?alt=media&token=9da22ff9-a6d4-43ab-b806-cae607f0ef29",
-		"title": "Hummus Quesadilla",
-		"category": "snacks",
-		"time": 10,
-		"serves": 2,
-		"difficulty": "very easy",
-		"ingredients": [
-			"1/2 teaspoon olive oil",
-			"4 garlic cloves chopped",
-			"2 cups baby spinach",
-			"2 whole wheat tortilla",
-			"1/2 cup hummus",
-			"salt",
-			"pepper",
-			"2 tablespoons of vegan butter",
-			"1/2 cups red peppers"
-		],
-		"steps": [
-			"Heat olive oil in a frying pan and saute the garlic and the red pepper",
-			"Add the baby spinach and season with salt and pepper, cook for 3 minutes and remove from heat",
-			"In another frying pan heat vegan butter and fry the tortilla",
-			"On one half of the tortilla add and spread the hummus and the spinach red pepper mix",
-			"Fold the tortilla and frying till the tortilla is a bit brown on bottom side",
-			"Flip the tortilla and fry the remaining side",
-			"Enjoy"
-		],
-		"suggestions": "Add some chili  for some heat",
-		"labels": ["hummus", "tortilla", "mexican"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FmangoSmoothie.jpg?alt=media&token=ce7cb362-ab87-47c9-a679-2e0abf2d9efa",
-		"title": "Mango Banana Smoothie",
-		"category": "smoothies",
-		"time": 5,
-		"serves": 2,
-		"difficulty": "very easy",
-		"ingredients": [
-			"1 ½ cups frozen mango",
-			"1  banana",
-			"¼ cup old-fashioned oats",
-			"1 ½ cups  unsweetened almond milk ",
-			"1/2 cup of orange juice ",
-			"1 tablespoon chia seeds"
-		],
-		"steps": [
-			"Add all the ingredients in a blender and mix",
-			"add more milk if necessary.",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["mango", "smoothie", "banana"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FTofuScramblewithVeggies.jpg?alt=media&token=92907c50-8205-4db7-8c73-8721df724efb",
-		"title": "Tofu Scramble with Veggies",
-		"category": "breakfast",
-		"time": 15,
-		"serves": 2,
-		"difficulty": "very easy",
-		"ingredients": [
-			"250gr firm tofu",
-			"1/2 teaspoon turmeric powder",
-			"1/2 teaspoon salt",
-			"1 onion",
-			"2 cloves garlic",
-			"3 tablespoons almond milk",
-			"black pepper",
-			"1/2 red bell pepper",
-			"1/2 zucchini",
-			"1/2 tablespoon olive oil"
-		],
-		"steps": [
-			"Chop the onion, red bell pepper, zucchini and garlic in small pieces",
-			"Crumble the tofu using a fork or with your hands",
-			"Add olive oil to the frying pan, fry the onion and garlic for few minutes",
-			"Add the zucchini and red bell pepper, cook for some minutes",
-			"Add crumble tofu and almond milk,stir and cook for around 8 minutes",
-			"Season with salt,black pepper and turmeric",
-			"Enjoy"
-		],
-		"suggestions": "serve with homemade hummus",
-		"labels": ["tofu", "scramble", "breakfast"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FHorseBeanHummusTaco.jpg?alt=media&token=ee34f592-7e00-44af-987d-92d7c0a38001",
-		"title": "Fava bean Hummus Taco",
-		"category": "meals",
-		"time": 30,
-		"serves": 2,
-		"difficulty": "easy",
-		"ingredients": [
-			"250gr minced fava bean or other mock meat",
-			"1 small onion",
-			"2 kale leaves",
-			"2 cloves garlic",
-			"2 tablespoons of fresh cilantro",
-			"1/2 lime juice",
-			"1/2 - 1 teaspoon of salt",
-			"1/2 - 1 teaspoon of smoked red chilli powder",
-			"1/2 tablespoon olive oil",
-			"2 tortillas",
-			"1 avocado",
-			"1 tomato chopped",
-			"1 cup of fresh spinach",
-			"2 tablespoons of hummus"
-		],
-		"steps": [
-			"Chop the onion, kale and garlic in small pieces;add to frying pan and cook for 2 minutes",
-			"Add minced fava bean to the frying pan and cook for 2 more minutes",
-			"Season with cilantro, salt, smoked chilli powder and lime juice",
-			"Cut the avocado, tomato and spinach in small slices",
-			"Warm the tortillas for 15 seconds in microwave or frying pan",
-			"Add the minced fava bean, chopped vegetables and hummus on the tortilla ",
-			"Enjoy"
-		],
-		"suggestions": "serve with chilli sauce, fresh cilantro and lime",
-		"labels": [
-			"taco",
-			"fava bean",
-			"hummus",
-			"chilli",
-			"mexican food",
-			"tortilla"
-		],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2FveganEnergyBall.jpg?alt=media&token=fa3d58ec-140e-42f2-88b3-dade1e20f389",
-		"title": "Vegan Energy Ball",
-		"category": "snacks",
-		"time": 10,
-		"serves": 3,
-		"difficulty": "very easy",
-		"ingredients": [
-			"1 dl oat flakes",
-			"1/2 dl ground flaxseed",
-			"1/4 dl sunflower seed",
-			"1/4 dl pumpkin seed",
-			"3 tablespoons of dark cocoa powder",
-			"1/2 dl peanut butter",
-			"1/2 dl maple syrup",
-			"salt"
-		],
-		"steps": [
-			"Add oat flakes, ground flaxseed, sunflower seeds, pumpkin seeds, cocoa powder and a pinch of salt  to a bowl and mix",
-			"Melt peanut butter",
-			"Add maple syrup with melted peanut butter and mix",
-			"Add the peanut butter mix with the dry ingredients and mix well",
-			"If the consistency is too dry, add a little bit of water or almond milk",
-			"Take a small amount of the mix and make a ball with your hands",
-			"Enjoy"
-		],
-		"suggestions": "add coconut flakes for extra flavor",
-		"labels": ["chocolate", "maple syrup", "energy", "ball"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FCreamyCinammonBananaBlueberryPorridge.jpg?alt=media&token=52e8e1c2-5f55-497b-a6b5-d454a687d83d",
-		"title": "Banana Blueberry Porridge",
-		"category": "breakfast",
-		"time": 15,
-		"serves": 1,
-		"difficulty": "very easy",
-		"ingredients": [
-			"1 dl oat flakes",
-			"½ banana",
-			"2.5 dl  almond/soy milk",
-			"cinnamon",
-			"salt"
-		],
-		"steps": [
-			"Add 1 dl of oat flakes on a pan",
-			"Cut the banana in half and cut it in 0,5 cm slices.",
-			"Add banana slices with the oat flakes.",
-			"Pour 2.5 dl of almond milk and boil the oat flakes and banana slices together for 5 minutes.",
-			"Add a pinch of salt and cinnamon for taste",
-			"Enjoy with fresh blueberries"
-		],
-		"suggestions": "",
-		"labels": ["blueberry", "banana", "oatmeal", "cinnamon", "morning"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FCarrotTurmericSmoothie.jpg?alt=media&token=18e2661f-0f97-4227-ad2e-fb41baf74049",
-		"title": "Carrot Turmeric Smoothie",
-		"category": "smoothies",
-		"time": 5,
-		"serves": 2,
-		"difficulty": "very easy",
-		"ingredients": [
-			"1 frozen banana",
-			"1 cup fresh pineapple",
-			"1/2 cup of carrot juice",
-			"1/4 tablespoon of turmeric powder ",
-			"1 cup of coconut milk"
-		],
-		"steps": [
-			"Combine all of the ingredients",
-			"Add more milk if necessary.",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["carrot", "smoothie", "turmeric"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/desserts%2FStrawberryAvocadoIceCream.jpg?alt=media&token=36b5d761-c6b5-442d-8bb2-3c07baeb1648",
-		"title": "Strawberry Avocado Ice cream",
-		"category": "desserts",
-		"time": 15,
-		"serves": 2,
-		"difficulty": "very easy",
-		"ingredients": [
-			"100 gr strawberries chopped",
-			"1 avocado chopped",
-			"1 tablespoon vanilla  extract ",
-			"2 tablespoons maple syrup "
-		],
-		"steps": [
-			"Put all the ingredients in a food processor and blend",
-			"Pour into cups and cover with a plastic film and freeze",
-			"Wait for 10 - 15 minutes",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["strawberry", "avocado", "ice cream"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FCoconutBananaPancakes.jpg?alt=media&token=01e37c23-4d46-4af5-bf63-3910b495fea0",
-		"title": "Coconut Banana Pancakes",
-		"category": "breakfast",
-		"time": 25,
-		"serves": 4,
-		"difficulty": "very easy",
-		"ingredients": [
-			"3 tablespoons sugar ",
-			"400 ml coconut milk",
-			"100 gr strawberries chopped",
-			"2 teaspoons baking powder",
-			"1 banana sliced",
-			"salt",
-			"vegetable oil"
-		],
-		"steps": [
-			"In a bowl mix the flour, baking powder, sugar and salt",
-			"Add slowly the coconut milk to the flour and mix until making a smooth batter",
-			"Heat a frying pan and add vegetable oil",
-			"Pour small portion of the batter to the frying pan and add small pieces of banana",
-			"Cook the pancakes",
-			"Enjoy"
-		],
-		"suggestions": "Serve with maple syrup",
-		"labels": ["banana", "coconut", "pancakes"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FPearSpinachSmoothie.jpg?alt=media&token=408d1939-8178-431e-8961-bd1a5d37f273",
-		"title": "Pear Spinach Smoothie",
-		"category": "smoothies",
-		"time": 5,
-		"serves": 2,
-		"difficulty": "very easy",
-		"ingredients": [
-			"1 small piece of ginger peeled and chopped",
-			"1 cup spinach",
-			"1 cup soy yogurt",
-			"1 pear chopped",
-			"1/4 cup of soy milk"
-		],
-		"steps": [
-			"Combine all of the ingredients",
-			"Add more milk if necessary.",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["spinach", "pear"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2FpicoDeGallo.jpg?alt=media&token=032d4eec-91bb-4ce7-a93d-79a680edd5ba",
-		"title": "Pico de Gallo",
-		"category": "snacks",
-		"time": 10,
-		"serves": 2,
-		"difficulty": "very easy",
-		"ingredients": [
-			"4 tomatoes diced",
-			"1  chilli jalapeño diced",
-			"1/2 onion diced",
-			"1/2 cup of cilantro",
-			"salt",
-			"2 tablespoons of lime juice"
-		],
-		"steps": [
-			"Add in a bowl the tomatoes,onion and chilli jalapeño and mix",
-			"Season with lime juice and salt",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["spicy", "mexican food"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/desserts%2FChocolateChipCookies.jpg?alt=media&token=0a3fa2bf-3da9-4990-9e8d-d78ba41689e0",
-		"title": "Chocolate Chip Cookies",
-		"category": "desserts",
-		"time": 15,
-		"serves": 2,
-		"difficulty": "easy",
-		"ingredients": [
-			"1 cup oat flour",
-			"1/3 cup chocolate chips",
-			"1/4 teaspoon vanilla extract",
-			"1/4 teaspoon salt",
-			"1/4 cup sugat",
-			"3 tablespoons almond milk",
-			"2 tablespoons of olive oil",
-			"1/2 teaspoon baking soda"
-		],
-		"steps": [
-			"Mix all the dry ingredients and add almond milk and vanilla extract",
-			"Stir until making a dough",
-			"Refrigerate the dough for 2 hours",
-			"Preheat the oven to 180 degrees Celsius ",
-			"Make small dough balls and put them in a greased baking tray",
-			"Bake for around 15 minutes",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["chocolate"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FStrawberryBananaSmoothie.jpg?alt=media&token=66a70478-ccfc-4ecc-99fa-ed5a85deb51b",
-		"title": "Strawberry Banana Smoothie",
-		"category": "smoothies",
-		"time": 5,
-		"serves": 2,
-		"difficulty": "very easy",
-		"ingredients": [
-			"1 cup frozen strawberries",
-			"1 banana",
-			"1/2 cup orange juice"
-		],
-		"steps": ["Combine all of the ingredients", "Enjoy"],
-		"suggestions": "",
-		"labels": ["strawberry", "banana"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/salads%2FStrawberrySalad.jpg?alt=media&token=f43be500-8c77-406d-a2aa-2525f6dabada",
-		"title": "Strawberry Salad",
-		"category": "salads",
-		"time": 15,
-		"serves": 4,
-		"difficulty": "easy",
-		"ingredients": [
-			"2 cups strawberries",
-			"6 cups mixed salad",
-			"black pepper",
-			"salt",
-			"2 tablespoons dijon mustard",
-			"6 tablespoons olive oil",
-			"2 tablespoons maple syrup",
-			"2 tablepsoons balsamic vinegar"
-		],
-		"steps": [
-			"Wash and chop and strawberries, onion and salad",
-			"Toast the nuts in a frying pan for 3 minutes",
-			"In a small bowl mix the balsamic vinegar, olive oil, maple syrup, mustard and a pintch of salt",
-			"Serve with salad dressing, nuts and black pepper",
-			"Enjoy"
-		],
-		"suggestions": "",
-		"labels": ["strawberry", "mustard"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FTofuScrambleTaco.jpg?alt=media&token=ddf62d74-6629-4e1c-872e-2c164d115cc3",
-		"title": "Tofu Scramble Taco",
-		"category": "breakfast",
-		"time": 15,
-		"serves": 2,
-		"difficulty": "very easy",
-		"ingredients": [
-			"250gr firm tofu",
-			"1/2 teaspoon turmeric powder",
-			"1/2 teaspoon salt",
-			"1/2 onion",
-			"1 tomato",
-			"1/4 cup of fresh cilantro",
-			"3 tablespoons almond milk",
-			"black pepper",
-			"1/2 tablespoon olive oil",
-			"1 jalapeno chili",
-			"2 tortillas",
-			"1 avocado"
-		],
-		"steps": [
-			"Chop  onion,avocado, tomato, cilantro and chili jalapeno in small pieces",
-			"Crumble the tofu using a fork or with your hands",
-			"Add olive oil to the frying pan, fry 1/4 of the onion and stir  for few minutes",
-			"Add crumble tofu and almond milk,stir and cook for around 8 minutes",
-			"Season with salt,black pepper and turmeric",
-			"Add the scramble tofu to the tortillas",
-			"Serve with the chopped tomato, cilantro, chili jalapeno and onion",
-			"Enjoy"
-		],
-		"suggestions": "serve with homemade chili salsa",
-		"labels": ["tofu", "scramble", "taco", "mexican food"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FspinachSoup.jpg?alt=media&token=a552687b-a542-4e18-b2d0-aef3ae0eabc1",
-		"title": "Spinach Soup",
-		"category": "soups",
-		"time": 20,
-		"serves": 4,
-		"difficulty": "very easy",
-		"ingredients": [
-			"Salt",
-			"1 1/2 onions",
-			"3 cloves of garlic",
-			"2 cups of vegetable broth",
-			"3 potatoes",
-			"salt",
-			"1 1/2 tbsp olive oil",
-			"black pepper",
-			"250 gr spinach leaves"
-		],
-		"steps": [
-			"Peel and chop in small pieces the onion, garlic and potatoes and wash the spinach leaves",
-			"Heat a pan on medium heat, pour olive oil. Add the onion and garlic, stir now and then",
-			"When the onion is tender, add the spinach leaves until wilted",
-			"Add the vegetable broth and the chopped potatoes and cook for 20 minutes",
-			"Pour the soup in a food mixer and blend the ingredients thoroughly",
-			"Add salt and pepper to taste",
-			"Enjoy"
-		],
-		"suggestions": "serve with homemade chili salsa",
-		"labels": ["tofu", "scramble", "taco", "mexican food"],
-		"nutrition": []
-	},
-	{
-		"image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FspinachSoup.jpg?alt=media&token=a552687b-a542-4e18-b2d0-aef3ae0eabc1",
-		"title": "Spinach Soup",
-		"category": "dinner",
-		"time": 20,
-		"serves": 4,
-		"difficulty": "very easy",
-		"ingredients": [
-			"Salt",
-			"1 1/2 onions",
-			"3 cloves of garlic",
-			"2 cups of vegetable broth",
-			"3 potatoes",
-			"salt",
-			"1 1/2 tbsp olive oil",
-			"black pepper",
-			"250 gr spinach leaves"
-		],
-		"steps": [
-			"Peel and chop in small pieces the onion, garlic and potatoes and wash the spinach leaves",
-			"Heat a pan on medium heat, pour olive oil. Add the onion and garlic, stir now and then",
-			"When the onion is tender, add the spinach leaves until wilted",
-			"Add the vegetable broth and the chopped potatoes and cook for 20 minutes",
-			"Pour the soup in a food mixer and blend the ingredients thoroughly",
-			"Add salt and pepper to taste",
-			"Enjoy"
-		],
-		"suggestions": "serve with homemade chili salsa",
-		"labels": ["tofu", "scramble", "taco", "mexican food"],
-		"nutrition": []
-	}
+  {
+    "id": 1,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/chiaPudding.jpg?alt=media&token=2c46f473-d174-4fa6-b359-46dc47e8f20a",
+    "title": "Chocolate chia pudding",
+    "category": "desserts",
+    "time": 5,
+    "serves": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      "50g chia seeds",
+      "400ml almond/soy milk",
+      "3 tbsp cacao powder",
+      "½ tsp vanilla extract",
+      "cacao nibs",
+      "frozen berries"
+    ],
+    "steps": [
+      "Mix all the ingredients in a big bowl",
+      "Add a pinch of salt",
+      "Whisk to combine the ingredients",
+      "Cover with a plastic film and leave for 4 hrs in the fridge",
+      "Pour the mix in small glasses",
+      "Add frozen berries and cacao powder",
+      "enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["berries", "chocolate", "fresh", "chia", "pudding"],
+    "nutrition": []
+  },
+  {
+    "id": 2,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/brownies.jpg?alt=media&token=e99817d2-7fbc-45a2-a4e4-b930f11769fc",
+    "title": "Vegan brownies",
+    "category": "desserts",
+    "time": 55,
+    "serves": 12,
+    "difficulty": "easy",
+    "ingredients": [
+      "200g dark chocolate",
+      "80g vegan margarine",
+      "125g flour",
+      "70g ground almonds",
+      "2 tbsp ground flaxseed",
+      "60g cocoa powder",
+      "¼ tsp baking powder",
+      "1 tsp vanilla extract"
+    ],
+    "steps": [
+      "Heat oven to 170C/150C and grease and line a 20cm square tin with baking parchment. ",
+      "Combine the flaxseed with 6 tbsp water and set aside for at least 5 mins",
+      "Melt 120g chocolate and margarine with 60ml water on  low heat. Allow to cool slightly.",
+      "Put the flour, almonds, cocoa, baking powder and ¼ tsp salt in a bowl and stir to remove any lumps.",
+      "Mix the sugar into the melted chocolate mixture, and beat well until a smooth mix is formed",
+      " Stir in the flaxseed mixture, vanilla extract and remaining chocolate, then add the flour mixture.",
+      "Bake for 35-45 mins",
+      "Allow to cool in the tin completely, then cut into squares.",
+      "Enjoy"
+    ],
+    "suggestions": "Eat the brownies within three days.",
+    "labels": ["chocolate", "brownie"],
+    "nutrition": []
+  },
+  {
+    "id": 3,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/coliflowerBuffalo.jpeg?alt=media&token=ca31c66c-fbf9-43b3-9cf1-29a1de12ea19",
+    "title": " Buffalo Cauliflower Bites",
+    "category": "snacks",
+    "time": 35,
+    "serves": 6,
+    "difficulty": "easy",
+    "ingredients": [
+      "⅔ cup flour",
+      "⅓ cup hot sauce or barbecue sauce",
+      "1 tsp dried parsley",
+      "1  cauliflower",
+      "1 tbsp tomato paste",
+      "2 tsp smoked paprika",
+      "2 tsp garlic powder",
+      "2 tsp onion powder"
+    ],
+    "steps": [
+      "Cut the cauliflower into florets",
+      "Preheat oven to 232°C. Line 2 baking sheets with parchment paper. ",
+      "Combine the tomato paste, garlic powder, onion powder, brown rice flour, almond flour, paprika, parsley, and ⅔ cup of water in a blender. Mix until the batter is smooth and thick.",
+      "Add the batter to a bowl and add the cauliflower ",
+      "Mix until the cauliflowers are well covered with the batter",
+      "Lay the cauliflower in a single layer on the baking sheets, make sure that there is some space between the cauliflower florets.",
+      "Bake for 20 to 25 minutes, until the cauliflowers are crispy, let them cool down after",
+      "Put the florets to a bowl and mix with the sauce.",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["snack", "crunchy", "cauliflower"],
+    "nutrition": []
+  },
+  {
+    "id": 4,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/corn_cream.jfif?alt=media&token=ed0015b9-d665-4101-b1c9-5fa73a6d7a7b",
+    "title": "Vegan Corn Cream",
+    "category": "soups",
+    "time": 40,
+    "serves": 6,
+    "difficulty": "easy",
+    "ingredients": [
+      "1 small onion",
+      "1 cup celery",
+      "1 cup carrots",
+      "1 mince clove garlic",
+      "2 tbsp olive oil",
+      "2 1/2 cups water",
+      "2 cups corn",
+      "2 cubes vegetable bouillon",
+      "2 cups soy/almond milk",
+      "1 tbsp flour",
+      "1 tsp dried parsley",
+      "1 tsp garlic powder",
+      "1 tsp salt",
+      "1 tsp pepper"
+    ],
+    "steps": [
+      "Chop the carrots,onion and celery",
+      "Heat oil in a large pot over medium heat. ",
+      "Stir in onions and celery and cook until the onions are golden",
+      "Stir in carrots and garlic until garlic is golden.",
+      "At the same time, bring water to a boil over high heat and add the cubes of boullion",
+      "When bouillon cubes have dissolved, add corn and the vegetables from the pan.",
+      "Cook until vegetables are tender. If required add water.",
+      "Reduce heat to low, and pour 1 cup soy/almond milk.",
+      "Stir soup well and add the second cup of soy/almond milk.",
+      "Quickly whisk in flour. Stir in and add parsley, garlic powder, salt, and pepper. ",
+      "Keep stirring all the time, until chowder thickens, it takes aroun 15 to 25 minutes.",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["soup", "corn", "creamy"],
+    "nutrition": []
+  },
+  {
+    "id": 5,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/pathThai.jfif?alt=media&token=380d8140-a55b-4c1f-a08b-2f5c3ee355b0",
+    "title": "Thai Sweet Potato Noodle Bowl",
+    "category": "meals",
+    "time": 25,
+    "serves": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      "1 teaspoon salt",
+      "1 cup sliced red bell pepper",
+      "2  tablespoons toasted sesame oil",
+      "2 medium sweet potatoes, spiralized into noodles",
+      "half cup water",
+      "3 cups baby spinach",
+      "150gr of tofu in cubes",
+      "half cup light coconut milk",
+      "2 tablespoons curry paste",
+      "half cup chopped unsalted cashews",
+      "4 lime wedge"
+    ],
+    "steps": [
+      "Heat 2 tablespoons oil in a large skillet over medium-high",
+      "Add sweet potato noodles, bell pepper, and 1/2 teaspoon salt; fry for 5 minutes.",
+      "Add half cup water; cover and cook 3 minutes.",
+      "Add tofu and spinach; fry for 4 minutes.",
+      "Combine remaining salt, coconut milk and curry paste in a bowl.",
+      "Serve with lime wedges",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["asian", "thai", "noodles", "sweet potatoes"],
+    "nutrition": []
+  },
+  {
+    "id": 6,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/carrot-salad.jpg?alt=media&token=a8bda9c7-dfd7-4210-bc4c-c0df2f2fd6b8",
+    "title": "Carrot Ginger Salad",
+    "category": "salads",
+    "time": 25,
+    "serves": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      "2 tablespoons sesame seeds",
+      "3 medium  carrots ",
+      "1 1/4 cups fresh bean sprouts",
+      "1/4 cup of lemon juice",
+      "1 tablespoon peanut oil",
+      "1 tablespoon sesame oil",
+      "3 teaspoons grated ginger",
+      "Salt & freshly ground black pepper",
+      "3 tablespoons almond butter",
+      "2 tablespoons fresh curry paste",
+      "1/4 cup chopped unsalted cashews",
+      "4 lime wedge"
+    ],
+    "steps": [
+      "Peel and cut the carrots in the shape of stick",
+      "Fry the sesame seeds for 2-3 minutes until lightly toasted, then set aside",
+      " Mix the lemon juice, peanut oil, sesame oil, ginger in a cup; then add salt and pepper",
+      "Combine the toasted sesame seeds, carrot and bean sprouts in a medium bowl. Pour the dressing",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["carrot", "ginger", "fresh", "summer"],
+    "nutrition": []
+  },
+  {
+    "id": 7,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/blueberrysmoothie.jfif?alt=media&token=8f3e27db-9110-4fe5-9028-f488bbe12e13",
+    "title": "Blueberry Smoothie",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "1 ½ cups frozen blueberries",
+      "1 ½ cup frozen bananas",
+      "¼ cup old-fashioned oats",
+      "1 ½ cups to 2 cups unsweetened almond milk "
+    ],
+    "steps": [
+      "Combine all of the ingredients",
+      "Stop to scrape down the sides ",
+      "add more milk if necessary.",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["blueberry", "smoothie", "banana"],
+    "nutrition": []
+  },
+  {
+    "id": 8,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FstrawberryPorridge.jpg?alt=media&token=c75ba37e-a582-4d03-8e9e-b1fe87d0e5fd",
+    "title": "Vegan strawberry porridge",
+    "category": "breakfast",
+    "time": 10,
+    "serves": 1,
+    "difficulty": "super easy",
+    "ingredients": [
+      "50g porridge oats",
+      "250ml almond/soy milk",
+      "small pinch of salt",
+      "3-4 chopped strawberry"
+    ],
+    "steps": [
+      "Combine the oats and milk in a pot",
+      "Cook gently for 10 minutes in medium-low heat,stir constantly",
+      "add a pinch of salt and serve it with the strawberries",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["strawberry", "oatmeal", "morning"],
+    "nutrition": []
+  },
+  {
+    "id": 9,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/roastedChickpeas2.jfif?alt=media&token=41ccc935-3139-4631-ba28-c5e57749bf10",
+    "title": "Roasted chickpeas",
+    "category": "snacks",
+    "time": 40,
+    "serves": 4,
+    "difficulty": "super easy",
+    "ingredients": [
+      "1 can chickpeas",
+      "salt",
+      "cayenne pepper",
+      "2 tbsp olive oil"
+    ],
+    "steps": [
+      "Preheat oven 23 degrees C",
+      "Drain and dry the chickpeas with paper towl.",
+      "Put the chickpeas in a bowl and add olive oil",
+      "Season to taste with salt and cayenne pepper",
+      "spread the chickpeas in trail cover with baking sheet",
+      "bake for around 30-40 minutes until they are crunchy",
+      "Enjoy"
+    ],
+    "suggestions": "Drain really well the chickpeas for a crunchy touch",
+    "labels": ["chickpeas", "crunchy", "roasted"],
+    "nutrition": []
+  },
+  {
+    "id": 10,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FpastaPesto.jpg?alt=media&token=9d218f1e-f47f-4f8e-bdaf-bbb89dba1ebf",
+    "title": "Chickpeas pesto pasta",
+    "category": "meals",
+    "time": 40,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "1 can chickpeas",
+      "salt",
+      "pepper",
+      "3 tbsp pesto pasta",
+      "2 tbsp olive oil",
+      "pasta",
+      "1/2 lemon"
+    ],
+    "steps": [
+      "Bring water with salt to boil and cook the pasta for 10 - 15 min",
+      "Meanwhile, drain  and rinse the chickpeas",
+      "Chop the onion and the chickpeas",
+      "Fry the chickpeas and onion for 5 min",
+      "Add pesto, salt, pepper and lemon juice ",
+      "When the pasta is ready, drain the water and add it to the frying pan",
+      "Mix everything and cook for 5 more minutes",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["chickpeas", "pasta", "pesto"],
+    "nutrition": []
+  },
+  {
+    "id": 11,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FVeganpestoPasta.jpg?alt=media&token=5aa5df47-494a-4e7a-bbe1-7aa432418371",
+    "title": "Vegan pesto pasta",
+    "category": "meals",
+    "time": 30,
+    "serves": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      "1 can chickpeas",
+      "salt",
+      "pepper",
+      "3 tbsp pesto pasta",
+      "2 tbsp olive oil",
+      "250gr pasta",
+      "3 cups cherry tomatoes (sliced)",
+      "Vegan parmesan cheese"
+    ],
+    "steps": [
+      "Bring water with salt to boil and cook the pasta for 10 - 15 min",
+      "While cooking the pasta, in a frying pan olive oil and tomatoes, stir occasionally",
+      "When the pasta is ready, add it to the frying pan",
+      "Add  pesto, salt and pepper to taste ",
+      "Mix well all the ingredients",
+      "Add vegan parmesan cheese when serving",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["tomatoes", "pasta", "pesto"],
+    "nutrition": []
+  },
+  {
+    "id": 12,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FcarrotSmoothie.jpg?alt=media&token=4422b677-1ecd-4e16-975f-8dac358e9c81",
+    "title": "Carrot smoothie",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "super easy",
+    "ingredients": [
+      "4 dl soy yogurt",
+      "180 gr of carrots",
+      "1 tsp sugar or vanilla sugar"
+    ],
+    "steps": [
+      "Peel and chop carrots in small pieces",
+      "Add the carrots, soy yogurt and sugar to the blender",
+      "Blend till all the ingredients are mixed",
+      "Enjoy"
+    ],
+    "suggestions": "Add some soy milk if the smoothie is thick",
+    "labels": ["carrot", "soy"],
+    "nutrition": []
+  },
+  {
+    "id": 13,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FavocadoToast.jpg?alt=media&token=7be1f73c-6935-4159-8763-c3d55f31de94",
+    "title": "Avocado toast",
+    "category": "breakfast",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "super easy",
+    "ingredients": [
+      "2 slices bread",
+      "1 avocado",
+      "salt",
+      "pepper",
+      "3 tbsp cilantro",
+      "4 tbsp lemon juice"
+    ],
+    "steps": [
+      "Toast 2 slices of bread in a toaster",
+      "Meanwhile in a bowl mash the avocado",
+      "Add cilantro, lemon juice, a pinch of salta and a pinch of pepper",
+      "Mix all the ingredients",
+      "Spread the avocado to the bread",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["avocado", "toast"],
+    "nutrition": []
+  },
+  {
+    "id": 14,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2Fhummus.jpg?alt=media&token=55fcae93-a562-492c-8959-0df0319ff4eb",
+    "title": "Hummus",
+    "category": "snacks",
+    "time": 10,
+    "serves": 2,
+    "difficulty": "super easy",
+    "ingredients": [
+      "2 garlic cloves",
+      "4 tbsp lemon juice",
+      "salt",
+      "pepper",
+      "3 tbsp olive oil",
+      "1 can chickpeas"
+    ],
+    "steps": [
+      "Drain and rince the chickpeas",
+      "Add the chickpeas,garlic,lemon juice, a big pinch of salt, pepper and olive oil to a food processor",
+      "Blend until well combined",
+      "Taste and add more lemon juice, pepper or salt",
+      "Enjoy"
+    ],
+    "suggestions": "If the hummus is a bit dry, add a bit of water while blending the ingredients",
+    "labels": ["chickpeas", "hummus"],
+    "nutrition": []
+  },
+  {
+    "id": 15,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2Fovenroastedsweetpotato.jpg?alt=media&token=7366bb8d-b7a9-49bf-a3ab-173c28e59e33",
+    "title": "Oven roasted sweet potato",
+    "category": "snacks",
+    "time": 30,
+    "serves": 4,
+    "difficulty": "super easy",
+    "ingredients": [
+      "2  large sweet potatoes",
+      "3 tablespoons  olive oil      ",
+      "2 teaspoons salt",
+      "2 teaspoons garlic powder",
+      "2 teaspoons oregano"
+    ],
+    "steps": [
+      "Peel the sweet potatoes",
+      "Cut the sweet potatoes in bite size pieces.",
+      "Add the sweet potato bites on an owen plate.",
+      "Cover them with olive oil using a cooking brush.",
+      "Spice with salt, garlic powder and oregano. ",
+      "Cook in oven for 20 minutes.",
+      "Enjoy"
+    ],
+    "suggestions": "Serve with hummus or guacamole.",
+    "labels": ["sweet potato", "healthy snack"],
+    "nutrition": []
+  },
+  {
+    "id": 16,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2Fsmokytomatoredpeppersoup.jpg?alt=media&token=457a758d-8786-4273-8192-7d97ed531314",
+    "title": "Smoky tomato and red pepper soup",
+    "category": "soups",
+    "time": 30,
+    "serves": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      "5 tomatoes",
+      "3 red peppers",
+      "1 can crushed tomatoes",
+      "2 dl vegetable broth",
+      "3 cloves of garlic",
+      "1 teaspoon of smoked paprika powder ",
+      "1-2 teaspoons of dried basil"
+    ],
+    "steps": [
+      "Roast tomatoes and peppers in oven until soft.",
+      "Add roasted tomatoes and peppers in blender with 1 can of crushed tomatoes",
+      "Add vegetable broth, garlic and spices and blend",
+      "Add to a kettle and boil until hot.",
+      "Check taste and add salt if necessary.",
+      "Cook in oven for 20 minutes.",
+      "Enjoy"
+    ],
+    "suggestions": "Serve with fried vegetables and mushrooms and/or freshly baked bread.",
+    "labels": ["tomato soup", "healthy soup", " starter,"],
+    "nutrition": []
+  },
+  {
+    "id": 17,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/desserts%2Ffruitcocktail.jpg?alt=media&token=6bbed582-32ef-4c32-b76e-9bf90799fa8f",
+    "title": "DIY Fruitcocktail",
+    "category": "desserts",
+    "time": 15,
+    "serves": 4,
+    "difficulty": "super easy",
+    "ingredients": [
+      "1 apple",
+      "1 orange",
+      "½ small pineapple",
+      "1 dl dried cranberries",
+      "1 stem of grapes",
+      "0,5 dl orange juice",
+      "½ lemon juice",
+      "1 tablespoon of maple syrup"
+    ],
+    "steps": [
+      "Cut all fruits in roughly the same size pieces.",
+      "Mix orange juice, the juice of a half lemon and maple syrup together in a bowl.",
+      "Pour the juice and maple syrup mix on the fruits and mix well with a spoon.      ",
+      "Enjoy"
+    ],
+    "suggestions": "Serve with vegan ice cream, chia pudding or plant yoghurt. ",
+    "labels": ["fruits", "healthy dessert"],
+    "nutrition": []
+  },
+  {
+    "id": 18,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2Fguacamole.jpg?alt=media&token=da2f2f88-d221-4b71-8cc3-f34884ad2a32",
+    "title": "Guacamole",
+    "category": "snacks",
+    "time": 15,
+    "serves": 4,
+    "difficulty": "super easy",
+    "ingredients": [
+      "3-4 avocados",
+      "1 lime",
+      "2 teaspoon salt",
+      "1/2 onion",
+      "4 tablespoons fresh cilantro"
+    ],
+    "steps": [
+      "In a bowl mash the avocados and add lime juice",
+      "Cut the onion into small pieces ",
+      "Add the chopped onion to the bowl; Add salt and cilantro",
+      "Mix all the ingredients",
+      "Enjoy"
+    ],
+    "suggestions": "Add 1/2 or 1 chopped  jalapeño if you want a spicy guacamole",
+    "labels": ["avocado", "snacks", "lime"],
+    "nutrition": []
+  },
+  {
+    "id": 19,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/salads%2FGreenChickpeaSalad.jpg?alt=media&token=8fae45af-ec9b-41d0-a69d-775651929425",
+    "title": "Green Chickpea Salad",
+    "category": "salads",
+    "time": 10,
+    "serves": 4,
+    "difficulty": "super easy",
+    "ingredients": [
+      "1/4 cup chopped cilantro",
+      "1 avocado",
+      "4 tablespoons of lemon juice",
+      "4 tablespoons extra virgin olive oil",
+      "salt",
+      "black pepper",
+      "1 can of chickpeas",
+      "1 cucumber"
+    ],
+    "steps": [
+      "Cut the avocado in slices ",
+      "Dice the cucumber   ",
+      "Drain and rinse the chickpeas with water",
+      "Mix all the ingredients in a bowl",
+      "Add lemon juice, salt and black pepper to taste",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["avocado", "chickpeas", "lime", "salads", "green"],
+    "nutrition": []
+  },
+  {
+    "id": 20,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/salads%2FbeetrootSpinach.jpg?alt=media&token=f567e519-a4b7-4c5e-a19a-256e523c6182",
+    "title": "Beetroot Spinach Salad",
+    "category": "salads",
+    "time": 10,
+    "serves": 4,
+    "difficulty": "super easy",
+    "ingredients": [
+      "4 boild beetroots",
+      "2 teaspoons Dijon Mustard",
+      "1/2 teaspoon of maple syrup",
+      "2 tablespoons apple sider vinager ",
+      "4 tablespoons olive oil",
+      "1/2 cup walnuts",
+      "1/2 teaspoon of salt",
+      "200 grams of spinach",
+      "black pepper"
+    ],
+    "steps": [
+      "Before starting, boil the beetroots for 45 min and then peel them",
+      "Cut in cubes the beetroots ",
+      "Cut the walnuts in small portions",
+      "For making the dressing  mix  olive oil, mustard, vinegar, maple syrup, salt and some  pepper",
+      "In a large bowl mix the spinach with the dressing",
+      "Then add  beetroots and walnuts ",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["walnuts", "spinach", "beetroot", "green"],
+    "nutrition": []
+  },
+  {
+    "id": 21,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FcarrotCorianderSoup.jpg?alt=media&token=cea2db5d-36ce-4a1c-9f82-b9388df601fe",
+    "title": "Carrot coriander soup",
+    "category": "soups",
+    "time": 40,
+    "serves": 4,
+    "difficulty": " easy",
+    "ingredients": [
+      "500gr carrots",
+      "1 onion",
+      "1 potato",
+      "40gr coriander",
+      "1 vegatable stockpot in 1L water",
+      "1 tablespoon olive oil",
+      "1 teaspoon of ground coriander",
+      "1 tablespoon of pumpkin seeds",
+      "salt"
+    ],
+    "steps": [
+      "Peel and chopp the onion, potato and carrots",
+      "Heat with olive oil the onion for 5 min",
+      "Add the potato, carrots and season with gorund coriander, cook for another 5 min",
+      "Pour the vegetable stock,bring to boil and the reduce the temperature",
+      "Cover and cook for around 15 - 20 min",
+      "Cool down a bit the soup;then pour it in a food processor with the coriander",
+      "Mix until smooth and return the purée to the pan ",
+      "Cook for 5 more min and season with salt",
+      "Serve and garnish the soup with coriander leaves and pumpkin seeds",
+      "Enjoy"
+    ],
+    "suggestions": "stir ocasionally while cooking the vegetables in the oven",
+    "labels": ["carrots", "soup", "coriander"],
+    "nutrition": []
+  },
+  {
+    "id": 22,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FroastedRootVegetables.jpg?alt=media&token=5337ec76-6239-4bd5-8c2f-28b4de552e7a",
+    "title": "Roasted Root Vegetables",
+    "category": "meals",
+    "time": 60,
+    "serves": 4,
+    "difficulty": " easy",
+    "ingredients": [
+      "2 beets",
+      "2 carrots",
+      "2 sweet potatoes",
+      "1 red onion",
+      "2 teaspoons olive oil",
+      "2 teaspoons salt",
+      "1/4 teaspoon black pepper",
+      "1 head garlic, cloves peeled and separated",
+      "3 tablespoons chopped fresh rosemary leaves"
+    ],
+    "steps": [
+      "Preheat the oven 220 degrees Celsius and place 1 baking sheets with parchment paper.",
+      "Peel the beets, carrots and sweet potatoes; then cut them in small pieces (3cm)",
+      "Cut the onion in slices",
+      "Place all the vegetables in a backing sheets. Drizzle with olive oil.",
+      "Season with salt,pepper and rosemary",
+      "Roast the vegetables for 45 min until they are tender",
+      "For making the dressing  mix  olive oil, mustard, vinegar, maple syrup, salt and some  pepper",
+      "Enjoy"
+    ],
+    "suggestions": "stir ocasionally while cooking the vegetables in the oven",
+    "labels": ["beets", "carrots", "roasted"],
+    "nutrition": []
+  },
+  {
+    "id": 23,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FstrawberryFrenchToast.jpg?alt=media&token=051ca277-0f79-4443-ba3e-fdfd3b923f3a",
+    "title": "Strawberry French toast",
+    "category": "breakfast",
+    "time": 40,
+    "serves": 6,
+    "difficulty": " easy",
+    "ingredients": [
+      "6 slices of bread",
+      "2 tsp vanilla extract",
+      "200 ml almond milk",
+      "2 tsp cinammon",
+      "4 tbsp maple syrup",
+      "200 gr strawberry",
+      "3 tbsp vegan butter"
+    ],
+    "steps": [
+      "Mix in a bowl the vanilla extract, cinamon, almond milk and maple syrup",
+      "Heat the frying pan for 5 min and grease with 1 tbsp of vegan butter",
+      "Dip each bread slice in the mix for 20 seconds per side",
+      "Place the bread in the frying pan and cook until it is brown and crispy, around 3 minutes per side",
+      "Cut the strawberries in half",
+      "Serve the french toasts with the stawberries",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["bread", "breakfast", "strawberry", "toast"],
+    "nutrition": []
+  },
+  {
+    "id": 24,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FgreenSmoothie.jpg?alt=media&token=227e87ad-ee33-4b29-b54a-53ae80294712",
+    "title": "Green Smoothie",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "super easy",
+    "ingredients": [
+      "1 ½ cups frozen berries",
+      "1 banana",
+      "1 ½ cup spinach",
+      "1 ½ cups to 2 cups unsweetened almond milk "
+    ],
+    "steps": [
+      "Cut the banana in slices",
+      "Add all the ingredients to the blender and mix well",
+      "Enjoy"
+    ],
+    "suggestions": "if the smoothie is too thick, add more almond milk",
+    "labels": ["spinach", "smoothie", "green"],
+    "nutrition": []
+  },
+  {
+    "id": 25,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FpastaBolognese.jpg?alt=media&token=530c95d7-dc94-4616-bd43-c5abda452527",
+    "title": "Pasta Bolognese",
+    "category": "meals",
+    "time": 60,
+    "serves": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      "80gr mushrooms diced",
+      "70gr lentils",
+      "200g spaghetti",
+      "2 tbsp of salt",
+      "1 ½ tsp olive oil",
+      "1 onion chopped",
+      "3 celery sticks chopped",
+      "1 carrot diced ",
+      "3 garlic cloves, chopped",
+      "400gr tomato purée",
+      "2 tbsp dried oregano"
+    ],
+    "steps": [
+      "Heat oil in a pan and add onion,garlic celery, mushrooms and carrots; cook for 8 min",
+      "Add lentils and tomato purée and cook for 15 min; then spice the sauce with oregano and salt",
+      "Meanwhile cook the pasta with salt water",
+      "When the pasta is ready drain the water for 40 - 50 min",
+      "Serve the pasta with the tomato sauce",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["pasta", "tomato", "lentils"],
+    "nutrition": []
+  },
+  {
+    "id": 26,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FchocolateBananaShake.jpg?alt=media&token=66377184-b0a5-47e3-b0bd-1cd75b39bed7",
+    "title": "Chocolate Banana Smoothie ",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "3 bananas",
+      "2 cups almond/soy milk",
+      "2 teaspoons of maple syrup",
+      "2 tablespoons of cocoa powder",
+      "Flax seeds",
+      "Almond Flakes"
+    ],
+    "steps": [
+      "Cut the banana in slices",
+      "Add the banana, milk, maple syrup and cocoa powder to the blender",
+      "Serve with some flax seeds and almond flakes",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["chocolate", "banana"],
+    "nutrition": []
+  },
+  {
+    "id": 27,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FChickpeaTomatoPasta.jpg?alt=media&token=ec14eeda-3e96-4dd3-ac9f-b110814f3405",
+    "title": "Chickpea Tomato Pasta",
+    "category": "meals",
+    "time": 30,
+    "serves": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      "400gr pasta",
+      "1 teaspoon of salt",
+      "1l water",
+      "1 onion",
+      "3 garlic cloves",
+      "1 tablespoon olive oil",
+      "3 kale leaves",
+      "1 carrot diced ",
+      "½ small (10 cm) zuchini",
+      "½ yellow paprika",
+      "3 cups cherry tomatoes (sliced)",
+      "400g Tomato purée",
+      "1 teaspoon turmeric powder",
+      "1 teaspoon smoked paprika powder",
+      "1-2 teaspoon dried basil",
+      "1 teaspoon black pepper",
+      "3 dl chickpeas"
+    ],
+    "steps": [
+      "Boil water with salt.",
+      "Heat olive oil on a pan.",
+      "Chop onion and garlic into small pieces and add to the pan. Fry for 2 minutes.",
+      "Chop kale and add to the pan. Cook until it loses its texture.",
+      "Chop zucchini and and red pepper in small same size pieces and add to the pan. Fry 2 minutes.",
+      "Chop tomatoes in small pieces and add to the pan. Cook until they lose their texture.",
+      "Add canned tomatoes and stir. Add spices according to your liking. ",
+      "Enjoy"
+    ],
+    "suggestions": "Serve with a glass of organic red wine and freshly baked bread with olive oil and seasalt.",
+    "labels": ["pasta", "chickpeas", "tomato"],
+    "nutrition": []
+  },
+  {
+    "id": 28,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FblueberryBananaSmoothie.jpg?alt=media&token=53ff5bb6-01aa-4567-89b2-2fc69d192cbc",
+    "title": "High Protein Blueberry Banana Smoothie ",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1 banana",
+      "250g unsweetened plantbased yoghurt",
+      "1 tablespoon unflavoured hemp protein",
+      "1 dl frozen blueberries",
+      "3 dl organic blueberry juice"
+    ],
+    "steps": ["Add all ingredients to a blender and blend.", "Enjoy"],
+    "suggestions": "",
+    "labels": ["blueberry", "banana", "hemp"],
+    "nutrition": []
+  },
+  {
+    "id": 29,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FTofuNoodleWok.jpg?alt=media&token=74bcc151-0399-4129-8433-bd1c44440f73",
+    "title": "Tofu Noodle Wok",
+    "category": "meals",
+    "time": 15,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "200gr whole wheat rice noodles",
+      "5 dl water",
+      "100g red cabbage",
+      "100g zucchini",
+      "100g red pepper",
+      "1 onion",
+      "3 garlic cloves",
+      "200g tofu",
+      "1 tablespoon sesame oil",
+      "1 tablespoon soy sauce",
+      "½ lemon juice",
+      "1 tablespoon fresh ginger",
+      "0,5 teaspoon turmeric",
+      "1-2 tablespoons sweet chili sauce"
+    ],
+    "steps": [
+      "Boil water and add water to a bowl with salt and noodles.",
+      "Heat pan with a small amount of olive oil.",
+      "Dry tofu with a paper towel and cut into cubes.",
+      "Add tofu to the heated pan with sliced onion and mashed garlic. Fry 2 minutes.",
+      "Cut all vegetables into same size slices so they cook evenly. Add vegetables to the pan. Fry 5 minutes.",
+      "Spice tofu and vegetables with sesame oil, soy sauce, lemon juice, ginger and turmeric.",
+      "Remove noodles from water and add them to the pan. Mix with tofu and vegetables.",
+      "Add sweet chili sauce and mix one more time.",
+      "Remove noodles from water and add them to the pan. Mix with tofu and vegetables.",
+      "Enjoy"
+    ],
+    "suggestions": "Serve with fresh coriander or thai basil.",
+    "labels": ["tofu", "wok", "noddles", "tumeric"],
+    "nutrition": []
+  },
+  {
+    "id": 30,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FsweetPotatoCoconutCurrySoup.jpg?alt=media&token=b7c2eed8-4208-4b4c-8620-d3afd6769183",
+    "title": "Sweet Potato Coconut Curry Soup",
+    "category": "soups",
+    "time": 30,
+    "serves": 2,
+    "difficulty": " easy",
+    "ingredients": [
+      "2 sweet potatoes",
+      "3 garlic cloves",
+      "1 tablespoon coconut oil",
+      "1 teaspoon masala",
+      "1/2 teaspoon turmeric",
+      "1/2 teaspoon ground ginger",
+      "250 ml coconut milk",
+      "250 ml vegetable stock",
+      "1 onion",
+      "1 lemon",
+      "pepper",
+      "salt"
+    ],
+    "steps": [
+      "Peel and cut the sweet potatoes and onion in small pieces",
+      "Heat the coconut oil in a large pot.Fry the onion untill golden ",
+      "Add the garlic to the pot and cook for a minute",
+      "Add ginger, turmeric and masala",
+      "Add the sweet potato, vegetable stock and coconut milk",
+      "Bring to simmer and cook for 20 minutes or until the sweet potato is soft",
+      "Blend the soup with a hand blender until creamy",
+      "Add lemon juice, salt and pepper to taste ",
+      "Enjoy"
+    ],
+    "suggestions": "Add some chili powder for some heat",
+    "labels": ["sweet potato", "curry", "ginger"],
+    "nutrition": []
+  },
+  {
+    "id": 31,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2FhummusQuesadilla.jpeg?alt=media&token=9da22ff9-a6d4-43ab-b806-cae607f0ef29",
+    "title": "Hummus Quesadilla",
+    "category": "snacks",
+    "time": 10,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1/2 teaspoon olive oil",
+      "4 garlic cloves chopped",
+      "2 cups baby spinach",
+      "2 whole wheat tortilla",
+      "1/2 cup hummus",
+      "salt",
+      "pepper",
+      "2 tablespoons of vegan butter",
+      "1/2 cups red peppers"
+    ],
+    "steps": [
+      "Heat olive oil in a frying pan and saute the garlic and the red pepper",
+      "Add the baby spinach and season with salt and pepper, cook for 3 minutes and remove from heat",
+      "In another frying pan heat vegan butter and fry the tortilla",
+      "On one half of the tortilla add and spread the hummus and the spinach red pepper mix",
+      "Fold the tortilla and frying till the tortilla is a bit brown on bottom side",
+      "Flip the tortilla and fry the remaining side",
+      "Enjoy"
+    ],
+    "suggestions": "Add some chili  for some heat",
+    "labels": ["hummus", "tortilla", "mexican"],
+    "nutrition": []
+  },
+  {
+    "id": 32,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FmangoSmoothie.jpg?alt=media&token=ce7cb362-ab87-47c9-a679-2e0abf2d9efa",
+    "title": "Mango Banana Smoothie",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1 ½ cups frozen mango",
+      "1  banana",
+      "¼ cup old-fashioned oats",
+      "1 ½ cups  unsweetened almond milk ",
+      "1/2 cup of orange juice ",
+      "1 tablespoon chia seeds"
+    ],
+    "steps": [
+      "Add all the ingredients in a blender and mix",
+      "add more milk if necessary.",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["mango", "smoothie", "banana"],
+    "nutrition": []
+  },
+  {
+    "id": 33,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FTofuScramblewithVeggies.jpg?alt=media&token=92907c50-8205-4db7-8c73-8721df724efb",
+    "title": "Tofu Scramble with Veggies",
+    "category": "breakfast",
+    "time": 15,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "250gr firm tofu",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon salt",
+      "1 onion",
+      "2 cloves garlic",
+      "3 tablespoons almond milk",
+      "black pepper",
+      "1/2 red bell pepper",
+      "1/2 zucchini",
+      "1/2 tablespoon olive oil"
+    ],
+    "steps": [
+      "Chop the onion, red bell pepper, zucchini and garlic in small pieces",
+      "Crumble the tofu using a fork or with your hands",
+      "Add olive oil to the frying pan, fry the onion and garlic for few minutes",
+      "Add the zucchini and red bell pepper, cook for some minutes",
+      "Add crumble tofu and almond milk,stir and cook for around 8 minutes",
+      "Season with salt,black pepper and turmeric",
+      "Enjoy"
+    ],
+    "suggestions": "serve with homemade hummus",
+    "labels": ["tofu", "scramble", "breakfast"],
+    "nutrition": []
+  },
+  {
+    "id": 34,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FHorseBeanHummusTaco.jpg?alt=media&token=ee34f592-7e00-44af-987d-92d7c0a38001",
+    "title": "Fava bean Hummus Taco",
+    "category": "meals",
+    "time": 30,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "250gr minced fava bean or other mock meat",
+      "1 small onion",
+      "2 kale leaves",
+      "2 cloves garlic",
+      "2 tablespoons of fresh cilantro",
+      "1/2 lime juice",
+      "1/2 - 1 teaspoon of salt",
+      "1/2 - 1 teaspoon of smoked red chilli powder",
+      "1/2 tablespoon olive oil",
+      "2 tortillas",
+      "1 avocado",
+      "1 tomato chopped",
+      "1 cup of fresh spinach",
+      "2 tablespoons of hummus"
+    ],
+    "steps": [
+      "Chop the onion, kale and garlic in small pieces;add to frying pan and cook for 2 minutes",
+      "Add minced fava bean to the frying pan and cook for 2 more minutes",
+      "Season with cilantro, salt, smoked chilli powder and lime juice",
+      "Cut the avocado, tomato and spinach in small slices",
+      "Warm the tortillas for 15 seconds in microwave or frying pan",
+      "Add the minced fava bean, chopped vegetables and hummus on the tortilla ",
+      "Enjoy"
+    ],
+    "suggestions": "serve with chilli sauce, fresh cilantro and lime",
+    "labels": [
+      "taco",
+      "fava bean",
+      "hummus",
+      "chilli",
+      "mexican food",
+      "tortilla"
+    ],
+    "nutrition": []
+  },
+  {
+    "id": 35,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2FveganEnergyBall.jpg?alt=media&token=fa3d58ec-140e-42f2-88b3-dade1e20f389",
+    "title": "Vegan Energy Ball",
+    "category": "snacks",
+    "time": 10,
+    "serves": 3,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1 dl oat flakes",
+      "1/2 dl ground flaxseed",
+      "1/4 dl sunflower seed",
+      "1/4 dl pumpkin seed",
+      "3 tablespoons of dark cocoa powder",
+      "1/2 dl peanut butter",
+      "1/2 dl maple syrup",
+      "salt"
+    ],
+    "steps": [
+      "Add oat flakes, ground flaxseed, sunflower seeds, pumpkin seeds, cocoa powder and a pinch of salt  to a bowl and mix",
+      "Melt peanut butter",
+      "Add maple syrup with melted peanut butter and mix",
+      "Add the peanut butter mix with the dry ingredients and mix well",
+      "If the consistency is too dry, add a little bit of water or almond milk",
+      "Take a small amount of the mix and make a ball with your hands",
+      "Enjoy"
+    ],
+    "suggestions": "add coconut flakes for extra flavor",
+    "labels": ["chocolate", "maple syrup", "energy", "ball"],
+    "nutrition": []
+  },
+  {
+    "id": 36,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FCreamyCinammonBananaBlueberryPorridge.jpg?alt=media&token=52e8e1c2-5f55-497b-a6b5-d454a687d83d",
+    "title": "Banana Blueberry Porridge",
+    "category": "breakfast",
+    "time": 15,
+    "serves": 1,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1 dl oat flakes",
+      "½ banana",
+      "2.5 dl  almond/soy milk",
+      "cinnamon",
+      "salt"
+    ],
+    "steps": [
+      "Add 1 dl of oat flakes on a pan",
+      "Cut the banana in half and cut it in 0,5 cm slices.",
+      "Add banana slices with the oat flakes.",
+      "Pour 2.5 dl of almond milk and boil the oat flakes and banana slices together for 5 minutes.",
+      "Add a pinch of salt and cinnamon for taste",
+      "Enjoy with fresh blueberries"
+    ],
+    "suggestions": "",
+    "labels": ["blueberry", "banana", "oatmeal", "cinnamon", "morning"],
+    "nutrition": []
+  },
+  {
+    "id": 37,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FCarrotTurmericSmoothie.jpg?alt=media&token=18e2661f-0f97-4227-ad2e-fb41baf74049",
+    "title": "Carrot Turmeric Smoothie",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1 frozen banana",
+      "1 cup fresh pineapple",
+      "1/2 cup of carrot juice",
+      "1/4 tablespoon of turmeric powder ",
+      "1 cup of coconut milk"
+    ],
+    "steps": [
+      "Combine all of the ingredients",
+      "Add more milk if necessary.",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["carrot", "smoothie", "turmeric"],
+    "nutrition": []
+  },
+  {
+    "id": 38,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/desserts%2FStrawberryAvocadoIceCream.jpg?alt=media&token=36b5d761-c6b5-442d-8bb2-3c07baeb1648",
+    "title": "Strawberry Avocado Ice cream",
+    "category": "desserts",
+    "time": 15,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "100 gr strawberries chopped",
+      "1 avocado chopped",
+      "1 tablespoon vanilla  extract ",
+      "2 tablespoons maple syrup "
+    ],
+    "steps": [
+      "Put all the ingredients in a food processor and blend",
+      "Pour into cups and cover with a plastic film and freeze",
+      "Wait for 10 - 15 minutes",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["strawberry", "avocado", "ice cream"],
+    "nutrition": []
+  },
+  {
+    "id": 39,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FCoconutBananaPancakes.jpg?alt=media&token=01e37c23-4d46-4af5-bf63-3910b495fea0",
+    "title": "Coconut Banana Pancakes",
+    "category": "breakfast",
+    "time": 25,
+    "serves": 4,
+    "difficulty": "very easy",
+    "ingredients": [
+      "3 tablespoons sugar ",
+      "400 ml coconut milk",
+      "100 gr strawberries chopped",
+      "2 teaspoons baking powder",
+      "1 banana sliced",
+      "salt",
+      "vegetable oil"
+    ],
+    "steps": [
+      "In a bowl mix the flour, baking powder, sugar and salt",
+      "Add slowly the coconut milk to the flour and mix until making a smooth batter",
+      "Heat a frying pan and add vegetable oil",
+      "Pour small portion of the batter to the frying pan and add small pieces of banana",
+      "Cook the pancakes",
+      "Enjoy"
+    ],
+    "suggestions": "Serve with maple syrup",
+    "labels": ["banana", "coconut", "pancakes"],
+    "nutrition": []
+  },
+  {
+    "id": 40,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FPearSpinachSmoothie.jpg?alt=media&token=408d1939-8178-431e-8961-bd1a5d37f273",
+    "title": "Pear Spinach Smoothie",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1 small piece of ginger peeled and chopped",
+      "1 cup spinach",
+      "1 cup soy yogurt",
+      "1 pear chopped",
+      "1/4 cup of soy milk"
+    ],
+    "steps": [
+      "Combine all of the ingredients",
+      "Add more milk if necessary.",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["spinach", "pear"],
+    "nutrition": []
+  },
+  {
+    "id": 41,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2FpicoDeGallo.jpg?alt=media&token=032d4eec-91bb-4ce7-a93d-79a680edd5ba",
+    "title": "Pico de Gallo",
+    "category": "snacks",
+    "time": 10,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "4 tomatoes diced",
+      "1  chilli jalapeño diced",
+      "1/2 onion diced",
+      "1/2 cup of cilantro",
+      "salt",
+      "2 tablespoons of lime juice"
+    ],
+    "steps": [
+      "Add in a bowl the tomatoes,onion and chilli jalapeño and mix",
+      "Season with lime juice and salt",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["spicy", "mexican food"],
+    "nutrition": []
+  },
+  {
+    "id": 42,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/desserts%2FChocolateChipCookies.jpg?alt=media&token=0a3fa2bf-3da9-4990-9e8d-d78ba41689e0",
+    "title": "Chocolate Chip Cookies",
+    "category": "desserts",
+    "time": 15,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "1 cup oat flour",
+      "1/3 cup chocolate chips",
+      "1/4 teaspoon vanilla extract",
+      "1/4 teaspoon salt",
+      "1/4 cup sugat",
+      "3 tablespoons almond milk",
+      "2 tablespoons of olive oil",
+      "1/2 teaspoon baking soda"
+    ],
+    "steps": [
+      "Mix all the dry ingredients and add almond milk and vanilla extract",
+      "Stir until making a dough",
+      "Refrigerate the dough for 2 hours",
+      "Preheat the oven to 180 degrees Celsius ",
+      "Make small dough balls and put them in a greased baking tray",
+      "Bake for around 15 minutes",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["chocolate"],
+    "nutrition": []
+  },
+  {
+    "id": 43,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FStrawberryBananaSmoothie.jpg?alt=media&token=66a70478-ccfc-4ecc-99fa-ed5a85deb51b",
+    "title": "Strawberry Banana Smoothie",
+    "category": "smoothies",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1 cup frozen strawberries",
+      "1 banana",
+      "1/2 cup orange juice"
+    ],
+    "steps": ["Combine all of the ingredients", "Enjoy"],
+    "suggestions": "",
+    "labels": ["strawberry", "banana"],
+    "nutrition": []
+  },
+  {
+    "id": 44,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/salads%2FStrawberrySalad.jpg?alt=media&token=f43be500-8c77-406d-a2aa-2525f6dabada",
+    "title": "Strawberry Salad",
+    "category": "salads",
+    "time": 15,
+    "serves": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      "2 cups strawberries",
+      "6 cups mixed salad",
+      "black pepper",
+      "salt",
+      "2 tablespoons dijon mustard",
+      "6 tablespoons olive oil",
+      "2 tablespoons maple syrup",
+      "2 tablepsoons balsamic vinegar"
+    ],
+    "steps": [
+      "Wash and chop and strawberries, onion and salad",
+      "Toast the nuts in a frying pan for 3 minutes",
+      "In a small bowl mix the balsamic vinegar, olive oil, maple syrup, mustard and a pintch of salt",
+      "Serve with salad dressing, nuts and black pepper",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["strawberry", "mustard"],
+    "nutrition": []
+  },
+  {
+    "id": 45,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FTofuScrambleTaco.jpg?alt=media&token=ddf62d74-6629-4e1c-872e-2c164d115cc3",
+    "title": "Tofu Scramble Taco",
+    "category": "breakfast",
+    "time": 15,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "250gr firm tofu",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon salt",
+      "1/2 onion",
+      "1 tomato",
+      "1/4 cup of fresh cilantro",
+      "3 tablespoons almond milk",
+      "black pepper",
+      "1/2 tablespoon olive oil",
+      "1 jalapeno chili",
+      "2 tortillas",
+      "1 avocado"
+    ],
+    "steps": [
+      "Chop  onion,avocado, tomato, cilantro and chili jalapeno in small pieces",
+      "Crumble the tofu using a fork or with your hands",
+      "Add olive oil to the frying pan, fry 1/4 of the onion and stir  for few minutes",
+      "Add crumble tofu and almond milk,stir and cook for around 8 minutes",
+      "Season with salt,black pepper and turmeric",
+      "Add the scramble tofu to the tortillas",
+      "Serve with the chopped tomato, cilantro, chili jalapeno and onion",
+      "Enjoy"
+    ],
+    "suggestions": "serve with homemade chili salsa",
+    "labels": ["tofu", "scramble", "taco", "mexican food"],
+    "nutrition": []
+  },
+  {
+    "id": 46,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FspinachSoup.jpg?alt=media&token=a552687b-a542-4e18-b2d0-aef3ae0eabc1",
+    "title": "Spinach Soup",
+    "category": "soups",
+    "time": 20,
+    "serves": 4,
+    "difficulty": "very easy",
+    "ingredients": [
+      "Salt",
+      "1 1/2 onions",
+      "3 cloves of garlic",
+      "2 cups of vegetable broth",
+      "3 potatoes",
+      "salt",
+      "1 1/2 tbsp olive oil",
+      "black pepper",
+      "250 gr spinach leaves"
+    ],
+    "steps": [
+      "Peel and chop in small pieces the onion, garlic and potatoes and wash the spinach leaves",
+      "Heat a pan on medium heat, pour olive oil. Add the onion and garlic, stir now and then",
+      "When the onion is tender, add the spinach leaves until wilted",
+      "Add the vegetable broth and the chopped potatoes and cook for 20 minutes",
+      "Pour the soup in a food mixer and blend the ingredients thoroughly",
+      "Add salt and pepper to taste",
+      "Enjoy"
+    ],
+    "suggestions": "serve with homemade chili salsa",
+    "labels": ["tofu", "scramble", "taco", "mexican food"],
+    "nutrition": []
+  },
+  {
+    "id": 47,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FspinachSoup.jpg?alt=media&token=a552687b-a542-4e18-b2d0-aef3ae0eabc1",
+    "title": "Spinach Soup",
+    "category": "dinner",
+    "time": 20,
+    "serves": 4,
+    "difficulty": "very easy",
+    "ingredients": [
+      "Salt",
+      "1 1/2 onions",
+      "3 cloves of garlic",
+      "2 cups of vegetable broth",
+      "3 potatoes",
+      "salt",
+      "1 1/2 tbsp olive oil",
+      "black pepper",
+      "250 gr spinach leaves"
+    ],
+    "steps": [
+      "Peel and chop in small pieces the onion, garlic and potatoes and wash the spinach leaves",
+      "Heat a pan on medium heat, pour olive oil. Add the onion and garlic, stir now and then",
+      "When the onion is tender, add the spinach leaves until wilted",
+      "Add the vegetable broth and the chopped potatoes and cook for 20 minutes",
+      "Pour the soup in a food mixer and blend the ingredients thoroughly",
+      "Add salt and pepper to taste",
+      "Enjoy"
+    ],
+    "suggestions": "serve with homemade chili salsa",
+    "labels": ["tofu", "scramble", "taco", "mexican food"],
+    "nutrition": [],
+    "attribution": {
+      "name": "juan",
+      "url": "https://www.flickr.com/photos/30478819@N08/42732768585"
+    }
+  }
 ]

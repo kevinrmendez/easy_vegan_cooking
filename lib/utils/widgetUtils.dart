@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:strings/strings.dart';
 import '../main.dart';
 
 class WidgetUtils {
@@ -31,5 +31,12 @@ class WidgetUtils {
       backgroundColor: AccentColor,
     );
     Scaffold.of(context).showSnackBar(snackBar);
+  }
+
+  static PreferredSizeWidget appBar({String title, Color iconColor}) {
+    return AppBar(
+      title: Text(capitalize(title)),
+      iconTheme: IconThemeData(color: iconColor),
+    );
   }
 }

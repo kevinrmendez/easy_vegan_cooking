@@ -10,6 +10,7 @@ class Recipe {
   final List steps;
   final List labels;
   final List nutrition;
+  final Map attribution;
   bool isFavorite;
 
   Recipe(
@@ -24,7 +25,8 @@ class Recipe {
       this.steps,
       this.labels,
       this.nutrition,
-      this.isFavorite});
+      this.isFavorite,
+      this.attribution});
 
   @override
   String toString() {
@@ -40,6 +42,8 @@ class Recipe {
         isFavorite: $isFavorite,
         labeLs: $labels,
         nutrition: $nutrition
+        attributionName: ${attribution["name"]}
+        attributionLink: ${attribution["link"]}
         """);
     return super.toString();
   }
@@ -56,7 +60,8 @@ class Recipe {
       'steps': steps,
       'isFavorite': isFavorite,
       'labels': labels,
-      'nutrition': nutrition
+      'nutrition': nutrition,
+      'attribution': attribution
     };
   }
 
@@ -71,7 +76,8 @@ class Recipe {
         'steps': steps,
         'isFavorite': isFavorite,
         'labels': labels,
-        'nutrition': nutrition
+        'nutrition': nutrition,
+        'attribution': attribution
       };
 
   factory Recipe.fromJson(Map<String, dynamic> json) {
@@ -86,6 +92,7 @@ class Recipe {
         steps: json['steps'],
         isFavorite: json['isFavorite'],
         labels: json['labels'],
-        nutrition: json['nutrition']);
+        nutrition: json['nutrition'],
+        attribution: json['attribution']);
   }
 }

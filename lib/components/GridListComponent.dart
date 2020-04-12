@@ -24,7 +24,7 @@ class GridListComponent extends StatefulWidget {
 }
 
 class _GridListComponentState extends State<GridListComponent> {
-  _GridListComponentState() {}
+  // _GridListComponentState() {}
   DatabaseReference recipesRef;
   // StreamSubscription _recipesSubscription;
   var connectivityResult;
@@ -45,6 +45,7 @@ class _GridListComponentState extends State<GridListComponent> {
         steps: data["steps"],
         labels: data["labels"],
         nutrition: data["nutrition"],
+        attribution: data["attribution"],
         isFavorite: false);
   }
 
@@ -114,6 +115,7 @@ class _GridListComponentState extends State<GridListComponent> {
                         ? FirebaseDatabase.instance.reference()
                         : FirebaseDatabase.instance
                             .reference()
+                            .orderByChild("id")
                             .limitToLast(widget.listSize),
                     itemBuilder: (BuildContext context, DataSnapshot snapshot,
                         Animation<double> animation, int index) {

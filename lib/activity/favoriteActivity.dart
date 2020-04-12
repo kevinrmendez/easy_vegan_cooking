@@ -5,6 +5,7 @@ import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
 import 'package:easy_vegan_cooking/components/MyGridTile.dart';
 import 'package:easy_vegan_cooking/main.dart';
+import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 import 'package:flutter/material.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
@@ -80,9 +81,7 @@ class _FavoriteActivityState extends State<FavoriteActivity>
     // var recipes = AppState.of(context).recipes;
     return Scaffold(
       drawer: AppDrawer(),
-      appBar: AppBar(
-        title: Text('Favorite recipes'),
-      ),
+      appBar: WidgetUtils.appBar(title: 'Favorite recipes'),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[

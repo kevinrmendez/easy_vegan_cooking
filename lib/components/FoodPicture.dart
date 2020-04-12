@@ -104,7 +104,7 @@ class _FoodPictureState extends State<FoodPicture> {
               iconSize: 45,
             ),
           ],
-        )
+        ),
       ],
     );
   }
