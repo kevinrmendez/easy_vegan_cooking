@@ -9,6 +9,7 @@ import 'package:admob_flutter/admob_flutter.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 // import 'package:url_launcher/url_launcher.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:strings/strings.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../main.dart';
@@ -206,7 +207,7 @@ class _CategoryActivityState extends State<CategoryActivity> {
                   crossAxisSpacing: 4.0,
                   children: categories.map((Map category) {
                     return GestureDetector(
-                        child: Container(
+                        child: Card(
                           child: GridTile(
                             child: Container(
                               decoration: BoxDecoration(
@@ -217,12 +218,21 @@ class _CategoryActivityState extends State<CategoryActivity> {
                                     fit: BoxFit.cover),
                               ),
                             ),
-                            footer: GridTileBar(
-                              backgroundColor: Color.fromRGBO(0, 0, 0, 0.3),
-                              title: Text(
-                                category["title"],
-                                style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.bold),
+                            footer: Container(
+                              height: 30,
+                              child: GridTileBar(
+                                // backgroundColor: Color.fromRGBO(0, 0, 0, 0.3),
+                                backgroundColor: Colors.white,
+                                title: Text(
+                                  capitalize(category["title"]),
+                                  textAlign: TextAlign.right,
+                                  style: TextStyle(
+                                      fontFamily: 'JosefinSans',
+                                      fontSize: 16,
+                                      color: Colors.black,
+                                      // color: Colors.white,
+                                      fontWeight: FontWeight.bold),
+                                ),
                               ),
                             ),
                           ),
