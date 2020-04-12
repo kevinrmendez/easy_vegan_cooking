@@ -53,6 +53,7 @@ dev_dependencies:
   permission_handler:
   swipedetector:
   firebase_core:
+  flutter_native_splash:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
