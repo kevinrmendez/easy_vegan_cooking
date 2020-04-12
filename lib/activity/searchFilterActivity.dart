@@ -73,6 +73,7 @@ class _SearchFilterActivityState extends State<SearchFilterActivity> {
         steps: data["steps"],
         labels: data["labels"],
         nutrition: data["nutrition"],
+        attribution: data["attribution"],
         isFavorite: false);
   }
 
