@@ -76,6 +76,7 @@ flutter:
     - assets/category-images/salads.jpg
     - assets/category-images/snacks.jfif
     - assets/category-images/dinner.jpg
+    - assets/icon/evc-icon.png
     - assets/alarmClock.mp3
     - lang/en.json
     - lang/es.json

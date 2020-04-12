@@ -26,7 +26,11 @@
     ],
     "suggestions": "",
     "labels": ["berries", "chocolate", "fresh", "chia", "pudding"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 2,
@@ -59,7 +63,11 @@
     ],
     "suggestions": "Eat the brownies within three days.",
     "labels": ["chocolate", "brownie"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 3,
@@ -92,7 +100,11 @@
     ],
     "suggestions": "",
     "labels": ["snack", "crunchy", "cauliflower"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 4,
@@ -134,7 +146,11 @@
     ],
     "suggestions": "",
     "labels": ["soup", "corn", "creamy"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 5,
@@ -168,7 +184,11 @@
     ],
     "suggestions": "",
     "labels": ["asian", "thai", "noodles", "sweet potatoes"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 6,
@@ -201,7 +221,11 @@
     ],
     "suggestions": "",
     "labels": ["carrot", "ginger", "fresh", "summer"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 7,
@@ -225,7 +249,11 @@
     ],
     "suggestions": "",
     "labels": ["blueberry", "smoothie", "banana"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 8,
@@ -249,7 +277,11 @@
     ],
     "suggestions": "",
     "labels": ["strawberry", "oatmeal", "morning"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 9,
@@ -276,7 +308,11 @@
     ],
     "suggestions": "Drain really well the chickpeas for a crunchy touch",
     "labels": ["chickpeas", "crunchy", "roasted"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 10,
@@ -307,7 +343,11 @@
     ],
     "suggestions": "",
     "labels": ["chickpeas", "pasta", "pesto"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 11,
@@ -338,7 +378,11 @@
     ],
     "suggestions": "",
     "labels": ["tomatoes", "pasta", "pesto"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 12,
@@ -361,7 +405,11 @@
     ],
     "suggestions": "Add some soy milk if the smoothie is thick",
     "labels": ["carrot", "soy"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 13,
@@ -389,7 +437,11 @@
     ],
     "suggestions": "",
     "labels": ["avocado", "toast"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 14,
@@ -416,7 +468,11 @@
     ],
     "suggestions": "If the hummus is a bit dry, add a bit of water while blending the ingredients",
     "labels": ["chickpeas", "hummus"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 15,
@@ -444,7 +500,11 @@
     ],
     "suggestions": "Serve with hummus or guacamole.",
     "labels": ["sweet potato", "healthy snack"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 16,
@@ -474,7 +534,11 @@
     ],
     "suggestions": "Serve with fried vegetables and mushrooms and/or freshly baked bread.",
     "labels": ["tomato soup", "healthy soup", " starter,"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 17,
@@ -502,7 +566,11 @@
     ],
     "suggestions": "Serve with vegan ice cream, chia pudding or plant yoghurt. ",
     "labels": ["fruits", "healthy dessert"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 18,
@@ -528,7 +596,11 @@
     ],
     "suggestions": "Add 1/2 or 1 chopped  jalapeño if you want a spicy guacamole",
     "labels": ["avocado", "snacks", "lime"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 19,
@@ -558,7 +630,11 @@
     ],
     "suggestions": "",
     "labels": ["avocado", "chickpeas", "lime", "salads", "green"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 20,
@@ -590,7 +666,11 @@
     ],
     "suggestions": "",
     "labels": ["walnuts", "spinach", "beetroot", "green"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 21,
@@ -625,7 +705,11 @@
     ],
     "suggestions": "stir ocasionally while cooking the vegetables in the oven",
     "labels": ["carrots", "soup", "coriander"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 22,
@@ -658,7 +742,11 @@
     ],
     "suggestions": "stir ocasionally while cooking the vegetables in the oven",
     "labels": ["beets", "carrots", "roasted"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 23,
@@ -688,7 +776,11 @@
     ],
     "suggestions": "",
     "labels": ["bread", "breakfast", "strawberry", "toast"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 24,
@@ -711,7 +803,11 @@
     ],
     "suggestions": "if the smoothie is too thick, add more almond milk",
     "labels": ["spinach", "smoothie", "green"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 25,
@@ -744,7 +840,11 @@
     ],
     "suggestions": "",
     "labels": ["pasta", "tomato", "lentils"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 26,
@@ -770,7 +870,11 @@
     ],
     "suggestions": "",
     "labels": ["chocolate", "banana"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 27,
@@ -811,7 +915,11 @@
     ],
     "suggestions": "Serve with a glass of organic red wine and freshly baked bread with olive oil and seasalt.",
     "labels": ["pasta", "chickpeas", "tomato"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 28,
@@ -831,7 +939,11 @@
     "steps": ["Add all ingredients to a blender and blend.", "Enjoy"],
     "suggestions": "",
     "labels": ["blueberry", "banana", "hemp"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 29,
@@ -871,7 +983,11 @@
     ],
     "suggestions": "Serve with fresh coriander or thai basil.",
     "labels": ["tofu", "wok", "noddles", "tumeric"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 30,
@@ -908,7 +1024,11 @@
     ],
     "suggestions": "Add some chili powder for some heat",
     "labels": ["sweet potato", "curry", "ginger"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 31,
@@ -940,7 +1060,11 @@
     ],
     "suggestions": "Add some chili  for some heat",
     "labels": ["hummus", "tortilla", "mexican"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 32,
@@ -965,7 +1089,11 @@
     ],
     "suggestions": "",
     "labels": ["mango", "smoothie", "banana"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 33,
@@ -998,7 +1126,11 @@
     ],
     "suggestions": "serve with homemade hummus",
     "labels": ["tofu", "scramble", "breakfast"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 34,
@@ -1042,7 +1174,11 @@
       "mexican food",
       "tortilla"
     ],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 35,
@@ -1073,7 +1209,11 @@
     ],
     "suggestions": "add coconut flakes for extra flavor",
     "labels": ["chocolate", "maple syrup", "energy", "ball"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 36,
@@ -1100,7 +1240,11 @@
     ],
     "suggestions": "",
     "labels": ["blueberry", "banana", "oatmeal", "cinnamon", "morning"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 37,
@@ -1124,7 +1268,11 @@
     ],
     "suggestions": "",
     "labels": ["carrot", "smoothie", "turmeric"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 38,
@@ -1148,7 +1296,11 @@
     ],
     "suggestions": "",
     "labels": ["strawberry", "avocado", "ice cream"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 39,
@@ -1177,7 +1329,11 @@
     ],
     "suggestions": "Serve with maple syrup",
     "labels": ["banana", "coconut", "pancakes"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 40,
@@ -1201,7 +1357,11 @@
     ],
     "suggestions": "",
     "labels": ["spinach", "pear"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 41,
@@ -1226,7 +1386,11 @@
     ],
     "suggestions": "",
     "labels": ["spicy", "mexican food"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 42,
@@ -1257,7 +1421,11 @@
     ],
     "suggestions": "",
     "labels": ["chocolate"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 43,
@@ -1340,7 +1508,11 @@
     ],
     "suggestions": "serve with homemade chili salsa",
     "labels": ["tofu", "scramble", "taco", "mexican food"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 46,
@@ -1371,43 +1543,38 @@
       "Enjoy"
     ],
     "suggestions": "serve with homemade chili salsa",
-    "labels": ["tofu", "scramble", "taco", "mexican food"],
-    "nutrition": []
+    "labels": ["spinach", "green"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 47,
-    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FspinachSoup.jpg?alt=media&token=a552687b-a542-4e18-b2d0-aef3ae0eabc1",
-    "title": "Spinach Soup",
-    "category": "dinner",
-    "time": 20,
-    "serves": 4,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2FpeanutButterFruitBread.jpg?alt=media&token=eabc1ff2-888a-4741-97c4-7f3b996b53b4",
+    "title": "Peanut Butter Strawberry Bread Slice",
+    "category": "snacks",
+    "time": 5,
+    "serves": 1,
     "difficulty": "very easy",
     "ingredients": [
-      "Salt",
-      "1 1/2 onions",
-      "3 cloves of garlic",
-      "2 cups of vegetable broth",
-      "3 potatoes",
-      "salt",
-      "1 1/2 tbsp olive oil",
-      "black pepper",
-      "250 gr spinach leaves"
+      "2 slices of bread",
+      "2 tbsp peanut butter",
+      "4 strawberries"
     ],
     "steps": [
-      "Peel and chop in small pieces the onion, garlic and potatoes and wash the spinach leaves",
-      "Heat a pan on medium heat, pour olive oil. Add the onion and garlic, stir now and then",
-      "When the onion is tender, add the spinach leaves until wilted",
-      "Add the vegetable broth and the chopped potatoes and cook for 20 minutes",
-      "Pour the soup in a food mixer and blend the ingredients thoroughly",
-      "Add salt and pepper to taste",
+      "Wash  thoroughly the strawberries",
+      "Spread the peanut butter evenly onto each bread slice",
+      "Cut the strawberries in slices and add them to the bread slice",
       "Enjoy"
     ],
-    "suggestions": "serve with homemade chili salsa",
-    "labels": ["tofu", "scramble", "taco", "mexican food"],
+    "suggestions": "add some banana slices also",
+    "labels": ["strawberry", "peanut butter"],
     "nutrition": [],
     "attribution": {
-      "name": "juan",
-      "url": "https://www.flickr.com/photos/30478819@N08/42732768585"
+      "name": "",
+      "url": ""
     }
   }
 ]

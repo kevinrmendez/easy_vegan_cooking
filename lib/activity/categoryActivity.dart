@@ -153,7 +153,10 @@ class _CategoryActivityState extends State<CategoryActivity> {
             actions: <Widget>[
               FlatButton(
                 onPressed: () => Navigator.of(context).pop(true),
-                child: new Text('Yes'),
+                child: new Text(
+                  'Yes',
+                  style: TextStyle(color: AccentColor),
+                ),
               ),
               FlatButton(
                 onPressed: () async {
@@ -166,11 +169,17 @@ class _CategoryActivityState extends State<CategoryActivity> {
                     throw 'Could not launch $url';
                   }
                 },
-                child: new Text('review app'),
+                child: new Text(
+                  'review app',
+                  style: TextStyle(color: AccentColor),
+                ),
               ),
               FlatButton(
                 onPressed: () => Navigator.of(context).pop(false),
-                child: new Text('No'),
+                child: new Text(
+                  'No',
+                  style: TextStyle(color: AccentColor),
+                ),
               ),
             ],
           ),

@@ -32,7 +32,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 
-const PrimaryColor = const Color(0xFF99cc00);
+// const PrimaryColor = const Color(0xFFa8e000);
+// const PrimaryColor = const Color(0xFF99cc00);
+// const PrimaryColor = const Color(0xFFB2DB2B);
+// const PrimaryColor = const Color(0xFFA8CE2D);
+const PrimaryColor = const Color(0xFFB4CE2F);
 const AccentColor = const Color(0xFFFF9900);
 const GreyColor = const Color(0xFFEEEEEE);
 const RedColors = const Color(0xFFff6961);

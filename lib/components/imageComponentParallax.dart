@@ -293,7 +293,8 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
   }
 
   Widget _pictureAttribution() {
-    return widget.recipe.attribution["name"] != null
+    return widget.recipe.attribution["name"] != null &&
+            widget.recipe.attribution["name"] != ""
         ? Container(
             color: PrimaryColor,
             padding: EdgeInsets.symmetric(vertical: 4),
