@@ -2,6 +2,7 @@ import 'package:audioplayers/audio_cache.dart';
 import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quiver/async.dart';
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:vibration/vibration.dart';
@@ -104,21 +105,8 @@ class _TimerActivityState extends State<TimerActivity> {
     super.dispose();
   }
 
-  // void _showAd() async {
-  //   _counter++;
-  //   if (_counter % 3 == 0) {
-  //     interstitialAd.load();
-  //   }
-
-  //   if (await interstitialAd.isLoaded) {
-  //     interstitialAd.show();
-  //   }
-  // }
-
   @override
   Widget build(BuildContext context) {
-    // var filteredData = data.where((recipe) => recipe["category"] == "dinner");
-    // var recipes = AppState.of(context).recipes;
     return Scaffold(
       drawer: AppDrawer(),
       appBar: WidgetUtils.appBar(title: 'Timer'),
@@ -129,6 +117,10 @@ class _TimerActivityState extends State<TimerActivity> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
+              Icon(
+                FontAwesomeIcons.clock,
+                size: 60,
+              ),
               // Text(
               //   AppLocalizations.of(context).translate('first_string'),
               //   style: TextStyle(fontSize: 25),
