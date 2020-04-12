@@ -157,7 +157,6 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            _pictureAttribution(),
             AdmobBanner(
               adUnitId: getBannerAdUnitId(),
               adSize: AdmobBannerSize.BANNER,
@@ -292,60 +291,6 @@ class ImageComponentParallaxState extends State<ImageComponentParallax> {
     );
   }
 
-  Widget _pictureAttribution() {
-    return widget.recipe.attribution["name"] != null &&
-            widget.recipe.attribution["name"] != ""
-        ? Container(
-            color: PrimaryColor,
-            padding: EdgeInsets.symmetric(vertical: 4),
-            child: Row(
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(left: 15),
-                  child: Icon(
-                    Icons.camera,
-                    color: Colors.white,
-                    size: 15,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 5.0),
-                  child: Text(
-                    'Picture taken by: ',
-                    style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () async {
-                    String url = widget.recipe.attribution["url"];
-                    if (await canLaunch(url)) {
-                      await launch(url);
-                    } else {
-                      throw 'Could not launch $url';
-                    }
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                        border: Border(
-                            bottom: BorderSide(width: 1, color: Colors.white))),
-                    child: Text(
-                      widget.recipe.attribution["name"],
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
-                )
-              ],
-            ),
-          )
-        : SizedBox();
-  }
-
   Widget _smallText(String title, String detail) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -428,6 +373,60 @@ class _FoodPictureParallaxState extends State<FoodPictureParallax> {
     super.initState();
   }
 
+  Widget _pictureAttribution() {
+    return widget.recipe.attribution["name"] != null &&
+            widget.recipe.attribution["name"] != ""
+        ? Container(
+            color: Colors.black,
+            padding: EdgeInsets.symmetric(vertical: 4),
+            child: Row(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(left: 15),
+                  child: Icon(
+                    Icons.camera,
+                    color: Colors.white,
+                    size: 15,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                  child: Text(
+                    'Picture taken by: ',
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () async {
+                    String url = widget.recipe.attribution["url"];
+                    if (await canLaunch(url)) {
+                      await launch(url);
+                    } else {
+                      throw 'Could not launch $url';
+                    }
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                        border: Border(
+                            bottom: BorderSide(width: 1, color: Colors.white))),
+                    child: Text(
+                      widget.recipe.attribution["name"],
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          )
+        : SizedBox();
+  }
+
   @override
   Widget build(BuildContext context) {
     // AppState appState = AppState.of(context);
@@ -467,6 +466,7 @@ class _FoodPictureParallaxState extends State<FoodPictureParallax> {
                 )),
           ),
         ),
+        _pictureAttribution(),
       ],
     );
   }
