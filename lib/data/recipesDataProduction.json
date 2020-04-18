@@ -1472,7 +1472,11 @@
     ],
     "suggestions": "",
     "labels": ["strawberry", "mustard"],
-    "nutrition": []
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   },
   {
     "id": 45,
@@ -1573,8 +1577,155 @@
     "labels": ["strawberry", "peanut butter"],
     "nutrition": [],
     "attribution": {
-      "name": "juan gonzales",
-      "url": "https://www.flickr.com/photos/leslievictor/31988544137/in/photolist-QJHDH4-R1jtma-AqNrKB-M5ajFh-iFxcZo-2iFduEJ-GznnP8-ZN1Bwq-JqZs6p-2i9fo8P-MDKoR5-SuE1CR-2gfvEVb-2gitboo-weN7Dk-DV1TCh-99WHqz-99WHtv-MPPb1k-99WHj6-2i6ziSi-Ht9WDA-Jv84fW-2iNNLH1-wa6yHj-J9ooe2-92totd-TnSFpN-2iNJkZT-99ZQB3-99WHwz-99ZQi5-aJAsb4-99ZQDQ-99ZQoh-vxkwep-wfbR55-acxGDD-zWhCtq-87CxNT-dx8DTC-aJArMn-S3B2QB-24gxPEK-24fyYxK-2anXCWo-PdTsRC-VJV7Bv-8vTPGC-RGxo4f"
+      "name": "",
+      "url": ""
+    }
+  },
+  {
+    "id": 48,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/dinner%2FchiliSinCarne.jpg?alt=media&token=90b86eb3-0426-4cc1-a000-d622f5bb7119",
+    "title": "Chili sin carne",
+    "category": "dinner",
+    "time": 45,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "1 onion",
+      "2 tbsp olive oil",
+      "2 tsp ground coriander",
+      "2 tsp oregano",
+      "2 tsp smoked paprika",
+      "2 cubes vegetable bouillon",
+      "300 gr soy mince",
+      "200 gr boiled black beans",
+      "200 gr boiled kidney beans",
+      "500 ml tomato sauce",
+      "4 tbsp chipotle sauce",
+      "1 red pepper",
+      "1 red chili",
+      "2 garlic cloves",
+      "salt",
+      "water"
+    ],
+    "steps": [
+      "Chop the onion, garlic, red pepper and red chili",
+      "Add olive oil to a cooking pot and fried the onion and garlic until softened",
+      "Fried the chopped paprika and chili for 5 min",
+      "Add the tomato sauce, chipotle sauce and vegetable bouillon",
+      "Pour tomato sauce, chipotle sauce and vegetable bouillon and bring to simmer, cook for 25 min",
+      "Add the soy mince and beans and pour a little bit of water if it gets thick",
+      "Season with salt, coriander, somked paprika and oregano",
+      "Enjoy"
+    ],
+    "suggestions": "Serve with white rice and cubes of avocado",
+    "labels": ["beans", "mexican", "chili"],
+    "nutrition": [],
+    "attribution": {
+      "name": "Marco Verch",
+      "url": "https://www.flickr.com/photos/160866001@N07/49208248433/in/photolist-bkWNFB-bkWPup-bkWR22-bkWS7k-bkWRWZ-2166A3h-2166AYq-Rq988h-bkWSgZ-2166BQW-2166Dgm-bkWRcB-bkWPGz-bkWP9v-bkWPQc-bkWQFi-bkWPX8-bkWQqB-U3znSL-bkWRnr-bkWRCK-bkWQ66-VKm1rF-bkWRMt-RaJ2Cx-2hYn8Sr-2hYpBAG-bkWQz6-21Zg6UV-7i3CLg-zsYT1S"
+    }
+  },
+  {
+    "id": 49,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/salads%2FspinachAppleSalad.jpg?alt=media&token=c27c7ecd-3e55-470e-84a5-507808cb5654",
+    "title": "Spinach Apple Salad",
+    "category": "salads",
+    "time": 10,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "300 gr spinach leaves ",
+      "2 apples",
+      "1/4 red onion",
+      "1/2 cup walnuts",
+      "1/3 cup dried cranberries",
+      "3 tbsp lemon juice",
+      "1 garlic clove peeled and minced",
+      "1/4 cup apple cider vinegar",
+      "1/2  tbsp extra virgin olive oil",
+      "salt",
+      "black pepper"
+    ],
+    "steps": [
+      "Chop the apple and the red onion in fine slices",
+      "In a bowl add apple slices,onion slices,  spinach leaves, cranberries and walnuts",
+      "For the vinaigrette in a small container add garlic,lemon juice, apple cider vinegar and olive oil",
+      "Mix well the vinaigrette and season with salt and pepper",
+      "Drizzle the vinaigrette to the salad",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["spinach", "apple"],
+    "nutrition": [],
+    "attribution": {
+      "name": "Marco Verch",
+      "url": "https://www.flickr.com/photos/30478819@N08/48674630411/in/album-72157710681221251/"
+    }
+  },
+  {
+    "id": 50,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FspinachAvocadoToast.jpg?alt=media&token=b97e81e3-5a0e-4905-8e82-0eeb6d629bad",
+    "title": "Spinach Avocado Toast",
+    "category": "breakfast",
+    "time": 5,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "4 slices bread",
+      "1 avocado",
+      "100 gr spinach leaves",
+      "salt",
+      "black pepper"
+    ],
+    "steps": [
+      "Wash the spinach leaves",
+      "Cut in half the avocado and spread on bread",
+      "Season with salt and pepper",
+      "Add the spinach leaves ",
+      "Enjoy"
+    ],
+    "suggestions": "You can also add some slices of tomato",
+    "labels": ["spinach", "avocado"],
+    "nutrition": [],
+    "attribution": {
+      "name": "Lisa Fotios",
+      "url": "https://www.pexels.com/@fotios-photos?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+    }
+  },
+  {
+    "id": 51,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FcreamMushroom.jpg?alt=media&token=6a5730fc-c249-45c3-8d30-b1d1ecf0edc5",
+    "title": "Creamy Vegan Mushroom Soup",
+    "category": "soups",
+    "time": 40,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "1 tsp salt",
+      "1 tsp black pepper",
+      "1 onion chopped",
+      "3 tbsp vegan butter",
+      "2 garlic cloves minced",
+      "1/4 all purpose flour",
+      "500 gr mushrooms sliced",
+      "4 cups vegetable broth",
+      "2 tsp dried thyme leaves",
+      "2 cups coconut milk"
+    ],
+    "steps": [
+      "In a cooking pot melt the vegan butter over medium heat",
+      "Fry garlic, onion and mushroom",
+      "When the mushrooms and onion are soft, add the flour and cook for 1 minute",
+      "Pour the vegetable broth and coconut milk and cooki for 20 minutes",
+      "Season the soup with thyme leaves, salt and pepper",
+      "Enjoy"
+    ],
+    "suggestions": "You can also add some slices of tomato",
+    "labels": ["mushroom", "cream"],
+    "nutrition": [],
+    "attribution": {
+      "name": "Marco Verch",
+      "url": "https://www.flickr.com/photos/30478819@N08/30966146077/in/photostream/"
     }
   }
 ]
