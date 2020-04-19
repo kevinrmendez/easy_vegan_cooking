@@ -5,7 +5,6 @@ import 'package:dio/dio.dart';
 import 'package:easy_vegan_cooking/activity/RecipeOfDayActivity.dart';
 
 import 'package:easy_vegan_cooking/components/appTItle.dart';
-import 'package:easy_vegan_cooking/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
@@ -219,73 +218,6 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
             home: CategoryActivity(),
           ),
         ));
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  static const platform = const MethodChannel('setWallpaper');
-
-  Dio dio = Dio();
-  int index;
-  String progressString;
-  bool downloading;
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    void _menuSelected(choice) {
-      switch (choice) {
-        case 'settings':
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => Settings()),
-          );
-          break;
-      }
-    }
-
-    return Scaffold(
-        appBar: AppBar(
-          // Here we take the value from the MyHomePage object that was created by
-          // the App.build method, and use it to set our appbar title.
-          iconTheme: IconThemeData(color: Colors.white),
-          title: appTitle('Cutest Cats'),
-          actions: <Widget>[
-            PopupMenuButton(
-              icon: Icon(
-                Icons.menu,
-                size: 30,
-              ),
-              onSelected: _menuSelected,
-              color: Colors.white,
-              itemBuilder: (BuildContext context) {
-                return [
-                  PopupMenuItem(
-                    value: 'settings',
-                    child: Container(child: Text('Settings')),
-                  ),
-                ];
-              },
-            )
-          ],
-        ),
-        body: Center(
-          child: Text('main'),
-        )
-        // This trailing comma makes auto-formatting nicer for build methods.
-        );
   }
 }
 
