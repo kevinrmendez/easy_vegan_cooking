@@ -1727,5 +1727,41 @@
       "name": "Marco Verch",
       "url": "https://www.flickr.com/photos/30478819@N08/30966146077/in/photostream/"
     }
+  },
+  {
+    "id": 51,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FBeanAndVegetableBreakfastPan.jpg?alt=media&token=e4ceca61-5265-4ee5-a1a1-dfbe4de8b45d",
+    "title": "Bean and vegetable breakfast pan",
+    "category": "breakfast",
+    "time": 15,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1 red onion",
+"2 cale leafs",
+"1/2 red bell pepper",
+"6 mushrooms",
+"2 dl black beans",
+"1 can chopped tomatoes",
+"1 tablespoon sunflower oil",
+"0,5 teaspoon salt",
+"Pinch of black pepper",
+"1 teaspoon paprika powder",
+"0,5 teaspoon curcumin",
+"1 teaspoon oregano or dry basil"
+    ],
+    "steps": [
+      " Fry onion for 2 minutes in oil.",
+      "Add cale and mushrooms and fry 2 minutes.",
+      " Add bell pepper and beans and fry 1 minute.",
+      " Add chopped tomatoes and spices. Let zimmer for 2 minutes."
+    ],
+    "suggestions": "",
+    "labels": ["bean", "pan"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   }
 ]

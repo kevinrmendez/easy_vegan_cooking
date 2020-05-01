@@ -3,6 +3,19 @@ import 'package:strings/strings.dart';
 import '../main.dart';
 
 class WidgetUtils {
+  static Widget boldTitle(String text) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Text(
+        capitalize(text),
+        style: TextStyle(
+          fontWeight: FontWeight.bold, fontSize: 20,
+          // color: AccentColor
+        ),
+      ),
+    );
+  }
+
   static Widget recipeTitle({String text = "", BuildContext context}) {
     return Container(
       margin: EdgeInsetsDirectional.only(top: 8),

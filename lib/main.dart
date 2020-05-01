@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:dio/dio.dart';
+import 'package:easy_vegan_cooking/activity/HomeActivity.dart';
 import 'package:easy_vegan_cooking/activity/RecipeOfDayActivity.dart';
 
 import 'package:easy_vegan_cooking/components/appTItle.dart';
@@ -215,7 +216,7 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
               return supportedLocales.first;
             },
             // home: SplashScreen(),
-            home: CategoryActivity(),
+            home: HomeActivity(),
           ),
         ));
   }
