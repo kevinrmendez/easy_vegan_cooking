@@ -1,4 +1,3 @@
-import 'package:easy_vegan_cooking/components/imageComponent.dart';
 import 'package:easy_vegan_cooking/components/imageComponentParallax.dart';
 import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 import 'package:flutter/material.dart';
