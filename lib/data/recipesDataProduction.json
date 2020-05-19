@@ -1738,17 +1738,17 @@
     "difficulty": "very easy",
     "ingredients": [
       "1 red onion",
-"2 cale leafs",
-"1/2 red bell pepper",
-"6 mushrooms",
-"2 dl black beans",
-"1 can chopped tomatoes",
-"1 tablespoon sunflower oil",
-"0,5 teaspoon salt",
-"Pinch of black pepper",
-"1 teaspoon paprika powder",
-"0,5 teaspoon curcumin",
-"1 teaspoon oregano or dry basil"
+      "2 cale leafs",
+      "1/2 red bell pepper",
+      "6 mushrooms",
+      "2 dl black beans",
+      "1 can chopped tomatoes",
+      "1 tablespoon sunflower oil",
+      "0,5 teaspoon salt",
+      "Pinch of black pepper",
+      "1 teaspoon paprika powder",
+      "0,5 teaspoon curcumin",
+      "1 teaspoon oregano or dry basil"
     ],
     "steps": [
       " Fry onion for 2 minutes in oil.",
@@ -1762,6 +1762,269 @@
     "attribution": {
       "name": "",
       "url": ""
+    }
+  },
+  {
+    "id": 52,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FBeanAndTomatoToast.jpg?alt=media&token=b9ada4dd-c05c-4acf-bbee-f26f139fa745",
+    "title": "Bean and tomato toast",
+    "category": "breakfast",
+    "time": 15,
+    "serves": 1,
+    "difficulty": "very easy",
+    "ingredients": [
+      "2 dl black beans",
+      "½ avocado",
+      "1 garlic clove",
+      "Salt",
+      "Pepper",
+      "2 slices of whole wheat bread",
+      "1 tomato"
+    ],
+    "steps": [
+      "Add beans, garlic and avocado in a blender and mix. Add spices and water if needed.",
+      "Toast two slices of bread. Cut tomato into thick slices. ",
+      "Add a thick layer off bean mix on bread and top with tomato slices. "
+    ],
+    "suggestions": "Serve with finger salt and fresh herbs",
+    "labels": ["bean", "high protein", "toast"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
+  },
+  {
+    "id": 53,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/breakfast%2FHummusBread.jpg?alt=media&token=b54b3758-341c-4887-9bca-836fc0c5a7c7",
+    "title": "Hummus bread",
+    "category": "breakfast",
+    "time": 15,
+    "serves": 1,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1 can cooked chickpeas",
+      "½ lemon juice",
+      "2 tbsp tahini",
+      "1,5 tsp cumin",
+      "¾ dl olive oil",
+      "Salt",
+      "Black pepper",
+      "2 garlic cloves"
+    ],
+    "steps": [
+      "Add chickpeas in a blender.",
+      "Add lemon juice, tahini, cumin, garlic and salt and pepper. ",
+      "Blend until you reach a smooth consistency.",
+      "For a different taste and color, add a pinch of curry and curcumin. ",
+      "Add hummus on bread and serve with vegetables."
+    ],
+    "suggestions": "Serve with finger salt and fresh herbs.",
+    "labels": ["toast", "hummus", "high protein"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
+  },
+  {
+    "id": 54,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2FBananaBlackberryPlate.jpg?alt=media&token=7f167b86-092c-4692-8ce8-29fc82fc7312",
+    "title": "Banana blackberry plate",
+    "category": "snacks",
+    "time": 5,
+    "serves": 1,
+    "difficulty": "very easy",
+    "ingredients": ["1 banana", "1 dl fresh blackberries"],
+    "steps": [
+      "Slice banana and add to the plate",
+      " Rinse the blackberries and add to the plate",
+      " Enjoy"
+    ],
+    "suggestions": "Serve with vegan yoghurt, nuts and oat flakes",
+    "labels": ["fruit", "banana", "berries"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
+  },
+  {
+    "id": 55,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FZucchiniVegetableSoup.jpg?alt=media&token=1a8a4934-58f5-4df2-8780-739c3f293c42",
+    "title": "Zucchini vegetable soup",
+    "category": "soups",
+    "time": 30,
+    "serves": 4,
+    "difficulty": "very easy",
+    "ingredients": [
+      "7 dl water",
+      "1 vegetable stock cube",
+      "1 zucchini",
+      "1 carrot",
+      "½ onion",
+      "4 potatoes",
+      "2-4 garlic cloves",
+      "Salt",
+      "Black pepper",
+      "1 tsp tarragon",
+      "1 dl vegan creme fraiche"
+    ],
+    "steps": [
+      "Boil water with vegetable stock cubes",
+      "Skim carrots, potatoes and onions",
+      "Chop all vegetables and add in boiling water. Boil until soft",
+      "Puree into a soup and add fresh grated garlic, salt, pepper and tarragon. Check taste",
+      "Add vegan creme fraiche",
+      "Bring to a boil and serve"
+    ],
+    "suggestions": "Serve with fresh whole wheat bread",
+    "labels": ["zucchini", "soups", "green"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
+  },
+  {
+    "id": 56,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/dinner%2FVegetableSkewers.jpg?alt=media&token=775afd06-28f9-4ea6-9f15-d014b18c9b82",
+    "title": "Vegetable skewers",
+    "category": "dinner",
+    "time": 30,
+    "serves": 4,
+    "difficulty": "very easy",
+    "ingredients": [
+      "200g mushrooms",
+      "1 zucchini",
+      "1 red and green bell pepper",
+      "1 onion",
+      "Salt",
+      "Black pepper",
+      "Vegetable oil",
+      "Italian herb mix"
+    ],
+    "steps": [
+      "Wash zucchini and bell peppers",
+      "Chop all vegetables and make skewers",
+      "Cover vegetables with oil. Spice with salt, pepper and italian herb mix",
+      "Cook for 20min in the oven or grill"
+    ],
+    "suggestions": "Serve with hummus, seitan stakes, or grilled mushrooms",
+    "labels": ["zucchini", "soups", "green"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
+  },
+  {
+    "id": 57,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/smoothies%2FParsleySmoothie.jpg?alt=media&token=c7aefcac-6f52-4792-9f49-d2e31e3345cf",
+    "title": "Parsley smoothie",
+    "category": "smoothies",
+    "time": 30,
+    "serves": 4,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1 dl fresh parsley",
+      "1 green apple",
+      "1 peach",
+      "1 banana",
+      "4 dates",
+      "½ dl lemon juice",
+      "4 dl water"
+    ],
+    "steps": ["Mix all ingredients into a smoothie.", "Enjoy"],
+    "suggestions": "Serve in a bowl with fresh fruits and berries",
+    "labels": ["green", "smoothie", "breakfast"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
+  },
+  {
+    "id": 58,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/desserts%2FmapleCinnamonCoconutCookies.jpg?alt=media&token=c2775e29-f7d7-419d-8c1f-fd2748a33168",
+    "title": "Maple cinnamon coconut cookies",
+    "category": "desserts",
+    "time": 15,
+    "serves": 4,
+    "difficulty": "very easy",
+    "ingredients": [
+      "1/4 cup packed dates",
+      "2 cups shredded coconut",
+      "4 tbsp coconut flour",
+      "2/4 cup maple syrup",
+      "3 tbsp melted coconut oil",
+      "1 tsp cinnamon",
+      "2 tsp coconut oil",
+      "2 tsp vanilla extract"
+    ],
+    "steps": [
+      "Mix in a bowl shredded coconut, coconut flour, 1/4 maple syrup, vanilla extract and melted coconut oil",
+      "With the dough make small balls",
+      "Place them in baking paper in a flat surface and press them to make cookies",
+      "For the icing mix in a blender the dates, 1/4 maple syrup, cinnamon and coconut oil",
+      "Add the icing to the cookies",
+      "Freeze them on the friedge until the cookies are hard",
+      "Enjoy"
+    ],
+    "suggestions": "Serve in a bowl with fresh fruits and berries",
+    "labels": ["maple syrup", "coconut"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
+  },
+  {
+    "id": 59,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FkungPaoTofu.jpg?alt=media&token=7af8a64a-68d5-4cc6-a5cb-f24cbfa63bb7",
+    "title": "Kung pao tofu",
+    "category": "meals",
+    "time": 25,
+    "serves": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      "1 block firm tofu",
+      "5 tbsp  soy sauce",
+      "3 tbsp dark sesame oil",
+      "1/2 tsp fresh cracked black pepper",
+      "5 tbsp water",
+      "3 tbsp  maple syrup",
+      "1 chilli sliced",
+      "1 diced white onion",
+      "3 bell peppers (red and green)",
+      "2 zucchini  diced",
+      "3 cloves garlic, minced",
+      "5 cm knob ginger, minced",
+      "2 tsp organic cornstarch",
+      "1/4 cup roasted peanuts",
+      "1 1/2 green onion, thinly sliced",
+      "2 tbsp olive oil",
+      "2 tsp organic cornstarch"
+    ],
+    "steps": [
+      "Drain the tofu, dried it with a clean paper towel and cut in small cubes",
+      "In a small bowl add 2 tbsp soy sauce, 1 tbsp sesame oil, black pepper and the tofu, let it marinate",
+      "For the kung pao sauce in a small bowl mix 3 tbsp soy sauce,4 tbsp water, maple syrup and 2 tbsp sesame oil",
+      "Add some oil to a wok/saute pan and heat it over medium-heat",
+      "Fry the tofu for around 3 minutes and put it on a plate",
+      "In the same pan fry the zucchini, ginger, bell peppers,onion and chilli",
+      "Then add the tofu back to the pan and add the kung pao sauce and fry for a couple of minutes",
+      "In a small bowl mix 2 tsp cornstarch and 1 tbsp water",
+      "Add the cornstach mix to the pan and stir for a couple of minutes",
+      "Serve with sliced green onion and peanuts",
+      "Enjoy"
+    ],
+    "suggestions": "Serve with rice or noddles",
+    "labels": ["asian", "sesame", "chilli", "tofu", "zucchini"],
+    "nutrition": [],
+    "attribution": {
+      "name": "Andrea Nguyen",
+      "url": "https://www.flickr.com/photos/andrea_nguyen/"
     }
   }
 ]

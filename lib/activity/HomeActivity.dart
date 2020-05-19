@@ -58,16 +58,15 @@ class HomeActivityState extends State<HomeActivity> {
           context: context,
           builder: (context) => new AlertDialog(
             title: new Text(
-              '¿Quieres cerrar la aplicación?',
+              '¿Do you want to close the app?',
               style: TextStyle(color: PrimaryColor),
             ),
-            content:
-                new Text('Antes de cerrar la aplicación, comparte tu opinión.'),
+            content: new Text('Before closing the app, share us your feedback'),
             actions: <Widget>[
               FlatButton(
                 onPressed: () => Navigator.of(context).pop(true),
                 child: new Text(
-                  'Si',
+                  'Yes',
                   style: TextStyle(color: AccentColor),
                 ),
               ),
@@ -79,11 +78,11 @@ class HomeActivityState extends State<HomeActivity> {
                   if (await canLaunch(url)) {
                     await launch(url);
                   } else {
-                    throw 'No pudimos entar a la página $url';
+                    throw 'We could not open $url';
                   }
                 },
                 child: new Text(
-                  'Dar reseña',
+                  'Review app',
                   style: TextStyle(color: AccentColor),
                 ),
               ),

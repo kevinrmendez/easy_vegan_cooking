@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:easy_vegan_cooking/activity/CartActivity.dart';
+import 'package:easy_vegan_cooking/activity/HomeActivity.dart';
 import 'package:easy_vegan_cooking/activity/RecentRecipesListActivity.dart';
 import 'package:easy_vegan_cooking/activity/RecipeOfDayActivity.dart';
 import 'package:easy_vegan_cooking/activity/TimerActivity.dart';
@@ -65,7 +66,7 @@ class AppDrawer extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context).pop();
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (BuildContext context) => CategoryActivity()));
+                      builder: (BuildContext context) => HomeActivity()));
                 },
               ),
               ListTile(
