@@ -58,43 +58,8 @@ class _RecentRecipesListActivityState extends State<RecentRecipesListActivity> {
     super.dispose();
   }
 
-  Recipe _recipeBuilder(data) {
-    return Recipe(
-        image: data["image"],
-        title: data["title"],
-        category: data["category"],
-        difficulty: data["difficulty"],
-        suggestions: data["suggestions"],
-        time: data["time"],
-        serves: data["serves"],
-        ingredients: data["ingredients"],
-        steps: data["steps"],
-        labels: data["labels"],
-        nutrition: data["nutrition"],
-        isFavorite: false);
-  }
-
-  Widget _cardDetailText(text) {
-    return Flexible(
-      child: Container(
-        width: MediaQuery.of(context).size.width * .6,
-        child: Text(
-          text,
-          textAlign: TextAlign.right,
-          style: TextStyle(color: Colors.white, fontSize: 20),
-        ),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
-    // AppState appState = AppState.of(context);
-
-    // recipesRef.once().then((DataSnapshot snapshot) {
-    //   print('Connected to second database and read ${snapshot.value}');
-    // });
-
     return Scaffold(
       drawer: AppDrawer(),
       appBar: AppBar(
@@ -103,28 +68,6 @@ class _RecentRecipesListActivityState extends State<RecentRecipesListActivity> {
       body: GridListComponent(
         listSize: 14,
       ),
-      // body: Column(
-      //   children: <Widget>[
-      //     Expanded(
-      //       child: FirebaseAnimatedList(
-      //         query: FirebaseDatabase.instance.reference().limitToLast(14),
-      //         itemBuilder: (BuildContext context, DataSnapshot snapshot,
-      //             Animation<double> animation, int index) {
-      //           Recipe recipe = _recipeBuilder(snapshot.value);
-
-      //           return MyGridTile(
-      //             recipe: recipe,
-      //             animation: animation,
-      //           );
-      //         },
-      //       ),
-      //     ),
-      //     AdmobBanner(
-      //       adUnitId: getBannerAdUnitId(),
-      //       adSize: AdmobBannerSize.BANNER,
-      //     ),
-      //   ],
-      // ),
     );
   }
 }

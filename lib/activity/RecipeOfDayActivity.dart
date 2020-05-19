@@ -4,6 +4,7 @@ import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
 import 'package:easy_vegan_cooking/components/imageComponent.dart';
 import 'package:easy_vegan_cooking/components/imageComponent2.dart';
 import 'package:easy_vegan_cooking/components/imageComponentParallax.dart';
+import 'package:easy_vegan_cooking/utils/utils.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 import 'package:connectivity/connectivity.dart';
@@ -78,22 +79,6 @@ class _RecipeOfDayActivityState extends State<RecipeOfDayActivity> {
     super.dispose();
   }
 
-  Recipe _recipeBuilder(data) {
-    return Recipe(
-        image: data["image"],
-        title: data["title"],
-        category: data["category"],
-        difficulty: data["difficulty"],
-        suggestions: data["suggestions"],
-        time: data["time"],
-        serves: data["serves"],
-        ingredients: data["ingredients"],
-        steps: data["steps"],
-        labels: data["labels"],
-        nutrition: data["nutrition"],
-        isFavorite: false);
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -113,7 +98,7 @@ class _RecipeOfDayActivityState extends State<RecipeOfDayActivity> {
                           FirebaseDatabase.instance.reference().limitToLast(1),
                       itemBuilder: (BuildContext context, DataSnapshot snapshot,
                           Animation<double> animation, int index) {
-                        Recipe recipe = _recipeBuilder(snapshot.value);
+                        Recipe recipe = Utils.recipeBuilder(snapshot.value);
                         return ImageComponent2(
                           // return ImageComponentParallax(
                           recipe: recipe,
