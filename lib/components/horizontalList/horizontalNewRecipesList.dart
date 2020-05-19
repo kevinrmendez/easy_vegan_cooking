@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:easy_vegan_cooking/utils/utils.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_vegan_cooking/Recipe.dart';
@@ -16,23 +17,6 @@ class HorizontalNewRecipesList extends StatefulWidget {
 
 class HorizontalNewRecipesListState extends State<HorizontalNewRecipesList> {
   var recipesRef = FirebaseDatabase.instance.reference();
-
-  Recipe _recipeBuilder(data) {
-    return Recipe(
-        image: data["image"],
-        title: data["title"],
-        category: data["category"],
-        difficulty: data["difficulty"],
-        suggestions: data["suggestions"],
-        time: data["time"],
-        serves: data["serves"],
-        ingredients: data["ingredients"],
-        steps: data["steps"],
-        labels: data["labels"],
-        nutrition: data["nutrition"],
-        attribution: data["attribution"],
-        isFavorite: false);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -92,7 +76,8 @@ class HorizontalNewRecipesListState extends State<HorizontalNewRecipesList> {
                       scrollDirection: Axis.horizontal,
                       itemCount: filteredRecipes.length,
                       itemBuilder: (BuildContext context, int index) {
-                        Recipe recipe = _recipeBuilder(filteredRecipes[index]);
+                        Recipe recipe =
+                            Utils.recipeBuilder(filteredRecipes[index]);
                         // return Text(recipe.title);
                         return GestureDetector(
                           child: Card(

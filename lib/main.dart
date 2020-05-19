@@ -5,7 +5,6 @@ import 'package:dio/dio.dart';
 import 'package:easy_vegan_cooking/activity/HomeActivity.dart';
 import 'package:easy_vegan_cooking/activity/RecipeOfDayActivity.dart';
 
-import 'package:easy_vegan_cooking/components/appTItle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
@@ -167,13 +166,8 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
           ],
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
-            title: 'Flutter Demo',
-            // initialRoute: '/',
-            // routes: {
-            //   // When navigating to the "/" route, build the FirstScreen widget.
-            //   '/Category': (context) => CategoryActivity(),
-            //   // When navigating to the "/second" route, build the SecondScreen widget.
-            // },
+            title: 'Easy Vegan Cooking',
+
             theme: ThemeData(
               textTheme: TextTheme(
                   body1: TextStyle(
@@ -191,43 +185,10 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
                       fontSize: 22)),
               primarySwatch: Colors.blueGrey,
             ),
-            supportedLocales: [
-              const Locale('en', 'US'),
-              const Locale('es', 'MX'),
-            ],
-            localizationsDelegates: [
-              // A class which loads the translations from JSON files
-              AppLocalizations.delegate,
-              // Built-in localization of basic text for Material widgets
-              GlobalMaterialLocalizations.delegate,
-              // Built-in localization for text direction LTR/RTL
-              GlobalWidgetsLocalizations.delegate,
-            ],
-            localeResolutionCallback: (locale, supportedLocales) {
-              // Check if the current device locale is supported
-              for (var supportedLocale in supportedLocales) {
-                if (supportedLocale.languageCode == locale.languageCode &&
-                    supportedLocale.countryCode == locale.countryCode) {
-                  return supportedLocale;
-                }
-              }
-              // If the locale of the device is not supported, use the first one
-              // from the list (English, in this case).
-              return supportedLocales.first;
-            },
+
             // home: SplashScreen(),
             home: HomeActivity(),
           ),
         ));
   }
 }
-
-// AdmobInterstitial interstitialAdBeginning = AdmobInterstitial(
-//   adUnitId: getInterstitialAdUnitId(),
-// );
-
-// getInterstitialAdUnitId() {
-//   return apikeys["addMobInterstellar"];
-// }
-
-// int _counter = 0;

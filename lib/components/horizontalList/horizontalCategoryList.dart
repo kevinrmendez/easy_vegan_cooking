@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:easy_vegan_cooking/utils/utils.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
@@ -20,23 +21,6 @@ class HorizontalCategoryList extends StatefulWidget {
 class HorizontalCategoryListState extends State<HorizontalCategoryList> {
   var recipesRef = FirebaseDatabase.instance.reference();
 
-  Recipe _recipeBuilder(data) {
-    return Recipe(
-        image: data["image"],
-        title: data["title"],
-        category: data["category"],
-        difficulty: data["difficulty"],
-        suggestions: data["suggestions"],
-        time: data["time"],
-        serves: data["serves"],
-        ingredients: data["ingredients"],
-        steps: data["steps"],
-        labels: data["labels"],
-        nutrition: data["nutrition"],
-        attribution: data["attribution"],
-        isFavorite: false);
-  }
-
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -52,7 +36,7 @@ class HorizontalCategoryListState extends State<HorizontalCategoryList> {
                 .limitToLast(widget.listSize),
         itemBuilder: (BuildContext context, DataSnapshot snapshot,
             Animation<double> animation, int index) {
-          Recipe recipe = _recipeBuilder(snapshot.value);
+          Recipe recipe = Utils.recipeBuilder(snapshot.value);
           if (widget.category == null) {
             return MyGridTile2(
               recipe: recipe,
@@ -83,18 +67,6 @@ class MyGridTile2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget _cardDetailText(text, fontWeight) {
-      return Container(
-        padding: EdgeInsets.fromLTRB(0, 3, 10, 0),
-        width: MediaQuery.of(context).size.width,
-        child: Text(
-          text,
-          textAlign: TextAlign.right,
-          style: TextStyle(fontSize: 16, fontWeight: fontWeight),
-        ),
-      );
-    }
-
     return GestureDetector(
       child: Card(
         child: Stack(

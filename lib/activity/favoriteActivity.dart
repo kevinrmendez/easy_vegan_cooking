@@ -31,16 +31,6 @@ class _FavoriteActivityState extends State<FavoriteActivity>
     with WidgetsBindingObserver {
   List<Recipe> recipes;
   var localDbrecipes;
-  // void _showAd() async {
-  //   _counter++;
-  //   if (_counter % 3 == 0) {
-  //     interstitialAd.load();
-  //   }
-
-  //   if (await interstitialAd.isLoaded) {
-  //     interstitialAd.show();
-  //   }
-  // }
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {

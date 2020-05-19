@@ -121,11 +121,7 @@ class _TimerActivityState extends State<TimerActivity> {
                 FontAwesomeIcons.clock,
                 size: 60,
               ),
-              // Text(
-              //   AppLocalizations.of(context).translate('first_string'),
-              //   style: TextStyle(fontSize: 25),
-              //   textAlign: TextAlign.center,
-              // ),
+
               isDone
                   ? Text(
                       isDoneText,

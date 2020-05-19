@@ -79,8 +79,6 @@ flutter:
     - assets/category-images/dinner.jpg
     - assets/icon/evc-icon.png
     - assets/alarmClock.mp3
-    - lang/en.json
-    - lang/es.json
 
   #  - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

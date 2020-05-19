@@ -29,19 +29,6 @@ class GridActivity extends StatefulWidget {
   final String category;
   GridActivity({Key key, this.category}) : super(key: key);
 
-  // GridActivity() {
-  //   data.shuffle();
-  // }
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
   @override
   _GridActivityState createState() => _GridActivityState();
 }
@@ -53,18 +40,6 @@ class _GridActivityState extends State<GridActivity> {
   var connectivitySubscription;
   List<Recipe> recipeList = [];
 
-  // bool isDatabaseNotEmpty;
-
-  // void _showAd() async {
-  //   _counter++;
-  //   if (_counter % 3 == 0) {
-  //     interstitialAd.load();
-  //   }
-
-  //   if (await interstitialAd.isLoaded) {
-  //     interstitialAd.show();
-  //   }
-  // }
   _checkConnectivity(ConnectivityResult result) async {
     // connectivityResult = await Connectivity().checkConnectivity();
     // print('Conectivity: ${connectivityResult == ConnectivityResult.mobile}');
@@ -86,14 +61,6 @@ class _GridActivityState extends State<GridActivity> {
       print(onValue);
     });
 
-    // recipesRef.once().then((snapshot) {
-    //   if (snapshot.value != null) {
-    //     isDatabaseNotEmpty = true;
-    //   } else {
-    //     isDatabaseNotEmpty = false;
-    //   }
-    // });
-
     _recipesSubscription = recipesRef.onChildAdded.listen((event) {
       // print('Child added: ${event.snapshot.value}');
     });
@@ -106,47 +73,9 @@ class _GridActivityState extends State<GridActivity> {
     super.dispose();
   }
 
-  Recipe _recipeBuilder(data) {
-    return Recipe(
-        image: data["image"],
-        title: data["title"],
-        category: data["category"],
-        difficulty: data["difficulty"],
-        suggestions: data["suggestions"],
-        time: data["time"],
-        serves: data["serves"],
-        ingredients: data["ingredients"],
-        steps: data["steps"],
-        labels: data["labels"],
-        nutrition: data["nutrition"],
-        isFavorite: false);
-  }
-
-  Widget _cardDetailText(text, fontWeight) {
-    return Flexible(
-      child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 10),
-        width: MediaQuery.of(context).size.width,
-        child: Text(
-          text,
-          textAlign: TextAlign.right,
-          style: TextStyle(
-              // color: Colors.white,
-              // fontWeight: FontWeight.bold,
-              fontSize: 18,
-              fontWeight: fontWeight),
-        ),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     // AppState appState = AppState.of(context);
-
-    // recipesRef.once().then((DataSnapshot snapshot) {
-    //   print('Connected to second database and read ${snapshot.value}');
-    // });
 
     return Scaffold(
         drawer: AppDrawer(),
@@ -164,17 +93,3 @@ class _GridActivityState extends State<GridActivity> {
         ));
   }
 }
-
-// String getBannerAdUnitId() {
-//   return apikeys["addMobBanner"];
-// }
-
-// AdmobInterstitial interstitialAd = AdmobInterstitial(
-//   adUnitId: getInterstitialAdUnitId(),
-// );
-
-// getInterstitialAdUnitId() {
-//   return apikeys["addMobInterstellar"];
-// }
-
-// int _counter = 0;

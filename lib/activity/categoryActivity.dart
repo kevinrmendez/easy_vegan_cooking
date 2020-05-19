@@ -37,16 +37,6 @@ class _CategoryActivityState extends State<CategoryActivity> {
   final TextEditingController _filter = new TextEditingController();
 
   String _searchText = "";
-  // void _showAd() async {
-  //   _counter++;
-  //   if (_counter % 5 == 0) {
-  //     interstitialAd.load();
-  //   }
-
-  //   if (await interstitialAd.isLoaded) {
-  //     interstitialAd.show();
-  //   }
-  // }
 
   Widget _buildAppBarTitle() {
     return Container(
@@ -238,10 +228,6 @@ class _CategoryActivityState extends State<CategoryActivity> {
                           ),
                         ),
                         onTap: () async {
-                          // String url = recipe["image"];
-                          // print('URL');
-                          // print(url);
-                          // showAd();
                           Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -252,38 +238,9 @@ class _CategoryActivityState extends State<CategoryActivity> {
                         });
                   }).toList()),
             ),
-            // AdmobBanner(
-            //   adUnitId: getBannerAdUnitId(),
-            //   adSize: AdmobBannerSize.BANNER,
-            // ),
           ],
         ),
       ),
     );
   }
 }
-
-// String getBannerAdUnitId() {
-//   return apikeys["addMobBanner"];
-// }
-
-// AdmobInterstitial interstitialAd = AdmobInterstitial(
-//   adUnitId: getInterstitialAdUnitId(),
-// );
-
-// getInterstitialAdUnitId() {
-//   return apikeys["addMobInterstellar"];
-// }
-
-// void showAd() async {
-//   _counter++;
-//   if (_counter % 5 == 0) {
-//     interstitialAd.load();
-//   }
-
-//   if (await interstitialAd.isLoaded) {
-//     interstitialAd.show();
-//   }
-// }
-
-// int _counter = 0;
