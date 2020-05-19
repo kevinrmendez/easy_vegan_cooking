@@ -1,11 +1,9 @@
 import 'dart:async';
 
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
-import 'package:easy_vegan_cooking/components/imageComponent.dart';
-import 'package:easy_vegan_cooking/components/imageComponent2.dart';
+
 import 'package:easy_vegan_cooking/components/imageComponentParallax.dart';
 import 'package:easy_vegan_cooking/utils/utils.dart';
-import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/services.dart';
@@ -89,28 +87,38 @@ class _RecipeOfDayActivityState extends State<RecipeOfDayActivity> {
       body: Center(
         child: connectivityResult == ConnectivityResult.mobile ||
                 connectivityResult == ConnectivityResult.wifi
-            ? Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Expanded(
-                    child: FirebaseAnimatedList(
-                      query:
-                          FirebaseDatabase.instance.reference().limitToLast(1),
-                      itemBuilder: (BuildContext context, DataSnapshot snapshot,
-                          Animation<double> animation, int index) {
-                        Recipe recipe = Utils.recipeBuilder(snapshot.value);
-                        return ImageComponent2(
-                          // return ImageComponentParallax(
-                          recipe: recipe,
-                        );
-                      },
-                    ),
-                  ),
-                  // AdmobBanner(
-                  //   adUnitId: getBannerAdUnitId(),
-                  //   adSize: AdmobBannerSize.BANNER,
-                  // ),
-                ],
+            ? StreamBuilder(
+                stream: recipesRef.onValue,
+                builder: (BuildContext context, AsyncSnapshot snap) {
+                  switch (snap.connectionState) {
+                    case ConnectionState.waiting:
+                      return Container(
+                        height: 300,
+                        child: Center(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            SizedBox(
+                                height: 50,
+                                width: 50,
+                                child: CircularProgressIndicator()),
+                          ],
+                        )),
+                      );
+                    default:
+                      // print("SNAPSHOT: ${snap.data.snapshot.value}");
+                      if (snap.hasData &&
+                          !snap.hasError &&
+                          snap.data.snapshot.value != null) {
+                        DataSnapshot snapshot = snap.data.snapshot;
+                        List recipesList = snapshot.value.toList();
+
+                        recipesList = recipesList.reversed.toList();
+                        Recipe recipe = Utils.recipeBuilder(recipesList[0]);
+                        return ImageComponentParallax(recipe: recipe);
+                      }
+                  }
+                },
               )
             : Column(
                 mainAxisAlignment: MainAxisAlignment.center,
