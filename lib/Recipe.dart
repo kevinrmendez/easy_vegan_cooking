@@ -96,3 +96,26 @@ class Recipe {
         attribution: json['attribution']);
   }
 }
+
+class Favorite {
+  String title;
+  int isFavorite;
+
+  Favorite(title, isFavorite);
+
+  Map<String, dynamic> toJson() => {
+        'title': title,
+        'favorite': isFavorite,
+      };
+  Map<String, dynamic> toMap() {
+    return {'title': title, 'isFavorite': isFavorite};
+  }
+
+  @override
+  String toString() {
+    print("""
+       FAVORITE:: title: $title, favorite: $isFavorite
+        """);
+    return super.toString();
+  }
+}

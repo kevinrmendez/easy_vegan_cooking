@@ -4,6 +4,7 @@ import 'package:admob_flutter/admob_flutter.dart';
 import 'package:dio/dio.dart';
 import 'package:easy_vegan_cooking/activity/HomeActivity.dart';
 import 'package:easy_vegan_cooking/activity/RecipeOfDayActivity.dart';
+import 'package:easy_vegan_cooking/favoritesDb.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -45,6 +46,8 @@ var recipesData;
 String dbPath;
 Directory directory;
 SharedPreferences prefs;
+
+FavoritesDb db = FavoritesDb();
 
 void main() async {
   SystemChrome.setPreferredOrientations(
@@ -175,7 +178,8 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
                 //  height: 1.13
               )),
               // fontFamily: 'Montserrat',
-              fontFamily: 'JosefinSans',
+              // fontFamily: 'JosefinSans',
+              fontFamily: 'Lato',
               primaryColor: PrimaryColor,
               accentColor: AccentColor,
               primaryTextTheme: TextTheme(

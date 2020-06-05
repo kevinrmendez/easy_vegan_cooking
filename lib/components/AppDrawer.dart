@@ -146,6 +146,25 @@ class AppDrawer extends StatelessWidget {
                       builder: (BuildContext context) => TimerActivity()));
                 },
               ),
+              ListTile(
+                title: Text(
+                  "Remove ads",
+                  // style: TextStyle(color: Theme.of(context).primaryColor),
+                ),
+                trailing: Icon(
+                  FontAwesomeIcons.minusCircle,
+                  color: Theme.of(context).accentColor,
+                ),
+                onTap: () async {
+                  String url =
+                      "https://play.google.com/store/apps/details?id=com.easy.vegan.cooking.pro";
+                  if (await canLaunch(url)) {
+                    await launch(url);
+                  } else {
+                    throw 'Could not launch $url';
+                  }
+                },
+              ),
               // ListTile(
               //   title: Text(
               //     "Random Recipe",

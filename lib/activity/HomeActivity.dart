@@ -116,7 +116,7 @@ class HomeActivityState extends State<HomeActivity> {
             //   Icons.search,
             //   color: Colors.white,
             // ),
-            hintText: 'Busca receta',
+            hintText: 'Search for recipe',
             hintStyle: TextStyle(color: Colors.white),
             enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(color: Colors.white),

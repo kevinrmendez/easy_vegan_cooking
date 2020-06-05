@@ -25,18 +25,27 @@ class FavoriteWidget extends StatefulWidget {
 class _FavoriteWidgetState extends State<FavoriteWidget> {
   bool _isFavorited;
 
-  void _toggleFavorite(context) {
-    setState(() {
-      if (_isFavorited) {
+  void _toggleFavorite(context) async {
+    if (_isFavorited) {
+      setState(() {
         widget.recipe.isFavorite = false;
         _isFavorited = false;
         Provider.of<RecipeModel>(context, listen: false).remove(widget.recipe);
-      } else {
+      });
+      // db.deleteFavorite(widget.recipe);
+      // var favorites = await db.favorites();
+      // favorites.forEach((f) => print(f.title));
+    } else {
+      setState(() {
         widget.recipe.isFavorite = true;
         _isFavorited = true;
         Provider.of<RecipeModel>(context, listen: false).add(widget.recipe);
-      }
-    });
+      });
+      // db.insertFavorite(widget.recipe);
+      // var favorites = await db.favorites();
+
+      // favorites.forEach((f) => print(f.title));
+    }
   }
 
   @override
@@ -57,12 +66,10 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
               icon: (_isFavorited
                   ? Icon(
                       Icons.favorite,
-                      // color: Theme.of(context).accentColor,
                       color: RedColors,
                     )
                   : Icon(
                       Icons.favorite_border,
-                      // color: Theme.of(context).accentColor,
                       color: RedColors,
                     )),
               color: Colors.red[500],
