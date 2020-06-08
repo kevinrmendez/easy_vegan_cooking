@@ -2,6 +2,7 @@ import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
+import 'package:easy_vegan_cooking/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
@@ -56,23 +57,6 @@ class _RecipesSuggestionsState extends State<RecipesSuggestions> {
     if (await interstitialAd.isLoaded) {
       interstitialAd.show();
     }
-  }
-
-  Recipe _recipeBuilder(data) {
-    return Recipe(
-        image: data["image"],
-        title: data["title"],
-        category: data["category"],
-        difficulty: data["difficulty"],
-        suggestions: data["suggestions"],
-        time: data["time"],
-        serves: data["serves"],
-        ingredients: data["ingredients"],
-        steps: data["steps"],
-        labels: data["labels"],
-        nutrition: data["nutrition"],
-        attribution: data["attribution"],
-        isFavorite: false);
   }
 
   @override
@@ -142,7 +126,7 @@ class _RecipesSuggestionsState extends State<RecipesSuggestions> {
                             itemCount: filteredRecipes.length,
                             itemBuilder: (BuildContext context, int index) {
                               Recipe recipe =
-                                  _recipeBuilder(filteredRecipes[index]);
+                                  Utils.recipeBuilder(filteredRecipes[index]);
                               // return Text(recipe.title);
                               return GestureDetector(
                                 child: Card(

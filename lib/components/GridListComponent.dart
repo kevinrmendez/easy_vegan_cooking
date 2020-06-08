@@ -6,6 +6,7 @@ import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
 import 'package:easy_vegan_cooking/components/MyGridTile.dart';
 import 'package:easy_vegan_cooking/main.dart';
+import 'package:easy_vegan_cooking/utils/utils.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
@@ -31,23 +32,6 @@ class _GridListComponentState extends State<GridListComponent> {
   var connectivitySubscription;
   final Connectivity _connectivity = Connectivity();
   List<Recipe> recipeList = [];
-
-  Recipe _recipeBuilder(data) {
-    return Recipe(
-        image: data["image"],
-        title: data["title"],
-        category: data["category"],
-        difficulty: data["difficulty"],
-        suggestions: data["suggestions"],
-        time: data["time"],
-        serves: data["serves"],
-        ingredients: data["ingredients"],
-        steps: data["steps"],
-        labels: data["labels"],
-        nutrition: data["nutrition"],
-        attribution: data["attribution"],
-        isFavorite: false);
-  }
 
   _updateConnectionStatus(ConnectivityResult result) async {
     connectivityResult = await (Connectivity().checkConnectivity());
@@ -119,7 +103,7 @@ class _GridListComponentState extends State<GridListComponent> {
                             .limitToLast(widget.listSize),
                     itemBuilder: (BuildContext context, DataSnapshot snapshot,
                         Animation<double> animation, int index) {
-                      Recipe recipe = _recipeBuilder(snapshot.value);
+                      Recipe recipe = Utils.recipeBuilder(snapshot.value);
                       if (widget.category == null) {
                         return MyGridTile(
                           recipe: recipe,

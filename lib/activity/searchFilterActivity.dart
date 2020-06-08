@@ -4,6 +4,7 @@ import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
+import 'package:easy_vegan_cooking/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
@@ -58,23 +59,6 @@ class _SearchFilterActivityState extends State<SearchFilterActivity> {
   @override
   void dispose() {
     super.dispose();
-  }
-
-  Recipe _recipeBuilder(data) {
-    return Recipe(
-        image: data["image"],
-        title: data["title"],
-        category: data["category"],
-        difficulty: data["difficulty"],
-        suggestions: data["suggestions"],
-        time: data["time"],
-        serves: data["serves"],
-        ingredients: data["ingredients"],
-        steps: data["steps"],
-        labels: data["labels"],
-        nutrition: data["nutrition"],
-        attribution: data["attribution"],
-        isFavorite: false);
   }
 
   @override
@@ -142,7 +126,8 @@ class _SearchFilterActivityState extends State<SearchFilterActivity> {
                               mainAxisSpacing: 4.0,
                               crossAxisSpacing: 4.0,
                               children: filteredRecipes.map<Widget>((document) {
-                                Recipe recipe = _recipeBuilder(document);
+                                Recipe recipe = Utils.recipeBuilder(document);
+
                                 // print(recipe.toString());
                                 return GestureDetector(
                                     child: Stack(

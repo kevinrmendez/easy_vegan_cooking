@@ -1,6 +1,7 @@
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
+import 'package:easy_vegan_cooking/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
@@ -17,7 +18,6 @@ import 'RecipeActivity.dart';
 
 class RecentRecipesActivity extends StatefulWidget {
   RecentRecipesActivity({Key key}) : super(key: key);
-
 
   @override
   _RecentRecipesActivityState createState() => _RecentRecipesActivityState();
@@ -43,22 +43,6 @@ class _RecentRecipesActivityState extends State<RecentRecipesActivity> {
   @override
   void dispose() {
     super.dispose();
-  }
-
-  Recipe _recipeBuilder(data) {
-    return Recipe(
-        image: data["image"],
-        title: data["title"],
-        category: data["category"],
-        difficulty: data["difficulty"],
-        suggestions: data["suggestions"],
-        time: data["time"],
-        serves: data["serves"],
-        ingredients: data["ingredients"],
-        steps: data["steps"],
-        labels: data["labels"],
-        nutrition: data["nutrition"],
-        isFavorite: false);
   }
 
   @override
@@ -113,7 +97,7 @@ class _RecentRecipesActivityState extends State<RecentRecipesActivity> {
                             mainAxisSpacing: 4.0,
                             crossAxisSpacing: 4.0,
                             children: recent10recipes.map<Widget>((document) {
-                              Recipe recipe = _recipeBuilder(document);
+                              Recipe recipe = Utils.recipeBuilder(document);
                               // print(recipe.toString());
                               return GestureDetector(
                                   child: Stack(
