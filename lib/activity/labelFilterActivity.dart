@@ -119,7 +119,6 @@ class _LabelFilterActivityState extends State<LabelFilterActivity> {
                             crossAxisSpacing: 4.0,
                             children: filteredRecipes.map<Widget>((document) {
                               Recipe recipe = Utils.recipeBuilder(document);
-                              _recipeBuilder(document);
                               // print(recipe.toString());
                               return GestureDetector(
                                   child: Stack(
