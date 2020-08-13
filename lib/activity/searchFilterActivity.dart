@@ -17,35 +17,12 @@ import '../helpers.dart';
 class SearchFilterActivity extends StatefulWidget {
   final String searchTerm;
   SearchFilterActivity({Key key, this.searchTerm}) : super(key: key);
-  // GridActivity() {
-  //   data.shuffle();
-  // }
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
 
   @override
   _SearchFilterActivityState createState() => _SearchFilterActivityState();
 }
 
 class _SearchFilterActivityState extends State<SearchFilterActivity> {
-  // void _showAd() async {
-  //   _counter++;
-  //   if (_counter % 3 == 0) {
-  //     interstitialAd.load();
-  //   }
-
-  //   if (await interstitialAd.isLoaded) {
-  //     interstitialAd.show();
-  //   }
-  // }
-
   @override
   void initState() {
     super.initState();
@@ -58,8 +35,6 @@ class _SearchFilterActivityState extends State<SearchFilterActivity> {
 
   @override
   Widget build(BuildContext context) {
-    // AppState appState = AppState.of(context);
-
     var recipesRef = FirebaseDatabase.instance.reference();
 
     // recipesRef.once().then((DataSnapshot snapshot) {
@@ -208,17 +183,3 @@ class _SearchFilterActivityState extends State<SearchFilterActivity> {
     );
   }
 }
-
-// String getBannerAdUnitId() {
-//   return apikeys["addMobBanner"];
-// }
-
-// AdmobInterstitial interstitialAd = AdmobInterstitial(
-//   adUnitId: getInterstitialAdUnitId(),
-// );
-
-// getInterstitialAdUnitId() {
-//   return apikeys["addMobInterstellar"];
-// }
-
-// int _counter = 0;

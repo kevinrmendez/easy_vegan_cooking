@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-// import 'package:url_launcher/url_launcher.dart';
 import 'package:firebase_database/firebase_database.dart';
 
 import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
@@ -15,35 +14,12 @@ import '../helpers.dart';
 class LabelFilterActivity extends StatefulWidget {
   final String label;
   LabelFilterActivity({Key key, this.label}) : super(key: key);
-  // GridActivity() {
-  //   data.shuffle();
-  // }
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
 
   @override
   _LabelFilterActivityState createState() => _LabelFilterActivityState();
 }
 
 class _LabelFilterActivityState extends State<LabelFilterActivity> {
-  // void _showAd() async {
-  //   _counter++;
-  //   if (_counter % 3 == 0) {
-  //     interstitialAd.load();
-  //   }
-
-  //   if (await interstitialAd.isLoaded) {
-  //     interstitialAd.show();
-  //   }
-  // }
-
   @override
   void initState() {
     super.initState();
@@ -195,17 +171,3 @@ class _LabelFilterActivityState extends State<LabelFilterActivity> {
     );
   }
 }
-
-// String getBannerAdUnitId() {
-//   return apikeys["addMobBanner"];
-// }
-
-// AdmobInterstitial interstitialAd = AdmobInterstitial(
-//   adUnitId: getInterstitialAdUnitId(),
-// );
-
-// getInterstitialAdUnitId() {
-//   return apikeys["addMobInterstellar"];
-// }
-
-// int _counter = 0;

@@ -1,41 +1,22 @@
-import 'dart:typed_data';
+import 'dart:io';
 
+import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:admob_flutter/admob_flutter.dart';
-import 'package:dio/dio.dart';
-import 'package:easy_vegan_cooking/activity/HomeActivity.dart';
-import 'package:easy_vegan_cooking/activity/RecipeOfDayActivity.dart';
-import 'package:easy_vegan_cooking/favoritesDb.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:http/http.dart' as http;
-// import 'package:url_launcher/url_launcher.dart';
 
-import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:easy_vegan_cooking/activity/HomeActivity.dart';
+import 'package:easy_vegan_cooking/favoritesDb.dart';
+
 import 'CartModel.dart';
 import 'Ingredient.dart';
 import 'Recipe.dart';
 import 'RecipeModel.dart';
-import 'activity/categoryActivity.dart';
-import 'apikeys.dart';
 import 'appState.dart';
-import 'app_localizations.dart';
-import 'package:provider/provider.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_database/firebase_database.dart';
 
-import 'dart:io';
-import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:dio/dio.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-
-import 'package:path/path.dart';
-import 'package:path_provider/path_provider.dart';
-
-// const PrimaryColor = const Color(0xFFa8e000);
-// const PrimaryColor = const Color(0xFF99cc00);
-// const PrimaryColor = const Color(0xFFB2DB2B);
-// const PrimaryColor = const Color(0xFFA8CE2D);
 const PrimaryColor = const Color(0xFFB4CE2F);
 const AccentColor = const Color(0xFFFF9900);
 const GreyColor = const Color(0xFFEEEEEE);
@@ -170,7 +151,6 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Easy Vegan Cooking',
-
             theme: ThemeData(
               textTheme: TextTheme(
                   body1: TextStyle(
@@ -189,8 +169,6 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
                       fontSize: 22)),
               primarySwatch: Colors.blueGrey,
             ),
-
-            // home: SplashScreen(),
             home: HomeActivity(),
           ),
         ));

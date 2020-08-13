@@ -3,7 +3,6 @@ import 'package:easy_vegan_cooking/main.dart';
 import 'package:flutter/material.dart';
 
 import 'package:cached_network_image/cached_network_image.dart';
-// import 'package:url_launcher/url_launcher.dart';
 
 import '../Recipe.dart';
 import '../helpers.dart';
