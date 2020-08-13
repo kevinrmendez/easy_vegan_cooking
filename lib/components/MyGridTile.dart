@@ -5,10 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 // import 'package:url_launcher/url_launcher.dart';
 
-import 'package:firebase_database/firebase_database.dart';
-
 import '../Recipe.dart';
-
 import '../helpers.dart';
 
 class MyGridTile extends StatelessWidget {

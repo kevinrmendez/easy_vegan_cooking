@@ -1,20 +1,13 @@
-import 'package:audioplayers/audio_cache.dart';
-import 'package:easy_vegan_cooking/components/AppDrawer.dart';
-import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quiver/async.dart';
-import 'package:admob_flutter/admob_flutter.dart';
 import 'package:vibration/vibration.dart';
-import 'package:audioplayers/audioplayers.dart';
-
+import 'package:audioplayers/audio_cache.dart';
 // import 'package:url_launcher/url_launcher.dart';
 import 'package:countdown/countdown.dart';
 
-import 'package:countdown_flutter/countdown_flutter.dart';
-
-import '../apikeys.dart';
-import '../app_localizations.dart';
+import 'package:easy_vegan_cooking/components/AppDrawer.dart';
+import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 
 class TimerActivity extends StatefulWidget {
   // TimerActivity({Key key}) : super(key: key);

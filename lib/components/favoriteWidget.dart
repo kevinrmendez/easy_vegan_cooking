@@ -1,9 +1,10 @@
-import 'package:easy_vegan_cooking/Recipe.dart';
-import 'package:easy_vegan_cooking/RecipeModel.dart';
-import 'package:easy_vegan_cooking/appState.dart';
-import 'package:easy_vegan_cooking/main.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import 'package:easy_vegan_cooking/Recipe.dart';
+import 'package:easy_vegan_cooking/RecipeModel.dart';
+
+import 'package:easy_vegan_cooking/main.dart';
 
 class FavoriteWidget extends StatefulWidget {
   final Recipe recipe;

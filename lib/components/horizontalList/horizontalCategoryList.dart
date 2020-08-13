@@ -1,14 +1,12 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:easy_vegan_cooking/utils/utils.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
+
 import 'package:easy_vegan_cooking/Recipe.dart';
 import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
-import 'package:easy_vegan_cooking/components/AppDrawer.dart';
-import 'package:easy_vegan_cooking/components/MyGridTile.dart';
 import 'package:easy_vegan_cooking/main.dart';
-import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
+import 'package:easy_vegan_cooking/utils/utils.dart';
 
 class HorizontalCategoryList extends StatefulWidget {
   final int listSize;

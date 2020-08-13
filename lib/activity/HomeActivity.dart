@@ -1,21 +1,14 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:firebase_database/firebase_database.dart';
-import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
-import 'package:easy_vegan_cooking/Recipe.dart';
-import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:firebase_database/firebase_database.dart';
+
 import 'package:easy_vegan_cooking/activity/searchFilterActivity.dart';
 import 'package:easy_vegan_cooking/components/AppDrawer.dart';
-import 'package:easy_vegan_cooking/components/MyGridTile.dart';
 import 'package:easy_vegan_cooking/components/categoryComponent.dart';
-
-import 'package:easy_vegan_cooking/components/horizontalList/horizontalCategory.dart';
 import 'package:easy_vegan_cooking/components/horizontalList/horizontalNewRecipes.dart';
-import 'package:easy_vegan_cooking/components/horizontalList/horizontalNewRecipesList.dart';
 import 'package:easy_vegan_cooking/components/horizontalList/horizontalRecipeDay.dart';
 import 'package:easy_vegan_cooking/main.dart';
 import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class HomeActivity extends StatefulWidget {
   final int listSize = 10;

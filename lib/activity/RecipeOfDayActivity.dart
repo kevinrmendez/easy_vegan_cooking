@@ -1,15 +1,14 @@
 import 'dart:async';
 
-import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
-
-import 'package:easy_vegan_cooking/components/imageComponentParallax.dart';
-import 'package:easy_vegan_cooking/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/services.dart';
-
-// import 'package:url_launcher/url_launcher.dart';
 import 'package:firebase_database/firebase_database.dart';
+// import 'package:url_launcher/url_launcher.dart';
+
+import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
+import 'package:easy_vegan_cooking/components/imageComponentParallax.dart';
+import 'package:easy_vegan_cooking/utils/utils.dart';
 
 import '../Recipe.dart';
 import '../components/AppDrawer.dart';

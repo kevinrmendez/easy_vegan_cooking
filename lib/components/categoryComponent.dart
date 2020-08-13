@@ -1,22 +1,7 @@
-import 'package:easy_vegan_cooking/activity/CartActivity.dart';
 import 'package:easy_vegan_cooking/activity/gridActivity.dart';
-import 'package:easy_vegan_cooking/activity/searchFilterActivity.dart';
-import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:easy_vegan_cooking/data/data.dart';
-
 import 'package:flutter/material.dart';
-
-import 'package:admob_flutter/admob_flutter.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-// import 'package:url_launcher/url_launcher.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:strings/strings.dart';
-import 'package:url_launcher/url_launcher.dart';
-
-import '../main.dart';
-import '../apikeys.dart';
-import '../apikeys.dart';
-import '../helpers.dart';
 
 class CategoryComponent extends StatelessWidget {
   @override

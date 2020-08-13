@@ -1,16 +1,15 @@
+import 'package:flutter/material.dart';
+import 'package:admob_flutter/admob_flutter.dart';
+import 'package:provider/provider.dart';
+
 import 'package:easy_vegan_cooking/Ingredient.dart';
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
-import 'package:flutter/material.dart';
 
-import 'package:admob_flutter/admob_flutter.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:provider/provider.dart';
 // import 'package:url_launcher/url_launcher.dart';
 
 import '../CartModel.dart';
-import '../apikeys.dart';
 import '../helpers.dart';
 
 class CartActivity extends StatefulWidget {

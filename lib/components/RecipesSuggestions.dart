@@ -1,19 +1,15 @@
-import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
-import 'package:easy_vegan_cooking/appState.dart';
-import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
-import 'package:easy_vegan_cooking/main.dart';
-import 'package:easy_vegan_cooking/utils/utils.dart';
 import 'package:flutter/material.dart';
-
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 // import 'package:url_launcher/url_launcher.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
+
+import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
+import 'package:easy_vegan_cooking/main.dart';
+import 'package:easy_vegan_cooking/utils/utils.dart';
 
 import '../Recipe.dart';
 import '../apikeys.dart';
-import '../components/AppDrawer.dart';
 
 class RecipesSuggestions extends StatefulWidget {
   final List labels;

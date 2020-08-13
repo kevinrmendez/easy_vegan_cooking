@@ -1,10 +1,10 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:easy_vegan_cooking/Recipe.dart';
-import 'package:easy_vegan_cooking/appState.dart';
-import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
-import 'package:easy_vegan_cooking/main.dart';
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+
+import 'package:easy_vegan_cooking/Recipe.dart';
+import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
+import 'package:easy_vegan_cooking/main.dart';
 
 class FoodPicture extends StatefulWidget {
   final Recipe recipe;

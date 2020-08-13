@@ -1,29 +1,15 @@
 import 'dart:async';
-
-import 'package:easy_vegan_cooking/appState.dart';
-import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
-import 'package:easy_vegan_cooking/components/GridListComponent.dart';
-import 'package:easy_vegan_cooking/components/MyGridTile.dart';
-import 'package:easy_vegan_cooking/components/favoriteWidget.dart';
-import 'package:easy_vegan_cooking/main.dart';
-import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
-import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 import 'package:connectivity/connectivity.dart';
-
-import 'package:admob_flutter/admob_flutter.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-// import 'package:url_launcher/url_launcher.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
 
-import '../Recipe.dart';
-import '../apikeys.dart';
-import '../components/AppDrawer.dart';
+import 'package:easy_vegan_cooking/components/GridListComponent.dart';
+import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 
-import 'categoryActivity.dart';
-import 'RecipeActivity.dart';
-import '../helpers.dart';
+// import 'package:url_launcher/url_launcher.dart';
+
+import '../Recipe.dart';
+import '../components/AppDrawer.dart';
 
 class GridActivity extends StatefulWidget {
   final String category;

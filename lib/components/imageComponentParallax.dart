@@ -1,29 +1,25 @@
+import 'package:flutter/material.dart';
+
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:easy_vegan_cooking/activity/CartActivity.dart';
+import 'package:share/share.dart';
 import 'package:easy_vegan_cooking/activity/labelFilterActivity.dart';
 import 'package:easy_vegan_cooking/components/StepWidget.dart';
 import 'package:easy_vegan_cooking/components/ingredientList.dart';
 import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
-import 'package:flutter/material.dart';
 // import 'package:swipedetector/swipedetector.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:http/http.dart' as http;
-import 'package:provider/provider.dart';
-
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:easy_vegan_cooking/components/SubtitleWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
 
-import '../CartModel.dart';
 import '../Ingredient.dart';
 import '../Recipe.dart';
 import 'RecipesSuggestions.dart';
 
 import './../helpers.dart';
 import 'favoriteWidget.dart';
-import 'package:share/share.dart';
 
 void _shareRecipe(Recipe recipe) {
   Share.share("""

@@ -1,24 +1,15 @@
-import 'dart:convert';
+import 'package:flutter/material.dart';
+import 'package:admob_flutter/admob_flutter.dart';
+import 'package:provider/provider.dart';
 
-import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
 import 'package:easy_vegan_cooking/components/MyGridTile.dart';
-import 'package:easy_vegan_cooking/main.dart';
 import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
-import 'package:flutter/material.dart';
-
-import 'package:admob_flutter/admob_flutter.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-// import 'package:url_launcher/url_launcher.dart';
-
-import 'package:provider/provider.dart';
 
 import '../Recipe.dart';
 import '../RecipeModel.dart';
-
 import '../apikeys.dart';
-import '../activity/../helpers.dart';
 
 class FavoriteActivity extends StatefulWidget {
   // GridActivity({Key key, this.title}) : super(key: key);

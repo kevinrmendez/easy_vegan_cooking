@@ -1,17 +1,14 @@
-import 'package:admob_flutter/admob_flutter.dart';
-import 'package:connectivity/connectivity.dart';
-import 'package:easy_vegan_cooking/Recipe.dart';
-import 'package:easy_vegan_cooking/RecipeModel.dart';
-import 'package:easy_vegan_cooking/appState.dart';
-import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
-import 'package:easy_vegan_cooking/components/MyGridTile.dart';
-import 'package:easy_vegan_cooking/main.dart';
-import 'package:easy_vegan_cooking/utils/utils.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:flutter/services.dart';
+import 'package:admob_flutter/admob_flutter.dart';
+import 'package:connectivity/connectivity.dart';
+
+import 'package:easy_vegan_cooking/Recipe.dart';
+import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
+import 'package:easy_vegan_cooking/components/MyGridTile.dart';
+import 'package:easy_vegan_cooking/utils/utils.dart';
 
 import '../helpers.dart';
 
