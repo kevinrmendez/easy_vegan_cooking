@@ -12,10 +12,11 @@ import 'package:easy_vegan_cooking/activity/HomeActivity.dart';
 import 'package:easy_vegan_cooking/favoritesDb.dart';
 
 import 'CartModel.dart';
-import 'Ingredient.dart';
-import 'Recipe.dart';
+import 'models/Ingredient.dart';
+import 'models/Recipe.dart';
 import 'RecipeModel.dart';
 import 'appState.dart';
+import 'apikeys.dart';
 
 const PrimaryColor = const Color(0xFFB4CE2F);
 const AccentColor = const Color(0xFFFF9900);
@@ -39,7 +40,7 @@ void main() async {
 }
 
 String getAppId() {
-  return "ca-app-pub-7306861253247220~4569332025";
+  return apikeys["appId"];
 }
 
 class MyApp extends StatefulWidget {

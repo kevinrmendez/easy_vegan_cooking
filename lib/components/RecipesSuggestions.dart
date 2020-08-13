@@ -8,7 +8,7 @@ import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
 import 'package:easy_vegan_cooking/main.dart';
 import 'package:easy_vegan_cooking/utils/utils.dart';
 
-import '../Recipe.dart';
+import '../models/Recipe.dart';
 import '../apikeys.dart';
 
 class RecipesSuggestions extends StatefulWidget {

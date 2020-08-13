@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:provider/provider.dart';
 
-import 'package:easy_vegan_cooking/Ingredient.dart';
+import 'package:easy_vegan_cooking/models/Ingredient.dart';
 import 'package:easy_vegan_cooking/appState.dart';
 import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';

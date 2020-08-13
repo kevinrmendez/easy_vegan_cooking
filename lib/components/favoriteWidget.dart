@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:easy_vegan_cooking/Recipe.dart';
+import 'package:easy_vegan_cooking/models/Recipe.dart';
 import 'package:easy_vegan_cooking/RecipeModel.dart';
 
 import 'package:easy_vegan_cooking/main.dart';

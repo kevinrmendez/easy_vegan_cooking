@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Ingredient.dart';
-import 'Recipe.dart';
+import 'models/Ingredient.dart';
 import 'dart:collection';
 
 class CartModel extends ChangeNotifier {

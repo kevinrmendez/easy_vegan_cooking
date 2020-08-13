@@ -14,8 +14,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:easy_vegan_cooking/components/SubtitleWidget.dart';
 import 'package:easy_vegan_cooking/main.dart';
 
-import '../Ingredient.dart';
-import '../Recipe.dart';
+import '../models/Ingredient.dart';
+import '../models/Recipe.dart';
 import 'RecipesSuggestions.dart';
 
 import './../helpers.dart';

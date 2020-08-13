@@ -1,4 +1,4 @@
-import 'package:easy_vegan_cooking/Recipe.dart';
+import 'package:easy_vegan_cooking/models/Recipe.dart';
 
 class Utils {
   static Recipe recipeBuilder(data) {

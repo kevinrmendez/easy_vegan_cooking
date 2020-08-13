@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:easy_vegan_cooking/activity/CartActivity.dart';
 import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 import '../CartModel.dart';
-import '../Ingredient.dart';
+import '../models/Ingredient.dart';
 import 'SubtitleWidget.dart';
 
 class IngredientList extends StatefulWidget {

@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
-import 'Recipe.dart';
+import 'models/Recipe.dart';
 
 class FavoritesDb {
   Future<Database> getDb() async {

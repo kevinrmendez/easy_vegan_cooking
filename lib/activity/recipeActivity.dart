@@ -1,9 +1,8 @@
 import 'package:easy_vegan_cooking/components/imageComponentParallax.dart';
 import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
+import 'package:easy_vegan_cooking/models/Recipe.dart';
 import 'package:flutter/material.dart';
 // import 'package:swipedetector/swipedetector.dart';
-
-import '../Recipe.dart';
 
 class RecipeActivity extends StatefulWidget {
   final Recipe recipe;

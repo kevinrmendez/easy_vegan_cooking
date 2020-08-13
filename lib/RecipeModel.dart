@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Recipe.dart';
+import 'models/Recipe.dart';
 import 'dart:collection';
 
 class RecipeModel extends ChangeNotifier {

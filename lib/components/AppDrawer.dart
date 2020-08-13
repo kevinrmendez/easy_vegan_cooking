@@ -16,7 +16,7 @@ import 'package:provider/provider.dart';
 import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../Recipe.dart';
+import '../models/Recipe.dart';
 import '../RecipeModel.dart';
 
 class AppDrawer extends StatelessWidget {

@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_vegan_cooking/utils/utils.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:easy_vegan_cooking/Recipe.dart';
+import 'package:easy_vegan_cooking/models/Recipe.dart';
 import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
 
 import 'package:easy_vegan_cooking/main.dart';
@@ -181,7 +181,7 @@ class HorizontalNewRecipesListState extends State<HorizontalNewRecipesList> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Text(
-                            'Lo sentimos, no encontramos ninguna sugerencia por el momento',
+                            'We are sorry, we did not find any suggestion at the moment',
                             textAlign: TextAlign.center,
                           ),
                         ],

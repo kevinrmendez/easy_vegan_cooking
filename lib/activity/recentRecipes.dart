@@ -6,7 +6,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:easy_vegan_cooking/main.dart';
 import 'package:easy_vegan_cooking/utils/utils.dart';
 
-import '../Recipe.dart';
+import '../models/Recipe.dart';
 import '../apikeys.dart';
 import '../components/AppDrawer.dart';
 

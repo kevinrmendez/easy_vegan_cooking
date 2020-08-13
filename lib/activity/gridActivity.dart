@@ -8,7 +8,7 @@ import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 
 // import 'package:url_launcher/url_launcher.dart';
 
-import '../Recipe.dart';
+import '../models/Recipe.dart';
 import '../components/AppDrawer.dart';
 
 class GridActivity extends StatefulWidget {

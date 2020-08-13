@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:connectivity/connectivity.dart';
 
-import 'package:easy_vegan_cooking/Recipe.dart';
+import 'package:easy_vegan_cooking/models/Recipe.dart';
 import 'package:easy_vegan_cooking/components/EmptyListTitle.dart';
 import 'package:easy_vegan_cooking/components/MyGridTile.dart';
 import 'package:easy_vegan_cooking/utils/utils.dart';
