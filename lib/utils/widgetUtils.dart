@@ -9,7 +9,7 @@ class WidgetUtils {
       child: Text(
         capitalize(text),
         style: TextStyle(
-          fontWeight: FontWeight.bold, fontSize: 20,
+          fontWeight: FontWeight.bold, fontSize: 24,
           // color: AccentColor
         ),
       ),

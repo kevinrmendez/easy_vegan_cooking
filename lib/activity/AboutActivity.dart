@@ -1,6 +1,9 @@
 import 'package:audioplayers/audio_cache.dart';
 import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 import 'package:quiver/async.dart';
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:vibration/vibration.dart';
@@ -13,14 +16,14 @@ import 'package:countdown_flutter/countdown_flutter.dart';
 
 import '../apikeys.dart';
 
-class TimerActivity extends StatefulWidget {
-  // TimerActivity({Key key}) : super(key: key);
+class AboutActivity extends StatefulWidget {
+  // AboutActivity({Key key}) : super(key: key);
 
   @override
-  _TimerActivityState createState() => _TimerActivityState();
+  _AboutActivityState createState() => _AboutActivityState();
 }
 
-class _TimerActivityState extends State<TimerActivity> {
+class _AboutActivityState extends State<AboutActivity> {
   @override
   void initState() {
     super.initState();
@@ -31,15 +34,30 @@ class _TimerActivityState extends State<TimerActivity> {
     super.dispose();
   }
 
-  void _showAd() async {
-    _counter++;
-    if (_counter % 3 == 0) {
-      interstitialAd.load();
-    }
+  _buildTitle(String title) {
+    return Container(
+      padding: EdgeInsets.only(bottom: 20),
+      child: Text(
+        title,
+        style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+      ),
+    );
+  }
 
-    if (await interstitialAd.isLoaded) {
-      interstitialAd.show();
-    }
+  _buildIcon({IconData icon, String url}) {
+    return IconButton(
+      color: Theme.of(context).accentColor,
+      icon: Icon(icon),
+      onPressed: () async {
+        String url =
+            "https://play.google.com/store/apps/details?id=com.easy.vegan.cooking.pro";
+        if (await canLaunch(url)) {
+          await launch(url);
+        } else {
+          throw 'Could not launch $url';
+        }
+      },
+    );
   }
 
   @override
@@ -54,21 +72,32 @@ class _TimerActivityState extends State<TimerActivity> {
       body: Center(
         child: Container(
           height: MediaQuery.of(context).size.height * 4,
+          padding: EdgeInsets.symmetric(horizontal: 40),
           margin: EdgeInsets.symmetric(vertical: 40),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              Text(
+              _buildTitle(
                 'About',
-                style: TextStyle(fontSize: 30),
               ),
               Text(
-                  'Easy vegan cooking is a free app that contains vegan recipes'),
-              Text('Sound effects obtained from https://www.zapsplat.com'),
-              AdmobBanner(
-                adUnitId: getBannerAdUnitId(),
-                adSize: AdmobBannerSize.BANNER,
-              ),
+                  'Easy vegan cooking is an app that will help you to eat healthy vegan recipes'),
+              Text(
+                  'If you want to learn more about healthy vegan eating, read our blog'),
+              _buildTitle('Follow us'),
+              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                _buildIcon(
+                    icon: FontAwesomeIcons.instagram,
+                    url: "https://www.instagram.com/easy.vegan.cooking/"),
+                _buildIcon(
+                    icon: FontAwesomeIcons.facebook,
+                    url:
+                        "https://www.facebook.com/Easy-Vegan-Cooking-101809041505334"),
+                _buildIcon(
+                    icon: Icons.web,
+                    url:
+                        "https://www.facebook.com/Easy-Vegan-Cooking-101809041505334")
+              ]),
             ],
           ),
         ),
@@ -76,17 +105,3 @@ class _TimerActivityState extends State<TimerActivity> {
     );
   }
 }
-
-String getBannerAdUnitId() {
-  return apikeys["addMobBanner"];
-}
-
-AdmobInterstitial interstitialAd = AdmobInterstitial(
-  adUnitId: getInterstitialAdUnitId(),
-);
-
-getInterstitialAdUnitId() {
-  return apikeys["addMobInterstellar"];
-}
-
-int _counter = 0;

@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:easy_vegan_cooking/activity/AboutActivity.dart';
 import 'package:easy_vegan_cooking/activity/CartActivity.dart';
 import 'package:easy_vegan_cooking/activity/HomeActivity.dart';
 import 'package:easy_vegan_cooking/activity/RecentRecipesListActivity.dart';
@@ -69,6 +70,7 @@ class AppDrawer extends StatelessWidget {
                       builder: (BuildContext context) => HomeActivity()));
                 },
               ),
+
               ListTile(
                 title: Text(
                   "Favorite",
@@ -163,6 +165,21 @@ class AppDrawer extends StatelessWidget {
                   } else {
                     throw 'Could not launch $url';
                   }
+                },
+              ),
+              ListTile(
+                title: Text(
+                  "About",
+                  // style: TextStyle(color: Theme.of(context).primaryColor),
+                ),
+                trailing: Icon(
+                  Icons.info,
+                  color: Theme.of(context).accentColor,
+                ),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) => AboutActivity()));
                 },
               ),
               // ListTile(

@@ -2633,5 +2633,383 @@
       "name": "",
       "url": ""
     }
+  },
+  {
+    "id": 75,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FlentilSoup.jpg?alt=media&token=1364b2a1-6780-4200-b6dd-97661a069f81",
+    "title": "Spicy lentil soup",
+    "category": "soups",
+    "time": 40,
+    "serves": 3,
+    "difficulty": "easy",
+    "ingredients": [
+      "1  onion chopped",
+      "3 carrots peeled and chopped",
+      "4 garlic cloves minced",
+      "3 cups vegetable broth",
+      "2 tsp  cumin",
+      "1 tsp curry powder",
+      "250 ml tomato puree",
+      "1 cup brown lentils rinsed",
+      "3 cups water",
+      "3 tsp salt",
+      "4 tbsp  ground black pepper",
+      "100 gr kale   ribs removed and chopped",
+      "2 tbsp lemon juice ",
+      "4 tbsp olive oil",
+      "4 tbsp chilli powder"
+    ],
+    "steps": [
+      "In big pot over medium-heat fry with olive oil onions, kale and carrots, cook for 7 min",
+      "Add the garlic and season with cumin, and curry powder.Cook for 5 more min",
+      "Add the lentils, water and vegetable broth. Raised the heat to boil, then reduce the heat and cook for 20 min",
+      "Season with salt,black pepper, chilli powder and lemon juice",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["lentils", "kale"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
+  },
+  {
+    "id": 76,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/dinner%2FgrilledCarrots.jpg?alt=media&token=ecbdbd9f-a235-4e48-ab49-05ab84bfb9c1",
+    "title": "Grilled carrots",
+    "category": "dinner",
+    "time": 20,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "6 carrots  cleaned, peeled and chopped",
+      "2 tbsp olive oil",
+      "2 tsp maple syrup",
+      "3 tsp chipotle sauce",
+      "1/4 cup soy yogurt",
+      "3 tbsp tahini",
+      "3 tbsp lemon juice",
+      "4 tbsp salt",
+      "4 tsp black pepper",
+      "2 tbsp wallnuts crushed",
+      "3 tbsp water"
+    ],
+    "steps": [
+      "Preheat oven 200 °C",
+      "In bowl mix maple syrup,chipotle sauce,2 tbsp salt and olive oil. Add the carrots to the mix",
+      "In a tray with baking paper spread the carrots, bake for 15 min, then transfer to a plate",
+      "Meanwhile in a small bowl mix the yogurt, lemon juice, tahini, 2 tbsp salt,water and black pepper",
+      "Serve the carrots with yogurt sauce and crushed walnuts",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["carrots", "grilled"],
+    "nutrition": [],
+    "attribution": {
+      "name": "Marco Verch",
+      "url": "https://www.flickr.com/photos/160866001@N07/"
+    }
+  },
+  {
+    "id": 77,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/salads%2FquinoaSalad.jpg?alt=media&token=43f194aa-c111-4c47-b36e-ca23fb12712a",
+    "title": "Quinoa Salad",
+    "category": "salads",
+    "time": 20,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      "2 cups quinoa cooked",
+      "3 cups water",
+      "1/2 cup cherry tomatoes sliced in half",
+      "1 yellow bell pepper chopped",
+      "1 cucumber chopped",
+      "1 1/2 tbsp red wine vinegar",
+      "1/2 cup  olives",
+      "1/2 cup  parsley leaves chopped ",
+      "3 tablespoons olive oil",
+      "1/2 tsp oregano",
+      "2 tsp salt",
+      "1 tsp black pepper"
+    ],
+    "steps": [
+      "In a bowl mix quinoa, cucumber, olives and parsley leaves, cherry tomatoes and bell pepper ",
+      "For preparing the dressing mix olive oil, red wine vinegar, olive oil, salt and black pepper",
+      "Add the dressing to the salad",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["quinoa", "mediterranean"],
+    "nutrition": [],
+    "attribution": {
+      "name": "Marco Verch",
+      "url": "https://www.flickr.com/photos/160866001@N07/"
+    }
+  },
+  {
+    "id": 78,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/dinner%2FmushroomPasta.jpg?alt=media&token=12592c1b-7d37-4576-94e9-72580416a3d7",
+    "title": "Mushroom cream pasta",
+    "category": "dinner",
+    "time": 20,
+    "serves": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      " 4 tbsp olive oil",
+      " 1 onion chopped",
+      " 2 garlic clove chopped",
+      " 200 gr mushrooms chopped",
+      " 40 ml white wine",
+      "40 ml almond/soy cream",
+      " 3 tsp chopped fresh parsley",
+      " 120g  cooked",
+      " 25g wallnuts crushed",
+      " 4 tbsp salt",
+      " ground4 tbsp black pepper"
+    ],
+    "steps": [
+      "In a frying pan over medium-heat add  olive oil  and fry  onion and garlic",
+      "Add  mushrooms and for 7 min. Season well with salt and pepper.",
+      "Add white wine and cook for 7 more minutes.",
+      "Add almond/soy cream and cook for 5 minutes and then add the parsley",
+      "Add the pasta to the sauce",
+      "Serve the pasta  with crushed wallnuts",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["mushroom", "pasta"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
+  },
+  {
+    "id": 78,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2FsweetPotatoesWedges.jpg?alt=media&token=4d2b20cb-256b-4f29-860f-ba76cb558149",
+    "title": "Sweet potatoes Wedges",
+    "category": "snacks",
+    "time": 55,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "2 sweet potatoes chopped in wedges",
+      "2 tbsp olive oil",
+      "4 tbsp garlic powder",
+      "2 tbsp black pepper",
+      "1 tbsp sea salt"
+    ],
+    "steps": [
+      "Preheat the oven to 250 C",
+      "In a tray with baking paper place the sweet potatoes wedges",
+      "Drizzle olive oil and season with garlic powder, black pepper and salt",
+      "Bake for 50 min",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["sweet potato", "baked"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
+  },
+  {
+    "id": 78,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/desserts%2FbakedPear.jpg?alt=media&token=e3a69bda-6f32-49c0-aac1-84e4c0bf000e",
+    "title": "Baked pears",
+    "category": "desserts",
+    "time": 45,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "2 pears half sliced",
+      "4 tbsp maple syrup",
+      "4 tsp cinnamon ",
+      "20 gr walnuts crushed"
+    ],
+    "steps": [
+      "Preheat the oven to 250 C",
+      "In a tray with baking paper place the pears",
+      "Sprinkle the crushed walnuts",
+      "Drizzle maple syrup and season with cinnamon",
+      "Bake for 40 min",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["pear", "baked", "cinnamon"],
+    "nutrition": [],
+    "attribution": {
+      "name": "Mark Bonica",
+      "url": "https://www.flickr.com/photos/23119666@N03/"
+    }
+  },
+  {
+    "id": 78,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2FkaleChips.jpg?alt=media&token=c68fb509-79b8-44b0-845d-ba3a8a992cc4",
+    "title": "Kale chips",
+    "category": "snacks",
+    "time": 40,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "200 gr kale washed and chopped",
+      "1 tbsp olive oil",
+      "1 tsp salt",
+      "1 tsp garlic powder"
+    ],
+    "steps": [
+      "Preheat the oven to 250 C",
+      "In a tray with baking paper place the kale",
+      "Drizzle olive oil and sprinkle with garlic powder and salt ",
+      "Bake for 35 min",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["kale", "baked", "chips"],
+    "nutrition": [],
+    "attribution": {
+      "name": "RobinzRabbit",
+      "url": "https://www.flickr.com/photos/95631775@N08/"
+    }
+  },
+  {
+    "id": 79,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/snacks%2FspinachHummus.jpg?alt=media&token=f4b3dcdf-b9df-4f5a-9ca0-fd765a5f9261",
+    "title": "Spinach Lemon Hummus",
+    "category": "snacks",
+    "time": 10,
+    "serves": 4,
+    "difficulty": "super easy",
+    "ingredients": [
+      "2 garlic cloves",
+      "4 tbsp lemon juice",
+      "250 gr spinach leaves",
+      "salt",
+      "pepper",
+      "3 tbsp olive oil",
+      "1 tsp cumin",
+      "300 gr chickpeas cooked"
+    ],
+    "steps": [
+      "Add the chickpeas,garlic,lemon juice,spinach,cumin, a big pinch of salt, pepper and olive oil to a food processor",
+      "Blend until well combined",
+      "Taste and add if neccesary more lemon juice, pepper or salt",
+      "Enjoy"
+    ],
+    "suggestions": "If the hummus is a bit dry, add a bit of water while blending the ingredients",
+    "labels": ["chickpeas", "hummus", "spinach", "lemon"],
+    "nutrition": [],
+    "attribution": {
+      "name": "Gloria Cabada-Leman",
+      "url": "https://www.flickr.com/photos/67238971@N04/"
+    }
+  },
+  {
+    "id": 80,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FPortobelloChipotleTacos.jpg?alt=media&token=905271f2-fc82-4652-88f8-76aca0bd1e92",
+    "title": "Portobello chipotle tacos",
+    "category": "meals",
+    "time": 40,
+    "serves": 3,
+    "difficulty": "easy",
+    "ingredients": [
+      "1 tsp cumin",
+      "1 tsp coriander",
+      "3 portobello mushrooms sliced",
+      "1 red bell pepper sliced",
+      "1 purple onion sliced",
+      "2 tbsp olive oil",
+      "1 tbsp salt",
+      "3 tbsp chipotle  sauce",
+      "2 garlic clove minced",
+      "4 corn tortillas warmed",
+      "100 gr black beans cooked"
+    ],
+    "steps": [
+      "In a small bowl mix chipotle sauce, olive oil, cumin, coriander and garlic",
+      "Add the portobello mushrooms to the small bowl and marinate",
+      "In a frying pan over medium-heat fry the portobello mushrooms till tender and season with salt",
+      "Warm the tortillas and serve the tacos with portobello mushrooms, red bell pepper and black beans",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["taco", "mexican", "spicy"],
+    "nutrition": [],
+    "attribution": {
+      "name": "Marco Verch",
+      "url": "https://www.flickr.com/photos/30478819@N08/"
+    }
+  },
+  {
+    "id": 90,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/meals%2FveganBalls.jpg?alt=media&token=2fc5f1a7-0c1a-430c-bb74-799a8e5670dd",
+    "title": "Vegan balls",
+    "category": "meals",
+    "time": 45,
+    "serves": 3,
+    "difficulty": "medium",
+    "ingredients": [
+      "2 tbsp water",
+      "1 purple onion chopped",
+      "1 tbsp olive oil",
+      "1 tsp sea salt",
+      "2 tsp fresh oregano",
+      "3 tbsp  basil chopped",
+      "3 tbsp vegan worcestershire sauce",
+      "1 cup quinoa cooked",
+      "1 cup black beans cooked",
+      "4 cloves garlic minced"
+    ],
+    "steps": [
+      "Preheat oven 200 °C",
+      "In a frying pan over medium-heat add  olive oil  and fry  onion and garlic, saute for 5 min",
+      "In a blender add all the ingredients. Mix well",
+      "With the dough make small balls and refrigerate for 15 min",
+      "In a frying pan over medium-heat sautee the balls for 3 min",
+      "Place the balls to a try with baking paper and cook for 20 min",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["balls", "baked"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
+  },
+  {
+    "id": 91,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/soups%2FpeaSoup.jpg?alt=media&token=f34e3a99-f0d4-43ae-97a5-b720fc3d9515",
+    "title": "Pea soup",
+    "category": "soups",
+    "time": 20,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "200 ml vegetable stock",
+      "1 onion chopped",
+      "250 gr peas",
+      "2 garlic cloves, pealed and chopped",
+      "1 tbsp olive oil",
+      "50 ml oat/soy cream",
+      "2 tsp salt",
+      "2 tsp black pepper"
+    ],
+    "steps": [
+      "In a pot over medium-heat add  olive oil  and fry  onion and garlic, saute for 5 min",
+      "Add the peas and vegetable stock, cook for 10 min",
+      "Add the cream and puree the ingredients with a hand blender",
+      "season with salt and black pepper",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["pea"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   }
 ]
