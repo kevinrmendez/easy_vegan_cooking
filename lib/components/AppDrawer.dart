@@ -1,4 +1,7 @@
-import 'dart:async';
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:share/share.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'package:easy_vegan_cooking/activity/AboutActivity.dart';
 import 'package:easy_vegan_cooking/activity/CartActivity.dart';
@@ -6,21 +9,10 @@ import 'package:easy_vegan_cooking/activity/HomeActivity.dart';
 import 'package:easy_vegan_cooking/activity/RecentRecipesListActivity.dart';
 import 'package:easy_vegan_cooking/activity/RecipeOfDayActivity.dart';
 import 'package:easy_vegan_cooking/activity/TimerActivity.dart';
-import 'package:easy_vegan_cooking/activity/categoryActivity.dart';
 import 'package:easy_vegan_cooking/activity/favoriteActivity.dart';
-import 'package:easy_vegan_cooking/activity/recentRecipes.dart';
 import 'package:easy_vegan_cooking/main.dart';
-import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:provider/provider.dart';
-import 'package:share/share.dart';
-import 'package:url_launcher/url_launcher.dart';
-
-import '../models/Recipe.dart';
-import '../RecipeModel.dart';
 
 class AppDrawer extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -30,22 +22,6 @@ class AppDrawer extends StatelessWidget {
           color: GreyColor,
           child: ListView(
             children: <Widget>[
-              // UserAccountsDrawerHeader(
-              //   accountName: Text('Bad Jokes'),
-              //   currentAccountPicture: CircleAvatar(
-              //     backgroundImage: AssetImage('assets/smile.png'),
-              //   ),
-              // ),
-              // Container(
-              //   height: 110,
-              //   color: Colors.yellow[600],
-              //   child: Column(
-              //     mainAxisAlignment: MainAxisAlignment.center,
-              //     children: <Widget>[
-              //       Container(height: 70, child: Image.asset('assets/smile.png')),
-              //     ],
-              //   ),
-              // ),
               DrawerHeader(
                 child: SizedBox(),
                 decoration: BoxDecoration(
@@ -58,7 +34,6 @@ class AppDrawer extends StatelessWidget {
               ListTile(
                 title: Text(
                   "Home",
-                  // style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 trailing: Icon(
                   Icons.home,
@@ -70,11 +45,9 @@ class AppDrawer extends StatelessWidget {
                       builder: (BuildContext context) => HomeActivity()));
                 },
               ),
-
               ListTile(
                 title: Text(
                   "Favorite",
-                  // style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 trailing: Icon(
                   Icons.favorite,
@@ -89,7 +62,6 @@ class AppDrawer extends StatelessWidget {
               ListTile(
                 title: Text(
                   "Groceries",
-                  // style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 trailing: Icon(
                   Icons.shopping_cart,
@@ -104,7 +76,6 @@ class AppDrawer extends StatelessWidget {
               ListTile(
                 title: Text(
                   "New Recipes",
-                  // style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 trailing: Icon(
                   FontAwesomeIcons.utensils,
@@ -120,7 +91,6 @@ class AppDrawer extends StatelessWidget {
               ListTile(
                 title: Text(
                   "Recipe of the Day",
-                  // style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 trailing: Icon(
                   FontAwesomeIcons.sun,
@@ -136,7 +106,6 @@ class AppDrawer extends StatelessWidget {
               ListTile(
                 title: Text(
                   "Timer",
-                  // style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 trailing: Icon(
                   FontAwesomeIcons.clock,
@@ -151,7 +120,6 @@ class AppDrawer extends StatelessWidget {
               ListTile(
                 title: Text(
                   "Remove ads",
-                  // style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 trailing: Icon(
                   FontAwesomeIcons.minusCircle,
@@ -170,7 +138,6 @@ class AppDrawer extends StatelessWidget {
               ListTile(
                 title: Text(
                   "About",
-                  // style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 trailing: Icon(
                   Icons.info,
@@ -182,76 +149,39 @@ class AppDrawer extends StatelessWidget {
                       builder: (BuildContext context) => AboutActivity()));
                 },
               ),
-              // ListTile(
-              //   title: Text(
-              //     "Random Recipe",
-              //     // style: TextStyle(color: Theme.of(context).primaryColor),
-              //   ),
-              //   trailing: Icon(
-              //     FontAwesomeIcons.plusCircle,
-              //     color: Theme.of(context).accentColor,
-              //   ),
-              //   onTap: () {
-              //     Navigator.of(context).pop();
-              //     // Navigator.of(context).push(MaterialPageRoute(
-              //     //     builder: (BuildContext context) =>
-              //     //         ImageActivity(recipe: ,))
-              //     //         );
-              //   },
-              // ),
+              ListTile(
+                title: Text(
+                  "Share App",
+                ),
+                trailing: Icon(
+                  Icons.share,
+                  color: Theme.of(context).accentColor,
+                ),
+                onTap: () {
+                  String url =
+                      "https://play.google.com/store/apps/details?id=com.kevinrmendez.easy.vegan.cooking";
 
-              // ListTile(
-              //   title: Text(
-              //     "Share App",
-              //     style: TextStyle(color: Theme.of(context).primaryColor),
-              //   ),
-              //   trailing: Icon(
-              //     Icons.share,
-              //     color: Theme.of(context).accentColor,
-              //   ),
-              //   onTap: () {
-              //     String url =
-              //         "https://play.google.com/store/apps/details?id=com.kevinrmendez.bad_jokes";
-              //     print('sharing');
-              //     Share.share(
-              //         "Get the best bad jokes and have a great timefrom $url");
-              //   },
-              // ),
-              // ListTile(
-              //   title: Text(
-              //     "Rate App",
-              //     style: TextStyle(color: Theme.of(context).primaryColor),
-              //   ),
-              //   trailing: Icon(
-              //     Icons.rate_review,
-              //     color: Theme.of(context).accentColor,
-              //   ),
-              //   onTap: () async {
-              //     String url =
-              //         "https://play.google.com/store/apps/details?id=com.kevinrmendez.bad_jokes";
-              //     if (await canLaunch(url)) {
-              //       await launch(url);
-              //     } else {
-              //       throw 'Could not launch $url';
-              //     }
-              //   },
-              // ),
-
-              // ListTile(
-              //   title: Text(
-              //     "Favorite Jokes",
-              //     style: TextStyle(color: Theme.of(context).primaryColor),
-              //   ),
-              //   trailing: Icon(
-              //     Icons.star,
-              //     color: Theme.of(context).primaryColor,
-              //   ),
-              //   onTap: () {
-              //     Navigator.of(context).pop();
-              //     Navigator.of(context).push(MaterialPageRoute(
-              //         builder: (BuildContext context) => FavoriteJokes()));
-              //   },
-              // ),
+                  Share.share("Get the best and easy vegan recipes: $url");
+                },
+              ),
+              ListTile(
+                title: Text(
+                  "Rate App",
+                ),
+                trailing: Icon(
+                  Icons.rate_review,
+                  color: Theme.of(context).accentColor,
+                ),
+                onTap: () async {
+                  String url =
+                      "https://play.google.com/store/apps/details?id=com.kevinrmendez.easy.vegan.cooking";
+                  if (await canLaunch(url)) {
+                    await launch(url);
+                  } else {
+                    throw 'Could not launch $url';
+                  }
+                },
+              ),
             ],
           ),
         ),
