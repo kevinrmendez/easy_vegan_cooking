@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:easy_vegan_cooking/models/Recipe.dart';
 import 'package:easy_vegan_cooking/RecipeModel.dart';
 import 'package:easy_vegan_cooking/bloc/favorite_recipe_bloc.dart';
+import 'package:easy_vegan_cooking/bloc/favorite_bloc.dart';
 
 import 'package:easy_vegan_cooking/main.dart';
 
@@ -49,14 +50,16 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
 
         // Provider.of<RecipeModel>(context, listen: false).add(widget.recipe);
       });
-      favoriteRecipeServices.add(widget.recipe);
+      // favoriteRecipeServices.add(widget.recipe);
+      favoriteServices.add(widget.recipe);
 
       // db.insertFavorite(widget.recipe);
       // var favorites = await db.favorites();
 
       // favorites.forEach((f) => print(f.title));
     }
-    var favorites = favoriteRecipeServices.currentList;
+    // var favorites = favoriteRecipeServices.currentList;
+    var favorites = favoriteServices.currentList;
     favorites.forEach((element) {
       print(element.id);
       print(element.title);

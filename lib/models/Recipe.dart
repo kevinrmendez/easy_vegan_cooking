@@ -1,5 +1,5 @@
 class Recipe {
-  final int id;
+  int id;
   final String image;
   final String title;
   final String category;
