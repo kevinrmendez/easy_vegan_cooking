@@ -43,6 +43,7 @@ dependencies:
   connectivity:
   strings:
   sqflite:
+  rxdart:
 
 dev_dependencies:
   flutter_test:

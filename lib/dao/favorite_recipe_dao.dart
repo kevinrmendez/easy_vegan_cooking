@@ -6,7 +6,7 @@ import 'package:easy_vegan_cooking/models/Recipe.dart';
 class FavoriteRecipeDao {
   final dbProvider = FoodDatabase.dbProvider;
 
-  Future<int> createFavorite(Recipe favoriteRecipe) async {
+  Future<int> createFavoriteRecipe(Recipe favoriteRecipe) async {
     final db = await dbProvider.database;
     var result = db.insert(favoriteRecipesTable, favoriteRecipe.toJson());
     return result;
