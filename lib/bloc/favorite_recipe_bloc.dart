@@ -2,7 +2,7 @@ import 'package:easy_vegan_cooking/models/Recipe.dart';
 import 'package:easy_vegan_cooking/repository/favorite_recipe_repository.dart';
 import 'package:rxdart/rxdart.dart';
 
-class FoodService {
+class FavoriteRecipeService {
   final FavoriteRecipeRepository _favoriteRecipeRepository =
       FavoriteRecipeRepository();
   static List<Recipe> dbFavoriteRecipes;
@@ -32,7 +32,7 @@ class FoodService {
     _getFavoriteRecipes();
   }
 
-  remove(int id, int index) async {
+  remove(int id, [int index]) async {
     _favoriteRecipeList.value.removeWhere((recipe) => recipe.id == id);
     _favoriteRecipeList.add(List<Recipe>.from(currentList));
     _favoriteRecipeRepository.deleteFavoriteRecipeById(id);
@@ -64,4 +64,4 @@ class FoodService {
   }
 }
 
-FoodService foodListServices = FoodService();
+FavoriteRecipeService favoriteRecipeServices = FavoriteRecipeService();

@@ -43,7 +43,7 @@ class FoodDatabase {
         "labels TEXT,"
         "nutrition TEXT,"
         "attribution TEXT,"
-        "isFavorite INTEGER DEFAULT 0,"
+        "isFavorite INTEGER DEFAULT 0"
         ")");
   }
 }

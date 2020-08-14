@@ -83,9 +83,7 @@ class _AboutActivityState extends State<AboutActivity> {
                     url:
                         "https://www.facebook.com/Easy-Vegan-Cooking-101809041505334"),
                 _buildIcon(
-                    icon: Icons.web,
-                    url:
-                        "https://www.facebook.com/Easy-Vegan-Cooking-101809041505334")
+                    icon: Icons.web, url: "https://easyvegancooking.recipes/")
               ]),
             ],
           ),

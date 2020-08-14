@@ -117,7 +117,7 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
       } else if (ingredient != null) {
         this.shoppingCart.add(ingredient.name);
       } else if (recipe != null) {
-        if (recipe.isFavorite) {
+        if (recipe.isFavorite == 1) {
           this.recipes.add(recipe);
         } else {
           this.recipes.removeAt(recipes.indexOf(recipe));

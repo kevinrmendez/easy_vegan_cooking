@@ -12,7 +12,7 @@ class Recipe {
   final List labels;
   final List nutrition;
   final Map attribution;
-  bool isFavorite;
+  int isFavorite;
 
   Recipe(
       {this.id,

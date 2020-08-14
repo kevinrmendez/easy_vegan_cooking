@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import 'package:easy_vegan_cooking/models/Recipe.dart';
 import 'package:easy_vegan_cooking/RecipeModel.dart';
+import 'package:easy_vegan_cooking/bloc/favorite_recipe_bloc.dart';
 
 import 'package:easy_vegan_cooking/main.dart';
 
@@ -24,29 +25,41 @@ class FavoriteWidget extends StatefulWidget {
 }
 
 class _FavoriteWidgetState extends State<FavoriteWidget> {
-  bool _isFavorited;
+  int _isFavorited;
 
   void _toggleFavorite(context) async {
-    if (_isFavorited) {
+    if (_isFavorited == 1) {
       setState(() {
-        widget.recipe.isFavorite = false;
-        _isFavorited = false;
-        Provider.of<RecipeModel>(context, listen: false).remove(widget.recipe);
+        widget.recipe.isFavorite = 0;
+        _isFavorited = 0;
+
+        // Provider.of<RecipeModel>(context, listen: false).remove(widget.recipe);
       });
+      int recipeId = await favoriteRecipeServices.getFoodId(widget.recipe);
+      favoriteRecipeServices.remove(recipeId);
+
       // db.deleteFavorite(widget.recipe);
       // var favorites = await db.favorites();
       // favorites.forEach((f) => print(f.title));
     } else {
       setState(() {
-        widget.recipe.isFavorite = true;
-        _isFavorited = true;
-        Provider.of<RecipeModel>(context, listen: false).add(widget.recipe);
+        widget.recipe.isFavorite = 1;
+        _isFavorited = 1;
+        widget.recipe.isFavorite = 1;
+        // Provider.of<RecipeModel>(context, listen: false).add(widget.recipe);
       });
+      favoriteRecipeServices.add(widget.recipe);
+
       // db.insertFavorite(widget.recipe);
       // var favorites = await db.favorites();
 
       // favorites.forEach((f) => print(f.title));
     }
+    var favorites = favoriteRecipeServices.currentList;
+    favorites.forEach((element) {
+      print(element.id);
+      print(element.title);
+    });
   }
 
   @override
@@ -64,7 +77,7 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
           padding: EdgeInsets.all(0),
           child: IconButton(
               iconSize: widget.iconSize,
-              icon: (_isFavorited
+              icon: (_isFavorited == 1
                   ? Icon(
                       Icons.favorite,
                       color: RedColors,

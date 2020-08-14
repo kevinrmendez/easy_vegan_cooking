@@ -15,6 +15,6 @@ class Utils {
         labels: data["labels"],
         nutrition: data["nutrition"],
         attribution: data["attribution"],
-        isFavorite: false);
+        isFavorite: 0);
   }
 }
