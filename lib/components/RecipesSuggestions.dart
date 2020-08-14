@@ -4,7 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 // import 'package:url_launcher/url_launcher.dart';
 import 'package:firebase_database/firebase_database.dart';
 
-import 'package:easy_vegan_cooking/activity/recipeActivity.dart';
+import 'package:easy_vegan_cooking/ui/recipeActivity.dart';
 import 'package:easy_vegan_cooking/main.dart';
 import 'package:easy_vegan_cooking/utils/utils.dart';
 

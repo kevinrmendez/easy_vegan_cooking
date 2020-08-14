@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
-import 'package:easy_vegan_cooking/activity/CartActivity.dart';
+import 'package:easy_vegan_cooking/ui/CartActivity.dart';
 import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 import '../CartModel.dart';
 import '../models/Ingredient.dart';

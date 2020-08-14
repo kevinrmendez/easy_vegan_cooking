@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:share/share.dart';
-import 'package:easy_vegan_cooking/activity/labelFilterActivity.dart';
+import 'package:easy_vegan_cooking/ui/labelFilterActivity.dart';
 import 'package:easy_vegan_cooking/components/StepWidget.dart';
 import 'package:easy_vegan_cooking/components/ingredientList.dart';
 import 'package:easy_vegan_cooking/utils/widgetUtils.dart';

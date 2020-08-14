@@ -2,7 +2,7 @@ import 'package:strings/strings.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 
-import 'package:easy_vegan_cooking/activity/searchFilterActivity.dart';
+import 'package:easy_vegan_cooking/ui/searchFilterActivity.dart';
 import 'package:easy_vegan_cooking/components/AppDrawer.dart';
 import 'package:easy_vegan_cooking/data/data.dart';
 

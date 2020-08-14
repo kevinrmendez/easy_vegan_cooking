@@ -1,4 +1,4 @@
-import 'package:easy_vegan_cooking/activity/gridActivity.dart';
+import 'package:easy_vegan_cooking/ui/gridActivity.dart';
 import 'package:easy_vegan_cooking/data/data.dart';
 import 'package:flutter/material.dart';
 import 'package:strings/strings.dart';

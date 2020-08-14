@@ -8,7 +8,7 @@ import 'package:admob_flutter/admob_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:easy_vegan_cooking/activity/HomeActivity.dart';
+import 'package:easy_vegan_cooking/ui/HomeActivity.dart';
 import 'package:easy_vegan_cooking/favoritesDb.dart';
 
 import 'CartModel.dart';

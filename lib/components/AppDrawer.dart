@@ -3,13 +3,13 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'package:easy_vegan_cooking/activity/AboutActivity.dart';
-import 'package:easy_vegan_cooking/activity/CartActivity.dart';
-import 'package:easy_vegan_cooking/activity/HomeActivity.dart';
-import 'package:easy_vegan_cooking/activity/RecentRecipesListActivity.dart';
-import 'package:easy_vegan_cooking/activity/RecipeOfDayActivity.dart';
-import 'package:easy_vegan_cooking/activity/TimerActivity.dart';
-import 'package:easy_vegan_cooking/activity/favoriteActivity.dart';
+import 'package:easy_vegan_cooking/ui/AboutActivity.dart';
+import 'package:easy_vegan_cooking/ui/CartActivity.dart';
+import 'package:easy_vegan_cooking/ui/HomeActivity.dart';
+import 'package:easy_vegan_cooking/ui/RecentRecipesListActivity.dart';
+import 'package:easy_vegan_cooking/ui/RecipeOfDayActivity.dart';
+import 'package:easy_vegan_cooking/ui/TimerActivity.dart';
+import 'package:easy_vegan_cooking/ui/favoriteActivity.dart';
 import 'package:easy_vegan_cooking/main.dart';
 
 class AppDrawer extends StatelessWidget {
