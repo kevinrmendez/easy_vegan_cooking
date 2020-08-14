@@ -46,6 +46,7 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
         widget.recipe.isFavorite = 1;
         _isFavorited = 1;
         widget.recipe.isFavorite = 1;
+
         // Provider.of<RecipeModel>(context, listen: false).add(widget.recipe);
       });
       favoriteRecipeServices.add(widget.recipe);

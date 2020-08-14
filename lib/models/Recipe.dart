@@ -51,22 +51,22 @@ class Recipe {
     return super.toString();
   }
 
-  Map<String, dynamic> toMap() {
-    return {
-      'title': title,
-      'image': image,
-      'category': category,
-      'difficulty': difficulty,
-      'time': time,
-      'serves': serves,
-      'ingredients': ingredients,
-      'steps': steps,
-      'isFavorite': isFavorite,
-      'labels': labels,
-      'nutrition': nutrition,
-      'attribution': attribution
-    };
-  }
+  // Map<String, dynamic> toMap() {
+  //   return {
+  //     'title': title,
+  //     'image': image,
+  //     'category': category,
+  //     'difficulty': difficulty,
+  //     'time': time,
+  //     'serves': serves,
+  //     'ingredients': ingredients,
+  //     'steps': steps,
+  //     'isFavorite': isFavorite,
+  //     'labels': labels,
+  //     'nutrition': nutrition,
+  //     'attribution': attribution
+  //   };
+  // }
 
   Map<String, dynamic> toJson() => {
         'title': title,
@@ -80,6 +80,7 @@ class Recipe {
         'labels': labels,
         'nutrition': nutrition,
         'attribution': attribution,
+        "suggestions": suggestions,
         'isFavorite': isFavorite,
       };
 
