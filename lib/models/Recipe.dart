@@ -1,4 +1,5 @@
 class Recipe {
+  final int id;
   final String image;
   final String title;
   final String category;
@@ -14,7 +15,8 @@ class Recipe {
   bool isFavorite;
 
   Recipe(
-      {this.image,
+      {this.id,
+      this.image,
       this.title,
       this.category,
       this.difficulty,
@@ -32,6 +34,7 @@ class Recipe {
   String toString() {
     print("""
         RECIPE:: title:$title, 
+        id: $id,
         image: $image,
         category:$category, 
         difficulty: $difficulty, 
@@ -74,26 +77,28 @@ class Recipe {
         'serves': serves,
         'ingredients': ingredients,
         'steps': steps,
-        'isFavorite': isFavorite,
         'labels': labels,
         'nutrition': nutrition,
-        'attribution': attribution
+        'attribution': attribution,
+        'isFavorite': isFavorite,
       };
 
   factory Recipe.fromJson(Map<String, dynamic> json) {
     return Recipe(
-        title: json['title'],
-        image: json['image'],
-        category: json['category'],
-        difficulty: json['difficulty'],
-        time: json['time'],
-        serves: json['serves'],
-        ingredients: json['ingredients'],
-        steps: json['steps'],
-        isFavorite: json['isFavorite'],
-        labels: json['labels'],
-        nutrition: json['nutrition'],
-        attribution: json['attribution']);
+      id: json['id'],
+      title: json['title'],
+      image: json['image'],
+      category: json['category'],
+      difficulty: json['difficulty'],
+      time: json['time'],
+      serves: json['serves'],
+      ingredients: json['ingredients'],
+      steps: json['steps'],
+      labels: json['labels'],
+      nutrition: json['nutrition'],
+      attribution: json['attribution'],
+      isFavorite: json['isFavorite'],
+    );
   }
 }
 
