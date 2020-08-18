@@ -44,6 +44,8 @@ dependencies:
   strings:
   sqflite:
   rxdart:
+  sembast: ^2.4.7+6
+  quiver: ^2.1.3
 
 dev_dependencies:
   flutter_test:

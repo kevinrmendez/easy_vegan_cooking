@@ -1,3 +1,4 @@
+import 'package:easy_vegan_cooking/bloc/ingredient_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
@@ -32,7 +33,8 @@ class _IngredientListState extends State<IngredientList> {
                 setState(() {
                   item.isChecked = value;
                   if (item.isChecked) {
-                    Provider.of<CartModel>(context, listen: false).add(item);
+                    // Provider.of<CartModel>(context, listen: false).add(item);
+                    ingredientServices.add(item);
                     WidgetUtils.showSnackBar(
                         context: context,
                         message: 'ingredient added to groceries list',
@@ -44,7 +46,9 @@ class _IngredientListState extends State<IngredientList> {
                           );
                         });
                   } else {
-                    Provider.of<CartModel>(context, listen: false).remove(item);
+                    // Provider.of<CartModel>(context, listen: false).remove(item);
+                    ingredientServices.remove(item);
+
                     WidgetUtils.showSnackBar(
                         context: context,
                         message: 'ingredient removed from groceries list',

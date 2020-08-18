@@ -1,5 +1,5 @@
 class Recipe {
-  final int id;
+  int id;
   final String image;
   final String title;
   final String category;
@@ -86,7 +86,7 @@ class Recipe {
 
   factory Recipe.fromJson(Map<String, dynamic> json) {
     return Recipe(
-      id: json['id'],
+      // id: json['id'],
       title: json['title'],
       image: json['image'],
       category: json['category'],

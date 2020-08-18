@@ -1,3 +1,4 @@
+import 'package:easy_vegan_cooking/bloc/ingredient_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:provider/provider.dart';
@@ -36,7 +37,8 @@ class _CartActivityState extends State<CartActivity> {
       switch (choice) {
         case 'delete':
           {
-            Provider.of<CartModel>(context, listen: false).removeAll();
+            ingredientServices.deleteAll();
+            // Provider.of<CartModel>(context, listen: false).removeAll();
             print('delete all');
           }
           break;
@@ -69,29 +71,48 @@ class _CartActivityState extends State<CartActivity> {
       body: Column(
         children: <Widget>[
           Expanded(
-              child: Consumer<CartModel>(builder: (context, cartModel, child) {
-            List<Ingredient> shoppingList = cartModel.ingredients;
-            return shoppingList.isNotEmpty
-                ? ListView.builder(
-                    itemCount: shoppingList.length,
-                    itemBuilder: (context, int index) {
-                      return ListTile(
-                        title: Text(shoppingList[index].name),
-                        trailing: IconButton(
-                          icon: Icon(Icons.delete),
-                          color: Theme.of(context).accentColor,
-                          onPressed: () {
-                            print('deleting item');
-                            Provider.of<CartModel>(context, listen: true)
-                                .remove(shoppingList[index]);
-                          },
-                        ),
-                      );
-                    },
-                  )
-                : EmptyListTitle('Groceries',
-                    'Add all your ingredients of your recipes here');
-          })),
+              child:
+                  //    Consumer<CartModel>(builder: (context, cartModel, child) {
+                  // List<Ingredient> shoppingList = cartModel.ingredients;
+                  // return shoppingList.isNotEmpty
+                  //     ?
+                  StreamBuilder<List<Ingredient>>(
+                      stream: ingredientServices.stream,
+                      builder: (context, snapshot) {
+                        if (snapshot.data == null) {
+                          return SizedBox();
+                        }
+                        if (snapshot.data.length == 0) {
+                          return Center(
+                              child: EmptyListTitle('Groceries',
+                                  'Add all your ingredients of your recipes here'));
+                        } else {
+                          return ListView.builder(
+                            itemCount: ingredientServices.currentList.length,
+                            itemBuilder: (context, int index) {
+                              Ingredient ingredientItem = snapshot.data[index];
+                              return ListTile(
+                                title: Text(ingredientItem.name),
+                                trailing: IconButton(
+                                  icon: Icon(Icons.delete),
+                                  color: Theme.of(context).accentColor,
+                                  onPressed: () {
+                                    print('deleting item');
+                                    ingredientServices.remove(ingredientItem);
+                                    // Provider.of<CartModel>(context,
+                                    //         listen: true)
+                                    //     .remove(shoppingList[index]);
+                                  },
+                                ),
+                              );
+                            },
+                          );
+                        }
+                      })
+              // : EmptyListTitle('Groceries',
+              //     'Add all your ingredients of your recipes here');
+              // })
+              ),
           AdmobBanner(
             adUnitId: getBannerAdUnitId(),
             adSize: AdmobBannerSize.BANNER,
