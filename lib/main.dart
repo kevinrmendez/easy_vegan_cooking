@@ -14,7 +14,7 @@ import 'package:easy_vegan_cooking/favoritesDb.dart';
 import 'CartModel.dart';
 import 'models/Ingredient.dart';
 import 'models/Recipe.dart';
-import 'RecipeModel.dart';
+
 import 'appState.dart';
 import 'apikeys.dart';
 
