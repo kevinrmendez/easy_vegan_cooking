@@ -3011,5 +3011,40 @@
       "name": "",
       "url": ""
     }
+  },
+  {
+    "id": 92,
+    "image": "https://firebasestorage.googleapis.com/v0/b/code4food-e0d74.appspot.com/o/dinner%2FtomatoRice.PNG?alt=media&token=5957dc7c-5b47-4324-853f-1af76a965d33",
+    "title": "Tomato rice",
+    "category": "dinner",
+    "time": 30,
+    "serves": 2,
+    "difficulty": "very easy",
+    "ingredients": [
+      "200 gr rice",
+      "1 onion chopped",
+      "5 tomatoes",
+      "3 tbsp chipotle sauce",
+      "2 garlic cloves, pealed and chopped",
+      "1 tbsp olive oil",
+      "500 ml vegetable stock",
+      "6 tbsp coriander chopped",
+      "1 tbsp salt"
+    ],
+    "steps": [
+      "In a pot over medium-heat add  olive oil  and fry  onion and garlic, saute for 5 min",
+      "In a blender add tomatoes,vegetable stock, salt and chipotle sauce. Mix well",
+      "Add the sauce in the pot and cook for 5 minutes, then add the rice",
+      "Bring to boil the rice, cover the pot and reduce the heat down. Cook for 20 min",
+      "Serve the rice with coriander",
+      "Enjoy"
+    ],
+    "suggestions": "",
+    "labels": ["rice", "tomato", "mexican"],
+    "nutrition": [],
+    "attribution": {
+      "name": "",
+      "url": ""
+    }
   }
 ]
