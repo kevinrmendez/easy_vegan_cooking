@@ -31,10 +31,10 @@ class FavoriteDao {
   }
 
   //delete _todo item
-  Future delete(String title) async {
+  Future delete(Recipe recipe) async {
     //get refence to object to be deleted using the finder method of sembast,
     //specifying it's id
-    final finder = Finder(filter: Filter.byKey(title));
+    final finder = Finder(filter: Filter.byKey(recipe.id));
 
     await _favoriteStore.delete(await _db, finder: finder);
   }
@@ -60,6 +60,19 @@ class FavoriteDao {
       recipe.id = snapshot.key;
       return recipe;
     }).toList();
+  }
+
+  Future<bool> checkIfRecipeExist(Recipe recipe) async {
+    List<Recipe> recipes = await getAllSortedByTImeStamp();
+    // bool ifRecipeExists;
+    if (recipes.length == 0) {
+      return false;
+    } else {
+      return recipes.indexWhere((element) => element.title == recipe.title) ==
+              -1
+          ? false
+          : true;
+    }
   }
 
   //sdfsdf sdf---------------------

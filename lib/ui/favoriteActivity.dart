@@ -38,46 +38,41 @@ class _FavoriteActivityState extends State<FavoriteActivity> {
     return Scaffold(
         drawer: AppDrawer(),
         appBar: WidgetUtils.appBar(title: 'Favorite recipes'),
-        body: StreamBuilder<List<Recipe>>(
-          stream: favoriteServices.stream,
-          builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
-            if (snapshot.data == null) {
-              return SizedBox();
-            }
-            if (snapshot.data.length == 0) {
-              return Center(
-                child: EmptyListTitle(
-                    'Favorite', 'Add your favorite recipes here'),
-              );
-            } else {
-              return ListView.builder(
-                  itemCount: favoriteServices.currentList == null
-                      ? 0
-                      : favoriteServices.currentList.length,
-                  itemBuilder: (BuildContext ctxt, int index) {
-                    Recipe recipeItem = snapshot.data[index];
-                    recipes = snapshot.data;
-
-                    return Container(
-                      child: MyGridTile(recipe: recipeItem),
+        body: Column(
+          children: [
+            Expanded(
+              child: StreamBuilder<List<Recipe>>(
+                stream: favoriteServices.stream,
+                builder:
+                    (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
+                  if (snapshot.data == null) {
+                    return SizedBox();
+                  }
+                  if (snapshot.data.length == 0) {
+                    return Center(
+                      child: EmptyListTitle(
+                          'Favorite', 'Add your favorite recipes here'),
                     );
-                    // return Flexible(
-                    //   child: GridView.count(
-                    //       // scrollDirection: Axis.vertical,
-                    //       // shrinkWrap: true,
-                    //       crossAxisCount: 1,
-                    //       childAspectRatio: 1.2,
-                    //       padding: const EdgeInsets.all(4.0),
-                    //       crossAxisSpacing: 4.0,
-                    //       children: recipes.map((recipe) {
-                    //         return Container(
-                    //           child: MyGridTile(recipe: recipeItem),
-                    //         );
-                    //       }).toList()),
-                    // );
-                  });
-            }
-          },
+                  } else {
+                    return ListView.builder(
+                        itemCount: favoriteServices.currentList.length,
+                        itemBuilder: (BuildContext ctxt, int index) {
+                          Recipe recipeItem = snapshot.data[index];
+                          // recipes = snapshot.data;
+
+                          return Container(
+                            child: MyGridTile(recipe: recipeItem),
+                          );
+                        });
+                  }
+                },
+              ),
+            ),
+            AdmobBanner(
+              adUnitId: getBannerAdUnitId(),
+              adSize: AdmobBannerSize.BANNER,
+            ),
+          ],
         )
         // body: Column(
         //   mainAxisAlignment: MainAxisAlignment.center,

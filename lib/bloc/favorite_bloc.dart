@@ -21,23 +21,30 @@ class FavoriteService {
   void _getFavoriteRecipes() async {
     dbFavoriteRecipes = await _favoriteRecipeRepository.getAllFavoriteRecipes();
     _favoriteRecipeList.add(dbFavoriteRecipes);
+    print("DB DATA");
+    dbFavoriteRecipes.forEach((element) {
+      print(element.title);
+    });
   }
 
   add(Recipe recipe) async {
-    _favoriteRecipeRepository.insertFavoriteRecipe(recipe);
-    _favoriteRecipeList.value.add(recipe);
-    _favoriteRecipeList.add(List<Recipe>.from(currentList));
-
-    _getFavoriteRecipes();
+    var isRecipeInDb =
+        await _favoriteRecipeRepository.checkIFFavoriteRecipeExist(recipe);
+    if (!isRecipeInDb) {
+      _favoriteRecipeList.value.add(recipe);
+      _favoriteRecipeList.add(List<Recipe>.from(currentList));
+      await _favoriteRecipeRepository.insertFavoriteRecipe(recipe);
+      _getFavoriteRecipes();
+    }
   }
 
-  // remove(int id, [int index]) async {
-  //   _favoriteRecipeList.value.removeWhere((recipe) => recipe.id == id);
-  //   _favoriteRecipeList.add(List<Recipe>.from(currentList));
-  //   _favoriteRecipeRepository.deleteFavoriteRecipeById(id);
-
-  //   _getFavoriteRecipes();
-  // }
+  remove(Recipe recipe) async {
+    _favoriteRecipeList.value
+        .removeWhere((recipeItem) => recipeItem.title == recipe.title);
+    _favoriteRecipeList.add(List<Recipe>.from(currentList));
+    await _favoriteRecipeRepository.deleteFavoriteRecipeById(recipe);
+    _getFavoriteRecipes();
+  }
 
   // getFoodId(Recipe recipe) async {
   //   int id = await _favoriteRecipeRepository.getFavoriteRecipeId(recipe);

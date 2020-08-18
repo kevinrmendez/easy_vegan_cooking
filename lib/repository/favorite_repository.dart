@@ -12,9 +12,12 @@ class FavoriteRepository {
 
   Future insertFavoriteRecipe(Recipe recipe) => foodDao.insert(recipe);
 
+  Future checkIFFavoriteRecipeExist(Recipe recipe) =>
+      foodDao.checkIfRecipeExist(recipe);
+
   Future updateFavoriteRecipe(Recipe recipe) => foodDao.update(recipe);
 
-  Future deleteFavoriteRecipeById(String title) => foodDao.delete(title);
+  Future deleteFavoriteRecipeById(Recipe recipe) => foodDao.delete(recipe);
 
   // Future deleteAllFavoriteRecipes() => foodDao.deleteAllFavoriteRecipes();
 }

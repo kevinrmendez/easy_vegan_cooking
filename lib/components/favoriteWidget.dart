@@ -36,8 +36,8 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
 
         // Provider.of<RecipeModel>(context, listen: false).remove(widget.recipe);
       });
-      int recipeId = await favoriteRecipeServices.getFoodId(widget.recipe);
-      favoriteRecipeServices.remove(recipeId);
+      // int recipeId = await favoriteRecipeServices.getFoodId(widget.recipe);
+      favoriteServices.remove(widget.recipe);
 
       // db.deleteFavorite(widget.recipe);
       // var favorites = await db.favorites();
