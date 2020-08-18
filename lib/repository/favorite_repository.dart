@@ -7,9 +7,6 @@ class FavoriteRepository {
   Future getAllFavoriteRecipes({String query}) =>
       foodDao.getAllSortedByTImeStamp();
 
-  // Future getFavoriteRecipeId(Recipe recipe) =>
-  //     foodDao.getFavoriteRecipeId(recipe);
-
   Future insertFavoriteRecipe(Recipe recipe) => foodDao.insert(recipe);
 
   Future checkIFFavoriteRecipeExist(Recipe recipe) =>
@@ -19,5 +16,5 @@ class FavoriteRepository {
 
   Future deleteFavoriteRecipeById(Recipe recipe) => foodDao.delete(recipe);
 
-  // Future deleteAllFavoriteRecipes() => foodDao.deleteAllFavoriteRecipes();
+  Future deleteAllFavoriteRecipes() => foodDao.deleteAllFavoriteRecipes();
 }

@@ -8,7 +8,6 @@ class FavoriteService {
 
   BehaviorSubject<List<Recipe>> _favoriteRecipeList =
       BehaviorSubject.seeded([]);
-  // BehaviorSubject.seeded([dbFavoriteRecipes] == null ? <List<Food>>[] : dbFavoriteRecipes);
 
   Stream get stream => _favoriteRecipeList.stream;
 
