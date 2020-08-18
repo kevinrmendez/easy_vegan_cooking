@@ -143,9 +143,6 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
         child: MultiProvider(
           providers: [
             ChangeNotifierProvider(
-              builder: (context) => RecipeModel(),
-            ),
-            ChangeNotifierProvider(
               builder: (context) => CartModel(),
             )
           ],

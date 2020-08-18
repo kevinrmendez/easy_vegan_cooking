@@ -9,7 +9,7 @@ import 'package:easy_vegan_cooking/components/MyGridTile.dart';
 import 'package:easy_vegan_cooking/utils/widgetUtils.dart';
 
 import '../models/Recipe.dart';
-import '../RecipeModel.dart';
+
 import '../apikeys.dart';
 
 class FavoriteActivity extends StatefulWidget {
