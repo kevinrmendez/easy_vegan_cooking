@@ -69,8 +69,8 @@ class IngredientService {
     _ingredientList.add(reversedList);
   }
 
-  void deleteAll() {
-    _ingredientRepository.deleteAllIngredients();
+  void deleteAll() async {
+    await _ingredientRepository.deleteAllIngredients();
     _getIngredients();
   }
 }

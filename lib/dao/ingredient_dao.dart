@@ -31,6 +31,7 @@ class IngredientDao {
         finder: finder);
   }
 
+// TODO:fix remove item
   //delete _todo item
   Future delete(Ingredient ingredient) async {
     //get refence to object to be deleted using the finder method of sembast,
@@ -76,7 +77,12 @@ class IngredientDao {
     }
   }
 
+// TODO:fix remove all
   deleteAllIngredients() async {
-    _ingredientStore.delete(await _db);
+    List<Ingredient> recipes = await getAllSortedByTImeStamp();
+    recipes.forEach((element) {
+      delete(element);
+    });
+    // _ingredientStore.delete(await _db);
   }
 }
