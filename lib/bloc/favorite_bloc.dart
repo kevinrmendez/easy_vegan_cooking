@@ -55,6 +55,11 @@ class FavoriteService {
     _getFavoriteRecipes();
   }
 
+  void deleteAll() {
+    _favoriteRecipeRepository.deleteAllFavoriteRecipes();
+    _getFavoriteRecipes();
+  }
+
   void orderFavoriteRecipesAscending() {
     List<Recipe> orderList = currentList;
     orderList.sort((a, b) => a.title.compareTo(b.title));

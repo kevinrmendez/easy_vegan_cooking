@@ -1,8 +1,7 @@
-import 'package:easy_vegan_cooking/models/Ingredient.dart';
-
-import 'package:easy_vegan_cooking/repository/ingredient_repository.dart';
-
 import 'package:rxdart/rxdart.dart';
+
+import 'package:easy_vegan_cooking/models/Ingredient.dart';
+import 'package:easy_vegan_cooking/repository/ingredient_repository.dart';
 
 class IngredientService {
   final IngredientRepository _ingredientRepository = IngredientRepository();
@@ -68,6 +67,11 @@ class IngredientService {
     orderList.sort((a, b) => a.name.compareTo(b.name));
     List<Ingredient> reversedList = orderList.reversed.toList();
     _ingredientList.add(reversedList);
+  }
+
+  void deleteAll() {
+    _ingredientRepository.deleteAllIngredients();
+    _getIngredients();
   }
 }
 
